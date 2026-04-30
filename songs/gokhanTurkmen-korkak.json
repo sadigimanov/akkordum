@@ -1,0 +1,138 @@
+{
+  "id": "gokhanTurkmen-korkak",
+  "title": "Korkak",
+  "artist": "Gökhan Türkmen",
+  "key": "Gm",
+  "capo": 0,
+  "sections": [
+    {
+      "chords": [
+        { "name": "Gm", "offset": 0 }
+      ],
+      "line": "Dünden beri"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 11 },
+        { "name": "Am", "offset": 41 }
+      ],
+      "line": "İçimde bir sıkıntı yokluyor beni"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 12 },
+        { "name": "F", "offset": 42 }
+      ],
+      "line": "Anlıyorum yakmışsın gemileri"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 8 },
+        { "name": "Am", "offset": 52 }
+      ],
+      "line": "Seviyordum biliyordun ve gidiyordun"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 18 },
+        { "name": "Am", "offset": 52 }
+      ],
+      "line": "Geri alabilmek mümkün olsa her şeyi"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 18 },
+        { "name": "F", "offset": 40 }
+      ],
+      "line": "İnandırmaz mıydım aşka seni"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 13 },
+        { "name": "Am", "offset": 39 }
+      ],
+      "line": "Hem seni hem o taş kalbini"
+    },
+    null,
+    {
+      "label": "Nakarat",
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Gider mi insan çok seviyorken"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Şimdi dur demem"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 34 },
+        { "name": "Em", "offset": 48 }
+      ],
+      "line": "Nasıl olsa bir gün anlar beni anlarsın"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Yalanlarla bırakma beni böyle"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Gözlerime bak doğruyu söyle"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 10 },
+        { "name": "Em", "offset": 24 }
+      ],
+      "line": "Ama korkak korkaksın!"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Gider mi insan çok seviyorken"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Şimdi dur demem"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 34 },
+        { "name": "Em", "offset": 50 }
+      ],
+      "line": "Nasıl olsa bir gün anlar, beni anlarsın"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Yalanlarla bırakma beni böyle"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Gözlerime bak doğruyu söyle"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 10 },
+        { "name": "Em", "offset": 30 }
+      ],
+      "line": "Ama korkak, sen bi korkaksın"
+    }
+  ]
+}

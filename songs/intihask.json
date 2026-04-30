@@ -1,0 +1,101 @@
+{
+  "id": "intihask",
+  "title": "İntihask",
+  "artist": "Onur Can Ozcan",
+  "key": "F#",
+  "capo": 0,
+  "sections": [
+    {
+      
+      "chords": [
+        { "name": "F#m", "offset": 0  },
+        { "name": "E",   "offset": 11 },
+        { "name": "D",   "offset": 16 },
+        { "name": "Bm",  "offset": 35 }
+      ],
+      "line": "Yarın olmaz bugün, yarım olmaz bütün"
+    },
+    {
+      "chords": [{ "name": "F#m", "offset": 12 }],
+      "line": "Benim ol bu gece"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0  },
+        { "name": "E",   "offset": 11  },
+        { "name": "D",   "offset": 17 },
+        { "name": "E",   "offset": 28  },
+        { "name": "Bm",  "offset": 34 }
+      ],
+      "line": "Yazı görse gözüm, kışı unutmaz özüm"
+    },
+    {
+      "chords": [{ "name": "F#m", "offset": 13 }],
+      "line": "Bitmez bu gece"
+    },
+    null,
+    {
+      "label": "Nakarat",
+      "chords": [
+        { "name": "D", "offset": 9},
+        { "name": "F#m",   "offset": 30 },
+        { "name": "E",   "offset": 45 },
+        { "name": "D",  "offset": 50 }
+      ],
+      "line": "Ötesi mi var, yalnızlığı yalnız, seninle aldattım"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 9 },
+        {"name":"D", "offset":18}
+    ],
+      "line": "Kıskandı yıldızlar"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 14  },
+        { "name": "F#m",   "offset": 33  }
+      ],
+      "line": "Aşka inanmayanlara, seni anlattım"
+    },
+    {
+      "chords": [{ "name": "D", "offset": 8 }],
+      "line": "Karardı ay"
+    },
+      null,
+      {
+        "chords": [
+          { "name": "F#m", "offset": 0  },
+          { "name": "E",   "offset": 46 },
+          { "name": "D",   "offset": 53 }
+        ],
+        "line": "Bırakın beni kendim giderim, alıştım artık yalnızlığa"
+      },
+      {
+        "chords": [
+          { "name": "E",   "offset": 21 },
+          { "name": "Bm",   "offset": 44 }
+        ],
+        "line": "Bildiğin gibi değilim, sildiğin gibiyim hala"
+      },
+      {
+        "chords": [
+          { "name": "F#m", "offset": 22  },
+          { "name": "E",   "offset": 43  },
+          { "name": "D",   "offset": 49 }
+        ],
+        "line": "Seni sevmek intihar da, sevmemek ihtimal bile değil"
+      },
+      {
+        "chords": [
+          { "name": "E",   "offset": 20 },
+          { "name": "Bm",   "offset": 44 }
+        ],
+        "line": "Aşk elbisesi en güzel, sende duruyor ama ne acı"
+      },
+      {
+        "chords": [{ "name": "F#m", "offset": 15 }],
+        "line": "Terzin ben değilim"
+      }
+  ]
+}

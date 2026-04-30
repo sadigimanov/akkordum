@@ -1,0 +1,115 @@
+{
+  "id": "halilSezai-galata",
+  "title": "Galata",
+  "artist": "Halil Sezai",
+  "key": "Gm",
+  "capo": 0,
+  "sections": [
+    {
+      "chords": [
+        { "name": "Gm", "offset": 0 }
+      ],
+      "line": "Kadehin dibini vurunca dostlar masaya"
+    },
+    {
+      "chords": [
+        { "name": "Dm7", "offset": 0 },
+        { "name": "Cm7", "offset": 44 }
+      ],
+      "line": "Gönlümün sokaklarında kandiller yanar"
+    },
+    {
+      "chords": [
+        { "name": "Gm", "offset": 0 }
+      ],
+      "line": "Muhabbet demini salınca hafiften havaya"
+    },
+    {
+      "chords": [
+        { "name": "Dm7", "offset": 0 },
+        { "name": "Cm7", "offset": 33 }
+      ],
+      "line": "Gözlerim gözlerini felaketimi arar"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Dm7", "offset": 0 }
+      ],
+      "line": "Şimdi Galatada bir meyhanede"
+    },
+    {
+      "chords": [
+        { "name": "Cm7", "offset": 0 }
+      ],
+      "line": "Aklım o zat-ı şahanede"
+    },
+    {
+      "chords": [
+        { "name": "Dm7", "offset": 0 },
+        { "name": "Cm7", "offset": 36 }
+      ],
+      "line": "Dostlar gönlümü eyler boşa"
+    },
+    {
+      "chords": [
+        { "name": "Dm7", "offset": 0 }
+      ],
+      "line": "Artık kalmadı bir bahane de"
+    },
+    {
+      "chords": [
+        { "name": "Cm7", "offset": 0 }
+      ],
+      "line": "Şans ne gezer divanede"
+    },
+    {
+      "chords": [
+        { "name": "Dm7", "offset": 0 },
+        { "name": "Cm7", "offset": 30 }
+      ],
+      "line": "Onca içtik meyler boşa"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Cm7", "offset": 0 }
+      ],
+      "line": ""
+    },
+    null,
+    {
+      "label": "Nakarat",
+      "chords": [
+        { "name": "Gm", "offset": 0 },
+        { "name": "Cm7", "offset": 21 },
+        { "name": "Dm7", "offset": 37 }
+      ],
+      "line": "Sonsuz bir akşam üstü şimdi"
+    },
+    {
+      "chords": [
+        { "name": "Gm", "offset": 0 },
+        { "name": "Cm7", "offset": 34 },
+        { "name": "Dm7", "offset": 45 }
+      ],
+      "line": "Hasret gitmez çakıldı kaldı semaya"
+    },
+    {
+      "chords": [
+        { "name": "Gm", "offset": 0 },
+        { "name": "Cm7", "offset": 17 },
+        { "name": "Dm7", "offset": 41 }
+      ],
+      "line": "Canımın canı gönlümü kahret"
+    },
+    {
+      "chords": [
+        { "name": "Gm", "offset": 0 },
+        { "name": "Cm7", "offset": 30 },
+        { "name": "Dm7", "offset": 39 }
+      ],
+      "line": "Gitme müptela etme cefaya"
+    }
+  ]
+}

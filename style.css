@@ -1,0 +1,556 @@
+/* style.css */
+
+/* ── Reset ────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+a { text-decoration: none; color: inherit; }
+
+/* ── Theme variables ──────────────────────────────────────── */
+:root {
+  --font-ui:   "DM Sans", "Helvetica Neue", sans-serif;
+  --font-mono: "JetBrains Mono", "Fira Mono", monospace;
+}
+
+[data-theme="dark"] {
+  --bg:          #1a2035;
+  --bg-deep:     #111827;
+  --surface:     #1e2d4a;
+  --surface-2:   #162038;
+  --border:      rgba(255,255,255,0.07);
+  --text:        #e8e4dc;
+  --text-muted:  #7a8aaa;
+  --accent:      #1D9E75;
+  --accent-dim:  rgba(29,158,117,0.15);
+  --card-bg:     #111827;
+  --card-hover:  #162038;
+  --navbar-bg:   #0d1526;
+  --input-bg:    #ffffff;
+  --input-text:  #111;
+  --input-border:#ccc;
+}
+
+[data-theme="light"] {
+  --bg:          #f0f4ff;
+  --bg-deep:     #e4eaf5;
+  --surface:     #ffffff;
+  --surface-2:   #f5f7ff;
+  --border:      rgba(0,0,0,0.08);
+  --text:        #1a1f2e;
+  --text-muted:  #6b7a99;
+  --accent:      #0f7a5a;
+  --accent-dim:  rgba(15,122,90,0.1);
+  --card-bg:     #1e2d4a;
+  --card-hover:  #263654;
+  --navbar-bg:   #0d1526;
+  --input-bg:    #ffffff;
+  --input-text:  #111;
+  --input-border:#ccc;
+}
+
+/* ── Base ─────────────────────────────────────────────────── */
+body {
+  background: var(--bg);
+  color: #fff;
+  font-family: var(--font-ui);
+  min-height: 100vh;
+  line-height: 1.6;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* ── Navbar ───────────────────────────────────────────────── */
+.navbar {
+  background: var(--navbar-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25rem;
+  height: 52px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-icon {
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  padding: 6px;
+  border-radius: 6px;
+  line-height: 1;
+  transition: opacity 0.15s;
+  display: flex;
+  align-items: center;
+}
+.nav-icon:hover { opacity: 0.7; }
+.nav-brand { cursor: default; }
+.nav-brand:hover { opacity: 1; }
+
+/* ── Container ────────────────────────────────────────────── */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* ── Page title ───────────────────────────────────────────── */
+.page-title {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.2rem;
+}
+
+/* ── Search ───────────────────────────────────────────────── */
+.search-wrap {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  font-size: 15px;
+  font-family: var(--font-ui);
+  background: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--input-border);
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.search-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-dim);
+}
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0; right: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  list-style: none;
+  z-index: 50;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+.search-results.hidden { display: none; }
+
+.search-results li a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  font-size: 14px;
+  transition: background 0.1s;
+  gap: 1rem;
+}
+.search-results li a:hover { background: var(--surface-2); }
+
+.search-results li a .res-title { font-weight: 500; }
+.search-results li a .res-meta  {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+
+.search-no-result {
+  padding: 0.8rem 1rem;
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+/* ── Category card grid ───────────────────────────────────── */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+@media (max-width: 600px) {
+  .card-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.cat-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 1.4rem 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background 0.15s, transform 0.12s;
+  border: 1px solid transparent;
+}
+.cat-card:hover {
+  background: var(--card-hover);
+  transform: translateY(-2px);
+}
+
+.cat-icon { font-size: 22px; flex-shrink: 0; }
+.cat-name  { line-height: 1.3; }
+
+/* ── Song list (index page, used in app.js) ───────────────── */
+#song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 2rem;
+}
+
+.song-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  transition: background 0.12s, border-color 0.12s;
+  gap: 1rem;
+  color: var(--accent);
+  font-size: 14px;
+}
+.song-item:hover {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--accent);
+}
+
+.song-title { font-weight: 500; }
+.song-meta  {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+
+/* ── Song card ────────────────────────────────────────────── */
+.song-card {
+  background: var(--card-bg);
+  border-radius: 14px;
+  padding: 2rem 2.5rem 2.5rem;
+  margin: 0 auto;
+}
+
+#song-artist {
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.8;
+  margin-bottom: 0.6rem;
+  margin-top: -0.2rem;
+}
+
+#song-title {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+.song-info-row {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+.song-info-row strong {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ── Sevimli düyməsi ──────────────────────────────────────── */
+.fav-btn {
+  cursor: pointer;
+  transition: color 0.12s;
+  display: inline-block;
+}
+.fav-btn:hover {
+  color: #FFF;
+}
+.fav-btn.fav-active {
+  color: #1D9E75;
+}
+
+/* ── Transpose ────────────────────────────────────────────── */
+.transpose-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 0.8rem;
+}
+
+.transpose-btn {
+  background: transparent;
+  border: 1px solid var(--text-muted);
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+}
+.transpose-btn:hover {
+  background: rgba(255,255,255,0.07);
+  border-color: var(--text);
+}
+
+/* ── Key row ──────────────────────────────────────────────── */
+.key-row {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.key-note {
+  font-size: 13px;
+  color: var(--text-muted);
+  padding: 2px 7px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--font-mono);
+  border: 1px solid transparent;
+  &:hover {
+    background: rgba(255,255,255,0.07);
+    border-color: var(--text);
+  }
+}
+.key-note.active {
+  color: #fff;
+  border-color: rgba(255,255,255,0.4);
+  padding: 2px 7px;
+}
+
+/* ── Divider ──────────────────────────────────────────────── */
+.divider {
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  margin: 1.2rem 0 1.5rem;
+}
+
+/* ── Lyrics & Chords ──────────────────────────────────────── */
+#lyrics {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.section-block { margin-bottom: 0.4rem; }
+.section-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  font-family: var(--font-ui);
+  margin-bottom: 4px;
+}
+.blank { height: 1.4rem; }
+
+.chord-row { position: relative; height: 22px; white-space: pre; }
+.chord-tag {
+  position: absolute;
+  top: 0;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 22px;
+  padding: 0 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background 0.1s;
+}
+.chord-tag:hover { background: var(--accent-dim); }
+.lyric-row { white-space: pre; font-size: 12px; }
+
+/* ── Error ────────────────────────────────────────────────── */
+.error { color: #e05a5a; font-size: 14px; padding: 1rem 0; }
+
+ 
+/* ── Sevimlilər bölməsi ───────────────────────────────────── */
+.section-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+  color: var(--text);
+}
+ 
+/* ── Favorites səhifəsi ───────────────────────────────────── */
+.page-header {
+  margin-bottom: 1.5rem;
+}
+ 
+.back-link {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+  transition: color 0.15s;
+}
+.back-link:hover { color: var(--text); }
+ 
+.fav-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+ 
+.fav-item-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  gap: 1rem;
+  padding: 0.75rem 0.8rem;
+  border-radius: 6px;
+  transition: background 0.12s;
+  color: var(--accent);
+}
+.fav-item-link:hover { background: var(--surface); }
+ 
+.fav-remove-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 14px;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 4px;
+  transition: color 0.12s, background 0.12s;
+  flex-shrink: 0;
+}
+.fav-remove-btn:hover {
+  color: #e05a5a;
+  background: rgba(224,90,90,0.08);
+}
+ 
+.empty-state {
+  text-align: center;
+  padding: 3rem 1rem;
+  color: var(--text-muted);
+}
+.empty-state p { margin-bottom: 1rem; font-size: 15px; }
+.empty-link {
+  color: var(--accent);
+  font-size: 14px;
+  transition: opacity 0.15s;
+}
+.empty-link:hover { opacity: 0.75; }
+
+/* ── Ritm ─────────────────────────────────────────────────── */
+.rhythm-section {
+  margin-bottom: 1.2rem;
+}
+.rhythm-section.hidden { display: none; }
+ 
+.rhythm-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  font-family: var(--font-ui);
+  margin-bottom: 8px;
+}
+ 
+.rhythm-display {
+  display: flex;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+ 
+.rhythm-beat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  min-width: 28px;
+}
+ 
+.beat-arrow {
+  font-size: 15px;
+  line-height: 1;
+}
+ 
+.beat-num {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+}
+ 
+.beat-down .beat-arrow { color: var(--accent); }
+.beat-up   .beat-arrow { color: #7ab8f5; }
+.beat-mute .beat-arrow { color: var(--text-muted); font-size: 14px; }
+
+/* ── Akkord diaqramları ───────────────────────────────────── */
+/* :root,
+[data-theme="dark"] {
+  --chord-text:        #e8e4dc;
+  --chord-muted:       #7a8aaa;
+  --chord-grid:        rgba(255,255,255,0.15);
+  --chord-dot:         #1D9E75;
+  --chord-finger-text: #ffffff;
+}
+[data-theme="light"] {
+  --chord-text:        #1a1f2e;
+  --chord-muted:       #6b7a99;
+  --chord-grid:        rgba(0,0,0,0.2);
+  --chord-dot:         #0f7a5a;
+  --chord-finger-text: #ffffff;
+} */
+ 
+.chord-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+.chord-panel.hidden { display: none; }
+ 
+.chord-diagram-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.chord-diagram-wrap svg {
+  display: block;
+}
+
+/* ── Akkord popup ─────────────────────────────────────────── */
+.chord-popup {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 14px 20px;
+  background: var(--card-bg);
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -8px 32px rgba(0,0,0,0.4);
+  z-index: 200;
+  overflow-x: auto;
+  transform: translateY(0);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  opacity: 1;
+}
+.chord-popup.hidden {
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+ 
+.chord-diagram-wrap.active svg text:first-child {
+  fill: var(--accent);
+}

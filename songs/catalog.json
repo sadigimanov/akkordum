@@ -1,0 +1,38 @@
+[
+  {
+    "id": "intihask",
+    "title": "İntihask",
+    "artist": "Onur Can Ozcan",
+    "key": "F#m",
+    "capo": 0
+  },
+  {
+    "id": "gokhanTurkmen-bitmesin",
+    "title": "Bitmesin",
+    "artist": "Gökhan Türkmen",
+    "key": "Am",
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
+  },
+  {
+    "id": "gokhanTurkmen-korkak",
+    "title": "Korkak",
+    "artist": "Gökhan Türkmen",
+    "key": "Gm",
+    "capo": 0
+  },
+  {
+    "id": "halilSezai-galata",
+    "title": "Galata",
+    "artist": "Halil Sezai",
+    "key": "Gm",
+    "capo": 0
+  },
+  {
+    "id": "ufukBaydemir-ayTenliKadin",
+    "title": "Ay Tenli Kadın",
+    "artist": "Ufuk Baydemir",
+    "key": "F#",
+    "capo": 0
+  }
+]

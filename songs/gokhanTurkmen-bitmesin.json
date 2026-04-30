@@ -1,0 +1,87 @@
+{
+  "id": "gokhanTurkmen-bitmesin",
+  "title": "Bitmesin",
+  "artist": "Gökhan Türkmen",
+  "key": "Am",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 25 },
+        { "name": "Em", "offset": 50 },
+        { "name": "Dm", "offset": 75 }
+      ],
+      "line": "Beni sana bağlayan tek söz seviyorum demen"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "Dm", "offset": 40 },
+        { "name": "Em", "offset": 58 }
+      ],
+      "line": "Onca laftan sonra bitti deyip çekip gitmen"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 22 },
+        { "name": "Em", "offset": 46 },
+        { "name": "Dm", "offset": 65 }
+      ],
+      "line": "Derdin efendisi olmuş kalbim bu senin hediyen"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "Dm", "offset": 42 },
+        { "name": "Em", "offset": 58 }
+      ],
+      "line": "Biri kalır biri gidermiş o biri benmişim meğer"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "F", "offset": 0 },
+        { "name": "Em", "offset": 8 },
+        { "name": "Am", "offset": 26 },
+        { "name": "F", "offset": 52 },
+        { "name": "Em", "offset": 56 },
+        { "name": "Dm", "offset": 73 },
+        { "name": "F", "offset": 76 },
+        { "name": "Em", "offset": 78 }
+      ],
+      "line": "Aşk seni bana yazmışsa niye bu ceza bu can yasta"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 54 }
+      ],
+      "line": "Gitme bitmesin diye bütün gece ağladım"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "Dm", "offset": 56 }
+      ],
+      "line": "Hayır olmaz böyle biteceğine inanmadım"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 54 }
+      ],
+      "line": "Gidersen kalan hayalinle ben ne yaparım"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "Dm", "offset": 58 }
+      ],
+      "line": "Sensiz olmaz böyle gideceğine inanmadım"
+    }
+  ]
+}

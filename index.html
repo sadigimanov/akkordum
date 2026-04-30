@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="az" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akorlarim</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="nav-icon nav-brand">🎸</span>
+    <a href="index.html" class="nav-icon">🏠</a>
+    <button class="nav-icon" id="theme-toggle" title="Tema dəyiş">🌙</button>
+  </nav>
+
+  <div class="container">
+    <h1 class="page-title">Akorlarim</h1>
+
+    <!-- Axtarış -->
+    <div class="search-wrap">
+      <input
+        type="text"
+        id="search-input"
+        class="search-input"
+        placeholder="Mahnı axtar..."
+        autocomplete="off"
+      />
+      <ul id="search-results" class="search-results hidden"></ul>
+    </div>
+
+    <!-- Kateqoriya kartları -->
+    <div class="card-grid">
+      <a href="#" class="cat-card">
+        <span class="cat-icon">🎸</span>
+        <span class="cat-name">Popüler Akorlar</span>
+      </a>
+      <a href="#" class="cat-card">
+        <span class="cat-icon">🎸</span>
+        <span class="cat-name">Rastgele</span>
+      </a>
+      <a href="#" class="cat-card">
+        <span class="cat-icon">🎸</span>
+        <span class="cat-name">Öne Çıkanlar</span>
+      </a>
+      <a href="#" class="cat-card">
+        <span class="cat-icon">🎸</span>
+        <span class="cat-name">Yeni Akorlar</span>
+      </a>
+      <a href="#" class="cat-card">
+        <span class="cat-icon">🎸</span>
+        <span class="cat-name">Not Aldıklarım</span>
+      </a>
+      <a href="favorites.html" class="cat-card">
+        <span class="cat-icon">🎸</span>
+        <span class="cat-name">Sevimlilerim</span>
+      </a>
+    </div>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

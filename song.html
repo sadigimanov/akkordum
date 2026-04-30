@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="az" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akorlarim</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <span class="nav-icon nav-brand">🎸</span>
+    <a href="index.html" class="nav-icon">🏠</a>
+    <button class="nav-icon" id="theme-toggle" title="Tema dəyiş">🌙</button>
+  </nav>
+
+
+
+  <div class="container">
+
+    <!-- Axtarış -->
+    <div class="search-wrap">
+      <input type="text" id="search-input" class="search-input" placeholder="Mahnı axtar..." autocomplete="off" />
+      <ul id="search-results" class="search-results hidden"></ul>
+    </div>
+
+    <div class="song-card">
+
+      <!-- Başlıq və metadata -->
+      <h1 id="song-title">Mahnı adı</h1>
+      <p id="song-artist"></p>
+      <div class="song-info-row">
+        <span>Orijinal Ton: <strong id="song-key">—</strong></span>
+        <span>Kapodastr: <strong id="song-capo">0</strong></span>
+        <span>Asan Ton: <strong id="song-easy-key">A</strong></span>
+        <span id="btn-favorite" class="fav-btn" title="Sevimlilərə əlavə et">Sevimlilərə əlavə et🤍</span>
+
+      </div>
+      <!-- Ritm -->
+      <div id="rhythm-section" class="rhythm-section hidden">
+        <div class="rhythm-label">Ritm</div>
+        <div id="rhythm-display" class="rhythm-display"></div>
+      </div>
+
+      <!-- Transpose -->
+      <div class="transpose-row">
+        <button class="transpose-btn" id="btn-down">-A</button>
+        <button class="transpose-btn" id="btn-up">+A</button>
+      </div>
+
+      <!-- Ton sırası -->
+      <div class="key-row" id="key-row"></div>
+
+      <hr class="divider" />
+
+      <!-- Lyrics -->
+      <div id="lyrics"></div>
+
+      <!-- Akkord diaqramları
+      <div id="chord-panel" class="chord-panel hidden"></div> -->
+
+    </div>
+  </div>
+
+  <script type="module" src="js/song.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+{
+  "id": "ufukBaydemir-ayTenliKadin",
+  "title": "Ay Tenli Kadın",
+  "artist": "Ufuk Baydemir",
+  "key": "F#",
+  "capo": 0,
+  "sections": [
+    {
+      "chords": [
+        { "name": "F#", "offset": 0 },
+        { "name": "Bbm", "offset": 48 }
+      ],
+      "line": "Senin derinlerinde bir yerde buldum"
+    },
+    {
+      "chords": [
+        { "name": "B", "offset": 21 },
+        { "name": "Bbm", "offset": 57 }
+      ],
+      "line": "Sımsıkı sarılacak, karışacak köklerimi"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 0 },
+        { "name": "Bbm", "offset": 48 }
+      ],
+      "line": "Görmek, beraber olmak seninle"
+    },
+    {
+      "chords": [
+        { "name": "B", "offset": 32 },
+        { "name": "Bbm", "offset": 68 }
+      ],
+      "line": "Çok güzel belki ama düşlemek bambaşka"
+    },
+    null,
+    {
+      "label": "Nakarat",
+      "chords": [
+        { "name": "F#", "offset": 0 },
+        { "name": "Bbm", "offset": 38 }
+      ],
+      "line": "Tenin almış beyazlığını aydan"
+    },
+    {
+      "chords": [
+        { "name": "B", "offset": 29 }
+      ],
+      "line": "Saçlarının rengi geceden"
+    },
+    {
+      "chords": [
+        { "name": "Bbm", "offset": 36 }
+      ],
+      "line": "Bundan geceye sevdam"
+    },
+    null,
+    {
+      "label": "x2"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 0 },
+        { "name": "Bbm", "offset": 42 }
+      ],
+      "line": "Sen örterken benimle kalbini"
+    },
+    {
+      "chords": [
+        { "name": "B", "offset": 28 }
+      ],
+      "line": "Al aklım gibi hissimi"
+    },
+    {
+      "chords": [
+        { "name": "Bbm", "offset": 29 }
+      ],
+      "line": "Al çünkü özlüyorum"
+    }
+  ]
+}

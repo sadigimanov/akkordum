@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sevimlilər — Akorlarim</title>
+  <title>Müəllif — Akorlarim</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
@@ -17,19 +17,17 @@
   </nav>
 
   <div class="container">
-    <a href="index.html" class="back-link">← Geri</a>
+    <a class="back-link" id="back-link" href="javascript:history.back()">← Geri</a>
+    <h1 class="page-title" id="artist-name">Müəllif</h1>
+    <p class="artist-count" id="artist-count"></p>
 
-    <div class="song-card">
-      <h1 class="page-title">Sevimlilər❤️</h1>
-      <hr class="divider" />
-      <div id="favorites-list" class="favorites-list"></div>
-      <div id="favorites-empty" class="empty-state">
-        <p>Hələ sevimli mahnı əlavə etməmisən.</p>
-        <a href="index.html" class="empty-link">Mahnılara bax →</a>
-      </div>
-    </div>
+    <div class="artist-grid" id="artist-grid"></div>
+
+    <p class="section-empty" id="artist-empty" style="display:none">
+      Bu müəllifə aid mahnı tapılmadı.
+    </p>
   </div>
 
-  <script type="module" src="js/favorites.js"></script>
+  <script type="module" src="js/artist.js"></script>
 </body>
 </html>

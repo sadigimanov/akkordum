@@ -4,13 +4,16 @@
     "title": "İntihask",
     "artist": "Onur Can Ozcan",
     "key": "F#m",
-    "capo": 0
+    "chords": ["F#m", "E", "D", "Bm"],
+    "capo": 0,
+     "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
   },
   {
     "id": "gokhanTurkmen-bitmesin",
     "title": "Bitmesin",
     "artist": "Gökhan Türkmen",
     "key": "Am",
+    "chords": ["Am", "Dm", "Em", "G", "F"],
     "capo": 0,
     "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
   },
@@ -19,6 +22,7 @@
     "title": "Korkak",
     "artist": "Gökhan Türkmen",
     "key": "Gm",
+    "chords": ["Gm", "G", "Dm", "F", "E"],
     "capo": 0
   },
   {
@@ -26,6 +30,7 @@
     "title": "Galata",
     "artist": "Halil Sezai",
     "key": "Gm",
+    "chords": ["Gm", "Dm7", "Cm7"],
     "capo": 0
   },
   {
@@ -33,6 +38,7 @@
     "title": "Ay Tenli Kadın",
     "artist": "Ufuk Baydemir",
     "key": "F#",
+    "chords": ["F#", "B", "Bbm"],
     "capo": 0
   }
 ]

@@ -62,13 +62,64 @@
       <!-- Lyrics -->
       <div id="lyrics"></div>
 
+      <!--Telif Warning-->
+      <div class="telif-warning">
+        <p>Bu sayt musiqi təhsili məqsədi ilə dərc olunur və hüquqlar onların müvafiq sahiblərinə məxsusdur.</p>
+      </div>
+
       <!-- Akkord diaqramları
       <div id="chord-panel" class="chord-panel hidden"></div> -->
 
-    </div>
-  </div>
+      <!-- Alt bölmələr -->
+      <div class="song-sections">
 
-  <script type="module" src="js/song.js"></script>
+        <div class="song-section" id="section-random">
+          <div class="section-header">
+            <span class="section-dot" style="background:#a78bfa"></span>
+            <span class="section-title-text">Rastgele</span>
+          </div>
+          <div class="section-list" id="list-random"></div>
+        </div>
+
+        <div class="song-section" id="section-artist">
+          <div class="section-header">
+            <span class="section-dot" style="background:#fbbf24"></span>
+            <span class="section-title-text" id="label-artist">Müəllif akorları</span>
+          </div>
+          <!-- <div class="section-list" id="list-artist"></div> -->
+        </div>
+
+        <div class="song-section" id="section-chords">
+          <div class="section-header">
+            <span class="section-dot" style="background:#34d399"></span>
+            <span class="section-title-text">Eyni akorlarla olan mahnılar</span>
+          </div>
+          <div class="section-list" id="list-chords"></div>
+        </div>
+
+        <div class="song-section" id="section-favorites">
+          <a href="favorites.html">
+            <div class="section-header">
+              <span class="section-dot" style="background:#f87171"></span>
+              <span class="section-title-text">Sevimlilərim</span>
+            </div>
+          </a>
+
+          <!-- <div class="section-list" id="list-favorites"></div> -->
+        </div>
+
+        <div class="song-section" id="section-rhythm">
+          <div class="section-header">
+            <span class="section-dot" style="background:#60a5fa"></span>
+            <span class="section-title-text">Eyni ritmlə olan mahnılar</span>
+          </div>
+          <!-- <div class="section-list" id="list-rhythm"></div> -->
+        </div>
+
+      </div>
+    </div>
+
+    <script type="module" src="js/song.js"></script>
 </body>
 
 </html>

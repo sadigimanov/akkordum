@@ -244,6 +244,172 @@ async function init() {
   }
 
 
+
+  // Catalog yüklə və bölmələri doldur
+  try {
+    const catalog = await fetch("songs/catalog.json").then(r => r.json());
+    const catalogEntry = catalog.find(s => s.id === song.id);
+    if (catalogEntry?.chords) song.chords = catalogEntry.chords;
+    await initSections(song, catalog);
+  } catch {}
+
+  // ── Alt bölmələr ───────────────────────────────────────────
+  async function initSections(song, catalog) {
+    function songLink(s) {
+      const a = document.createElement("a");
+      a.href = `song.html?id=${s.id}`;
+      a.innerHTML = `<span>${s.title}</span><span class="s-meta">${s.artist} · ${s.key}</span>`;
+      return a;
+    }
+
+    function fillList(listId, items, emptyMsg = "Tezliklə...") {
+      const el = document.getElementById(listId);
+      if (!el) return;
+      el.innerHTML = "";
+      if (!items || items.length === 0) {
+        const p = document.createElement("p");
+        p.className = "section-empty";
+        p.textContent = emptyMsg;
+        el.appendChild(p);
+        return;
+      }
+      items.forEach(s => el.appendChild(songLink(s)));
+    }
+
+    // Cari mahnı xaric
+    const others = catalog.filter(s => s.id !== song.id);
+
+    // Rastgele — bölməyə klik edəndə açılır, yenilə düyməsi var
+    const sectionRandom  = document.getElementById("section-random");
+    const listRandom     = document.getElementById("list-random");
+    const headerRandom   = sectionRandom?.querySelector(".section-header");
+    let   randomOpen     = false;
+
+    function getRandomSongs() {
+      return [...others].sort(() => Math.random() - 0.5).slice(0, 5);
+    }
+
+    function renderRandom() {
+      listRandom.innerHTML = "";
+      if (others.length === 0) {
+        const p = document.createElement("p");
+        p.className = "section-empty";
+        p.textContent = "Başqa mahnı yoxdur.";
+        listRandom.appendChild(p);
+        return;
+      }
+      getRandomSongs().forEach(s => listRandom.appendChild(songLink(s)));
+
+      // Yenilə düyməsi
+      const btn = document.createElement("button");
+      btn.className = "section-refresh-btn";
+      btn.textContent = "↻ Yenilə";
+      btn.addEventListener("click", (e) => { e.stopPropagation(); renderRandom(); });
+      listRandom.appendChild(btn);
+    }
+
+    if (headerRandom) {
+      headerRandom.style.cursor = "pointer";
+      headerRandom.addEventListener("click", () => {
+        randomOpen = !randomOpen;
+        if (randomOpen) {
+          renderRandom();
+          listRandom.classList.remove("section-list-hidden");
+        } else {
+          listRandom.classList.add("section-list-hidden");
+        }
+      });
+    }
+    listRandom.classList.add("section-list-hidden");
+
+    // Müəllif akorları
+    const labelArtist = document.getElementById("label-artist");
+    if (labelArtist) labelArtist.textContent = `${song.artist} akorları`;
+    const byArtist = others.filter(s => s.artist === song.artist).slice(0, 5);
+    fillList("list-artist", byArtist, "Bu müəllifin başqa mahnısı yoxdur.");
+
+    const sectionArtist = document.getElementById("section-artist");
+    if (sectionArtist) {
+      sectionArtist.style.cursor = "pointer";
+      sectionArtist.addEventListener("click", () => {
+        window.location.href = `artist.html?artist=${encodeURIComponent(song.artist)}`;
+      });
+    }
+
+    // Sevimlilər
+    const favs = (() => { try { return JSON.parse(localStorage.getItem("favorites") || "[]"); } catch { return []; } })();
+    const favSongs = favs.filter(f => f.id !== song.id).slice(0, 5);
+    fillList("list-favorites", favSongs, "Hələ sevimli mahnı yoxdur.");
+
+    // Eyni ritm
+    if (song.rhythm) {
+      const sameRhythm = others.filter(s => {
+        return s.rhythm && JSON.stringify(s.rhythm) === JSON.stringify(song.rhythm);
+      }).slice(0, 5);
+      fillList("list-rhythm", sameRhythm, "Eyni ritmlə başqa mahnı tapılmadı.");
+    } else {
+      fillList("list-rhythm", [], "Bu mahnının ritmi əlavə edilməyib.");
+    }
+
+    // Eyni akorlar
+    const sectionChords  = document.getElementById("section-chords");
+    const listChords     = document.getElementById("list-chords");
+    const headerChords   = sectionChords?.querySelector(".section-header");
+    let   chordsOpen     = false;
+
+    if (sectionChords) {
+      if (song.chords && song.chords.length > 0) {
+        const songChords = new Set(song.chords);
+        const sameChords = others
+          .filter(s => s.chords && s.chords.some(c => songChords.has(c)))
+          .sort((a, b) => {
+            const aMatch = a.chords.filter(c => songChords.has(c)).length;
+            const bMatch = b.chords.filter(c => songChords.has(c)).length;
+            return bMatch - aMatch;
+          })
+          .slice(0, 10);
+
+        if (headerChords) {
+          headerChords.style.cursor = "pointer";
+          headerChords.addEventListener("click", () => {
+            chordsOpen = !chordsOpen;
+            if (chordsOpen) {
+              listChords.innerHTML = "";
+              if (sameChords.length === 0) {
+                const p = document.createElement("p");
+                p.className = "section-empty";
+                p.textContent = "Uyğun mahnı tapılmadı.";
+                listChords.appendChild(p);
+              } else {
+                const grid = document.createElement("div");
+                grid.className = "artist-grid";
+                sameChords.forEach(s => {
+                  const matchCount = s.chords.filter(c => songChords.has(c)).length;
+                  const card = document.createElement("a");
+                  card.href = `song.html?id=${s.id}`;
+                  card.className = "artist-card";
+                  card.innerHTML = `
+                    <span class="artist-card-title">${s.title}</span>
+                    <span class="artist-card-meta">${s.artist} · ${matchCount}/${s.chords.length} akkord</span>
+                  `;
+                  grid.appendChild(card);
+                });
+                listChords.appendChild(grid);
+              }
+              listChords.classList.remove("section-list-hidden");
+            } else {
+              listChords.classList.add("section-list-hidden");
+            }
+          });
+        }
+        listChords.classList.add("section-list-hidden");
+      } else {
+        fillList("list-chords", [], "Bu mahnının akorları əlavə edilməyib.");
+      }
+    }
+  }
+
+
   update();
 }
 

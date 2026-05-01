@@ -91,6 +91,91 @@ async function initSearch() {
   });
 }
 
+// ── Sevimlilər (index səhifəsi) ──────────────────────────────
+function getFavorites() {
+  try { return JSON.parse(localStorage.getItem("favorites") || "[]"); } catch { return []; }
+}
+
+function initFavorites() {
+  const section  = document.getElementById("favorites-section");
+  const listEl   = document.getElementById("favorites-list");
+  if (!section || !listEl) return;
+
+  const favs = getFavorites();
+  if (favs.length === 0) return;
+
+  section.classList.remove("hidden");
+  favs.forEach(s => {
+    const item = document.createElement("a");
+    item.href = `song.html?id=${s.id}`;
+    item.className = "song-item";
+    item.innerHTML = `
+      <span class="song-title">${s.title}</span>
+      <span class="song-meta">${s.artist} · ${s.key}</span>
+    `;
+    listEl.appendChild(item);
+  });
+}
+
+// ── Rastgele panel (index səhifəsi) ──────────────────────────
+async function initRandom() {
+  const card = document.getElementById("card-random");
+  if (!card) return;
+
+  let catalog = [];
+  try {
+    catalog = await fetch("songs/catalog.json").then(r => r.json());
+  } catch { return; }
+
+  // Panel yarat
+  const panel = document.createElement("div");
+  panel.id = "random-panel";
+  panel.className = "random-panel hidden";
+  panel.innerHTML = `
+    <div class="random-panel-header">
+      <span>Rastgele Mahnılar</span>
+      <button class="random-panel-close" id="random-close">✕</button>
+    </div>
+    <div class="artist-grid" id="random-grid"></div>
+    <button class="section-refresh-btn" id="random-refresh" style="margin:0.8rem 0 0.4rem">↻ Yenilə</button>
+  `;
+  document.body.appendChild(panel);
+
+  function renderRandom() {
+    const grid = document.getElementById("random-grid");
+    grid.innerHTML = "";
+    const shuffled = [...catalog].sort(() => Math.random() - 0.5).slice(0, 10);
+    shuffled.forEach(s => {
+      const card = document.createElement("a");
+      card.href = `song.html?id=${s.id}`;
+      card.className = "artist-card";
+      card.innerHTML = `
+        <span class="artist-card-title">${s.title}</span>
+        <span class="artist-card-meta">${s.artist} · ${s.key}</span>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  card.addEventListener("click", (e) => {
+    e.preventDefault();
+    renderRandom();
+    panel.classList.remove("hidden");
+  });
+
+  document.getElementById("random-close").addEventListener("click", () => {
+    panel.classList.add("hidden");
+  });
+
+  document.getElementById("random-refresh").addEventListener("click", renderRandom);
+
+  document.addEventListener("click", (e) => {
+    if (!panel.contains(e.target) && e.target !== card && !card.contains(e.target)) {
+      panel.classList.add("hidden");
+    }
+  });
+}
+
 // ── Index səhifəsi ────────────────────────────────────────────
 async function initIndex() {
   const listEl = document.getElementById("song-list");
@@ -145,5 +230,7 @@ async function initSong() {
 // ── Başlat ────────────────────────────────────────────────────
 initTheme();
 initSearch();
+initFavorites();
+initRandom();
 initIndex();
 initSong();

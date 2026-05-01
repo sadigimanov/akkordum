@@ -4,6 +4,7 @@
   "artist": "Halil Sezai",
   "key": "Gm",
   "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"],
   "sections": [
     {
       "chords": [

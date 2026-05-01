@@ -1,0 +1,87 @@
+{
+  "id": "uzulmedin_mi",
+  "title": "Üzülmedin mi?",
+  "artist": "Simge Sağın",
+  "key": "Em",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓","↑"],
+  "sections": [
+    {
+      "label": "x2",
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "C", "offset": 6 }
+      ],
+      "line": ""
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Em", "offset": 3 },
+        { "name": "C", "offset": 66 }
+      ],
+      "line": "Vuruldum, aynı yerden üst üste vuruldum, ama sustum"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 5 },
+        { "name": "C", "offset": 48 }
+      ],
+      "line": "Dağıttın hayatımı, beni ağır yanılttın, acım oldun"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Am", "offset": 6 }
+      ],
+      "line": "Ve gördüm gerçeği, içindeki seni"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 12 }
+      ],
+      "line": "Buna rağmen tutuyordum o soğuk ellerini"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 9 }
+      ],
+      "line": "Gidiyordum kaç defa ama tuttum kendimi"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 9 }
+      ],
+      "line": "Yapamazdım, acıtamazdım asla senin gibi"
+    },
+    null,
+    {
+      "label": "Nakarat",
+      "chords": [
+        { "name": "Em", "offset": 0 }
+      ],
+      "line": "Üzülmedin mi kalbimi çarpıp çıkarken"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Küçülmedin mi aşkla verdiğin sözden cayarken"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Nasıl bakıyorsun gözlerime veda ederken"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "Am", "offset": 30 },
+        { "name": "Bm", "offset": 42 },
+        { "name": "Em", "offset": 50 }
+      ],
+      "line": "Ben çok üzüldüm, sen üzülmedin mi"
+    }
+  ]
+}

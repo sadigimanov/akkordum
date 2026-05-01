@@ -23,7 +23,8 @@
     "artist": "Gökhan Türkmen",
     "key": "Gm",
     "chords": ["Gm", "G", "Dm", "F", "E"],
-    "capo": 0
+    "capo": 0,
+    "rythim": ["↓", "↓", "↑", "↑", "↓", "↑"]
   },
   {
     "id": "halilSezai-galata",
@@ -31,7 +32,8 @@
     "artist": "Halil Sezai",
     "key": "Gm",
     "chords": ["Gm", "Dm7", "Cm7"],
-    "capo": 0
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
   },
   {
     "id": "ufukBaydemir-ayTenliKadin",
@@ -39,6 +41,52 @@
     "artist": "Ufuk Baydemir",
     "key": "F#",
     "chords": ["F#", "B", "Bbm"],
-    "capo": 0
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
+  },
+  {
+    "id":"ezhel-felaket",
+    "title":"Felaket",
+    "artist":"Ezhel",
+    "key":"Am",
+    "chords": ["Am", "Em", "D#m", "Dm"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
+  },
+  {
+    "id": "halukLevent-elfida",
+    "title": "Elfida",
+    "artist": "Haluk Levent",
+    "key": "F#m",
+    "chords": ["F#m", "Bm", "E"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "↑", "↓",  "↑", "↑", "↓", "↑"]
+  },
+  {
+    "id": "simgeSagin-uzulmedinMi",
+    "title": "Üzülmedin mi?",
+    "artist": "Simge Sağın",
+    "key": "Em",
+    "chords": ["Em", "C", "Am", "Bm"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑"]
+  },
+  {
+    "id": "sertabErener-acikAdres",
+    "title": "Açık Adres",
+    "artist": "Sertab Erener",
+    "key": "G#m",
+    "chords": ["G#m", "C#m", "E","D#m", "F#"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
+  },
+  {
+    "id": "madrigal-dip",
+    "title": "Dip",
+    "artist": "Madrigal",
+    "key": "Eb",
+    "chords": ["Eb", "Dm"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "↑", "↓",  "↑", "↑", "↓", "↑"]
   }
 ]

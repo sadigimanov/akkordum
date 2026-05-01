@@ -1,0 +1,105 @@
+{
+  "id": "acik_adres",
+  "title": "Açık Adres",
+  "artist": "Sertab Erener",
+  "key": "G#m",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "G#m", "offset": 0 }
+      ],
+      "line": "Sorma bu ara şu halimi, bu acıların hepsi mi daimi"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 }
+      ],
+      "line": "Yazık oldu her iki tarafa da şimdi sence daha iyi mi"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 }
+      ],
+      "line": "Bi gün oldu iki gün oldu, ay oldu yıl oldu ümitlere"
+    },
+    {
+      "chords": [
+        { "name": "G#m", "offset": 0 }
+      ],
+      "line": "Unutmuyor gönlüm seni seviyor her gün her gece"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 }
+      ],
+      "line": "Yoruldu duruldu kırıldı vuruldu bi kaç kere"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "G#m", "offset": 28 }
+      ],
+      "line": "Yazılıdır hepsi hikayede"
+    },
+    null,
+    {
+      "label": "Nakarat",
+      "chords": [
+        { "name": "G#m", "offset": 0 },
+        { "name": "E", "offset": 34 }
+      ],
+      "line": "Yok mu bi haber alan, yok mu gören"
+    },
+    {
+      "chords": [
+        { "name": "G#m", "offset": 0 },
+        { "name": "E", "offset": 28 }
+      ],
+      "line": "Bu mudur adetin bu mudur tören"
+    },
+    {
+      "chords": [
+        { "name": "D#m", "offset": 0 }
+      ],
+      "line": "Yaz ya da söyle bulamadım böyle"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "E", "offset": 32 },
+        { "name": "F#", "offset": 43 }
+      ],
+      "line": "Neresi açık adresin neresi yören"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "G#m", "offset": 0 }
+      ],
+      "line": "Sorma bu ara şu halimi, bu acıların hepsi mi daimi"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 }
+      ],
+      "line": "Yazık oldu her iki tarafa da şimdi sence daha iyi mi"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 }
+      ],
+      "line": "Bi gün oldu iki gün oldu, ay oldu yıl oldu ümitlere"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "G#m", "offset": 28 }
+      ],
+      "line": "Yazılıdır hepsi hikayede"
+    }
+  ]
+}

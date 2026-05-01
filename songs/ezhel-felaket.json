@@ -1,0 +1,71 @@
+{
+  "id": "felaket",
+  "title": "Felaket",
+  "artist": "Ezhel",
+  "key": "Am",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Em", "offset": 46 },
+        { "name": "Am", "offset": 95 }
+      ],
+      "line": "Güneşi gülüşüne nasıl sığdırdın, döndürdün kalbimi çöle"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 37 },
+        { "name": "Am", "offset": 78 }
+      ],
+      "line": "Gözünden akan yağmurlar, döndürür çölleri sele"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 31 },
+        { "name": "D#m", "offset": 63 },
+        { "name": "Dm", "offset": 72 }
+      ],
+      "line": "Saçında kopan fırtınalar, eserken ruhunda hala"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 31 },
+        { "name": "Am", "offset": 74 }
+      ],
+      "line": "Dediler bu kız neymiş, dedim felaket felaket"
+    },
+    null,
+    {
+      "label": "Nakarat",
+      "chords": [
+        { "name": "Em", "offset": 8 },
+        { "name": "Am", "offset": 38 }
+      ],
+      "line": "Felaket, bu kız bi afet bi afet"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 32 },
+        { "name": "Am", "offset": 75 }
+      ],
+      "line": "Gözün gözüme değse, kopar kıyamet kıyamet"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 34 },
+        { "name": "D#m", "offset": 63 },
+        { "name": "Dm", "offset": 71 }
+      ],
+      "line": "Yarattın dünyamda zelzele, hala sallanır bu hergele"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 34 },
+        { "name": "Am", "offset": 76 }
+      ],
+      "line": "Kaybettim kalbimi ben yine, ah felaket felaket"
+    }
+  ]
+}

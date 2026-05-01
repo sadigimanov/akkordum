@@ -4,6 +4,7 @@
   "artist": "Ufuk Baydemir",
   "key": "F#",
   "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑", "↓", "↑"],
   "sections": [
     {
       "chords": [

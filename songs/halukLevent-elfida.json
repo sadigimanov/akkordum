@@ -1,0 +1,114 @@
+{
+  "id": "elfida",
+  "title": "Elfida",
+  "artist": "Haluk Levent",
+  "key": "F#m",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "↑", "↓",  "↑", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 }
+      ],
+      "line": "Yüzün geçmişten kalan aşka tarif yazdıran"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Bir alaturka hüzün yüzün kıyıma vuran"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 }
+      ],
+      "line": "Anne karnı huzuru çocukluğumun sesi"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "F#m", "offset": 52 }
+      ],
+      "line": "Senden bana şimdi zamanı sızdıran"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 }
+      ],
+      "line": "Şımartılmamış aşkın sessizliğe yakın"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Kimbilir kaç yüzyıldır sarılmamış kolların"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 }
+      ],
+      "line": "Sisliydi kirpiklerin ve gözlerin yağmurlu"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "F#m", "offset": 54 }
+      ],
+      "line": "Yorulmuşsun hakkını almış yılların"
+    },
+    null,
+    {
+      "label": "Nakarat",
+      "chords": [
+        { "name": "F#m", "offset": 0 }
+      ],
+      "line": "Elfida, bir belalı başımsın"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Elfida, beni farketme sakın"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 }
+      ],
+      "line": "Omzumda iz bırakma yüküm dünyaya yakın"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "F#m", "offset": 54 }
+      ],
+      "line": "Elfida hep aklımda kalacaksın"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 }
+      ],
+      "line": "Elfida sen eski bir şarkısın"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Elfida, beni farketme sakın"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 }
+      ],
+      "line": "Omzumda iz bırakma yüküm dünyaya yakın"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "F#m", "offset": 54 }
+      ],
+      "line": "Elfida hep aklımda kalacaksın"
+    }
+  ]
+}

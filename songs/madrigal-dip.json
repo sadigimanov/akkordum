@@ -1,0 +1,100 @@
+{
+  "id": "dip",
+  "title": "Dip",
+  "artist": "Madrigal",
+  "key": "Eb",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "↑", "↓",  "↑", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "label": "x3",
+      "chords": [
+        { "name": "Eb", "offset": 0 },
+        { "name": "Dm", "offset": 6 }
+      ],
+      "line": ""
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Eb", "offset": 0 },
+        { "name": "Dm", "offset": 52 }
+      ],
+      "line": "Uzun zamandır her yanım yangın, soğuklarında"
+    },
+    {
+      "chords": [
+        { "name": "Eb", "offset": 3 },
+        { "name": "Dm", "offset": 54 }
+      ],
+      "line": "Denizlerin önemi yok zaten, derdin karanlıkta"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Eb", "offset": 0 }
+      ],
+      "line": "Belki hiç duymadım, belki de takmadın"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 6 }
+      ],
+      "line": "Bilmem, bilmem"
+    },
+    {
+      "chords": [
+        { "name": "Eb", "offset": 3 }
+      ],
+      "line": "Konuşmalar faydasız, sanki susmadım mı anlamsız"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 6 }
+      ],
+      "line": "Üzmem, kendimi üzmem"
+    },
+    null,
+    {
+      "label": "Nakarat",
+      "chords": [
+        { "name": "Eb", "offset": 9 },
+        { "name": "Dm", "offset": 61 }
+      ],
+      "line": "Peki sen de mi en dibe daldın"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 54 }
+      ],
+      "line": "En son ben de uyandım, artık o düşlerinden"
+    },
+    {
+      "chords": [
+        { "name": "Eb", "offset": 0 }
+      ],
+      "line": "Sen de mi en dibe daldın"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 54 }
+      ],
+      "line": "En son ben de uyandım artık o düşlerinden"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Eb", "offset": 0 },
+        { "name": "Dm", "offset": 58 }
+      ],
+      "line": "Sonunda buradayız yapyalnız, kendi başımıza"
+    },
+    {
+      "chords": [
+        { "name": "Eb", "offset": 8 },
+        { "name": "Dm", "offset": 60 }
+      ],
+      "line": "Çok istedik, hiç olmadık aynı şeyi bulduk karşımızda"
+    }
+  ]
+}

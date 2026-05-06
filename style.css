@@ -742,7 +742,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 0.8rem;
+  /* margin-bottom: 0.8rem; */
 }
 
 .section-dot {

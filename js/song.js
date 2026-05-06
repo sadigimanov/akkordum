@@ -308,9 +308,9 @@ async function init() {
       listRandom.appendChild(btn);
     }
 
-    if (headerRandom) {
-      headerRandom.style.cursor = "pointer";
-      headerRandom.addEventListener("click", () => {
+    if (sectionRandom) {
+      sectionRandom.style.cursor = "pointer";
+      sectionRandom.addEventListener("click", () => {
         randomOpen = !randomOpen;
         if (randomOpen) {
           renderRandom();
@@ -369,9 +369,9 @@ async function init() {
           })
           .slice(0, 10);
 
-        if (headerChords) {
-          headerChords.style.cursor = "pointer";
-          headerChords.addEventListener("click", () => {
+        if (sectionChords) {
+          sectionChords.style.cursor = "pointer";
+          sectionChords.addEventListener("click", () => {
             chordsOpen = !chordsOpen;
             if (chordsOpen) {
               listChords.innerHTML = "";

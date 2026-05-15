@@ -9,27 +9,25 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-
   <nav class="navbar">
-    <span class="nav-icon nav-brand">🎸</span>
+    <a href="profile.html" class="nav-icon nav-profile" id="nav-profile">🎸</a>
     <a href="index.html" class="nav-icon">🏠</a>
-    <button class="nav-icon" id="theme-toggle" title="Tema dəyiş">🌙</button>
+    <div class="nav-right">
+      <button class="nav-icon" id="theme-toggle">🌙</button>
+    </div>
   </nav>
-
   <div class="container">
-    <a href="index.html" class="back-link">← Geri</a>
-
+    <a href="javascript:history.back()" class="back-link">← Geri</a>
     <div class="song-card">
-      <h1 class="page-title">Sevimlilər❤️</h1>
+      <h1 class="page-title">Sevimlilərim❤️</h1>
       <hr class="divider" />
-      <div id="favorites-list" class="favorites-list"></div>
+      <div id="favorites-list"></div>
       <div id="favorites-empty" class="empty-state">
         <p>Hələ sevimli mahnı əlavə etməmisən.</p>
         <a href="index.html" class="empty-link">Mahnılara bax →</a>
       </div>
     </div>
   </div>
-
   <script type="module" src="js/favorites.js"></script>
 </body>
 </html>

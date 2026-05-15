@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="az" data-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Akorlarim</title>
+  <title>Akkordlarim</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet" />
 </head>
+
 <body>
 
   <nav class="navbar">
-    <span class="nav-icon nav-brand">🎸</span>
+    <a href="profile.html" id="nav-profile" class="nav-icon nav-profile">🎸</a>
     <a href="index.html" class="nav-icon">🏠</a>
     <button class="nav-icon" id="theme-toggle" title="Tema dəyiş">🌙</button>
   </nav>
@@ -21,13 +25,7 @@
 
     <!-- Axtarış -->
     <div class="search-wrap">
-      <input
-        type="text"
-        id="search-input"
-        class="search-input"
-        placeholder="Mahnı axtar..."
-        autocomplete="off"
-      />
+      <input type="text" id="search-input" class="search-input" placeholder="Mahnı axtar..." autocomplete="off" />
       <ul id="search-results" class="search-results hidden"></ul>
     </div>
 
@@ -41,6 +39,9 @@
         <span class="cat-icon">🎸</span>
         <span class="cat-name">Rastgele</span>
       </a>
+      <a href="akkordlar.html" class="cat-card">
+        <span class="cat-icon">🎸</span>
+        <span class="cat-name">Akkordlar</span></a>
       <a href="#" class="cat-card">
         <span class="cat-icon">🎸</span>
         <span class="cat-name">Öne Çıkanlar</span>
@@ -70,4 +71,5 @@
 
   <script type="module" src="js/app.js"></script>
 </body>
+
 </html>

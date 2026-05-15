@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="az" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil — Akorlarim</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="profile.html" id="nav-profile" class="nav-icon nav-profile">🎸</a>
+    <a href="index.html" class="nav-icon">🏠</a>
+    <div class="nav-right">
+      <button class="nav-icon" id="theme-toggle">🌙</button>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Giriş edilməyib -->
+    <div id="view-guest" class="profile-card" style="display:none">
+      <div class="profile-guest-icon">🎸</div>
+      <h1 class="profile-title">Xoş gəldin!</h1>
+      <p class="profile-subtitle">Sevimlilərini saxlamaq və daha çox funksiyadan yararlanmaq üçün daxil ol.</p>
+      <button class="btn-google-login" id="btn-login">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" width="20" height="20" alt="Google" />
+        Google ilə daxil ol
+      </button>
+    </div>
+
+    <!-- Giriş edilib -->
+    <div id="view-user" class="profile-card" style="display:none">
+      <img class="profile-photo" id="profile-photo" src="" alt="profil" />
+      <h1 class="profile-title" id="profile-name"></h1>
+      <p class="profile-email" id="profile-email"></p>
+      <a href="favorites.html" class="profile-link">Sevimlilərə bax</a>
+      <button class="btn-logout-full" id="btn-logout">Çıxış et</button>
+    </div>
+
+  </div>
+
+  <script type="module" src="js/profile.js"></script>
+</body>
+</html>

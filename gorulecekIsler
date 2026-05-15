@@ -2,12 +2,18 @@ Akordlar.html
 Butun akorlarin gorunduyu ayri bir html fayli. 
 datalar movcuddu onsuz. 
 istifadeci oyrenmek istediyi akoru orda baxib oyrensin.
-
+(fixed)
 =============================================
 
 Sevimlilerimde geri duymesine klik edende bir basa indexe yox evvelki sehifeye qayitsin
+(fixed)
 
 =============================================
 
-axtaris edende Enter duymesi islesin ve yazdigim ilk herife gore filterlesin.
+axtaris edende Enter duymesi islesin ve yazdigim ilk herife gore filterlesin. 
+(fixed)
 
+
+=============================================
+
+Akordlar sehifesinde barelileri ayrica gostermek.

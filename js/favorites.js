@@ -1,4 +1,7 @@
 // js/favorites.js
+import { initAuth } from "./auth.js";
+import { getFavorites, removeFavorite } from "./firestore-favs.js";
+import { auth, onAuthStateChanged } from "./firebase.js";
 
 function initTheme() {
   const btn = document.getElementById("theme-toggle");
@@ -13,53 +16,45 @@ function initTheme() {
   });
 }
 
-function getFavorites() {
-  try { return JSON.parse(localStorage.getItem("favorites") || "[]"); } catch { return []; }
-}
+async function render(user) {
+  const listEl  = document.getElementById("favorites-list");
+  const emptyEl = document.getElementById("favorites-empty");
+  if (!listEl || !emptyEl) return;
 
-function saveFavorites(favs) {
-  localStorage.setItem("favorites", JSON.stringify(favs));
+  listEl.innerHTML = "";
+  const favs = await getFavorites(user);
+
+  if (favs.length === 0) {
+    emptyEl.style.display = "block";
+    return;
+  }
+  emptyEl.style.display = "none";
+
+  favs.forEach(s => {
+    const item = document.createElement("div");
+    item.className = "fav-item";
+    item.innerHTML = `
+      <a href="song.html?id=${s.id}" class="fav-item-link">
+        <span class="song-title">${s.title}</span>
+        <span class="song-meta">${s.artist} · ${s.key}</span>
+      </a>
+      <button class="fav-remove-btn" data-id="${s.id}" title="Sil">✕</button>
+    `;
+    listEl.appendChild(item);
+  });
+
+  listEl.querySelectorAll(".fav-remove-btn").forEach(btn => {
+    btn.addEventListener("click", async () => {
+      await removeFavorite(user, btn.dataset.id);
+      render(user);
+    });
+  });
 }
 
 function init() {
+  initAuth();
   initTheme();
-
-  const listEl  = document.getElementById("favorites-list");
-  const emptyEl = document.getElementById("favorites-empty");
-
-  function render() {
-    const favs = getFavorites();
-    listEl.innerHTML = "";
-
-    if (favs.length === 0) {
-      emptyEl.style.display = "block";
-      return;
-    }
-
-    emptyEl.style.display = "none";
-
-    favs.forEach(s => {
-      const item = document.createElement("div");
-      item.className = "fav-item";
-      item.innerHTML = `
-        <a href="song.html?id=${s.id}" class="fav-item-link">
-          <span class="song-title">${s.title}</span>
-          <span class="song-meta">${s.artist} · ${s.key}</span>
-        </a>
-        <button class="fav-remove-btn" data-id="${s.id}" title="Sil">✕</button>
-      `;
-      listEl.appendChild(item);
-    });
-
-    listEl.querySelectorAll(".fav-remove-btn").forEach(btn => {
-      btn.addEventListener("click", () => {
-        saveFavorites(getFavorites().filter(f => f.id !== btn.dataset.id));
-        render();
-      });
-    });
-  }
-
-  render();
+  onAuthStateChanged(auth, (user) => render(user));
 }
 
 init();

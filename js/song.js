@@ -1,3 +1,6 @@
+import { initAuth } from "./auth.js";
+import { auth, onAuthStateChanged } from "./firebase.js";
+import { getFavorites, addFavorite, removeFavorite, isFavorite } from "./firestore-favs.js";
 // js/song.js
 import { renderLyrics } from "./renderer.js";
 import { initChordClick } from "./chord-diagram.js";
@@ -88,7 +91,7 @@ async function initSearch() {
 
     const q = normalize(query);
     const matched = catalog.filter(s =>
-      normalize(s.title).includes(q) || normalize(s.artist).includes(q)
+      normalize(s.title).startsWith(q) || normalize(s.artist).startsWith(q)
     );
 
     results.innerHTML = "";
@@ -108,6 +111,13 @@ async function initSearch() {
   }
 
   input.addEventListener("input", e => search(e.target.value));
+
+  input.addEventListener("keydown", e => {
+    if (e.key === "Enter") {
+      const first = results.querySelector("li a");
+      if (first) window.location.href = first.href;
+    }
+  });
   document.addEventListener("click", e => {
     if (!input.contains(e.target) && !results.contains(e.target))
       results.classList.add("hidden");
@@ -115,6 +125,7 @@ async function initSearch() {
 }
 
 async function init() {
+  initAuth();
   initTheme();
   initSearch();
 
@@ -212,35 +223,30 @@ async function init() {
   // ── Sevimli düyməsi ────────────────────────────────────────
   const favBtn = document.getElementById("btn-favorite");
   if (favBtn) {
-    function getFavorites() {
-      try { return JSON.parse(localStorage.getItem("favorites") || "[]"); } catch { return []; }
-    }
-    function saveFavorites(favs) {
-      localStorage.setItem("favorites", JSON.stringify(favs));
-    }
-    function isFavorite() {
-      return getFavorites().some(f => f.id === song.id);
-    }
-    function updateFavBtn() {
-      if (isFavorite()) {
-        favBtn.textContent = "❤️ Sevimlilərə əlavədir";
+    // auth.currentUser-i hər dəfə birbaşa oxu — sabit saxlama
+    async function updateFavBtn() {
+      const fav = await isFavorite(auth.currentUser, song.id);
+      if (fav) {
+        favBtn.textContent = "Sevimlilərə əlavədir❤️";
         favBtn.classList.add("fav-active");
       } else {
-        favBtn.textContent = "🤍 Sevimlilərə əlavə et";
+        favBtn.textContent = "Sevimlilərə əlavə et🤍";
         favBtn.classList.remove("fav-active");
       }
     }
-    favBtn.addEventListener("click", () => {
-      let favs = getFavorites();
-      if (isFavorite()) {
-        favs = favs.filter(f => f.id !== song.id);
+    favBtn.addEventListener("click", async () => {
+      const user = auth.currentUser;
+      const fav = await isFavorite(user, song.id);
+      if (fav) {
+        await removeFavorite(user, song.id);
       } else {
-        favs.push({ id: song.id, title: song.title, artist: song.artist, key: song.key });
+        await addFavorite(user, { id: song.id, title: song.title, artist: song.artist, key: song.key });
       }
-      saveFavorites(favs);
       updateFavBtn();
     });
-    updateFavBtn();
+
+    // Auth hazır olana qədər gözlə, sonra düyməni yenilə
+    onAuthStateChanged(auth, () => updateFavBtn());
   }
 
 
@@ -308,9 +314,9 @@ async function init() {
       listRandom.appendChild(btn);
     }
 
-    if (sectionRandom) {
-      sectionRandom.style.cursor = "pointer";
-      sectionRandom.addEventListener("click", () => {
+    if (headerRandom) {
+      headerRandom.style.cursor = "pointer";
+      headerRandom.addEventListener("click", () => {
         randomOpen = !randomOpen;
         if (randomOpen) {
           renderRandom();
@@ -369,9 +375,9 @@ async function init() {
           })
           .slice(0, 10);
 
-        if (sectionChords) {
-          sectionChords.style.cursor = "pointer";
-          sectionChords.addEventListener("click", () => {
+        if (headerChords) {
+          headerChords.style.cursor = "pointer";
+          headerChords.addEventListener("click", () => {
             chordsOpen = !chordsOpen;
             if (chordsOpen) {
               listChords.innerHTML = "";

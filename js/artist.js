@@ -1,3 +1,4 @@
+import { initAuth } from "./auth.js";
 // js/artist.js
 
 function initTheme() {

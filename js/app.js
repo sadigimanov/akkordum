@@ -1,3 +1,4 @@
+import { initAuth } from "./auth.js";
 // app.js
 import { renderLyrics } from "./renderer.js";
 
@@ -59,7 +60,7 @@ async function initSearch() {
 
     const q = normalize(query);
     const matched = catalog.filter(s =>
-      normalize(s.title).includes(q) || normalize(s.artist).includes(q)
+      normalize(s.title).startsWith(q) || normalize(s.artist).startsWith(q)
     );
 
     results.innerHTML = "";
@@ -82,6 +83,15 @@ async function initSearch() {
   }
 
   input.addEventListener("input", e => search(e.target.value));
+
+  input.addEventListener("keydown", e => {
+    if (e.key === "Enter") {
+      const first = results.querySelector("li a");
+      if (first) {
+        window.location.href = first.href;
+      }
+    }
+  });
 
   // Xaricdə klik edəndə bağla
   document.addEventListener("click", e => {
@@ -228,6 +238,7 @@ async function initSong() {
 }
 
 // ── Başlat ────────────────────────────────────────────────────
+initAuth();
 initTheme();
 initSearch();
 initFavorites();

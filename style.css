@@ -14,6 +14,11 @@ a {
   color: inherit;
 }
 
+/* ---------------------------------------------------------------- */
+.cursor{
+  cursor: pointer;
+}
+
 /* ── Theme variables ──────────────────────────────────────── */
 :root {
   --font-ui: "DM Sans", "Helvetica Neue", sans-serif;
@@ -98,7 +103,7 @@ body {
 }
 
 .nav-brand {
-  cursor: default;
+  cursor: pointer;
 }
 
 .nav-brand:hover {
@@ -507,7 +512,7 @@ body {
 }
 
 /* ── Favorites səhifəsi ───────────────────────────────────── */
-.favorites-list {
+#favorites-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 8px;
@@ -875,4 +880,279 @@ body {
   font-size: 15px;
   font-weight: 600;
   transition: opacity 0.15s;
+}
+
+/* ── Auth / Navbar ────────────────────────────────────────── */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+ 
+.btn-login {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font-ui);
+  cursor: pointer;
+  transition: opacity 0.15s;
+  white-space: nowrap;
+}
+.btn-login:hover { opacity: 0.88; }
+ 
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+ 
+.user-photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+}
+ 
+.user-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+ 
+.btn-logout {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 12px;
+  font-family: var(--font-ui);
+  padding: 4px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.12s, border-color 0.12s;
+}
+.btn-logout:hover {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
+/* ── Profil səhifəsi ──────────────────────────────────────── */
+.profile-card {
+  max-width: 420px;
+  margin: 4rem auto 0;
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  text-align: center;
+}
+ 
+.profile-guest-icon {
+  font-size: 52px;
+  margin-bottom: 0.4rem;
+}
+ 
+.profile-title {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+ 
+.profile-subtitle {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 0.4rem;
+}
+ 
+.btn-google-login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--font-ui);
+  cursor: pointer;
+  margin-top: 0.6rem;
+  transition: opacity 0.15s, transform 0.12s;
+}
+.btn-google-login:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+ 
+.profile-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  margin-bottom: 0.4rem;
+}
+ 
+.profile-email {
+  font-size: 13px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+ 
+.profile-link {
+  font-size: 14px;
+  color: var(--accent);
+  padding: 8px 20px;
+  border-radius: 6px;
+  transition: background 0.12s;
+}
+.profile-link:hover { background: var(--accent-dim); }
+ 
+.btn-logout-full {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 13px;
+  font-family: var(--font-ui);
+  padding: 8px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.4rem;
+  transition: color 0.12s, border-color 0.12s;
+}
+.btn-logout-full:hover {
+  color: #e05a5a;
+  border-color: #e05a5a;
+}
+/* ── Navbar profil şəkli (kiçik) ─────────────────────────── */
+.nav-profile-photo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  display: block;
+}
+
+/* ── Akkordlar səhifəsi ───────────────────────────────────── */
+.akkord-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 1.5rem;
+}
+ 
+.akkord-filter-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.akkord-filter-btn:hover {
+  border-color: var(--text-muted);
+  color: var(--text);
+}
+.akkord-filter-btn.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+ 
+.akkord-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+  gap: 12px;
+}
+ 
+.akkord-card {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  transition: border-color 0.15s, transform 0.12s;
+}
+.akkord-card:hover {
+  border-color: var(--border);
+  transform: translateY(-2px);
+}
+/* ── Akkord modal ─────────────────────────────────────────── */
+.akkord-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.2s;
+  opacity: 1;
+}
+.akkord-modal.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+ 
+.akkord-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(4px);
+}
+ 
+.akkord-modal-content {
+  position: relative;
+  background: var(--card-bg);
+  border-radius: 16px;
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.5);
+  min-width: 280px;
+}
+ 
+.akkord-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.12s;
+}
+.akkord-modal-close:hover { color: var(--text); }
+ 
+.akkord-modal-diagram svg {
+  display: block;
+}
+ 
+.akkord-modal-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
 }

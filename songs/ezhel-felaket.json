@@ -9,8 +9,8 @@
     {
       "chords": [
         { "name": "Am", "offset": 0 },
-        { "name": "Em", "offset": 46 },
-        { "name": "Am", "offset": 95 }
+        { "name": "Em", "offset": 16 },
+        { "name": "Am", "offset": 55 }
       ],
       "line": "Güneşi gülüşüne nasıl sığdırdın, döndürdün kalbimi çöle"
     },

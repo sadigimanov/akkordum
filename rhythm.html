@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="az" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eyni ritmlə olan mahnılar — Akorlarim</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <nav class="navbar">
+    <a href="profile.html" id="nav-brand" class="nav-icon nav-brand">🎸</a>
+    <a href="index.html" class="nav-icon">🏠</a>
+    <div class="nav-right">
+      <button class="nav-icon" id="theme-toggle">🌙</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <a href="javascript:history.back()" class="back-link">← Geri</a>
+    <h1 class="page-title">Eyni ritmlə olan mahnılar</h1>
+
+    <div class="rhythm-preview" id="rhythm-preview"></div>
+    <p class="artist-count" id="rhythm-count"></p>
+    <div class="artist-grid" id="rhythm-grid"></div>
+    <p class="section-empty" id="rhythm-empty" style="display:none">
+      Eyni ritmlə başqa mahnı tapılmadı.
+    </p>
+  </div>
+
+  <script type="module" src="js/rhythm.js"></script>
+</body>
+</html>

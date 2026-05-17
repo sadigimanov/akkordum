@@ -2,6 +2,9 @@ import { initAuth } from "./auth.js";
 // app.js
 import { renderLyrics } from "./renderer.js";
 
+import { getHistory } from "./firestore-favs.js";
+import { auth, onAuthStateChanged } from "./firebase.js";
+
 // ── Yardımçı funksiyalar ─────────────────────────────────────
 function getParam(name) {
   return new URLSearchParams(window.location.search).get(name);
@@ -127,6 +130,73 @@ function initFavorites() {
   });
 }
 
+// ── Son Çaldıklarım panel (index səhifəsi) ───────────────────
+async function initHistory() {
+  const card = document.getElementById("card-history");
+  if (!card) return;
+
+  let panel = document.getElementById("history-panel");
+  if (!panel) {
+    panel = document.createElement("div");
+    panel.id = "history-panel";
+    panel.className = "random-panel hidden";
+    panel.innerHTML = `
+      <div class="random-panel-header">
+        <span>Son Çaldıklarım</span>
+        <button class="random-panel-close" id="history-close">✕</button>
+      </div>
+      <div class="artist-grid" id="history-grid"></div>
+      <p class="section-empty" id="history-empty" style="display:none">Hələ heç bir mahnı açmamısınız.</p>
+    `;
+    document.body.appendChild(panel);
+
+    document.getElementById("history-close").addEventListener("click", () => {
+      panel.classList.add("hidden");
+    });
+    document.addEventListener("click", (e) => {
+      if (!panel.contains(e.target) && e.target !== card && !card.contains(e.target)) {
+        panel.classList.add("hidden");
+      }
+    });
+  }
+
+  async function renderHistory() {
+    const grid  = document.getElementById("history-grid");
+    const empty = document.getElementById("history-empty");
+    grid.innerHTML = "";
+
+    // Auth hazır olana qədər gözlə
+    const user = await new Promise(resolve => {
+      const unsub = onAuthStateChanged(auth, u => { unsub(); resolve(u); });
+    });
+
+    const history = await getHistory(user);
+
+    if (history.length === 0) {
+      empty.style.display = "block";
+      return;
+    }
+    empty.style.display = "none";
+
+    history.forEach(s => {
+      const a = document.createElement("a");
+      a.href = `song.html?id=${s.id}`;
+      a.className = "artist-card";
+      a.innerHTML = `
+        <span class="artist-card-title">${s.title}</span>
+        <span class="artist-card-meta">${s.artist} · ${s.key}</span>
+      `;
+      grid.appendChild(a);
+    });
+  }
+
+  card.addEventListener("click", (e) => {
+    e.preventDefault();
+    renderHistory();
+    panel.classList.remove("hidden");
+  });
+}
+
 // ── Rastgele panel (index səhifəsi) ──────────────────────────
 async function initRandom() {
   const card = document.getElementById("card-random");
@@ -183,6 +253,48 @@ async function initRandom() {
     if (!panel.contains(e.target) && e.target !== card && !card.contains(e.target)) {
       panel.classList.add("hidden");
     }
+  });
+}
+
+// ── "Tezliklə" paneli ────────────────────────────────────────
+function initSoonCards() {
+  const soonIds = ["card-soon-1", "card-soon-2", "card-soon-3", "card-soon-4", "card-soon-5"];
+
+  let panel = document.getElementById("soon-panel");
+  if (!panel) {
+    panel = document.createElement("div");
+    panel.id = "soon-panel";
+    panel.className = "random-panel hidden";
+    panel.innerHTML = `
+      <div class="random-panel-header">
+        <span>Tezliklə...</span>
+        <button class="random-panel-close" id="soon-close">✕</button>
+      </div>
+      <p class="soon-message">Bu bölmə hazırlanır. Tezliklə əlavə olunacaq! 🎸</p>
+    `;
+    document.body.appendChild(panel);
+
+    document.getElementById("soon-close").addEventListener("click", () => {
+      panel.classList.add("hidden");
+    });
+    document.addEventListener("click", (e) => {
+      const isCard = soonIds.some(id => {
+        const el = document.getElementById(id);
+        return el && (e.target === el || el.contains(e.target));
+      });
+      if (!panel.contains(e.target) && !isCard) {
+        panel.classList.add("hidden");
+      }
+    });
+  }
+
+  soonIds.forEach(id => {
+    const card = document.getElementById(id);
+    if (!card) return;
+    card.addEventListener("click", (e) => {
+      e.preventDefault();
+      panel.classList.remove("hidden");
+    });
   });
 }
 
@@ -243,5 +355,7 @@ initTheme();
 initSearch();
 initFavorites();
 initRandom();
+initHistory();
+initSoonCards();
 initIndex();
 initSong();

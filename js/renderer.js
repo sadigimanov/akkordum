@@ -1,7 +1,5 @@
 // renderer.js
-// Mahnı data-sını götürüb #lyrics elementinə render edir
-
-const CH_WIDTH = 9.02; // monospace font üçün simvol eni (px)
+const CH_WIDTH = 9.02;
 
 export function renderLyrics(song, targetId) {
   const container = document.getElementById(targetId);
@@ -9,7 +7,6 @@ export function renderLyrics(song, targetId) {
   container.innerHTML = "";
 
   song.sections.forEach((section) => {
-    // null = bənd arası boşluq
     if (section === null) {
       const blank = document.createElement("div");
       blank.className = "blank";
@@ -20,7 +17,6 @@ export function renderLyrics(song, targetId) {
     const block = document.createElement("div");
     block.className = "section-block";
 
-    // Bənd adı (label) varsa göstər
     if (section.label) {
       const labelEl = document.createElement("div");
       labelEl.className = "section-label";
@@ -28,7 +24,6 @@ export function renderLyrics(song, targetId) {
       block.appendChild(labelEl);
     }
 
-    // Akor sətri
     if (section.chords && section.chords.length > 0) {
       const chordRow = document.createElement("div");
       chordRow.className = "chord-row";
@@ -38,13 +33,13 @@ export function renderLyrics(song, targetId) {
         tag.className = "chord-tag";
         tag.textContent = chord.name;
         tag.style.left = chord.offset * CH_WIDTH + "px";
+        tag.dataset.offset = chord.offset; // ← font ölçüsü üçün saxla
         chordRow.appendChild(tag);
       });
 
       block.appendChild(chordRow);
     }
 
-    // Söz sətri
     if (section.line) {
       const lyricRow = document.createElement("div");
       lyricRow.className = "lyric-row";

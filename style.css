@@ -1331,3 +1331,36 @@ body {
   text-decoration: underline;
 }
 
+/* ── Tezliklə mesajı ─────────────────────────────────────── */
+.soon-message {
+  font-size: 15px;
+  color: var(--text-muted);
+  padding: 0.5rem 0 1rem;
+  text-align: center;
+}
+ 
+/* ── Lyrics toolbar (font ölçüsü) ────────────────────────── */
+.lyrics-toolbar {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 0.6rem;
+}
+ 
+.font-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.12s, border-color 0.12s;
+}
+.font-btn:hover {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
+

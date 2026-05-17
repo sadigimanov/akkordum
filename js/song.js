@@ -1,6 +1,6 @@
 import { initAuth } from "./auth.js";
 import { auth, onAuthStateChanged } from "./firebase.js";
-import { getFavorites, addFavorite, removeFavorite, isFavorite, getUserRhythm, saveUserRhythm } from "./firestore-favs.js";
+import { getFavorites, addFavorite, removeFavorite, isFavorite, getUserRhythm, saveUserRhythm, addToHistory } from "./firestore-favs.js";
 // js/song.js
 import { renderLyrics } from "./renderer.js";
 import { initChordClick } from "./chord-diagram.js";
@@ -145,6 +145,12 @@ async function init() {
 
   document.title = `${song.title} — ${song.artist}`;
   document.getElementById("song-title").textContent  = song.title;
+
+  // Tarixçəyə əlavə et (auth hazır olduqda)
+  const unsubHistory = onAuthStateChanged(auth, (user) => {
+    unsubHistory();
+    addToHistory(user, song);
+  });
   document.getElementById("song-artist").textContent = song.artist;
   document.getElementById("song-key").textContent    = song.key;
   document.getElementById("song-capo").textContent   = song.capo ?? 0;
@@ -320,6 +326,7 @@ async function init() {
     lyricsEl.innerHTML = "";
     renderLyrics({ ...song, sections: transposed }, "lyrics");
     initChordClick(transposed, song.chords_override || {});
+    applyFontSize();
     const activeNote = NOTES[((originalIdx + semitones) % 12 + 12) % 12];
     renderKeyRow(activeNote, (clickedNote) => {
       semitones = ((NOTES.indexOf(clickedNote) - originalIdx) % 12 + 12) % 12;
@@ -338,7 +345,7 @@ async function init() {
   }
 
   // Orijinal tona klik — sıfırla
-  const origKeyEl = document.getElementById("song-key");
+  const origKeyEl = document.getElementById("song-key-text");
   if (origKeyEl) {
     origKeyEl.style.cursor = "pointer";
     origKeyEl.addEventListener("click", () => { semitones = 0; update(); });
@@ -359,13 +366,30 @@ async function init() {
     });
   }
 
+  // +A / -A — mətn ölçüsünü böyüdüb kiçildir
+  const FONT_MIN = 11, FONT_MAX = 18, FONT_STEP = 1;
+  let fontSize = 15;
+
+  function applyFontSize() {
+    if (!lyricsEl) return;
+    lyricsEl.style.fontSize = fontSize + "px";
+    // chord-row hündürlüyü font-a uyğun dəyişsin
+    const chWidth = fontSize * 0.598;
+    lyricsEl.querySelectorAll(".chord-tag").forEach(tag => {
+      const offset = parseFloat(tag.dataset.offset || 0);
+      tag.style.left = (offset * chWidth) + "px";
+      tag.style.fontSize = Math.max(11, fontSize - 2) + "px";
+    });
+    lyricsEl.querySelectorAll(".lyric-row").forEach(row => {
+      row.style.fontSize = fontSize + "px";
+    });
+  }
+
   document.getElementById("btn-up").addEventListener("click", () => {
-    semitones = (semitones + 1) % 12;
-    update();
+    if (fontSize < FONT_MAX) { fontSize += FONT_STEP; applyFontSize(); }
   });
   document.getElementById("btn-down").addEventListener("click", () => {
-    semitones = ((semitones - 1) % 12 + 12) % 12;
-    update();
+    if (fontSize > FONT_MIN) { fontSize -= FONT_STEP; applyFontSize(); }
   });
 
   // ── Sevimli düyməsi ────────────────────────────────────────
@@ -375,10 +399,10 @@ async function init() {
     async function updateFavBtn() {
       const fav = await isFavorite(auth.currentUser, song.id);
       if (fav) {
-        favBtn.textContent = "❤️ Sevimlilərə əlavədir";
+        favBtn.textContent = "Sevimlilərə əlavədir❤️";
         favBtn.classList.add("fav-active");
       } else {
-        favBtn.textContent = "🤍 Sevimlilərə əlavə et";
+        favBtn.textContent = "Sevimlilərə əlavə et🤍";
         favBtn.classList.remove("fav-active");
       }
     }

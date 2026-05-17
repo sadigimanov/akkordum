@@ -95,6 +95,45 @@ function createDiagram(chordName, chordData) {
   return svg;
 }
 
+
+// Akkord adlarının Azərbaycan izahı
+const CHORD_NAMES = {
+  // C
+  "C": "Do major", "Cm": "Do minor", "C7": "Do dominant 7", "Cm7": "Do minor 7",
+  "Cmaj7": "Do major 7", "Csus2": "Do sus2", "Csus4": "Do sus4",
+  // C#
+  "C#": "Do diyez major", "C#m": "Do diyez minor", "C#7": "Do diyez 7",
+  "C#m7": "Do diyez minor 7", "Db": "Re bemol major",
+  // D
+  "D": "Re major", "Dm": "Re minor", "D7": "Re dominant 7", "Dm7": "Re minor 7",
+  "Dmaj7": "Re major 7", "Dsus2": "Re sus2", "Dsus4": "Re sus4",
+  // D#
+  "D#": "Re diyez major", "D#m": "Re diyez minor", "Eb": "Mi bemol major", "Ebm": "Mi bemol minor",
+  // E
+  "E": "Mi major", "Em": "Mi minor", "E7": "Mi dominant 7", "Em7": "Mi minor 7",
+  "Emaj7": "Mi major 7", "Esus4": "Mi sus4",
+  // F
+  "F": "Fa major", "Fm": "Fa minor", "F7": "Fa dominant 7", "Fm7": "Fa minor 7",
+  "Fmaj7": "Fa major 7", "Fsus2": "Fa sus2",
+  // F#
+  "F#": "Fa diyez major", "F#m": "Fa diyez minor", "F#7": "Fa diyez 7",
+  "F#m7": "Fa diyez minor 7", "Gb": "Sol bemol major",
+  // G
+  "G": "Sol major", "Gm": "Sol minor", "G7": "Sol dominant 7", "Gm7": "Sol minor 7",
+  "Gmaj7": "Sol major 7", "Gsus4": "Sol sus4", "Gsus2": "Sol sus2",
+  // G#
+  "G#": "Sol diyez major", "G#m": "Sol diyez minor", "Ab": "La bemol major", "Abm": "La bemol minor",
+  // A
+  "A": "La major", "Am": "La minor", "A7": "La dominant 7", "Am7": "La minor 7",
+  "Amaj7": "La major 7", "Asus2": "La sus2", "Asus4": "La sus4",
+  // A#
+  "A#": "La diyez major", "A#m": "La diyez minor", "Bb": "Si bemol major",
+  "Bbm": "Si bemol minor", "Bb7": "Si bemol 7",
+  // B
+  "B": "Si major", "Bm": "Si minor", "B7": "Si dominant 7", "Bm7": "Si minor 7",
+  "Bmaj7": "Si major 7",
+};
+
 // Akkord növləri üçün filtr qrupları
 const GROUPS = [
   { label: "Hamısı", filter: () => true },
@@ -104,6 +143,7 @@ const GROUPS = [
   { label: "m7",     filter: (name) => name.endsWith("m7") },
   { label: "maj7",   filter: (name) => name.includes("maj7") },
   { label: "sus",    filter: (name) => name.includes("sus") },
+  { label: "Bareli", filter: (name, data) => !!data.barre },
 ];
 
 function initTheme() {
@@ -134,10 +174,11 @@ function init() {
     grid.innerHTML = "";
     const { filter } = GROUPS[groupIdx];
     entries
-      .filter(([name]) => filter(name))
+      .filter(([name, data]) => filter(name, data))
       .forEach(([name, data]) => {
         const wrap = document.createElement("div");
         wrap.className = "akkord-card";
+        wrap.title = CHORD_NAMES[name] || name;
         wrap.appendChild(createDiagram(name, data));
         wrap.style.cursor = "pointer";
         wrap.addEventListener("click", () => openModal(name, data));
@@ -173,10 +214,10 @@ function init() {
     const diagramEl = document.getElementById("modal-diagram");
     const nameEl    = document.getElementById("modal-name");
     diagramEl.innerHTML = "";
-    const SIZE = 270;
+    const SIZE = 240;
     const svg = createDiagram(name, data);
     svg.setAttribute("width", SIZE);
-    svg.setAttribute("height", SIZE * 1.1);
+    svg.setAttribute("height", SIZE * 1.2);
     svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
     diagramEl.appendChild(svg);
     nameEl.textContent = name;

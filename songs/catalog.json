@@ -1,6 +1,6 @@
 [
   {
-    "id": "intihask",
+    "id": "onur-can-ozcan-intihask",
     "title": "İntihask",
     "artist": "Onur Can Ozcan",
     "key": "F#m",
@@ -9,7 +9,7 @@
      "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
   },
   {
-    "id": "gokhanTurkmen-bitmesin",
+    "id": "gokhan-turkmen-bitmesin",
     "title": "Bitmesin",
     "artist": "Gökhan Türkmen",
     "key": "Am",
@@ -18,16 +18,16 @@
     "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
   },
   {
-    "id": "gokhanTurkmen-korkak",
+    "id": "gokhan-turkmen-korkak",
     "title": "Korkak",
     "artist": "Gökhan Türkmen",
     "key": "Gm",
     "chords": ["Gm", "G", "Dm", "F", "E"],
     "capo": 0,
-    "rythim": ["↓", "↓", "↑", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
   },
   {
-    "id": "halilSezai-galata",
+    "id": "halil-sezai-galata",
     "title": "Galata",
     "artist": "Halil Sezai",
     "key": "Gm",
@@ -36,7 +36,7 @@
     "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
   },
   {
-    "id": "ufukBaydemir-ayTenliKadin",
+    "id": "ufuk-baydemir-ay-tenli-kadin",
     "title": "Ay Tenli Kadın",
     "artist": "Ufuk Baydemir",
     "key": "F#",
@@ -54,7 +54,7 @@
     "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
   },
   {
-    "id": "halukLevent-elfida",
+    "id": "haluk-levent-elfida",
     "title": "Elfida",
     "artist": "Haluk Levent",
     "key": "F#m",
@@ -63,7 +63,7 @@
     "rhythm": ["↓", "↑", "↑", "↓",  "↑", "↑", "↓", "↑"]
   },
   {
-    "id": "simgeSagin-uzulmedinMi",
+    "id": "simge-sagin-uzulmedin-mi",
     "title": "Üzülmedin mi?",
     "artist": "Simge Sağın",
     "key": "Em",
@@ -72,7 +72,7 @@
     "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑"]
   },
   {
-    "id": "sertabErener-acikAdres",
+    "id": "sertab-erener-acik-adres",
     "title": "Açık Adres",
     "artist": "Sertab Erener",
     "key": "G#m",
@@ -81,7 +81,7 @@
     "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
   },
   {
-    "id": "madrigalDip",
+    "id": "madrigal-dip",
     "title": "Dip",
     "artist": "Madrigal",
     "key": "Eb",

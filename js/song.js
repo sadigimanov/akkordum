@@ -1,6 +1,6 @@
 import { initAuth } from "./auth.js";
 import { auth, onAuthStateChanged } from "./firebase.js";
-import { getFavorites, addFavorite, removeFavorite, isFavorite } from "./firestore-favs.js";
+import { getFavorites, addFavorite, removeFavorite, isFavorite, getUserRhythm, saveUserRhythm } from "./firestore-favs.js";
 // js/song.js
 import { renderLyrics } from "./renderer.js";
 import { initChordClick } from "./chord-diagram.js";
@@ -151,15 +151,26 @@ async function init() {
 
 
   // ── Ritm ──────────────────────────────────────────────────
-  if (song.rhythm && song.rhythm.length > 0) {
-    const rhythmSection  = document.getElementById("rhythm-section");
-    const rhythmDisplay  = document.getElementById("rhythm-display");
-    rhythmSection.classList.remove("hidden");
+  const rhythmSection = document.getElementById("rhythm-section");
+  const rhythmDisplay = document.getElementById("rhythm-display");
 
-    song.rhythm.forEach((beat, i) => {
+  function renderRhythmRow(beats, label, labelColor) {
+    const wrap = document.createElement("div");
+    wrap.className = "rhythm-row-wrap";
+
+    const lbl = document.createElement("div");
+    lbl.className = "rhythm-row-label";
+    lbl.textContent = label;
+    lbl.style.color = labelColor || "var(--text-muted)";
+    wrap.appendChild(lbl);
+
+    const row = document.createElement("div");
+    row.className = "rhythm-display";
+    const BEAT_LABELS = { "↓": "Aşağı", "↑": "Yuxarı", "-": "Susma" };
+    beats.forEach((beat, i) => {
       const span = document.createElement("span");
       span.className = "rhythm-beat";
-
+      span.title = BEAT_LABELS[beat] || beat;
       if (beat === "↓") {
         span.classList.add("beat-down");
         span.innerHTML = `<span class="beat-arrow">↓</span><span class="beat-num">${i + 1}</span>`;
@@ -170,10 +181,135 @@ async function init() {
         span.classList.add("beat-mute");
         span.innerHTML = `<span class="beat-arrow">✕</span><span class="beat-num">&nbsp;</span>`;
       }
-
-      rhythmDisplay.appendChild(span);
+      row.appendChild(span);
     });
+    wrap.appendChild(row);
+    return wrap;
   }
+
+  function renderRhythmEditor(existingRhythm, onSave) {
+    const editor = document.getElementById("rhythm-editor");
+    if (!editor) return;
+    editor.innerHTML = "";
+
+    let beats = existingRhythm ? [...existingRhythm] : [];
+
+    function refreshEditor() {
+      editor.innerHTML = "";
+
+      // Mövcud vuruşlar
+      const beatsRow = document.createElement("div");
+      beatsRow.className = "rhythm-editor-beats";
+      beats.forEach((b, i) => {
+        const btn = document.createElement("button");
+        btn.className = "rhythm-beat-btn";
+        btn.textContent = b;
+        btn.title = "Sil";
+        btn.addEventListener("click", () => { beats.splice(i, 1); refreshEditor(); });
+        beatsRow.appendChild(btn);
+      });
+      editor.appendChild(beatsRow);
+
+      // Əlavə et düymələri
+      const addRow = document.createElement("div");
+      addRow.className = "rhythm-add-row";
+      const BEAT_TITLES = { "↓": "Aşağı", "↑": "Yuxarı", "-": "Susma" };
+      [["↓", "beat-down"], ["↑", "beat-up"], ["-", "beat-mute"]].forEach(([sym, cls]) => {
+        const btn = document.createElement("button");
+        btn.className = `rhythm-add-btn ${cls}`;
+        btn.textContent = sym;
+        btn.title = BEAT_TITLES[sym];
+        btn.addEventListener("click", () => { beats.push(sym); refreshEditor(); });
+        addRow.appendChild(btn);
+      });
+
+      // Sıfırla + Bitdi
+      const actions = document.createElement("div");
+      actions.className = "rhythm-actions";
+
+      const resetBtn = document.createElement("button");
+      resetBtn.className = "rhythm-reset-btn";
+      resetBtn.textContent = "Sıfırla";
+      resetBtn.addEventListener("click", () => { beats = []; refreshEditor(); });
+
+      const saveBtn = document.createElement("button");
+      saveBtn.className = "rhythm-save-btn";
+      saveBtn.textContent = "✓ Bitdi";
+      saveBtn.addEventListener("click", () => { onSave(beats); });
+
+      actions.appendChild(resetBtn);
+      actions.appendChild(saveBtn);
+      addRow.appendChild(actions);
+      editor.appendChild(addRow);
+    }
+
+    refreshEditor();
+  }
+
+  const editorEl = document.getElementById("rhythm-editor");
+
+  async function renderRhythms() {
+    if (!rhythmSection || !rhythmDisplay) return;
+    rhythmSection.classList.remove("hidden");
+    rhythmDisplay.innerHTML = "";
+
+    // Düymə song-info-row-dadır
+    const addBtn = document.getElementById("rhythm-add-btn");
+
+    // Köhnə listener-i sil, yenisini qoy
+    if (addBtn) {
+      addBtn.textContent = "＋ Ritm əlavə et";
+      editorEl.classList.add("hidden");
+      addBtn.onclick = () => {
+        if (!auth.currentUser) {
+          let warning = document.getElementById("rhythm-login-warning");
+          if (!warning) {
+            warning = document.createElement("p");
+            warning.id = "rhythm-login-warning";
+            warning.className = "rhythm-login-warning";
+            warning.innerHTML = `Ritm əlavə etmək üçün <a href="profile.html">giriş et</a>.`;
+            editorEl.parentNode.insertBefore(warning, editorEl);
+          }
+          return;
+        }
+        const warning = document.getElementById("rhythm-login-warning");
+        if (warning) warning.remove();
+
+        const isOpen = !editorEl.classList.contains("hidden");
+        editorEl.classList.toggle("hidden");
+        addBtn.textContent = isOpen ? "＋ Ritm əlavə et" : "✕ Bağla";
+        if (!isOpen) {
+          getUserRhythm(auth.currentUser, song.id).then(existing => {
+            renderRhythmEditor(existing, async (beats) => {
+              await saveUserRhythm(auth.currentUser, song.id, beats);
+              editorEl.classList.add("hidden");
+              addBtn.textContent = "＋ Ritm əlavə et";
+              await renderRhythms();
+            });
+          });
+        }
+      };
+    }
+
+    // 1. Orijinal ritm
+    if (song.rhythm && song.rhythm.length > 0) {
+      const origRow = renderRhythmRow(song.rhythm, "Orijinal", "var(--text-muted)");
+      rhythmDisplay.appendChild(origRow);
+    }
+
+    // 2. Redaktor
+    rhythmDisplay.appendChild(editorEl);
+
+    // 3. İstifadəçi ritmi — orijinalın altında
+    const user = auth.currentUser;
+    const userRhythm = await getUserRhythm(user, song.id);
+    if (userRhythm && userRhythm.length > 0) {
+      rhythmDisplay.appendChild(renderRhythmRow(userRhythm, "Mənim ritmim", "var(--accent)"));
+    }
+  }
+
+  // Auth hazır olandan sonra ritmi yüklə
+  onAuthStateChanged(auth, () => renderRhythms());
 
   const originalRoot = getOriginalRoot(song.key);
   const originalIdx  = NOTES.indexOf(originalRoot);
@@ -189,6 +325,16 @@ async function init() {
       semitones = ((NOTES.indexOf(clickedNote) - originalIdx) % 12 + 12) % 12;
       update();
     });
+
+    // Kapo hesabla: orijinal key-dən semitones aşağı getsək kapo o qədər olur
+    // semitones > 0: yuxarı transpoz — kapo lazım deyil (0)
+    // semitones < 0 mümkün deyil (həmişə 0-11 arası)
+    // Ən rahat: 12 - semitones (semitones > 0 olduqda gitarist kapo ilə orijinal akorları çala bilər)
+    const capoEl = document.getElementById("song-capo");
+    if (capoEl) {
+      const capo = semitones === 0 ? (song.capo ?? 0) : (12 - semitones) % 12;
+      capoEl.textContent = capo;
+    }
   }
 
   // Orijinal tona klik — sıfırla
@@ -199,11 +345,13 @@ async function init() {
   }
 
   // Asan tona klik
-  const easyKeyEl = document.getElementById("song-easy-key");
+  const easyKeyEl = document.getElementById("song-easy-text");
   if (easyKeyEl) {
     easyKeyEl.style.cursor = "pointer";
     easyKeyEl.addEventListener("click", () => {
-      const clickedIdx = NOTES.indexOf(easyKeyEl.textContent.trim());
+      const strong = easyKeyEl.querySelector("strong");
+      if (!strong) return;
+      const clickedIdx = NOTES.indexOf(strong.textContent.trim());
       if (clickedIdx !== -1) {
         semitones = ((clickedIdx - originalIdx) % 12 + 12) % 12;
         update();
@@ -227,10 +375,10 @@ async function init() {
     async function updateFavBtn() {
       const fav = await isFavorite(auth.currentUser, song.id);
       if (fav) {
-        favBtn.textContent = "Sevimlilərə əlavədir❤️";
+        favBtn.textContent = "❤️ Sevimlilərə əlavədir";
         favBtn.classList.add("fav-active");
       } else {
-        favBtn.textContent = "Sevimlilərə əlavə et🤍";
+        favBtn.textContent = "🤍 Sevimlilərə əlavə et";
         favBtn.classList.remove("fav-active");
       }
     }
@@ -328,12 +476,9 @@ async function init() {
     }
     listRandom.classList.add("section-list-hidden");
 
-    // Müəllif akorları
+    // Müəllif akorları — klik ilə artist.html-ə
     const labelArtist = document.getElementById("label-artist");
     if (labelArtist) labelArtist.textContent = `${song.artist} akorları`;
-    const byArtist = others.filter(s => s.artist === song.artist).slice(0, 5);
-    fillList("list-artist", byArtist, "Bu müəllifin başqa mahnısı yoxdur.");
-
     const sectionArtist = document.getElementById("section-artist");
     if (sectionArtist) {
       sectionArtist.style.cursor = "pointer";
@@ -342,19 +487,20 @@ async function init() {
       });
     }
 
-    // Sevimlilər
-    const favs = (() => { try { return JSON.parse(localStorage.getItem("favorites") || "[]"); } catch { return []; } })();
-    const favSongs = favs.filter(f => f.id !== song.id).slice(0, 5);
-    fillList("list-favorites", favSongs, "Hələ sevimli mahnı yoxdur.");
-
-    // Eyni ritm
-    if (song.rhythm) {
-      const sameRhythm = others.filter(s => {
-        return s.rhythm && JSON.stringify(s.rhythm) === JSON.stringify(song.rhythm);
-      }).slice(0, 5);
-      fillList("list-rhythm", sameRhythm, "Eyni ritmlə başqa mahnı tapılmadı.");
-    } else {
-      fillList("list-rhythm", [], "Bu mahnının ritmi əlavə edilməyib.");
+    // Eyni ritm — klik ilə rhythm.html-ə
+    const sectionRhythmNav = document.getElementById("section-rhythm");
+    if (sectionRhythmNav) {
+      if (song.rhythm && song.rhythm.length > 0) {
+        sectionRhythmNav.style.cursor = "pointer";
+        sectionRhythmNav.addEventListener("click", () => {
+          window.location.href = `rhythm.html?from=${song.id}`;
+        });
+      } else {
+        const p = document.createElement("p");
+        p.className = "section-empty";
+        p.textContent = "Bu mahnının ritmi əlavə edilməyib.";
+        sectionRhythmNav.appendChild(p);
+      }
     }
 
     // Eyni akorlar

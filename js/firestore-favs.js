@@ -60,3 +60,21 @@ export async function isFavorite(user, songId) {
   const favs = await getFavorites(user);
   return favs.some(f => f.id === songId);
 }
+
+// ── Ritm ──────────────────────────────────────────────────────
+export async function getUserRhythm(user, songId) {
+  if (!user) return null;
+  try {
+    const ref  = doc(db, "users", user.uid, "rhythms", songId);
+    const snap = await getDoc(ref);
+    return snap.exists() ? snap.data().rhythm : null;
+  } catch (e) { console.error("getUserRhythm xətası:", e); return null; }
+}
+
+export async function saveUserRhythm(user, songId, rhythm) {
+  if (!user) return;
+  try {
+    const ref = doc(db, "users", user.uid, "rhythms", songId);
+    await setDoc(ref, { rhythm });
+  } catch (e) { console.error("saveUserRhythm xətası:", e); }
+}

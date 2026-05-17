@@ -349,7 +349,7 @@ body {
 .song-info-row {
   display: flex;
   gap: 1.5rem;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-muted);
   margin-bottom: 1rem;
 }
@@ -357,6 +357,12 @@ body {
 .song-info-row strong {
   color: var(--accent);
   font-weight: 600;
+}
+
+#song-key-text, #song-easy-text {
+  &:hover {
+    color: var(--text);
+  }
 }
 
 /* ── Sevimli düyməsi ──────────────────────────────────────── */
@@ -1156,3 +1162,172 @@ body {
   font-family: var(--font-mono);
   letter-spacing: 0.05em;
 }
+
+/* ── Ritm editor ──────────────────────────────────────────── */
+.rhythm-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+ 
+.rhythm-add-toggle {
+  background: transparent;
+  border: 1px solid transparent;
+  color: var(--text-muted);
+  font-family: var(--font-ui);
+  cursor: pointer;
+  transition: color 0.12s, border-color 0.12s;
+}
+.rhythm-add-toggle:hover {
+  color: var(--text);
+}
+ 
+.rhythm-row-wrap {
+  margin-bottom: 0.6rem;
+}
+ 
+.rhythm-row-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: var(--font-ui);
+  margin-bottom: 4px;
+}
+ 
+.rhythm-editor {
+  margin-top: 0.8rem;
+  padding: 1rem;
+  background: var(--surface);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.rhythm-editor.hidden { display: none; }
+ 
+.rhythm-editor-beats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-height: 36px;
+}
+ 
+.rhythm-beat-btn {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.12s, border-color 0.12s;
+}
+.rhythm-beat-btn:hover {
+  background: rgba(224,90,90,0.15);
+  border-color: #e05a5a;
+  color: #e05a5a;
+}
+ 
+.rhythm-add-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+ 
+.rhythm-add-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--card-bg);
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.1s, background 0.12s;
+}
+.rhythm-add-btn:hover { transform: scale(1.1); }
+.rhythm-add-btn.beat-down { color: var(--accent); }
+.rhythm-add-btn.beat-up   { color: #7ab8f5; }
+.rhythm-add-btn.beat-mute { color: var(--text-muted); font-size: 14px; }
+ 
+.rhythm-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+ 
+.rhythm-reset-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 12px;
+  font-family: var(--font-ui);
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: color 0.12s;
+}
+.rhythm-reset-btn:hover { color: #e05a5a; border-color: #e05a5a; }
+ 
+.rhythm-save-btn {
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: var(--font-ui);
+  padding: 6px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.12s;
+}
+.rhythm-save-btn:hover { opacity: 0.85; }
+ 
+/* ── Telif xəbərdarlığı ───────────────────────────────────── */
+.telif-warning {
+  margin-top: 2rem;
+  padding: 0.8rem 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 12px;
+  color: var(--text-muted);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* ── Ritm preview (rhythm.html) ───────────────────────────── */
+.rhythm-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background: var(--card-bg);
+  border-radius: 10px;
+}
+
+/* ── Ritm sətri düzəlişi ──────────────────────────────────── */
+.rhythm-row-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 0.6rem;
+}
+.rhythm-row-wrap .rhythm-add-toggle {
+  margin-left: 4px;
+  flex-shrink: 0;
+}
+
+/* ── Ritm login xəbərdarlığı ─────────────────────────────── */
+.rhythm-login-warning {
+  font-size: 13px;
+  color: #fbbf24;
+  margin-top: 0.5rem;
+}
+.rhythm-login-warning a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+

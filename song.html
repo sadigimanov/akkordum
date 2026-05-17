@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html lang="az" data-theme="dark">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akkordlarim</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
   <nav class="navbar">
-    <a href="profile.html" id="nav-profile" class="nav-icon nav-profile">🎸</a>
+    <a href="profile.html" id="nav-brand" class="nav-icon nav-brand">🎸</a>
     <a href="index.html" class="nav-icon">🏠</a>
     <button class="nav-icon" id="theme-toggle" title="Tema dəyiş">🌙</button>
   </nav>
@@ -34,16 +30,18 @@
       <h1 id="song-title">Mahnı adı</h1>
       <p id="song-artist"></p>
       <div class="song-info-row">
-        <span>Orijinal Ton: <strong id="song-key">—</strong></span>
+        <span id="song-key-text">Orijinal Ton: <strong id="song-key">—</strong></span>
+        <span id="song-easy-text">Asan Ton: <strong id="song-easy-key">A</strong></span>
         <span>Kapodastr: <strong id="song-capo">0</strong></span>
-        <span>Asan Ton: <strong id="song-easy-key">A</strong></span>
-        <span id="btn-favorite" class="fav-btn" title="Sevimlilərə əlavə et">Sevimlilərə əlavə et🤍</span>
-
+        <span id="btn-favorite" class="fav-btn" title="Sevimlilərə əlavə et">Sevimlilərə əlavə et 🤍</span>
+        <button id="rhythm-add-btn" class="rhythm-add-toggle">＋ Ritm əlavə et</button>
       </div>
+
       <!-- Ritm -->
       <div id="rhythm-section" class="rhythm-section hidden">
         <div class="rhythm-label">Ritm</div>
-        <div id="rhythm-display" class="rhythm-display"></div>
+        <div id="rhythm-display"></div>
+        <div id="rhythm-editor" class="rhythm-editor hidden"></div>
       </div>
 
       <!-- Transpose -->
@@ -60,13 +58,10 @@
       <!-- Lyrics -->
       <div id="lyrics"></div>
 
-      <!--Telif Warning-->
+      <!-- Telif Warning -->
       <div class="telif-warning">
         <p>Bu sayt musiqi təhsili məqsədi ilə dərc olunur və hüquqlar onların müvafiq sahiblərinə məxsusdur.</p>
       </div>
-
-      <!-- Akkord diaqramları
-      <div id="chord-panel" class="chord-panel hidden"></div> -->
 
       <!-- Alt bölmələr -->
       <div class="song-sections">
@@ -84,7 +79,7 @@
             <span class="section-dot" style="background:#fbbf24"></span>
             <span class="section-title-text" id="label-artist">Müəllif akorları</span>
           </div>
-          <!-- <div class="section-list" id="list-artist"></div> -->
+          <div class="section-list" id="list-artist"></div>
         </div>
 
         <div class="song-section" id="section-chords">
@@ -100,7 +95,6 @@
             <span class="section-dot" style="background:#f87171"></span>
             <span class="section-title-text">Sevimlilərim</span>
           </div>
-          <!-- <div class="section-list" id="list-favorites"></div> -->
         </a>
 
         <div class="song-section" id="section-rhythm">
@@ -108,13 +102,14 @@
             <span class="section-dot" style="background:#60a5fa"></span>
             <span class="section-title-text">Eyni ritmlə olan mahnılar</span>
           </div>
-          <!-- <div class="section-list" id="list-rhythm"></div> -->
+          <div class="section-list" id="list-rhythm"></div>
         </div>
 
       </div>
     </div>
 
-    <script type="module" src="js/song.js"></script>
-</body>
+  </div>
 
+  <script type="module" src="js/song.js"></script>
+</body>
 </html>

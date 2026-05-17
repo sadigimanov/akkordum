@@ -17,3 +17,16 @@ axtaris edende Enter duymesi islesin ve yazdigim ilk herife gore filterlesin.
 =============================================
 
 Akordlar sehifesinde barelileri ayrica gostermek.
+
+=============================================
+
+ana seyfedeki islemeyen sehifelre "Yaxinda" kimi aciqlama yazmaq.
+
+=============================================
+
+giris edilen hesabi yadda saxlamasi ve avtomatik daxil olmasi.
+
+=============================================
+
++A ve -A duymelerine klik edende mahninin sozlerini boyudub kiciltmek.
+hemin butonlari mahninin sozlerinin ustune qoymaq.

@@ -78,3 +78,43 @@ export async function saveUserRhythm(user, songId, rhythm) {
     await setDoc(ref, { rhythm });
   } catch (e) { console.error("saveUserRhythm xətası:", e); }
 }
+
+// ── Tarixçə ───────────────────────────────────────────────────
+const HISTORY_MAX = 10;
+
+export async function addToHistory(user, song) {
+  const entry = { id: song.id, title: song.title, artist: song.artist, key: song.key };
+
+  if (!user) {
+    // localStorage fallback
+    let h = JSON.parse(localStorage.getItem("history") || "[]");
+    h = h.filter(s => s.id !== entry.id);
+    h.unshift(entry);
+    localStorage.setItem("history", JSON.stringify(h.slice(0, HISTORY_MAX)));
+    return;
+  }
+
+  try {
+    const ref  = doc(db, "users", user.uid);
+    const snap = await getDoc(ref);
+    let history = snap.exists() ? (snap.data().history || []) : [];
+    history = history.filter(s => s.id !== entry.id);
+    history.unshift(entry);
+    await updateDoc(ref, { history: history.slice(0, HISTORY_MAX) });
+  } catch (e) {
+    // doc yoxdursa yarat
+    try {
+      await setDoc(doc(db, "users", user.uid), { history: [entry] }, { merge: true });
+    } catch (e2) { console.error("addToHistory xətası:", e2); }
+  }
+}
+
+export async function getHistory(user) {
+  if (!user) {
+    try { return JSON.parse(localStorage.getItem("history") || "[]"); } catch { return []; }
+  }
+  try {
+    const snap = await getDoc(doc(db, "users", user.uid));
+    return snap.exists() ? (snap.data().history || []) : [];
+  } catch { return []; }
+}

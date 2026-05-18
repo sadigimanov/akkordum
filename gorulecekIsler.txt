@@ -32,6 +32,7 @@ giris edilen hesabi yadda saxlamasi ve avtomatik daxil olmasi.
 
 +A ve -A duymelerine klik edende mahninin sozlerini boyudub kiciltmek.
 hemin butonlari mahninin sozlerinin ustune qoymaq.
+(fixed)
 
 =============================================
 

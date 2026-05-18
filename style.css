@@ -1,4 +1,5 @@
 /* style.css */
+@import url("css/responsive.css");
 
 /* ── Reset ────────────────────────────────────────────────── */
 *,
@@ -205,11 +206,6 @@ body {
   gap: 12px;
 }
 
-@media (max-width: 600px) {
-  .card-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
 
 .cat-card {
   background: var(--card-bg);
@@ -849,11 +845,6 @@ body {
   
 }
 
-@media (max-width: 500px) {
-  .artist-grid {
-    grid-template-columns: 1fr;
-  }
-}
 
 .artist-card {
   display: flex;
@@ -1363,4 +1354,186 @@ body {
   border-color: var(--text-muted);
 }
 
+/* ── Feedback səhifəsi ────────────────────────────────────── */
+.feedback-card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+ 
+.feedback-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+ 
+.feedback-tab {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.feedback-tab:hover {
+  border-color: var(--text-muted);
+  color: var(--text);
+}
+.feedback-tab.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+ 
+.feedback-type-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+ 
+.feedback-textarea {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  padding: 0.8rem 1rem;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.15s;
+  line-height: 1.6;
+}
+.feedback-textarea:focus {
+  border-color: var(--accent);
+}
+.feedback-textarea::placeholder {
+  color: var(--text-muted);
+}
+ 
+.feedback-form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+ 
+.feedback-char-count {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+ 
+.feedback-submit {
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 8px 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.feedback-submit:hover { opacity: 0.85; }
+.feedback-submit:disabled { opacity: 0.5; cursor: default; }
+ 
+.feedback-success {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: var(--accent);
+}
+.feedback-error {
+  margin-top: 1rem;
+  font-size: 14px;
+  color: #e05a5a;
+}
+ 
+/* ── Feedback panel ───────────────────────────────────────── */
+.feedback-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+.feedback-tab {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: var(--font-ui);
+  font-size: 13px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.feedback-tab:hover { border-color: var(--text-muted); color: var(--text); }
+.feedback-tab.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+ 
+.feedback-type-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+}
+.feedback-textarea {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  padding: 0.7rem 0.9rem;
+  resize: none;
+  outline: none;
+  transition: border-color 0.15s;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+.feedback-textarea:focus { border-color: var(--accent); }
+.feedback-textarea::placeholder { color: var(--text-muted); }
+ 
+.feedback-form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+.feedback-char-count {
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+.feedback-submit {
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  font-family: var(--font-ui);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.feedback-submit:hover { opacity: 0.85; }
+.feedback-submit:disabled { opacity: 0.5; cursor: default; }
+ 
+.feedback-success { margin-top: 0.8rem; font-size: 14px; color: var(--accent); }
+.feedback-error   { margin-top: 0.8rem; font-size: 14px; color: #e05a5a; }
+ 
+.hidden { display: none; }
 
+.feedback-linkToProfile{
+  text-decoration: underline;
+  &:hover {
+    color: var(--text);
+  }
+}

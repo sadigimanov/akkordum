@@ -1,0 +1,36 @@
+/* css/responsive.css */
+
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .cat-card {
+    padding: 1rem 0.8rem;
+    font-size: 13px;
+  }
+
+  .cat-icon { font-size: 18px; }
+
+  .song-card {
+    padding: 1.2rem 1rem;
+    border-radius: 10px;
+  }
+
+  .song-info-row {
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 12px;
+  }
+
+  .artist-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .random-panel {
+    padding: 1rem 1rem 1.5rem;
+  }
+
+  #song-title { font-size: 20px; }
+}

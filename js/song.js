@@ -383,6 +383,9 @@ async function init() {
     lyricsEl.querySelectorAll(".lyric-row").forEach(row => {
       row.style.fontSize = fontSize + "px";
     });
+    lyricsEl.querySelectorAll(".section-label").forEach(row => {
+      row.style.fontSize = fontSize + "px";
+    });
   }
 
   document.getElementById("btn-up").addEventListener("click", () => {

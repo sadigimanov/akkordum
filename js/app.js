@@ -298,6 +298,119 @@ function initSoonCards() {
   });
 }
 
+// ── Əlaqə paneli ─────────────────────────────────────────────
+async function initFeedback() {
+  const card = document.getElementById("card-feedback");
+  if (!card) return;
+
+  const TYPE_DESCS = {
+    "song-request": "İstədiyiniz mahnını yazın, ən qısa zamanda əlavə edəcəyik.",
+    "suggestion":   "Saytla bağlı təklifinizi bizimlə paylaşın.",
+    "complaint":    "Problemi və ya şikayətinizi bildirin.",
+  };
+
+  let panel = document.getElementById("feedback-panel");
+  if (!panel) {
+    panel = document.createElement("div");
+    panel.id = "feedback-panel";
+    panel.className = "random-panel hidden";
+    panel.innerHTML = `
+      <div class="random-panel-header">
+        <span>Bizimlə əlaqə</span>
+        <button class="random-panel-close" id="feedback-close">✕</button>
+      </div>
+      <div class="feedback-tabs">
+        <button class="feedback-tab active" data-type="song-request">🎵 Mahnı istəyi</button>
+        <button class="feedback-tab" data-type="suggestion">💡 Təklif</button>
+        <button class="feedback-tab" data-type="complaint">⚠️ Şikayət</button>
+      </div>
+      <div class="feedback-type-desc" id="feedback-desc">İstədiyiniz mahnını yazın, ən qısa zamanda əlavə edəcəyik.</div>
+      <textarea id="feedback-text" class="feedback-textarea" placeholder="Mesajınızı buraya yazın..." rows="4"></textarea>
+      <div class="feedback-form-footer">
+        <span class="feedback-char-count" id="feedback-char">0 / 500</span>
+        <button class="feedback-submit" id="feedback-submit">Göndər</button>
+      </div>
+      <div class="feedback-success hidden" id="feedback-success">✅ Mesajınız göndərildi! Təşəkkür edirik.</div>
+      <div class="feedback-error hidden" id="feedback-error">❌ Xəta baş verdi. Yenidən cəhd edin.</div>
+    `;
+    document.body.appendChild(panel);
+
+    // Bağla
+    document.getElementById("feedback-close").addEventListener("click", () => panel.classList.add("hidden"));
+    document.addEventListener("click", (e) => {
+      if (!panel.contains(e.target) && e.target !== card && !card.contains(e.target))
+        panel.classList.add("hidden");
+    });
+
+    // Tablar
+    let activeType = "song-request";
+    panel.querySelectorAll(".feedback-tab").forEach(tab => {
+      tab.addEventListener("click", () => {
+        panel.querySelectorAll(".feedback-tab").forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
+        activeType = tab.dataset.type;
+        document.getElementById("feedback-desc").textContent = TYPE_DESCS[activeType];
+        document.getElementById("feedback-success").classList.add("hidden");
+        document.getElementById("feedback-error").classList.add("hidden");
+      });
+    });
+
+    // Simvol sayı
+    const MAX = 500;
+    document.getElementById("feedback-text").addEventListener("input", (e) => {
+      const len = e.target.value.length;
+      if (len > MAX) e.target.value = e.target.value.slice(0, MAX);
+      document.getElementById("feedback-char").textContent = `${Math.min(len, MAX)} / ${MAX}`;
+    });
+
+    // Göndər
+    document.getElementById("feedback-submit").addEventListener("click", async () => {
+      const { auth } = await import("./firebase.js");
+      if (!auth.currentUser) {
+        document.getElementById("feedback-error").innerHTML = "⚠️ Göndərmək üçün <a class='feedback-linkToProfile' href='profile.html'>giriş et</a>məlisiniz.";
+        document.getElementById("feedback-error").classList.remove("hidden");
+        return;
+      }
+      const text = document.getElementById("feedback-text").value.trim();
+      if (!text) { document.getElementById("feedback-text").focus(); return; }
+
+      const submitBtn = document.getElementById("feedback-submit");
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Göndərilir...";
+      document.getElementById("feedback-success").classList.add("hidden");
+      document.getElementById("feedback-error").classList.add("hidden");
+
+      try {
+        const { db, doc, setDoc, auth } = await import("./firebase.js");
+        const user = auth.currentUser;
+        await setDoc(doc(db, "feedback", Date.now().toString()), {
+          type: activeType,
+          text,
+          uid: user?.uid || null,
+          email: user?.email || null,
+          createdAt: new Date().toISOString(),
+        });
+        document.getElementById("feedback-text").value = "";
+        document.getElementById("feedback-char").textContent = "0 / 500";
+        document.getElementById("feedback-success").classList.remove("hidden");
+      } catch (e) {
+        console.error(e);
+        document.getElementById("feedback-error").classList.remove("hidden");
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Göndər";
+      }
+    });
+  }
+
+  card.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.getElementById("feedback-success").classList.add("hidden");
+    document.getElementById("feedback-error").classList.add("hidden");
+    panel.classList.remove("hidden");
+  });
+}
+
 // ── Index səhifəsi ────────────────────────────────────────────
 async function initIndex() {
   const listEl = document.getElementById("song-list");
@@ -357,5 +470,6 @@ initFavorites();
 initRandom();
 initHistory();
 initSoonCards();
+initFeedback();
 initIndex();
 initSong();

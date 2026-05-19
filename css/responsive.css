@@ -11,9 +11,7 @@
     font-size: 13px;
   }
 
-  .cat-icon {
-    font-size: 18px;
-  }
+  .cat-icon { font-size: 18px; }
 
   .song-card {
     padding: 1.2rem 1rem;
@@ -31,17 +29,22 @@
   }
 
   .random-panel {
-    padding: 1rem 1rem 1.5rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 16px 16px 0 0;
+    padding: 1rem 1rem 2rem;
   }
 
-  #song-title {
-    font-size: 20px;
-  }
+  #song-title { font-size: 20px; }
 
   .navbar {
+    padding: 0 1rem;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 1rem;
   }
 
   .container {

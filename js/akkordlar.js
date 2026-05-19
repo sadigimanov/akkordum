@@ -218,7 +218,7 @@ function init() {
     const svg = createDiagram(name, data);
     svg.setAttribute("width", SIZE);
     svg.setAttribute("height", SIZE * 1.2);
-    svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+    svg.setAttribute("viewBox", `-10 0 ${W + 20} ${H}`);
     diagramEl.appendChild(svg);
     nameEl.textContent = name;
     modal.classList.remove("hidden");

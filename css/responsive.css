@@ -7,9 +7,23 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  .song-info-row {
-    overflow-x: auto;
+ .song-info-row {
+    display: flex;
+    flex-wrap: nowrap !important;
+    overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-bottom: 6px;
+    scrollbar-width: none;
+  }
+  
+  .song-info-row::-webkit-scrollbar {
+    display: none;
+  }
+
+  .song-info-row > * {
+    flex-shrink: 0;
+    white-space: nowrap;
   }
 
   .card-grid {

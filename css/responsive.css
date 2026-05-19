@@ -11,7 +11,9 @@
     font-size: 13px;
   }
 
-  .cat-icon { font-size: 18px; }
+  .cat-icon {
+    font-size: 18px;
+  }
 
   .song-card {
     padding: 1.2rem 1rem;
@@ -32,5 +34,19 @@
     padding: 1rem 1rem 1.5rem;
   }
 
-  #song-title { font-size: 20px; }
+  #song-title {
+    font-size: 20px;
+  }
+
+  .navbar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+  }
+
+  .container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
 }

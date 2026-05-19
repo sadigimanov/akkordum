@@ -34,3 +34,11 @@ hemin butonlari mahninin sozlerinin ustune qoymaq.
 
 istifadecilerden gelen istek mahnilar, oneriler ve sikayet hissesi
 (fixed)
+
+===============================================
+
+responsive dizayn
+
+===============================================
+
+telefonda elaqeye basanda mesaj hissesi cixmir

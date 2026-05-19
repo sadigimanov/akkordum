@@ -15,6 +15,7 @@
     gap: 16px;
     padding-bottom: 6px;
     scrollbar-width: none;
+    font-size: 12px;
   }
   
   .song-info-row::-webkit-scrollbar {

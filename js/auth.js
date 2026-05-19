@@ -1,16 +1,15 @@
 // js/auth.js
-import { auth, provider, signInWithPopup, signOut, onAuthStateChanged }
+import { auth, provider, signInWithPopup, signOut, onAuthStateChanged, signInWithRedirect, getRedirectResult }
   from "./firebase.js";
 
 function updateNavbar(user) {
-  // nav-profile: giriş edilibsə profil şəkli, yoxsa 🎸
-  const navProfile
-   = document.getElementById("nav-profile");
-  if (navProfile) {
+  // nav-brand: giriş edilibsə profil şəkli, yoxsa 🎸
+  const navBrand = document.getElementById("nav-brand");
+  if (navBrand) {
     if (user && user.photoURL) {
-      navProfile.innerHTML = `<img src="${user.photoURL}" class="nav-profile-photo" alt="profil" />`;
+      navBrand.innerHTML = `<img src="${user.photoURL}" class="nav-profile-photo" alt="profil" />`;
     } else {
-      navProfile.textContent = "🎸";
+      navBrand.textContent = "🎸";
     }
   }
 
@@ -29,10 +28,23 @@ export function initAuth() {
   const loginBtn  = document.getElementById("btn-login");
   const logoutBtn = document.getElementById("btn-logout");
 
+  // Redirect nəticəsini yoxla — giriş tamamlandısa auth state yenilənəcək
+  getRedirectResult(auth)
+    .then(result => {
+      if (result?.user) updateNavbar(result.user);
+    })
+    .catch(e => console.error("Redirect xətası:", e));
+
   if (loginBtn) {
     loginBtn.addEventListener("click", async () => {
-      try { await signInWithPopup(auth, provider); }
-      catch (e) { console.error("Giriş xətası:", e); }
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      try {
+        if (isMobile) {
+          await signInWithRedirect(auth, provider);
+        } else {
+          await signInWithPopup(auth, provider);
+        }
+      } catch (e) { console.error("Giriş xətası:", e); }
     });
   }
 

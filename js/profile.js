@@ -1,5 +1,5 @@
 // js/profile.js
-import { auth, provider, signInWithPopup, signOut, onAuthStateChanged }
+import { auth, provider, signInWithPopup, signInWithRedirect, getRedirectResult, signOut, onAuthStateChanged }
   from "./firebase.js";
 
 function initTheme() {
@@ -25,9 +25,18 @@ function init() {
   const logoutBtn = document.getElementById("btn-logout");
 
   if (loginBtn) {
+    getRedirectResult(auth)
+      .then(result => { if (result?.user) init(); })
+      .catch(e => console.error("Redirect xətası:", e));
     loginBtn.addEventListener("click", async () => {
-      try { await signInWithPopup(auth, provider); }
-      catch (e) { console.error("Giriş xətası:", e); }
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      try {
+        if (isMobile) {
+          await signInWithRedirect(auth, provider);
+        } else {
+          await signInWithPopup(auth, provider);
+        }
+      } catch (e) { console.error("Giriş xətası:", e); }
     });
   }
 

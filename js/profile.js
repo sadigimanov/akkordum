@@ -56,14 +56,15 @@ function init() {
 
   if (loginBtn) {
     loginBtn.addEventListener("click", async () => {
-      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
       try {
-        if (isMobile) {
+        await signInWithPopup(auth, provider);
+      } catch (e) {
+        if (e.code === "auth/popup-blocked" || e.code === "auth/popup-closed-by-user") {
           await signInWithRedirect(auth, provider);
         } else {
-          await signInWithPopup(auth, provider);
+          console.error("Giriş xətası:", e);
         }
-      } catch (e) { console.error("Giriş xətası:", e); }
+      }
     });
   }
 

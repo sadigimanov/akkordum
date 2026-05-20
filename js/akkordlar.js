@@ -170,11 +170,30 @@ function init() {
   // Filtr düymələri
   let activeGroup = 0;
 
+  let searchQuery = "";
+
   function renderGrid(groupIdx) {
     grid.innerHTML = "";
     const { filter } = GROUPS[groupIdx];
+    const q = searchQuery.trim().toLowerCase();
     entries
-      .filter(([name, data]) => filter(name, data))
+      .filter(([name, data]) => {
+        if (!filter(name, data)) return false;
+        if (!q) return true;
+        const nameMatch = name.toLowerCase().startsWith(q);
+        const azName = (CHORD_NAMES[name] || "").toLowerCase();
+        const azMatch = azName.startsWith(q) || azName.includes(" " + q);
+        return nameMatch || azMatch;
+      })
+      .sort(([a], [b]) => {
+        const aNameMatch = a.toLowerCase().startsWith(q);
+        const bNameMatch = b.toLowerCase().startsWith(q);
+        // Akkord adına uyğun olanlar əvvəl
+        if (aNameMatch && !bNameMatch) return -1;
+        if (!aNameMatch && bNameMatch) return 1;
+        // Hər ikisi eyni kateqoriyadadırsa qısa olanlar əvvəl
+        return a.length - b.length;
+      })
       .forEach(([name, data]) => {
         const wrap = document.createElement("div");
         wrap.className = "akkord-card";
@@ -218,11 +237,24 @@ function init() {
     const svg = createDiagram(name, data);
     svg.setAttribute("width", SIZE);
     svg.setAttribute("height", SIZE * 1.2);
-    svg.setAttribute("viewBox", `-10 0 ${W + 20} ${H}`);
+    svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
     diagramEl.appendChild(svg);
     nameEl.textContent = name;
     modal.classList.remove("hidden");
   }
+
+  // Axtarış input
+  const searchInput = document.createElement("input");
+  searchInput.type = "text";
+  searchInput.placeholder = "Akkord axtar... (Am, La minor...)";
+  searchInput.className = "search-input akkord-search";
+  searchInput.style.marginBottom = "1rem";
+  filters.parentNode.insertBefore(searchInput, grid);
+
+  searchInput.addEventListener("input", e => {
+    searchQuery = e.target.value;
+    renderGrid(activeGroup);
+  });
 
   GROUPS.forEach((g, i) => {
     const btn = document.createElement("button");

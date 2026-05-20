@@ -9,28 +9,28 @@
     {
       "chords": [
         { "name": "F#", "offset": 0 },
-        { "name": "Bbm", "offset": 48 }
+        { "name": "Bbm", "offset": 18 }
       ],
       "line": "Senin derinlerinde bir yerde buldum"
     },
     {
       "chords": [
         { "name": "B", "offset": 21 },
-        { "name": "Bbm", "offset": 57 }
+        { "name": "Bbm", "offset": 27 }
       ],
       "line": "Sımsıkı sarılacak, karışacak köklerimi"
     },
     {
       "chords": [
         { "name": "F#", "offset": 0 },
-        { "name": "Bbm", "offset": 48 }
+        { "name": "Bbm", "offset": 28 }
       ],
       "line": "Görmek, beraber olmak seninle"
     },
     {
       "chords": [
-        { "name": "B", "offset": 32 },
-        { "name": "Bbm", "offset": 68 }
+        { "name": "B", "offset": 12 },
+        { "name": "Bbm", "offset": 28 }
       ],
       "line": "Çok güzel belki ama düşlemek bambaşka"
     },
@@ -39,19 +39,19 @@
       "label": "Nakarat",
       "chords": [
         { "name": "F#", "offset": 0 },
-        { "name": "Bbm", "offset": 38 }
+        { "name": "Bbm", "offset": 18 }
       ],
       "line": "Tenin almış beyazlığını aydan"
     },
     {
       "chords": [
-        { "name": "B", "offset": 29 }
+        { "name": "B", "offset": 19 }
       ],
       "line": "Saçlarının rengi geceden"
     },
     {
       "chords": [
-        { "name": "Bbm", "offset": 36 }
+        { "name": "Bbm", "offset": 26 }
       ],
       "line": "Bundan geceye sevdam"
     },
@@ -62,7 +62,7 @@
     {
       "chords": [
         { "name": "F#", "offset": 0 },
-        { "name": "Bbm", "offset": 42 }
+        { "name": "Bbm", "offset": 22 }
       ],
       "line": "Sen örterken benimle kalbini"
     },

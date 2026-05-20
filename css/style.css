@@ -449,7 +449,7 @@ body {
 }
 
 .section-label {
-  font-size: 10px;
+  font-size: 11px !important;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--text-muted);

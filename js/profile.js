@@ -1,6 +1,7 @@
 // js/profile.js
 import { auth, provider, signInWithPopup, signInWithRedirect, getRedirectResult, signOut, onAuthStateChanged }
   from "./firebase.js";
+import { initAuth } from "./auth.js";
 
 function initTheme() {
   const btn = document.getElementById("theme-toggle");
@@ -25,6 +26,12 @@ function showUser(user) {
   document.getElementById("profile-photo").src         = user.photoURL || "";
   document.getElementById("profile-name").textContent  = user.displayName || "İstifadəçi";
   document.getElementById("profile-email").textContent = user.email || "";
+
+  // Navbar-dakı profil şəklini yenilə
+  const navProfile = document.getElementById("nav-profile");
+  if (navProfile && user.photoURL) {
+    navProfile.innerHTML = `<img src="${user.photoURL}" class="nav-profile-photo" alt="profil" />`;
+  }
 }
 
 function showGuest() {
@@ -36,6 +43,7 @@ function showGuest() {
 }
 
 function init() {
+  initAuth();
   initTheme();
 
   const loginBtn  = document.getElementById("btn-login");

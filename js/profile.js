@@ -1,7 +1,6 @@
 // js/profile.js
 import { auth, provider, signInWithPopup, signInWithRedirect, getRedirectResult, signOut, onAuthStateChanged }
   from "./firebase.js";
-import { initAuth } from "./auth.js";
 
 function initTheme() {
   const btn = document.getElementById("theme-toggle");
@@ -43,7 +42,6 @@ function showGuest() {
 }
 
 function init() {
-  initAuth();
   initTheme();
 
   const loginBtn  = document.getElementById("btn-login");

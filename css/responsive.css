@@ -24,7 +24,7 @@
   .song-info-row > * {
     flex-shrink: 0;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .card-grid {

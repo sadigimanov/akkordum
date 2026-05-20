@@ -369,6 +369,7 @@ async function init() {
   // +A / -A — mətn ölçüsünü böyüdüb kiçildir
   const FONT_MIN = 11, FONT_MAX = 18, FONT_STEP = 1;
   let fontSize = 15;
+  let fontSize = window.innerWidth <= 600 ? 12 : 15;
 
   function applyFontSize() {
     if (!lyricsEl) return;

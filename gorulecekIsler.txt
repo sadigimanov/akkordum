@@ -38,7 +38,42 @@ istifadecilerden gelen istek mahnilar, oneriler ve sikayet hissesi
 ===============================================
 
 responsive dizayn
+(pending)
 
 ===============================================
 
 telefonda elaqeye basanda mesaj hissesi cixmir
+(fixed)
+
+===============================================
+
+telefonda giris etmek olmur.
+(fixed)
+
+===============================================
+
+telde song info hissesine scroll elave elemek
+(fixed)
+
+===============================================
+
+akkordlar sehifesinde gridi 2li elemek
+(fixed)
+
+===============================================
+
+akkordlar sehifesinde axtaris imkani
+
+===============================================
+
+akkorlarin hamisini yoxlamaq, sehvlik var duzeltmek
+
+=====================================================
+
+mahni sehifesinde video oynatma
+
+========================================================
+
+mahni sehifesinde sozlerin dasmasina bir care tap(telefonda)
+
+=========================================================

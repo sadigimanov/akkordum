@@ -3,8 +3,15 @@
 @media (max-width: 600px) {
 
   #lyrics {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
+    font-size: 12px;
+  }
+
+  .lyric-row {
+    font-size: 12px;
+  }
+
+  .chord-tag {
+    font-size: 11px;
   }
 
   .akkord-grid {
@@ -12,7 +19,7 @@
     gap: 8px;
   }
 
- .song-info-row {
+  .song-info-row {
     display: flex;
     flex-wrap: nowrap !important;
     overflow-x: scroll;
@@ -21,12 +28,12 @@
     padding-bottom: 6px;
     scrollbar-width: none;
   }
-  
+
   .song-info-row::-webkit-scrollbar {
     display: none;
   }
 
-  .song-info-row > * {
+  .song-info-row>* {
     flex-shrink: 0;
     white-space: nowrap;
     font-size: 14px;
@@ -36,6 +43,7 @@
     grid-template-columns: 1fr;
     gap: 8px;
   }
+
   #favorites-list {
     grid-template-columns: 1fr;
   }
@@ -45,7 +53,9 @@
     font-size: 13px;
   }
 
-  .cat-icon { font-size: 18px; }
+  .cat-icon {
+    font-size: 18px;
+  }
 
   .song-card {
     padding: 1.2rem 1rem;
@@ -73,7 +83,9 @@
     padding: 1rem 1rem 2rem;
   }
 
-  #song-title { font-size: 20px; }
+  #song-title {
+    font-size: 20px;
+  }
 
   .navbar {
     padding: 0 1rem;
@@ -84,6 +96,7 @@
   .container {
     width: 100%;
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 0.5rem;
+    /*  kohne hali 1rem */
   }
 }

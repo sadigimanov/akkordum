@@ -15,19 +15,46 @@ function initTheme() {
   });
 }
 
-function init() {
-  initTheme();
-
+function showUser(user) {
   const viewGuest = document.getElementById("view-guest");
   const viewUser  = document.getElementById("view-user");
+  if (!viewGuest || !viewUser) return;
+
+  viewGuest.style.display = "none";
+  viewUser.style.display  = "flex";
+  document.getElementById("profile-photo").src         = user.photoURL || "";
+  document.getElementById("profile-name").textContent  = user.displayName || "İstifadəçi";
+  document.getElementById("profile-email").textContent = user.email || "";
+}
+
+function showGuest() {
+  const viewGuest = document.getElementById("view-guest");
+  const viewUser  = document.getElementById("view-user");
+  if (!viewGuest || !viewUser) return;
+  viewGuest.style.display = "flex";
+  viewUser.style.display  = "none";
+}
+
+function init() {
+  initTheme();
 
   const loginBtn  = document.getElementById("btn-login");
   const logoutBtn = document.getElementById("btn-logout");
 
+  // Redirect-dən qayıdış — yalnız bir dəfə yoxla
+  getRedirectResult(auth)
+    .then(result => {
+      if (result?.user) showUser(result.user);
+    })
+    .catch(e => console.error("Redirect xətası:", e));
+
+  // Auth vəziyyəti
+  onAuthStateChanged(auth, (user) => {
+    if (user) showUser(user);
+    else showGuest();
+  });
+
   if (loginBtn) {
-    getRedirectResult(auth)
-      .then(result => { if (result?.user) init(); })
-      .catch(e => console.error("Redirect xətası:", e));
     loginBtn.addEventListener("click", async () => {
       const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
       try {
@@ -41,25 +68,8 @@ function init() {
   }
 
   if (logoutBtn) {
-    logoutBtn.addEventListener("click", async () => {
-      await signOut(auth);
-    });
+    logoutBtn.addEventListener("click", () => signOut(auth));
   }
-
-  onAuthStateChanged(auth, (user) => {
-    if (user) {
-      viewGuest.style.display = "none";
-      viewUser.style.display  = "flex";
-
-      document.getElementById("profile-photo").src  = user.photoURL || "";
-      document.getElementById("profile-name").textContent  = user.displayName || "İstifadəçi";
-      document.getElementById("profile-email").textContent = user.email || "";
-      document.getElementById("stat-favs").textContent     = getFavCount();
-    } else {
-      viewGuest.style.display = "flex";
-      viewUser.style.display  = "none";
-    }
-  });
 }
 
 init();

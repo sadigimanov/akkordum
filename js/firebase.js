@@ -7,7 +7,7 @@ import { getFirestore, doc, getDoc, setDoc, updateDoc, arrayUnion, arrayRemove }
 
 const firebaseConfig = {
   apiKey: "AIzaSyCBUBycbWSIC2DHx-e8EuiQQYneYp-mfD0",
-  authDomain: "akkordlarim-35c64.firebaseapp.com",
+  authDomain: "sadigimanov.github.io",
   projectId: "akkordlarim-35c64",
   storageBucket: "akkordlarim-35c64.firebasestorage.app",
   messagingSenderId: "406624151690",

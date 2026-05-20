@@ -1,0 +1,119 @@
+{
+  "id": "akif-islamzade-feridem",
+  "title": "Fəridəm",
+  "artist": "Akif İslamzadə",
+  "key": "Am",
+  "capo": 2,
+  "rhythm": ["↓", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 21 },
+        { "name": "E", "offset": 32 }
+      ],
+      "line": "Ay gələn, haralısan, qaşları qaralısan?"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 21 },
+        { "name": "E", "offset": 32 }
+      ],
+      "line": "Ay gələn, haralısan, qaşları qaralısan?"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Am", "offset": 12 },
+        { "name": "E", "offset": 21 },
+        { "name": "Am", "offset": 33 }
+      ],
+      "line": "Gözlərindən tanıram, Bakının maralısan"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Am", "offset": 12 },
+        { "name": "E", "offset": 21 },
+        { "name": "Am", "offset": 33 }
+      ],
+      "line": "Gözlərindən tanıram, Bakının maralısan"
+    },
+
+    null,
+
+    {
+      "label": "Nəqarət",
+      "chords": [
+        { "name": "C", "offset": 0 },
+        { "name": "Dm", "offset": 21 },
+        { "name": "C", "offset": 35 }
+      ],
+      "line": "Fəridəm, ay Fəridəm, gözəl qızsan, Fəridəm"
+    },
+    {
+      "chords": [
+        { "name": "C", "offset": 0 },
+        { "name": "Dm", "offset": 21 },
+        { "name": "C", "offset": 35 }
+      ],
+      "line": "Fəridəm, ay Fəridəm, gözəl qızsan, Fəridəm"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Am", "offset": 10 },
+        { "name": "E", "offset": 21 },
+        { "name": "Am", "offset": 35 }
+      ],
+      "line": "Bir dönüb baxmaq ilə əqlimi aldın, Fəridəm"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Am", "offset": 10 },
+        { "name": "E", "offset": 21 },
+        { "name": "Am", "offset": 35 }
+      ],
+      "line": "Bir dönüb baxmaq ilə əqlimi aldın, Fəridəm"
+    },
+
+    null,
+
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 22 },
+        { "name": "E", "offset": 31 }
+      ],
+      "line": "Dağ başında quzu var, ahu kimi gözü var"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 22 },
+        { "name": "E", "offset": 31 }
+      ],
+      "line": "Dağ başında quzu var, ahu kimi gözü var"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Am", "offset": 11 },
+        { "name": "E", "offset": 20 },
+        { "name": "Am", "offset": 30 }
+      ],
+      "line": "Oğlan qızı sevərsə, kimin ona sözü var?"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Am", "offset": 11 },
+        { "name": "E", "offset": 20 },
+        { "name": "Am", "offset": 30 }
+      ],
+      "line": "Oğlan qızı sevərsə, kimin ona sözü var?"
+    }
+  ]
+}

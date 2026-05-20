@@ -1,0 +1,106 @@
+{
+  "id": "elvin-mirzezade-dusun-meni",
+  "title": "Düşün Məni",
+  "artist": "Elvin Mirzəzadə",
+  "key": "Am",
+  "capo": 3,
+  "rhythm": ["↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Düşün məni, gecə səhərə çatana qədər"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 0 }
+      ],
+      "line": "Düşün məni, gözün yuxuya dalana qədər"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 }
+      ],
+      "line": "Düşün məni, zalımın zülmündən"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 }
+      ],
+      "line": "Kağız qələmi tapana qədər,"
+    },
+     {
+      "chords": [
+        { "name": "E", "offset": 0 }
+      ],
+      "line": "Göz səni axtarana qədər"
+    },
+
+    null,
+
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Salma yada, nə badə badə badə"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 10 }
+      ],
+      "line": "Arxasıyca gedər yada"
+    },
+    {
+      "chords": [
+        { "name": "", "offset": 0 }
+      ],
+      "line": "Düşər sevgili yar intizara"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 5 }
+      ],
+      "line": "Ömrü gedər, sevgi bitər bir gün gözlərimdə"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 6 }
+      ],
+      "line": "Mənim sevgim, mənim sözlərimdə"
+    },
+
+    null,
+
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Xəyallarım, niyə yarım qaldı xəyallarım?"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 0 }
+      ],
+      "line": "Mən ağlaram"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 31 }
+      ],
+      "line": "Gecələri səni mən yuxuda görüb sayıqlaram"
+    },
+    {
+      "chords": [
+        { "name": "", "offset": 0 }
+      ],
+      "line": "Cırdığım onca şəkillər bir də"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 }
+      ],
+      "line": "Yazdığın məktubu oxuyub mən ağlaram..."
+    }
+  ]
+}

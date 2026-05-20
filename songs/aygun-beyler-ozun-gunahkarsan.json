@@ -1,0 +1,131 @@
+{
+  "id": "aygun-beyler-ozun-gunahkarsan",
+  "title": "Özün Günahkarsan",
+  "artist": "Aygün Bəylər",
+  "key": "Am",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 19 }
+      ],
+      "line": "İllər boyu həsrətimi duymaz oldun"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 17 }
+      ],
+      "line": "İllər boyu qədərimi bilmədin də"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 16 }
+      ],
+      "line": "Çox vaxt güldüm ağlayaraq için-için"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 16 }
+      ],
+      "line": "Bircə sözlə göz yaşımı silmədin də"
+    },
+
+    null,
+
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Am", "offset": 15 }
+      ],
+      "line": "Soyuqluğun buz olanda yanağımda"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 16 }
+      ],
+      "line": "Nəfəsinlə başqasını isitmisən"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Am", "offset": 17 }
+      ],
+      "line": "Sənsizliklə yaşadıqca otağımda"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 17 }
+      ],
+      "line": "Sən də məni bir otaqda itirmisən"
+    },
+
+    null,
+
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 18 }
+      ],
+      "line": "Bəs bilmirdin, həsrətinlə ürəyimə"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 16 }
+      ],
+      "line": "Həsrətinin əvəzinə daş asırsan?"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 16 }
+      ],
+      "line": "Bəs bilmirdin, özün mənə yad olduqca"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 13 }
+      ],
+      "line": "Məninçün də yavaş-yavaş yadlaşırsan?"
+    },
+
+    null,
+
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 19 }
+      ],
+      "line": "Yad baxışlar dikilibdir gözlərinə"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 14 }
+      ],
+      "line": "Sənsə mənə peşman qəlb gətirmisən"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 16 }
+      ],
+      "line": "Necə verim sabahımı, necə sənə?"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 14 }
+      ],
+      "line": "Sən ki mənim dünənimi itirmisən"
+    }
+  ]
+}

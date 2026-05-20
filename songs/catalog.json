@@ -88,5 +88,60 @@
     "chords": ["Eb", "Dm"],
     "capo": 0,
     "rhythm": ["↓", "↑", "↑", "↓",  "↑", "↑", "↓", "↑"]
-  }
+  },
+  {
+    "id": "asif-meherremov-gece-gece",
+    "title": "Gecə Gecə",
+    "artist": "Asif Məhərrəmov",
+    "key": "Am",
+    "chords": ["Dm", "Am", "E", "F"],
+    "capo": 2,
+    "rhythm": ["↓", "-", "↑", "↑", "↑", "-", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "aygun-beyler-ozun-gunahkarsan",
+    "title": "Özün Günahkarsan",
+    "artist": "Aygün Bəylər",
+    "key": "Am",
+    "chords": ["Am", "Dm", "E"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "akif-islamzade-feridem",
+    "title": "Fəridəm",
+    "artist": "Akif İslamzadə",
+    "key": "Am",
+    "chords": ["Am", "Dm", "E", "C"],
+    "capo": 2,
+    "rhythm": ["↓", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "pasa-emircan-olerdim",
+    "title": "Ölərdim",
+    "artist": "Paşa Əmircan",
+    "key": "Am",
+    "chords": ["Am", "Dm", "Em"],
+    "capo": 7,
+    "rhythm": ["↓", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "elvin-mirzezade-dusun-meni",
+    "title": "Düşün Məni",
+    "artist": "Elvin Mirzəzadə",
+    "key": "Am",
+    "chords": ["Am", "F", "Dm", "E"],
+    "capo": 3,
+    "rhythm": ["↓", "↑", "↓", "↑"]
+    },
+    {
+      "id": "kerim-gunahkar-mavi-xezerdir",
+      "title": "Günahkar Mavi Xəzərdir",
+      "artist": "Kərim",
+      "key": "Am",
+      "chords": ["Am", "Dm", "E", "F"],
+      "capo": 2,
+      "rhythm": ["↓", "↓", "↑", "↓", "↑"]
+    }
+
 ]

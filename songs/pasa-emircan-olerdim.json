@@ -1,0 +1,114 @@
+{
+  "id": "pasa-emircan-olerdim",
+  "title": "Ölərdim",
+  "artist": "Paşa Əmircan",
+  "key": "Am",
+  "capo": 7,
+  "rhythm": ["↓", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Em", "offset": 17 }
+      ],
+      "line": "Nə qədər ağlayar insan?"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Em", "offset": 19 }
+      ],
+      "line": "Bilə bilsəydin ölərdim"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Em", "offset": 17 }
+      ],
+      "line": "Gözümün yaşını yarım"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Em", "offset": 19 }
+      ],
+      "line": "Silə bilsəydin ölərdim"
+    },
+
+    null,
+
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Em", "offset":17 }
+      ],
+      "line": "Gülüşündən xəbər aldım"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Em", "offset": 17 }
+      ],
+      "line": "Yola verdin məni getdin"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Em", "offset": 18 }
+      ],
+      "line": "Amma bir dəfə ürəkdən"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Em", "offset": 19 }
+      ],
+      "line": "Gülə bilsəydin ölərdim"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Em", "offset": 17 }
+      ],
+      "line": "Gedən heç vaxt qayıtmaz"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Em", "offset": 19 }
+      ],
+      "line": "Gələ bilsəydin ölərdim"
+    },
+
+    null,
+
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Em", "offset": 17 }
+      ],
+      "line": "Paşa bəsdir demə nolar"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Em", "offset": 17 }
+      ],
+      "line": "Demə bihudə yazırsan"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Em", "offset": 18 }
+      ],
+      "line": "Elə bilmə dəliyəm mən"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Em", "offset": 18 }
+      ],
+      "line": "Elə bilsəydin ölərdim."
+    }
+  ]
+}

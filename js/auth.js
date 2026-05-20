@@ -3,13 +3,13 @@ import { auth, provider, signInWithPopup, signOut, onAuthStateChanged, signInWit
   from "./firebase.js";
 
 function updateNavbar(user) {
-  // nav-brand: giriş edilibsə profil şəkli, yoxsa 🎸
-  const navBrand = document.getElementById("nav-brand");
-  if (navBrand) {
+  // nav-profile: giriş edilibsə profil şəkli, yoxsa 🎸
+  const navProfile = document.getElementById("nav-profile");
+  if (navProfile) {
     if (user && user.photoURL) {
-      navBrand.innerHTML = `<img src="${user.photoURL}" class="nav-profile-photo" alt="profil" />`;
+      navProfile.innerHTML = `<img src="${user.photoURL}" class="nav-profile-photo" alt="profil" />`;
     } else {
-      navBrand.textContent = "🎸";
+      navProfile.textContent = "🎸";
     }
   }
 

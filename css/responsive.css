@@ -4,6 +4,8 @@
 
   #lyrics {
     font-size: 12px;
+     overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
   }
 
   .lyric-row {
@@ -58,7 +60,7 @@
   }
 
   .song-card {
-    padding: 1.2rem 1rem;
+    padding: 1.2rem 0.5rem;
     border-radius: 10px;
   }
 
@@ -96,7 +98,7 @@
   .container {
     width: 100%;
     box-sizing: border-box;
-    padding: 0.5rem;
+    padding: 0.3rem;
     /*  kohne hali 1rem */
   }
 }

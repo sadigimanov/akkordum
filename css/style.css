@@ -23,7 +23,7 @@ a {
 /* ── Theme variables ──────────────────────────────────────── */
 :root {
   --font-ui: "DM Sans", "Helvetica Neue", sans-serif;
-  --font-mono: "JetBrains Mono", "Fira Mono", monospace;
+  --font-mono: "Open Sans", sans-serif;
 }
 
 [data-theme="dark"] {

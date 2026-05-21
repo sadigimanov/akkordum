@@ -1,7 +1,6 @@
 import { initAuth } from "./auth.js";
 import { auth, onAuthStateChanged } from "./firebase.js";
 import { getFavorites, addFavorite, removeFavorite, isFavorite, getUserRhythm, saveUserRhythm, addToHistory } from "./firestore-favs.js";
-// js/song.js
 import { renderLyrics } from "./renderer.js";
 import { initChordClick } from "./chord-diagram.js";
 
@@ -44,7 +43,6 @@ function renderKeyRow(activeNote, onNoteClick) {
   });
 }
 
-// Azərbaycan/Türk hərflərini normalize et ki axtarış düzgün işləsin
 function normalize(str) {
   return str
     .replace(/İ/g, "i").replace(/I/g, "i")
@@ -78,9 +76,7 @@ async function initSearch() {
   let catalog = [];
   try {
     catalog = await fetch("songs/catalog.json").then(r => r.json());
-  } catch {
-    return;
-  }
+  } catch { return; }
 
   function search(query) {
     if (!query.trim()) {
@@ -88,12 +84,10 @@ async function initSearch() {
       results.innerHTML = "";
       return;
     }
-
     const q = normalize(query);
     const matched = catalog.filter(s =>
       normalize(s.title).startsWith(q) || normalize(s.artist).startsWith(q)
     );
-
     results.innerHTML = "";
     if (matched.length === 0) {
       results.innerHTML = `<li class="search-no-result">Nəticə tapılmadı</li>`;
@@ -111,7 +105,6 @@ async function initSearch() {
   }
 
   input.addEventListener("input", e => search(e.target.value));
-
   input.addEventListener("keydown", e => {
     if (e.key === "Enter") {
       const first = results.querySelector("li a");
@@ -145,31 +138,29 @@ async function init() {
 
   document.title = `${song.title} — ${song.artist}`;
   document.getElementById("song-title").textContent  = song.title;
-
-  // Tarixçəyə əlavə et (auth hazır olduqda)
-  const unsubHistory = onAuthStateChanged(auth, (user) => {
-    unsubHistory();
-    addToHistory(user, song);
-  });
   document.getElementById("song-artist").textContent = song.artist;
   document.getElementById("song-key").textContent    = song.key;
   document.getElementById("song-capo").textContent   = song.capo ?? 0;
 
+  // Tarixçəyə əlavə et
+  const unsubHistory = onAuthStateChanged(auth, (user) => {
+    unsubHistory();
+    addToHistory(user, song);
+  });
 
   // ── Ritm ──────────────────────────────────────────────────
   const rhythmSection = document.getElementById("rhythm-section");
   const rhythmDisplay = document.getElementById("rhythm-display");
+  const editorEl      = document.getElementById("rhythm-editor");
 
   function renderRhythmRow(beats, label, labelColor) {
     const wrap = document.createElement("div");
     wrap.className = "rhythm-row-wrap";
-
     const lbl = document.createElement("div");
     lbl.className = "rhythm-row-label";
     lbl.textContent = label;
     lbl.style.color = labelColor || "var(--text-muted)";
     wrap.appendChild(lbl);
-
     const row = document.createElement("div");
     row.className = "rhythm-display";
     const BEAT_LABELS = { "↓": "Aşağı", "↑": "Yuxarı", "-": "Susma" };
@@ -194,16 +185,12 @@ async function init() {
   }
 
   function renderRhythmEditor(existingRhythm, onSave) {
-    const editor = document.getElementById("rhythm-editor");
-    if (!editor) return;
-    editor.innerHTML = "";
-
+    if (!editorEl) return;
+    editorEl.innerHTML = "";
     let beats = existingRhythm ? [...existingRhythm] : [];
 
     function refreshEditor() {
-      editor.innerHTML = "";
-
-      // Mövcud vuruşlar
+      editorEl.innerHTML = "";
       const beatsRow = document.createElement("div");
       beatsRow.className = "rhythm-editor-beats";
       beats.forEach((b, i) => {
@@ -214,9 +201,8 @@ async function init() {
         btn.addEventListener("click", () => { beats.splice(i, 1); refreshEditor(); });
         beatsRow.appendChild(btn);
       });
-      editor.appendChild(beatsRow);
+      editorEl.appendChild(beatsRow);
 
-      // Əlavə et düymələri
       const addRow = document.createElement("div");
       addRow.className = "rhythm-add-row";
       const BEAT_TITLES = { "↓": "Aşağı", "↑": "Yuxarı", "-": "Susma" };
@@ -229,40 +215,31 @@ async function init() {
         addRow.appendChild(btn);
       });
 
-      // Sıfırla + Bitdi
       const actions = document.createElement("div");
       actions.className = "rhythm-actions";
-
       const resetBtn = document.createElement("button");
       resetBtn.className = "rhythm-reset-btn";
       resetBtn.textContent = "Sıfırla";
       resetBtn.addEventListener("click", () => { beats = []; refreshEditor(); });
-
       const saveBtn = document.createElement("button");
       saveBtn.className = "rhythm-save-btn";
       saveBtn.textContent = "✓ Bitdi";
       saveBtn.addEventListener("click", () => { onSave(beats); });
-
       actions.appendChild(resetBtn);
       actions.appendChild(saveBtn);
       addRow.appendChild(actions);
-      editor.appendChild(addRow);
+      editorEl.appendChild(addRow);
     }
 
     refreshEditor();
   }
-
-  const editorEl = document.getElementById("rhythm-editor");
 
   async function renderRhythms() {
     if (!rhythmSection || !rhythmDisplay) return;
     rhythmSection.classList.remove("hidden");
     rhythmDisplay.innerHTML = "";
 
-    // Düymə song-info-row-dadır
     const addBtn = document.getElementById("rhythm-add-btn");
-
-    // Köhnə listener-i sil, yenisini qoy
     if (addBtn) {
       addBtn.textContent = "＋ Ritm əlavə et";
       editorEl.classList.add("hidden");
@@ -280,7 +257,6 @@ async function init() {
         }
         const warning = document.getElementById("rhythm-login-warning");
         if (warning) warning.remove();
-
         const isOpen = !editorEl.classList.contains("hidden");
         editorEl.classList.toggle("hidden");
         addBtn.textContent = isOpen ? "＋ Ritm əlavə et" : "✕ Bağla";
@@ -297,29 +273,43 @@ async function init() {
       };
     }
 
-    // 1. Orijinal ritm
     if (song.rhythm && song.rhythm.length > 0) {
-      const origRow = renderRhythmRow(song.rhythm, "Orijinal", "var(--text-muted)");
-      rhythmDisplay.appendChild(origRow);
+      rhythmDisplay.appendChild(renderRhythmRow(song.rhythm, "Orijinal", "var(--text-muted)"));
     }
-
-    // 2. Redaktor
     rhythmDisplay.appendChild(editorEl);
 
-    // 3. İstifadəçi ritmi — orijinalın altında
-    const user = auth.currentUser;
-    const userRhythm = await getUserRhythm(user, song.id);
+    const userRhythm = await getUserRhythm(auth.currentUser, song.id);
     if (userRhythm && userRhythm.length > 0) {
       rhythmDisplay.appendChild(renderRhythmRow(userRhythm, "Mənim ritmim", "var(--accent)"));
     }
   }
 
-  // Auth hazır olandan sonra ritmi yüklə
   onAuthStateChanged(auth, () => renderRhythms());
 
   const originalRoot = getOriginalRoot(song.key);
   const originalIdx  = NOTES.indexOf(originalRoot);
   let semitones = 0;
+
+  // +A / -A — mətn ölçüsünü böyüdüb kiçildir
+  const FONT_MIN = 11, FONT_MAX = 18, FONT_STEP = 1;
+  let fontSize = window.innerWidth <= 600 ? 12 : 15;
+
+  function applyFontSize() {
+    if (!lyricsEl) return;
+    lyricsEl.style.fontSize = fontSize + "px";
+    const chWidth = fontSize * 0.598;
+    lyricsEl.querySelectorAll(".chord-tag").forEach(tag => {
+      const offset = parseFloat(tag.dataset.offset || 0);
+      tag.style.left = (offset * chWidth) + "px";
+      tag.style.fontSize = Math.max(11, fontSize - 2) + "px";
+    });
+    lyricsEl.querySelectorAll(".lyric-row").forEach(row => {
+      row.style.fontSize = fontSize + "px";
+    });
+    lyricsEl.querySelectorAll(".section-label").forEach(row => {
+      row.style.fontSize = fontSize + "px";
+    });
+  }
 
   function update() {
     const transposed = transposeSong(song.sections, semitones);
@@ -332,11 +322,6 @@ async function init() {
       semitones = ((NOTES.indexOf(clickedNote) - originalIdx) % 12 + 12) % 12;
       update();
     });
-
-    // Kapo hesabla: orijinal key-dən semitones aşağı getsək kapo o qədər olur
-    // semitones > 0: yuxarı transpoz — kapo lazım deyil (0)
-    // semitones < 0 mümkün deyil (həmişə 0-11 arası)
-    // Ən rahat: 12 - semitones (semitones > 0 olduqda gitarist kapo ilə orijinal akorları çala bilər)
     const capoEl = document.getElementById("song-capo");
     if (capoEl) {
       const capo = semitones === 0 ? (song.capo ?? 0) : (12 - semitones) % 12;
@@ -344,7 +329,7 @@ async function init() {
     }
   }
 
-  // Orijinal tona klik — sıfırla
+  // Orijinal tona klik
   const origKeyEl = document.getElementById("song-key-text");
   if (origKeyEl) {
     origKeyEl.style.cursor = "pointer";
@@ -366,28 +351,6 @@ async function init() {
     });
   }
 
-  // +A / -A — mətn ölçüsünü böyüdüb kiçildir
-  const FONT_MIN = 11, FONT_MAX = 18, FONT_STEP = 1;
-  let fontSize = window.innerWidth <= 600 ? 12 : 15;
-
-  function applyFontSize() {
-    if (!lyricsEl) return;
-    lyricsEl.style.fontSize = fontSize + "px";
-    // chord-row hündürlüyü font-a uyğun dəyişsin
-    const chWidth = fontSize * 0.598;
-    lyricsEl.querySelectorAll(".chord-tag").forEach(tag => {
-      const offset = parseFloat(tag.dataset.offset || 0);
-      tag.style.left = (offset * chWidth) + "px";
-      tag.style.fontSize = Math.max(11, fontSize - 2) + "px";
-    });
-    lyricsEl.querySelectorAll(".lyric-row").forEach(row => {
-      row.style.fontSize = fontSize + "px";
-    });
-    lyricsEl.querySelectorAll(".section-label").forEach(row => {
-      row.style.fontSize = fontSize + "px";
-    });
-  }
-
   document.getElementById("btn-up").addEventListener("click", () => {
     if (fontSize < FONT_MAX) { fontSize += FONT_STEP; applyFontSize(); }
   });
@@ -398,7 +361,6 @@ async function init() {
   // ── Sevimli düyməsi ────────────────────────────────────────
   const favBtn = document.getElementById("btn-favorite");
   if (favBtn) {
-    // auth.currentUser-i hər dəfə birbaşa oxu — sabit saxlama
     async function updateFavBtn() {
       const fav = await isFavorite(auth.currentUser, song.id);
       if (fav) {
@@ -411,6 +373,11 @@ async function init() {
     }
     favBtn.addEventListener("click", async () => {
       const user = auth.currentUser;
+      if (!user) {
+        favBtn.textContent = "Giriş et ➜";
+        favBtn.onclick = () => window.location.href = "profile.html";
+        return;
+      }
       const fav = await isFavorite(user, song.id);
       if (fav) {
         await removeFavorite(user, song.id);
@@ -419,12 +386,8 @@ async function init() {
       }
       updateFavBtn();
     });
-
-    // Auth hazır olana qədər gözlə, sonra düyməni yenilə
     onAuthStateChanged(auth, () => updateFavBtn());
   }
-
-
 
   // Catalog yüklə və bölmələri doldur
   try {
@@ -434,7 +397,6 @@ async function init() {
     await initSections(song, catalog);
   } catch {}
 
-  // ── Alt bölmələr ───────────────────────────────────────────
   async function initSections(song, catalog) {
     function songLink(s) {
       const a = document.createElement("a");
@@ -457,14 +419,13 @@ async function init() {
       items.forEach(s => el.appendChild(songLink(s)));
     }
 
-    // Cari mahnı xaric
     const others = catalog.filter(s => s.id !== song.id);
 
-    // Rastgele — bölməyə klik edəndə açılır, yenilə düyməsi var
-    const sectionRandom  = document.getElementById("section-random");
-    const listRandom     = document.getElementById("list-random");
-    const headerRandom   = sectionRandom?.querySelector(".section-header");
-    let   randomOpen     = false;
+    // Rastgele
+    const sectionRandom = document.getElementById("section-random");
+    const listRandom    = document.getElementById("list-random");
+    const headerRandom  = sectionRandom?.querySelector(".section-header");
+    let randomOpen = false;
 
     function getRandomSongs() {
       return [...others].sort(() => Math.random() - 0.5).slice(0, 5);
@@ -480,8 +441,6 @@ async function init() {
         return;
       }
       getRandomSongs().forEach(s => listRandom.appendChild(songLink(s)));
-
-      // Yenilə düyməsi
       const btn = document.createElement("button");
       btn.className = "section-refresh-btn";
       btn.textContent = "↻ Yenilə";
@@ -503,7 +462,7 @@ async function init() {
     }
     listRandom.classList.add("section-list-hidden");
 
-    // Müəllif akorları — klik ilə artist.html-ə
+    // Müəllif akorları
     const labelArtist = document.getElementById("label-artist");
     if (labelArtist) labelArtist.textContent = `${song.artist} akorları`;
     const sectionArtist = document.getElementById("section-artist");
@@ -514,7 +473,7 @@ async function init() {
       });
     }
 
-    // Eyni ritm — klik ilə rhythm.html-ə
+    // Eyni ritm
     const sectionRhythmNav = document.getElementById("section-rhythm");
     if (sectionRhythmNav) {
       if (song.rhythm && song.rhythm.length > 0) {
@@ -531,10 +490,10 @@ async function init() {
     }
 
     // Eyni akorlar
-    const sectionChords  = document.getElementById("section-chords");
-    const listChords     = document.getElementById("list-chords");
-    const headerChords   = sectionChords?.querySelector(".section-header");
-    let   chordsOpen     = false;
+    const sectionChords = document.getElementById("section-chords");
+    const listChords    = document.getElementById("list-chords");
+    const headerChords  = sectionChords?.querySelector(".section-header");
+    let chordsOpen = false;
 
     if (sectionChords) {
       if (song.chords && song.chords.length > 0) {
@@ -587,7 +546,6 @@ async function init() {
       }
     }
   }
-
 
   update();
 }

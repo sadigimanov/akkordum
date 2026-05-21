@@ -192,6 +192,10 @@ async function initHistory() {
 
   card.addEventListener("click", (e) => {
     e.preventDefault();
+    if (!panel.classList.contains("hidden")) {
+      panel.classList.add("hidden");
+      return;
+    }
     renderHistory();
     panel.classList.remove("hidden");
   });
@@ -239,6 +243,10 @@ async function initRandom() {
 
   card.addEventListener("click", (e) => {
     e.preventDefault();
+    if (!panel.classList.contains("hidden")) {
+      panel.classList.add("hidden");
+      return;
+    }
     renderRandom();
     panel.classList.remove("hidden");
   });
@@ -293,6 +301,10 @@ function initSoonCards() {
     if (!card) return;
     card.addEventListener("click", (e) => {
       e.preventDefault();
+      if (!panel.classList.contains("hidden")) {
+        panel.classList.add("hidden");
+        return;
+      }
       panel.classList.remove("hidden");
     });
   });
@@ -367,7 +379,7 @@ async function initFeedback() {
     document.getElementById("feedback-submit").addEventListener("click", async () => {
       const { auth } = await import("./firebase.js");
       if (!auth.currentUser) {
-        document.getElementById("feedback-error").innerHTML = "⚠️ Göndərmək üçün <a class='feedback-linkToProfile' href='profile.html'>giriş et</a>məlisiniz.";
+        document.getElementById("feedback-error").textContent = "⚠️ Göndərmək üçün giriş etməlisiniz.";
         document.getElementById("feedback-error").classList.remove("hidden");
         return;
       }
@@ -405,6 +417,10 @@ async function initFeedback() {
 
   card.addEventListener("click", (e) => {
     e.preventDefault();
+    if (!panel.classList.contains("hidden")) {
+      panel.classList.add("hidden");
+      return;
+    }
     document.getElementById("feedback-success").classList.add("hidden");
     document.getElementById("feedback-error").classList.add("hidden");
     panel.classList.remove("hidden");

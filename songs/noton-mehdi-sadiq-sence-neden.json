@@ -1,0 +1,77 @@
+{
+  "id": "noton-mehdi-sadiq-sence-neden",
+  "title": "Səncə Nədən?",
+  "artist": "Noton & Mehdi Sadiq",
+  "key": "Am",
+  "capo": 3,
+  "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Am", "offset": 10 },
+        { "name": "G", "offset": 30 },
+        { "name": "F", "offset": 51 }
+      ],
+      "line": "Bu şəhər insanları öldürür axı, səncə, nədən?"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 10 },
+        { "name": "E", "offset": 31 },
+        { "name": "Am", "offset": 49 }
+      ],
+      "line": "Cismimi asıram, ruhumu atıram pəncərədən"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 10 },
+        { "name": "G", "offset": 30 },
+        { "name": "F", "offset": 51 }
+      ],
+      "line": "Bu şəhər insanları öldürür axı, səncə, nədən?"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 10 },
+        { "name": "E", "offset": 31 },
+        { "name": "Am", "offset": 49 }
+      ],
+      "line": "Cismimi asıram, ruhumu atıram pəncərədən"
+    },
+
+    null,
+
+    {
+      "chords": [
+        { "name": "Dm", "offset": 12 },
+        { "name": "E", "offset": 28 },
+        { "name": "F", "offset": 44 }
+      ],
+      "line": "Pəncərədən, pəncərədən, pəncərədən"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 10 },
+        { "name": "E", "offset": 30 },
+        { "name": "Am", "offset": 49 }
+      ],
+      "line": "Cismimi asıram, ruhumu atıram pəncərədən"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 14 },
+        { "name": "E", "offset": 33 },
+        { "name": "F", "offset": 53 }
+      ],
+      "line": "Səncə, nədən? Səncə, nədən? Səncə, nədən?"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 10 },
+        { "name": "E", "offset": 30 },
+        { "name": "Am", "offset": 49 }
+      ],
+      "line": "Cismimi asıram, ruhumu atıram pəncərədən"
+    }
+  ]
+}

@@ -142,6 +142,24 @@
       "chords": ["Am", "Dm", "E", "F"],
       "capo": 2,
       "rhythm": ["↓", "↓", "↑", "↓", "↑"]
+    },
+    {
+      "id": "noton-mehdi-sadiq-sence-neden",
+      "title": "Səncə Nədən?",
+      "artist": "Noton & Mehdi Sadiq",
+      "key": "Am",
+      "chords": ["Am", "G", "F", "Dm", "E"],
+      "capo": 3,
+      "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑", "↓", "↑"]
+    },
+    {
+      "id": "eyyub-yaqubov-ezizim",
+      "title": "Əzizim",
+      "artist": "Eyyub Yaqubov",
+      "key": "Am",
+      "chords": ["Am", "Dm", "E", "A7", "F"],
+      "capo": 0,
+      "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
     }
 
 ]

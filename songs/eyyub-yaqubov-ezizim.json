@@ -1,0 +1,103 @@
+{
+  "id": "eyyub-yaqubov-ezizim",
+  "title": "Əzizim",
+  "artist": "Eyyub Yaqubov",
+  "key": "Am",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 26 }
+      ],
+      "line": "Saçlarının rəngi payızdır"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 24 }
+      ],
+      "line": "Gözlərinin rəngi dəniz"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 26 }
+      ],
+      "line": "Almaya bənzər yanağın var"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 22 }
+      ],
+      "line": "Ay üzün aydan da təmiz"
+    },
+
+    null,
+
+    {
+      "chords": [
+        { "name": "A7", "offset": 0 },
+        { "name": "Dm", "offset": 28 }
+      ],
+      "line": "Qönçə dodaqlarda gülüşlər"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 22 }
+      ],
+      "line": "Yenə gözlərimə görünsün"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 0 },
+        { "name": "Dm", "offset": 24 }
+      ],
+      "line": "Məni məndən alan öpüşlər"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 24 }
+      ],
+      "line": "Yenə ətrafıma bürünsün"
+    },
+
+    null,
+
+    {
+      "label": "Nəqarət",
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "A7", "offset": 13 },
+        { "name": "Dm", "offset": 29 }
+      ],
+      "line": "Günləri saydım sənə çatdım, əzizim"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 25 }
+      ],
+      "line": "Dərdi-qəmi başımdan atdım, əzizim"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Am", "offset": 22 }
+      ],
+      "line": "Yuxuna gəlmək üçün, üzünü görmək üçün"
+    },
+    {
+      "chords": [
+        { "name": "B", "offset": 0 },
+        { "name": "E", "offset": 18 },
+        { "name": "Am", "offset": 30 }
+      ],
+      "line": "Tək səni fikirləşib yatdım, əzizim"
+    }
+  ]
+}

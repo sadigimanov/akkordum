@@ -237,10 +237,15 @@ body {
 /* ── Rastgele panel (index) ───────────────────────────────── */
 .random-panel {
   position: fixed;
-  bottom: 0;
-  left: auto;
+  top: 15%;
+  left: 50%;
   right: auto;
-  background: var(--card-bg);
+  width: 100%;
+  max-width: 960px;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease;
+  opacity: 1;
+  background: var(--surface);
   border-top: 1px solid var(--border);
   border-radius: 16px 16px 0 0;
   padding: 1.2rem 1.5rem 1.5rem;
@@ -248,14 +253,12 @@ body {
   max-height: 70vh;
   overflow-y: auto;
   box-shadow: 0 -8px 32px rgba(0,0,0,0.4);
-  transform: translateY(0);
-  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
-  opacity: 1;
 }
 .random-panel.hidden {
-  transform: translateY(100%);
   opacity: 0;
   pointer-events: none;
+  transform: translateX(-50%) translateY(100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
 }
  
 .random-panel-header {

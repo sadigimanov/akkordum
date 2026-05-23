@@ -69,14 +69,17 @@
   }
 
   .random-panel {
-    position: fixed;
-    bottom: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    top: auto;
+    max-width: 100%;
+    transform: translateX(0);
     max-height: 80vh;
-    overflow-y: auto;
-    border-radius: 16px 16px 0 0;
     padding: 1rem 1rem 2rem;
+  }
+  .random-panel.hidden {
+    transform: translateY(100%);
   }
 
   #song-title {
@@ -137,14 +140,17 @@
   }
 
   .random-panel {
-    position: fixed;
-    bottom: 0;
     left: 0;
     right: 0;
+    top: auto;
+    bottom: 0;
+    max-width: 100%;
+    transform: translateX(0);
     max-height: 70vh;
-    overflow-y: auto;
-    border-radius: 16px 16px 0 0;
     padding: 1.2rem 1.5rem 2rem;
+  }
+  .random-panel.hidden {
+    transform: translateY(100%);
   }
 
   #song-title {

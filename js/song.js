@@ -547,6 +547,115 @@ async function init() {
     }
   }
 
+
+  // ── Oxuma paneli ───────────────────────────────────────────
+  const playBtn     = document.getElementById("player-play");
+  const restartBtn  = document.getElementById("player-restart");
+  const speedSlider = document.getElementById("player-speed");
+  const speedVal    = document.getElementById("player-speed-val");
+
+  let isPlaying  = false;
+  let scrollRAF  = null;
+  let scrollPos  = 0;
+
+  function getScrollSpeed() {
+    // 1-10 arası dəyəri px/saniyəyə çevir
+    return parseFloat(speedSlider?.value || 5) * 8;
+  }
+
+  function startScroll() {
+    let lastTime = null;
+
+    function step(timestamp) {
+      if (!isPlaying) return;
+      if (lastTime === null) lastTime = timestamp;
+      const delta = (timestamp - lastTime) / 1000;
+      lastTime = timestamp;
+
+      scrollPos += getScrollSpeed() * delta;
+      window.scrollTo(0, scrollPos);
+
+      // Lyrics-in sonuna çatdıqda dayandır
+      const lyricsBottom = lyricsEl.getBoundingClientRect().bottom + window.scrollY;
+      const stopAt = lyricsBottom - window.innerHeight + 40;
+      if (scrollPos >= stopAt) {
+        stopScroll();
+        if (playBtn) playBtn.textContent = "▶";
+        return;
+      }
+
+      scrollRAF = requestAnimationFrame(step);
+    }
+
+    scrollRAF = requestAnimationFrame(step);
+  }
+
+  function stopScroll() {
+    isPlaying = false;
+    if (scrollRAF) cancelAnimationFrame(scrollRAF);
+    scrollRAF = null;
+
+    // Mobil/tablet — navbar-ı göstər
+    if (window.innerWidth <= 1024) {
+      document.querySelector(".navbar")?.classList.remove("hidden");
+      document.querySelector(".song-card > h1")?.classList.remove("hidden");
+      document.querySelector(".song-card > p")?.classList.remove("hidden");
+      document.querySelector(".song-info-row")?.classList.remove("hidden");
+      document.querySelector(".rhythm-section")?.classList.remove("player-hidden");
+      document.querySelector(".transpose-row")?.classList.remove("player-hidden");
+      document.querySelector(".key-row")?.classList.remove("player-hidden");
+      document.querySelector(".divider")?.classList.remove("player-hidden");
+    }
+  }
+
+  function startPlay() {
+    isPlaying = true;
+    scrollPos = window.scrollY;
+
+    // Mobil/tablet — navbar-ı gizlət
+    if (window.innerWidth <= 1024) {
+      document.querySelector(".navbar")?.classList.add("hidden");
+      document.querySelector(".song-card > h1")?.classList.add("hidden");
+      document.querySelector(".song-card > p")?.classList.add("hidden");
+      document.querySelector(".song-info-row")?.classList.add("hidden");
+      document.getElementById("rhythm-section")?.classList.add("player-hidden");
+      document.querySelector(".key-row")?.classList.add("player-hidden");
+      document.querySelector(".divider")?.classList.add("player-hidden");
+    }
+
+    startScroll();
+  }
+
+  if (playBtn) {
+    playBtn.addEventListener("click", () => {
+      if (isPlaying) {
+        isPlaying = false;
+        stopScroll();
+        playBtn.textContent = "▶";
+      } else {
+        startPlay();
+        playBtn.textContent = "⏸";
+      }
+    });
+  }
+
+  if (restartBtn) {
+    restartBtn.addEventListener("click", () => {
+      isPlaying = false;
+      if (scrollRAF) cancelAnimationFrame(scrollRAF);
+      scrollRAF = null;
+      scrollPos = 0;
+      if (playBtn) playBtn.textContent = "▶";
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+  if (speedSlider) {
+    speedSlider.addEventListener("input", () => {
+      speedVal.textContent = speedSlider.value;
+    });
+  }
+
   update();
 }
 

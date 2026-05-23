@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="az" data-theme="dark">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akkordlarim</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="/css/style.css"/>
+  <link rel="stylesheet" href="/css/responsive.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
-    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
 </head>
-
 <body>
 
   <nav class="navbar">
-    <a href="profile.html" id="nav-profile" class="nav-icon nav-profile">🎸</a>
+    <a href="profile.html" id="nav-brand" class="nav-icon nav-brand">🎸</a>
     <a href="index.html" class="nav-icon">🏠</a>
     <button class="nav-icon" id="theme-toggle" title="Tema dəyiş">🌙</button>
   </nav>
@@ -35,9 +31,9 @@
       <h1 id="song-title">Mahnı adı</h1>
       <p id="song-artist"></p>
       <div class="song-info-row">
-        <span id="song-key-text">Orijinal Ton: <strong id="song-key">—</strong></span>
-        <span id="song-easy-text">Asan Ton: <strong id="song-easy-key">A</strong></span>
+        <span>Orijinal Ton: <strong id="song-key">—</strong></span>
         <span>Kapodastr: <strong id="song-capo">0</strong></span>
+        <span>Asan Ton: <strong id="song-easy-key">A</strong></span>
         <span id="btn-favorite" class="fav-btn" title="Sevimlilərə əlavə et">Sevimlilərə əlavə et 🤍</span>
         <button id="rhythm-add-btn" class="rhythm-add-toggle">＋ Ritm əlavə et</button>
       </div>
@@ -54,10 +50,21 @@
 
       <hr class="divider" />
 
+      <!-- Oxuma paneli -->
+      <div class="player-toolbar" id="player-toolbar">
+        <button class="player-btn" id="player-play" title="Oxu">▶</button>
+        <button class="player-btn" id="player-restart" title="Başa qayıt">⏮</button>
+        <div class="player-speed">
+          <span class="player-speed-label">Sürət</span>
+          <input type="range" id="player-speed" min="1" max="10" value="5" class="player-speed-slider" />
+          <span class="player-speed-val" id="player-speed-val">5</span>
+        </div>
+      </div>
+
       <!-- Lyrics -->
       <div class="lyrics-toolbar">
-        <button class="font-btn" id="btn-down" title="Kiçilt">A−</button>
-        <button class="font-btn" id="btn-up" title="Böyüt">A+</button>
+        <button class="font-btn" id="btn-down">A−</button>
+        <button class="font-btn" id="btn-up">A+</button>
       </div>
       <div id="lyrics"></div>
 
@@ -115,5 +122,4 @@
 
   <script type="module" src="js/song.js"></script>
 </body>
-
 </html>

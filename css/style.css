@@ -45,11 +45,11 @@ a {
 }
 
 [data-theme="light"] {
-  --bg: #f0f4ff;
+  --bg: #a7bdfb;
   --bg-deep: #e4eaf5;
   --surface: #ffffff;
-  --surface-2: #f5f7ff;
-  --border: rgba(0, 0, 0, 0.08);
+  --surface-2: #d6dbf0;
+  --border: rgba(0, 0, 0, 0.18);
   --text: #1a1f2e;
   --text-muted: #6b7a99;
   --accent: #0f7a5a;
@@ -245,9 +245,9 @@ body {
   transform: translateX(-50%);
   transition: opacity 0.3s ease;
   opacity: 1;
-  background: var(--surface);
+  background: var(--surface-2);
   border-top: 1px solid var(--border);
-  border-radius: 16px 16px 0 0;
+  border-radius: 16px;
   padding: 1.2rem 1.5rem 1.5rem;
   z-index: 200;
   max-height: 70vh;
@@ -662,9 +662,9 @@ body {
 }
 
 [data-theme="light"] {
-  --chord-text: #1a1f2e;
+  --chord-text: #e8e4dc;
   --chord-muted: #6b7a99;
-  --chord-grid: rgba(0, 0, 0, 0.2);
+  --chord-grid: rgba(255, 255, 255, 0.15);
   --chord-dot: #0f7a5a;
   --chord-finger-text: #ffffff;
 }
@@ -862,6 +862,7 @@ body {
 .artist-card-title {
   font-size: 15px;
   font-weight: 500;
+  color :#fff;
 }
 
 .artist-card-meta {

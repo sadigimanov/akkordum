@@ -4,7 +4,7 @@
 
   #lyrics {
     font-size: 12px;
-     overflow-x: scroll;
+    overflow-x: scroll;
     -webkit-overflow-scrolling: touch;
   }
 
@@ -35,7 +35,7 @@
     display: none;
   }
 
-  .song-info-row>* {
+  .song-info-row > * {
     flex-shrink: 0;
     white-space: nowrap;
     font-size: 14px;
@@ -62,12 +62,6 @@
   .song-card {
     padding: 1.2rem 0.5rem;
     border-radius: 10px;
-  }
-
-  .song-info-row {
-    flex-wrap: wrap;
-    gap: 6px;
-    font-size: 12px;
   }
 
   .artist-grid {
@@ -99,6 +93,69 @@
     width: 100%;
     box-sizing: border-box;
     padding: 0.3rem;
-    /*  kohne hali 1rem */
+  }
+}
+
+/* ── Tablet (601px - 1024px) ──────────────────────────────── */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  .container {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .navbar {
+    padding: 0 1.5rem;
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .akkord-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  .artist-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  #favorites-list {
+    grid-template-columns: 1fr;
+  }
+
+  .song-card {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .song-info-row {
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .random-panel {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 70vh;
+    overflow-y: auto;
+    border-radius: 16px 16px 0 0;
+    padding: 1.2rem 1.5rem 2rem;
+  }
+
+  #song-title {
+    font-size: 22px;
+  }
+
+  .cat-card {
+    padding: 1.2rem 1rem;
+    font-size: 14px;
+  }
+  #favorites-list {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -62,9 +62,9 @@ async function initSearch() {
     }
 
     const q = normalize(query);
-    const matched = catalog.filter(s =>
-      normalize(s.title).startsWith(q) || normalize(s.artist).startsWith(q)
-    );
+    const byTitle  = catalog.filter(s => normalize(s.title).startsWith(q));
+    const byArtist = catalog.filter(s => !normalize(s.title).startsWith(q) && normalize(s.artist).startsWith(q));
+    const matched  = [...byTitle, ...byArtist];
 
     results.innerHTML = "";
 

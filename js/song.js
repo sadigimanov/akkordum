@@ -85,9 +85,9 @@ async function initSearch() {
       return;
     }
     const q = normalize(query);
-    const matched = catalog.filter(s =>
-      normalize(s.title).startsWith(q) || normalize(s.artist).startsWith(q)
-    );
+    const byTitle  = catalog.filter(s => normalize(s.title).startsWith(q));
+    const byArtist = catalog.filter(s => !normalize(s.title).startsWith(q) && normalize(s.artist).startsWith(q));
+    const matched  = [...byTitle, ...byArtist];
     results.innerHTML = "";
     if (matched.length === 0) {
       results.innerHTML = `<li class="search-no-result">Nəticə tapılmadı</li>`;

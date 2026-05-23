@@ -19,7 +19,7 @@ function el(tag, attrs = {}) {
 function strX(i) { return LEFT + i * STR_GAP; }
 
 function createDiagram(chordName, chordData) {
-  const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, width: W, height: H });
+  const svg = el("svg", { viewBox: `-10 0 ${W + 20} ${H}`, width: W, height: H });
 
   const title = el("text", { x: W / 2, y: 13, "text-anchor": "middle",
     "font-size": 13, "font-weight": "bold", fill: "var(--chord-text)" });
@@ -95,46 +95,31 @@ function createDiagram(chordName, chordData) {
   return svg;
 }
 
-
-// Akkord adlarının Azərbaycan izahı
 const CHORD_NAMES = {
-  // C
   "C": "Do major", "Cm": "Do minor", "C7": "Do dominant 7", "Cm7": "Do minor 7",
-  "Cmaj7": "Do major 7", "Csus2": "Do sus2", "Csus4": "Do sus4",
-  // C#
+  "Cmaj7": "Do major 7", "Csus2(I)": "Do sus2", "Csus2(II)": "Do sus2", "Csus2(III)": "Do sus2", "Csus4": "Do sus4",
   "C#": "Do diyez major", "C#m": "Do diyez minor", "C#7": "Do diyez 7",
   "C#m7": "Do diyez minor 7", "Db": "Re bemol major",
-  // D
   "D": "Re major", "Dm": "Re minor", "D7": "Re dominant 7", "Dm7": "Re minor 7",
-  "Dmaj7": "Re major 7", "Dsus2": "Re sus2", "Dsus4": "Re sus4",
-  // D#
+  "Dmaj7": "Re major 7", "Dsus2(I)": "Re sus2", "Dsus2(II)": "Re sus2", "Dsus4": "Re sus4",
   "D#": "Re diyez major", "D#m": "Re diyez minor", "Eb": "Mi bemol major", "Ebm": "Mi bemol minor",
-  // E
   "E": "Mi major", "Em": "Mi minor", "E7": "Mi dominant 7", "Em7": "Mi minor 7",
   "Emaj7": "Mi major 7", "Esus4": "Mi sus4",
-  // F
   "F": "Fa major", "Fm": "Fa minor", "F7": "Fa dominant 7", "Fm7": "Fa minor 7",
-  "Fmaj7": "Fa major 7", "Fsus2": "Fa sus2",
-  // F#
+  "Fmaj7(I)": "Fa major 7", "Fmaj7(II)": "Fa major 7", "Fsus2(I)": "Fa sus2", "Fsus2(II)": "Fa sus2",
   "F#": "Fa diyez major", "F#m": "Fa diyez minor", "F#7": "Fa diyez 7",
   "F#m7": "Fa diyez minor 7", "Gb": "Sol bemol major",
-  // G
   "G": "Sol major", "Gm": "Sol minor", "G7": "Sol dominant 7", "Gm7": "Sol minor 7",
   "Gmaj7": "Sol major 7", "Gsus4": "Sol sus4", "Gsus2": "Sol sus2",
-  // G#
   "G#": "Sol diyez major", "G#m": "Sol diyez minor", "Ab": "La bemol major", "Abm": "La bemol minor",
-  // A
   "A": "La major", "Am": "La minor", "A7": "La dominant 7", "Am7": "La minor 7",
-  "Amaj7": "La major 7", "Asus2": "La sus2", "Asus4": "La sus4",
-  // A#
+  "Amaj7": "La major 7", "Asus2": "La sus2", "Asus4(I)": "La sus4", "Asus4(II)": "La sus4",
   "A#": "La diyez major", "A#m": "La diyez minor", "Bb": "Si bemol major",
   "Bbm": "Si bemol minor", "Bb7": "Si bemol 7",
-  // B
   "B": "Si major", "Bm": "Si minor", "B7": "Si dominant 7", "Bm7": "Si minor 7",
   "Bmaj7": "Si major 7",
 };
 
-// Akkord növləri üçün filtr qrupları
 const GROUPS = [
   { label: "Hamısı", filter: () => true },
   { label: "Major",  filter: (name) => /^[A-G](#|b)?$/.test(name) },
@@ -165,48 +150,66 @@ function init() {
 
   const grid    = document.getElementById("akkord-grid");
   const filters = document.getElementById("akkord-filters");
-  const entries = Object.entries(CHORDS_DB);
 
-  // Filtr düymələri
+  const NOTE_ORDER = ["C", "D", "E", "F", "G", "A", "B"];
+  const SUFFIX_ORDER = ["", "m", "7", "m7", "maj7", "sus2", "sus4"];
+
+  function chordSortKey(name) {
+    const match = name.match(/^([A-G])(#|b)?(.*)$/);
+    if (!match) return "99-0-99-" + name;
+    const root       = NOTE_ORDER.indexOf(match[1]);
+    const modifier   = match[2] === "#" ? 1 : match[2] === "b" ? 2 : 0;
+    const suffix     = match[3] || "";
+    const suffixIdx  = SUFFIX_ORDER.indexOf(suffix);
+    const suffixSort = String(suffixIdx === -1 ? 99 : suffixIdx).padStart(2, "0");
+    return `${root}-${modifier}-${suffixSort}`;
+  }
+
+  // Bir dəfə sırala, renderGrid-də istifadə et
+  const entries = Object.entries(CHORDS_DB).sort(([a], [b]) =>
+    chordSortKey(a).localeCompare(chordSortKey(b))
+  );
+
   let activeGroup = 0;
-
   let searchQuery = "";
 
   function renderGrid(groupIdx) {
     grid.innerHTML = "";
     const { filter } = GROUPS[groupIdx];
     const q = searchQuery.trim().toLowerCase();
-    entries
-      .filter(([name, data]) => {
-        if (!filter(name, data)) return false;
-        if (!q) return true;
-        const nameMatch = name.toLowerCase().startsWith(q);
-        const azName = (CHORD_NAMES[name] || "").toLowerCase();
-        const azMatch = azName.startsWith(q) || azName.includes(" " + q);
-        return nameMatch || azMatch;
-      })
-      .sort(([a], [b]) => {
-        const aNameMatch = a.toLowerCase().startsWith(q);
-        const bNameMatch = b.toLowerCase().startsWith(q);
-        // Akkord adına uyğun olanlar əvvəl
-        if (aNameMatch && !bNameMatch) return -1;
-        if (!aNameMatch && bNameMatch) return 1;
-        // Hər ikisi eyni kateqoriyadadırsa qısa olanlar əvvəl
-        return a.length - b.length;
-      })
-      .forEach(([name, data]) => {
-        const wrap = document.createElement("div");
-        wrap.className = "akkord-card";
-        wrap.title = CHORD_NAMES[name] || name;
-        wrap.appendChild(createDiagram(name, data));
-        wrap.style.cursor = "pointer";
-        wrap.addEventListener("click", () => openModal(name, data));
-        grid.appendChild(wrap);
+
+    let filtered = entries.filter(([name, data]) => {
+      if (!filter(name, data)) return false;
+      if (!q) return true;
+      const nameMatch = name.toLowerCase().startsWith(q);
+      const azName = (CHORD_NAMES[name] || "").toLowerCase();
+      const azMatch = azName.startsWith(q) || azName.includes(" " + q);
+      return nameMatch || azMatch;
+    });
+
+    // Axtarış varsa: akkord adı uyğunları əvvəl
+    if (q) {
+      filtered = filtered.sort(([a], [b]) => {
+        const aName = a.toLowerCase().startsWith(q);
+        const bName = b.toLowerCase().startsWith(q);
+        if (aName && !bName) return -1;
+        if (!aName && bName) return 1;
+        return 0;
       });
+    }
+
+    filtered.forEach(([name, data]) => {
+      const wrap = document.createElement("div");
+      wrap.className = "akkord-card";
+      wrap.title = CHORD_NAMES[name] || name;
+      wrap.appendChild(createDiagram(name, data));
+      wrap.style.cursor = "pointer";
+      wrap.addEventListener("click", () => openModal(name, data));
+      grid.appendChild(wrap);
+    });
   }
 
-
-  // Modal yarat
+  // Modal
   const modal = document.createElement("div");
   modal.className = "akkord-modal hidden";
   modal.innerHTML = `
@@ -219,15 +222,9 @@ function init() {
   `;
   document.body.appendChild(modal);
 
-  modal.querySelector(".akkord-modal-backdrop").addEventListener("click", () => {
-    modal.classList.add("hidden");
-  });
-  modal.querySelector(".akkord-modal-close").addEventListener("click", () => {
-    modal.classList.add("hidden");
-  });
-  document.addEventListener("keydown", e => {
-    if (e.key === "Escape") modal.classList.add("hidden");
-  });
+  modal.querySelector(".akkord-modal-backdrop").addEventListener("click", () => modal.classList.add("hidden"));
+  modal.querySelector(".akkord-modal-close").addEventListener("click", () => modal.classList.add("hidden"));
+  document.addEventListener("keydown", e => { if (e.key === "Escape") modal.classList.add("hidden"); });
 
   function openModal(name, data) {
     const diagramEl = document.getElementById("modal-diagram");
@@ -237,7 +234,7 @@ function init() {
     const svg = createDiagram(name, data);
     svg.setAttribute("width", SIZE);
     svg.setAttribute("height", SIZE * 1.2);
-    svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+    svg.setAttribute("viewBox", `-10 0 ${W + 20} ${H}`);
     diagramEl.appendChild(svg);
     nameEl.textContent = name;
     modal.classList.remove("hidden");

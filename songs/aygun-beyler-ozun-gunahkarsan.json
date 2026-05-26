@@ -2,35 +2,35 @@
   "id": "aygun-beyler-ozun-gunahkarsan",
   "title": "Özün Günahkarsan",
   "artist": "Aygün Bəylər",
-  "key": "Am",
+  "key": "Bm",
   "capo": 0,
   "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
   "sections": [
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 19 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 14 }
       ],
       "line": "İllər boyu həsrətimi duymaz oldun"
     },
     {
       "chords": [
-        { "name": "E", "offset": 0 },
-        { "name": "Am", "offset": 17 }
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 12 }
       ],
-      "line": "İllər boyu qədərimi bilmədin də"
+      "line": "İllər boyu kədərimi bölmədin də"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 16 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 12 }
       ],
       "line": "Çox vaxt güldüm ağlayaraq için-için"
     },
     {
       "chords": [
-        { "name": "E", "offset": 0 },
-        { "name": "Am", "offset": 16 }
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 12 }
       ],
       "line": "Bircə sözlə göz yaşımı silmədin də"
     },
@@ -39,29 +39,29 @@
 
     {
       "chords": [
-        { "name": "Dm", "offset": 0 },
-        { "name": "Am", "offset": 15 }
+        { "name": "Em", "offset": 0 },
+        { "name": "Bm", "offset": 11 }
       ],
       "line": "Soyuqluğun buz olanda yanağımda"
     },
     {
       "chords": [
-        { "name": "E", "offset": 0 },
-        { "name": "Am", "offset": 16 }
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 12 }
       ],
       "line": "Nəfəsinlə başqasını isitmisən"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 },
-        { "name": "Am", "offset": 17 }
+        { "name": "Em", "offset": 0 },
+        { "name": "Bm", "offset": 13 }
       ],
       "line": "Sənsizliklə yaşadıqca otağımda"
     },
     {
       "chords": [
-        { "name": "E", "offset": 0 },
-        { "name": "Am", "offset": 17 }
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 13 }
       ],
       "line": "Sən də məni bir otaqda itirmisən"
     },
@@ -70,29 +70,29 @@
 
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 18 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 13 }
       ],
       "line": "Bəs bilmirdin, həsrətinlə ürəyimə"
     },
     {
       "chords": [
-        { "name": "E", "offset": 0 },
-        { "name": "Am", "offset": 16 }
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 11 }
       ],
       "line": "Həsrətinin əvəzinə daş asırsan?"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 16 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 12 }
       ],
       "line": "Bəs bilmirdin, özün mənə yad olduqca"
     },
     {
       "chords": [
-        { "name": "E", "offset": 0 },
-        { "name": "Am", "offset": 13 }
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 10 }
       ],
       "line": "Məninçün də yavaş-yavaş yadlaşırsan?"
     },
@@ -101,29 +101,29 @@
 
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 19 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 13 }
       ],
       "line": "Yad baxışlar dikilibdir gözlərinə"
     },
     {
       "chords": [
-        { "name": "E", "offset": 0 },
-        { "name": "Am", "offset": 14 }
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 11 }
       ],
       "line": "Sənsə mənə peşman qəlb gətirmisən"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 16 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 12 }
       ],
       "line": "Necə verim sabahımı, necə sənə?"
     },
     {
       "chords": [
-        { "name": "E", "offset": 0 },
-        { "name": "Am", "offset": 14 }
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 11 }
       ],
       "line": "Sən ki mənim dünənimi itirmisən"
     }

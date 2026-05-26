@@ -2,26 +2,26 @@
   "id": "asif-meherremov-gece-gece",
   "title": "Gecə Gecə",
   "artist": "Asif Məhərrəmov",
-  "key": "Am",
-  "capo": 2,
+  "key": "Bm",
+  "capo": 0,
   "rhythm": ["↓", "-", "↑", "↑", "↑", "-", "↓", "↑", "↓", "↑"],
   "sections": [
     {
       "chords": [
-        { "name": "Am", "offset": 0 }
+        { "name": "Bm", "offset": 0 }
       ],
       "line": "Səhər odu gün işığı, Yuxum odu gecə gecə."
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 },
-        { "name": "F", "offset": 31 }
+        { "name": "Em", "offset": 0 },
+        { "name": "G", "offset": 25 }
       ],
       "line": "Onu gəzib aramışam, Qapı qapı, küçə küçə."
     },
     {
       "chords": [
-        { "name": "E", "offset": 10 }
+        { "name": "F#", "offset": 9 }
       ],
       "line": "Düşünürəm içə içə..."
     },
@@ -30,20 +30,20 @@
 
     {
       "chords": [
-        { "name": "Am", "offset": 0 }
+        { "name": "Bm", "offset": 0 }
       ],
       "line": "Onu salıb ürəyimə, Ürəyimi sıxan həyat"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 },
-        { "name": "F", "offset": 29 }
+        { "name": "Em", "offset": 0 },
+        { "name": "G", "offset": 21 }
       ],
       "line": "Axı belə hara gedir, Axırıma çıxan həyat."
     },
     {
       "chords": [
-        { "name": "E", "offset": 10 }
+        { "name": "F#", "offset": 9 }
       ],
       "line": "Düz üzümə baxan həyat..."
     },
@@ -53,38 +53,38 @@
     {
       "label": "Keçid",
       "chords": [
-        { "name": "Dm", "offset": 6 }
+        { "name": "Em", "offset": 4 }
       ],
       "line": "Gizlincə aranı vurub,"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 }
+        { "name": "Em", "offset": 0 }
       ],
       "line": "Bizi ayırıb, məni bir yana çəkib atıb"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 }
+        { "name": "Bm", "offset": 0 }
       ],
       "line": "o, birini bir tərəfə"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 }
+        { "name": "Bm", "offset": 0 }
       ],
       "line": "Ya belə olub, ya da nə bilim,"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 }
+        { "name": "Bm", "offset": 0 }
       ],
       "line": "Mənə bəlkə də düşməyib hansı ki,"
     },
     {
       "chords": [
-        { "name": "E", "offset": 10 },
-        { "name": "Am", "offset": 34 }
+        { "name": "F#", "offset": 5 },
+        { "name": "Bm", "offset": 26 }
       ],
       "line": "Sevən ərəfə, götürün içək bunu şərəfə..."
     },
@@ -94,43 +94,43 @@
     {
       "label": "Təkrar",
       "chords": [
-        { "name": "Dm", "offset": 0 }
+        { "name": "Em", "offset": 0 }
       ],
       "line": "Belədi həyat aranı vurub,"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 }
+        { "name": "Em", "offset": 0 }
       ],
       "line": "Bizi ayırıb, məni bir yana"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 11 }
+        { "name": "Bm", "offset": 7 }
       ],
       "line": "çəkib atıb o, birini bir tərəfə"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 }
+        { "name": "Bm", "offset": 0 }
       ],
       "line": "Ya belə olub, ya da nə bilim,"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 }
+        { "name": "Bm", "offset": 0 }
       ],
       "line": "Mənə bəlkə də düşməyib hansısa,"
     },
     {
       "chords": [
-        { "name": "E", "offset": 9 }
+        { "name": "F#", "offset": 5 }
       ],
       "line": "sevən ərəfə..."
     },
     {
       "chords": [
-        { "name": "Am", "offset": 22 }
+        { "name": "Bm", "offset": 17 }
       ],
       "line": "Götürün içək bunu şərəfə..."
     }

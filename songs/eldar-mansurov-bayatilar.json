@@ -1,0 +1,104 @@
+{
+  "id": "eldar-mansurov-bayatilar",
+  "title": "Bayatılar",
+  "artist": "Eldar Mansurov",
+  "key": "Cm",
+  "capo": 0,
+  "rythim": ["↓", "↓", "↑", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "Fm", "offset": 7 },
+        { "name": "Gm", "offset": 14 },
+        { "name": "Cm", "offset": 24 }
+      ],
+      "line": "Ürəyimdə ayaz var Nə qış gedib, nə yaz var"
+    },
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "Fm", "offset": 6 },
+        { "name": "Gm", "offset": 14 },
+        { "name": "Cm", "offset": 23 }
+      ],
+      "line": "Oyatma bənövşəni Kol dibində ayaz var"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "D#", "offset": 0 },
+        { "name": "Fm", "offset": 5 },
+        { "name": "A#", "offset": 15 },
+        { "name": "D#", "offset": 24 }
+      ],
+      "line": "Kədərli baxmayaydı Göz yaşım axmayaydı"
+    },
+    {
+      "chords": [
+        { "name": "D#", "offset": 0 },
+        { "name": "Fm", "offset": 10 },
+        { "name": "A#", "offset": 17 },
+        { "name": "D#", "offset": 24 }
+      ],
+      "line": "Yad baxmağı bir yana Yar yada baxmayaydı"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "Fm", "offset": 8 },
+        { "name": "Gm", "offset": 14 },
+        { "name": "Cm", "offset": 25 }
+      ],
+      "line": "Ürəyimdə ayaz var Nə qış gedib, nə yaz var"
+    },
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "Fm", "offset": 6 },
+        { "name": "Gm", "offset": 14 },
+        { "name": "Cm", "offset": 23 }
+      ],
+      "line": "Oyatma bənövşəni Kol dibində ayaz var"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "Fm", "offset": 8 },
+        { "name": "Gm", "offset": 15 },
+        { "name": "Cm", "offset": 21 }
+      ],
+      "line": "Bu dünya çətin qala Yolları çətin qala"
+    },
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "Fm", "offset": 8 },
+        { "name": "Gm", "offset": 16 },
+        { "name": "Cm", "offset": 22 }
+      ],
+      "line": "Yaxşı yarı yazda gəz Payıza çətin qala"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "D#", "offset": 0 },
+        { "name": "Fm", "offset": 6 },
+        { "name": "A#", "offset": 15 },
+        { "name": "D#", "offset": 22 }
+      ],
+      "line": "Qalanın daşı oldum Gözünün yaşı oldum"
+    },
+    {
+      "chords": [
+        { "name": "D#", "offset": 0 },
+        { "name": "Fm", "offset": 7 },
+        { "name": "A#", "offset": 18 },
+        { "name": "D#", "offset": 25 }
+      ],
+      "line": "Dünyada gün görmədim Sevəndə naşı oldum"
+    }
+  ]
+}

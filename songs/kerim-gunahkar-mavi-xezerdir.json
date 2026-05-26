@@ -2,43 +2,43 @@
   "id": "kerim-gunahkar-mavi-xezerdir",
   "title": "Günahkar Mavi Xəzərdir",
   "artist": "Kərim",
-  "key": "Am",
-  "capo": 2,
+  "key": "Bm",
+  "capo": 0,
   "rhythm": ["↓", "↓", "↑", "↓", "↑"],
   "sections": [
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "E", "offset": 9 },
-        { "name": "Am", "offset": 34 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#", "offset": 6 },
+        { "name": "Bm", "offset": 24 }
       ],
       "line": "Eşit, ey nazlı Mələk, keçmişə bir eylə nəzər"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 7 },
-        { "name": "E", "offset": 19 },
-        { "name": "Am", "offset": 33 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 5 },
+        { "name": "F#", "offset": 13 },
+        { "name": "Bm", "offset": 22 }
       ],
-      "line": "İki sevgim var idi qəlbimdə sən, bir də Xəzər"
+      "line": "İki sevgim var idi qəlbdə sən, bir də Xəzər"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 9 },
-        { "name": "E", "offset": 19 },
-        { "name": "Am", "offset": 32 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 6 },
+        { "name": "F#", "offset": 14 },
+        { "name": "Bm", "offset": 25 }
       ],
       "line": "Siz idiz qəlbimə hakim, mənə candan da əziz"
     },
     {
       "chords": [
-        { "name": "F", "offset": 0 },
-        { "name": "Dm", "offset": 9 },
-        { "name": "E", "offset": 23 },
-        { "name": "Am", "offset": 34 },
-        { "name": "E", "offset": 45 }
+        { "name": "G", "offset": 0 },
+        { "name": "Em", "offset": 6 },
+        { "name": "F#", "offset": 16 },
+        { "name": "Bm", "offset": 24 },
+        { "name": "F#", "offset": 33 }
       ],
       "line": "Bir-birindən də gözəl; sən və ləlatümlü dəniz"
     },
@@ -47,37 +47,37 @@
 
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 7 },
-        { "name": "F", "offset": 15 },
-        { "name": "E", "offset": 25 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 5 },
+        { "name": "G", "offset": 11 },
+        { "name": "F#", "offset": 19 }
       ],
       "line": "Indiki keçmişə edirsən nəzər"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 },
-        { "name": "F", "offset": 8 },
-        { "name": "E", "offset": 16 },
-        { "name": "Am", "offset": 26 }
+        { "name": "Em", "offset": 0 },
+        { "name": "G", "offset": 5 },
+        { "name": "F#", "offset": 11 },
+        { "name": "Bm", "offset": 19 }
       ],
       "line": "De iki, sevgiyə axı kim dözər"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 6 },
-        { "name": "F", "offset": 16 },
-        { "name": "E", "offset": 26 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 4 },
+        { "name": "G", "offset": 10 },
+        { "name": "F#", "offset": 18 }
       ],
       "line": "Ikimizdən birini sevərdin gərək"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 },
-        { "name": "F", "offset": 6 },
-        { "name": "E", "offset": 15 },
-        { "name": "Am", "offset": 25 }
+        { "name": "Em", "offset": 0 },
+        { "name": "G", "offset": 5 },
+        { "name": "F#", "offset": 11 },
+        { "name": "Bm", "offset": 19 }
       ],
       "line": "Seçim etməliydin ya mən, ya Xəzər"
     },
@@ -86,37 +86,37 @@
 
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "E", "offset": 10 },
-        { "name": "Am", "offset": 33 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#", "offset": 8 },
+        { "name": "Bm", "offset": 26 }
       ],
       "line": "Bir zaman bu sahildə tapmışdım məhəbbətimi"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 8 },
-        { "name": "E", "offset": 19 },
-        { "name": "Am", "offset": 28 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 6 },
+        { "name": "F#", "offset": 15 },
+        { "name": "Bm", "offset": 22 }
       ],
       "line": "Aldı məndən apardı dalğalar səadətimi"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 8 },
-        { "name": "E", "offset": 20 },
-        { "name": "Am", "offset": 31 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 6 },
+        { "name": "F#", "offset": 15 },
+        { "name": "Bm", "offset": 23 }
       ],
-      "line": "Yada saldıqca qulaq dalğaların tellərini"
+      "line": "Yada saldıqca qulac dalğaların tellərini"
     },
     {
       "chords": [
-        { "name": "F", "offset": 0 },
-        { "name": "Dm", "offset": 8 },
-        { "name": "E", "offset": 19 },
-        { "name": "Am", "offset": 32 },
-        { "name": "E", "offset": 40 }
+        { "name": "G", "offset": 0 },
+        { "name": "Em", "offset": 7 },
+        { "name": "F#", "offset": 14 },
+        { "name": "Bm", "offset": 23 },
+        { "name": "F#", "offset": 28 }
       ],
       "line": "Gəzirəm həsrət ilə ötən gənclik illərini"
     },
@@ -125,37 +125,37 @@
 
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 11 },
-        { "name": "F", "offset": 19 },
-        { "name": "E", "offset": 31 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 8 },
+        { "name": "G", "offset": 14 },
+        { "name": "F#", "offset": 24 }
       ],
       "line": "Bir vaxt yadındamı sənlə baş-başa"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 },
-        { "name": "F", "offset": 7 },
-        { "name": "E", "offset": 14 },
-        { "name": "Am", "offset": 23 }
+        { "name": "Em", "offset": 0 },
+        { "name": "G", "offset": 5 },
+        { "name": "F#", "offset": 9 },
+        { "name": "Bm", "offset": 16 }
       ],
       "line": "Ikimiz sahili gəzərdik qoşa"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 9 },
-        { "name": "F", "offset": 18 },
-        { "name": "E", "offset": 28 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 7 },
+        { "name": "G", "offset": 15 },
+        { "name": "F#", "offset": 23 }
       ],
       "line": "Bəlkə də günahkar mavi Xəzərdir"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 },
-        { "name": "F", "offset": 8 },
-        { "name": "E", "offset": 17 },
-        { "name": "Am", "offset": 26 }
+        { "name": "Em", "offset": 0 },
+        { "name": "G", "offset": 7 },
+        { "name": "F#", "offset": 14 },
+        { "name": "Bm", "offset": 22 }
       ],
       "line": "Yetmədi bu nakam sevgimiz başa"
     }

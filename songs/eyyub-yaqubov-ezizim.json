@@ -2,35 +2,35 @@
   "id": "eyyub-yaqubov-ezizim",
   "title": "Əzizim",
   "artist": "Eyyub Yaqubov",
-  "key": "Am",
+  "key": "C#m",
   "capo": 0,
   "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
   "sections": [
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 26 }
+        { "name": "C#m", "offset": 0 },
+        { "name": "F#m", "offset": 12 }
       ],
       "line": "Saçlarının rəngi payızdır"
     },
     {
       "chords": [
-        { "name": "E", "offset": 0 },
-        { "name": "Am", "offset": 24 }
+        { "name": "G#", "offset": 0 },
+        { "name": "C#m", "offset": 12 }
       ],
       "line": "Gözlərinin rəngi dəniz"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 26 }
+        { "name": "C#m", "offset": 0 },
+        { "name": "F#m", "offset": 15 }
       ],
       "line": "Almaya bənzər yanağın var"
     },
     {
       "chords": [
-        { "name": "E", "offset": 0 },
-        { "name": "Am", "offset": 22 }
+        { "name": "G#", "offset": 0 },
+        { "name": "C#m", "offset": 15 }
       ],
       "line": "Ay üzün aydan da təmiz"
     },
@@ -39,29 +39,29 @@
 
     {
       "chords": [
-        { "name": "A7", "offset": 0 },
-        { "name": "Dm", "offset": 28 }
+        { "name": "C#7", "offset": 0 },
+        { "name": "F#m", "offset": 16 }
       ],
       "line": "Qönçə dodaqlarda gülüşlər"
     },
     {
       "chords": [
-        { "name": "E", "offset": 0 },
-        { "name": "Am", "offset": 22 }
+        { "name": "G#", "offset": 0 },
+        { "name": "C#m", "offset": 14 }
       ],
       "line": "Yenə gözlərimə görünsün"
     },
     {
       "chords": [
-        { "name": "F", "offset": 0 },
-        { "name": "Dm", "offset": 24 }
+        { "name": "A", "offset": 0 },
+        { "name": "F#m", "offset": 15 }
       ],
       "line": "Məni məndən alan öpüşlər"
     },
     {
       "chords": [
-        { "name": "E", "offset": 0 },
-        { "name": "Am", "offset": 24 }
+        { "name": "G#", "offset": 0 },
+        { "name": "C#m", "offset": 15 }
       ],
       "line": "Yenə ətrafıma bürünsün"
     },
@@ -71,31 +71,31 @@
     {
       "label": "Nəqarət",
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "A7", "offset": 13 },
-        { "name": "Dm", "offset": 29 }
+        { "name": "C#m", "offset": 0 },
+        { "name": "C#7", "offset": 8 },
+        { "name": "F#m", "offset": 16 }
       ],
       "line": "Günləri saydım sənə çatdım, əzizim"
     },
     {
       "chords": [
-        { "name": "E", "offset": 0 },
-        { "name": "Am", "offset": 25 }
+        { "name": "G#", "offset": 0 },
+        { "name": "C#m", "offset": 17 }
       ],
       "line": "Dərdi-qəmi başımdan atdım, əzizim"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 },
-        { "name": "Am", "offset": 22 }
+        { "name": "F#m", "offset": 0 },
+        { "name": "C#m", "offset": 17 }
       ],
       "line": "Yuxuna gəlmək üçün, üzünü görmək üçün"
     },
     {
       "chords": [
-        { "name": "B", "offset": 0 },
-        { "name": "E", "offset": 18 },
-        { "name": "Am", "offset": 30 }
+        { "name": "D#", "offset": 0 },
+        { "name": "G#", "offset": 13 },
+        { "name": "C#m", "offset": 19 }
       ],
       "line": "Tək səni fikirləşib yatdım, əzizim"
     }

@@ -2,37 +2,37 @@
   "id": "elvin-mirzezade-dusun-meni",
   "title": "Düşün Məni",
   "artist": "Elvin Mirzəzadə",
-  "key": "Am",
-  "capo": 3,
+  "key": "Cm",
+  "capo": 0,
   "rhythm": ["↓", "↑", "↓", "↑"],
   "sections": [
     {
       "chords": [
-        { "name": "Am", "offset": 0 }
+        { "name": "Cm", "offset": 0 }
       ],
       "line": "Düşün məni, gecə səhərə çatana qədər"
     },
     {
       "chords": [
-        { "name": "F", "offset": 0 }
+        { "name": "G#", "offset": 0 }
       ],
       "line": "Düşün məni, gözün yuxuya dalana qədər"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 }
+        { "name": "Fm", "offset": 0 }
       ],
       "line": "Düşün məni, zalımın zülmündən"
     },
     {
       "chords": [
-        { "name": "E", "offset": 0 }
+        { "name": "G", "offset": 0 }
       ],
       "line": "Kağız qələmi tapana qədər,"
     },
      {
       "chords": [
-        { "name": "E", "offset": 0 }
+        { "name": "G", "offset": 0 }
       ],
       "line": "Göz səni axtarana qədər"
     },
@@ -41,13 +41,13 @@
 
     {
       "chords": [
-        { "name": "Am", "offset": 0 }
+        { "name": "Cm", "offset": 0 }
       ],
       "line": "Salma yada, nə badə badə badə"
     },
     {
       "chords": [
-        { "name": "F", "offset": 10 }
+        { "name": "G#", "offset": 8 }
       ],
       "line": "Arxasıyca gedər yada"
     },
@@ -59,13 +59,13 @@
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 5 }
+        { "name": "Fm", "offset": 4 }
       ],
       "line": "Ömrü gedər, sevgi bitər bir gün gözlərimdə"
     },
     {
       "chords": [
-        { "name": "E", "offset": 6 }
+        { "name": "G", "offset": 5 }
       ],
       "line": "Mənim sevgim, mənim sözlərimdə"
     },
@@ -74,19 +74,19 @@
 
     {
       "chords": [
-        { "name": "Am", "offset": 0 }
+        { "name": "Cm", "offset": 0 }
       ],
       "line": "Xəyallarım, niyə yarım qaldı xəyallarım?"
     },
     {
       "chords": [
-        { "name": "F", "offset": 0 }
+        { "name": "G#", "offset": 0 }
       ],
       "line": "Mən ağlaram"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 31 }
+        { "name": "Fm", "offset": 24 }
       ],
       "line": "Gecələri səni mən yuxuda görüb sayıqlaram"
     },
@@ -98,7 +98,7 @@
     },
     {
       "chords": [
-        { "name": "E", "offset": 0 }
+        { "name": "G", "offset": 0 }
       ],
       "line": "Yazdığın məktubu oxuyub mən ağlaram..."
     }

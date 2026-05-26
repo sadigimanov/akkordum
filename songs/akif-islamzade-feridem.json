@@ -2,41 +2,41 @@
   "id": "akif-islamzade-feridem",
   "title": "Fəridəm",
   "artist": "Akif İslamzadə",
-  "key": "Am",
-  "capo": 2,
+  "key": "Bm",
+  "capo": 0,
   "rhythm": ["↓", "↓", "↑", "↓", "↑"],
   "sections": [
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 21 },
-        { "name": "E", "offset": 32 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 15 },
+        { "name": "F#", "offset": 22 }
       ],
       "line": "Ay gələn, haralısan, qaşları qaralısan?"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 21 },
-        { "name": "E", "offset": 32 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 15 },
+        { "name": "F#", "offset": 22 }
       ],
       "line": "Ay gələn, haralısan, qaşları qaralısan?"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 },
-        { "name": "Am", "offset": 12 },
-        { "name": "E", "offset": 21 },
-        { "name": "Am", "offset": 33 }
+        { "name": "Em", "offset": 0 },
+        { "name": "Bm", "offset": 9 },
+        { "name": "F#", "offset": 16 },
+        { "name": "Bm", "offset": 24 }
       ],
       "line": "Gözlərindən tanıram, Bakının maralısan"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 },
-        { "name": "Am", "offset": 12 },
-        { "name": "E", "offset": 21 },
-        { "name": "Am", "offset": 33 }
+        { "name": "Em", "offset": 0 },
+        { "name": "Bm", "offset": 9 },
+        { "name": "F#", "offset": 16 },
+        { "name": "Bm", "offset": 24 }
       ],
       "line": "Gözlərindən tanıram, Bakının maralısan"
     },
@@ -46,35 +46,35 @@
     {
       "label": "Nəqarət",
       "chords": [
-        { "name": "C", "offset": 0 },
-        { "name": "Dm", "offset": 21 },
-        { "name": "C", "offset": 35 }
+        { "name": "D", "offset": 0 },
+        { "name": "Em", "offset": 16 },
+        { "name": "D", "offset": 26 }
       ],
       "line": "Fəridəm, ay Fəridəm, gözəl qızsan, Fəridəm"
     },
     {
       "chords": [
-        { "name": "C", "offset": 0 },
-        { "name": "Dm", "offset": 21 },
-        { "name": "C", "offset": 35 }
+        { "name": "D", "offset": 0 },
+        { "name": "Em", "offset": 16 },
+        { "name": "D", "offset": 26 }
       ],
       "line": "Fəridəm, ay Fəridəm, gözəl qızsan, Fəridəm"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 },
-        { "name": "Am", "offset": 10 },
-        { "name": "E", "offset": 21 },
-        { "name": "Am", "offset": 35 }
+        { "name": "Em", "offset": 0 },
+        { "name": "Bm", "offset": 7 },
+        { "name": "F#", "offset": 16 },
+        { "name": "Bm", "offset": 25 }
       ],
       "line": "Bir dönüb baxmaq ilə əqlimi aldın, Fəridəm"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 },
-        { "name": "Am", "offset": 10 },
-        { "name": "E", "offset": 21 },
-        { "name": "Am", "offset": 35 }
+        { "name": "Em", "offset": 0 },
+        { "name": "Bm", "offset": 7 },
+        { "name": "F#", "offset": 16 },
+        { "name": "Bm", "offset": 25 }
       ],
       "line": "Bir dönüb baxmaq ilə əqlimi aldın, Fəridəm"
     },
@@ -83,35 +83,35 @@
 
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 22 },
-        { "name": "E", "offset": 31 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 17 },
+        { "name": "F#", "offset": 24 }
       ],
       "line": "Dağ başında quzu var, ahu kimi gözü var"
     },
     {
       "chords": [
-        { "name": "Am", "offset": 0 },
-        { "name": "Dm", "offset": 22 },
-        { "name": "E", "offset": 31 }
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 17 },
+        { "name": "F#", "offset": 24 }
       ],
       "line": "Dağ başında quzu var, ahu kimi gözü var"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 },
-        { "name": "Am", "offset": 11 },
-        { "name": "E", "offset": 20 },
-        { "name": "Am", "offset": 30 }
+        { "name": "Em", "offset": 0 },
+        { "name": "Bm", "offset": 8 },
+        { "name": "F#", "offset": 16 },
+        { "name": "Bm", "offset": 25 }
       ],
       "line": "Oğlan qızı sevərsə, kimin ona sözü var?"
     },
     {
       "chords": [
-        { "name": "Dm", "offset": 0 },
-        { "name": "Am", "offset": 11 },
-        { "name": "E", "offset": 20 },
-        { "name": "Am", "offset": 30 }
+        { "name": "Em", "offset": 0 },
+        { "name": "Bm", "offset": 8 },
+        { "name": "F#", "offset": 16 },
+        { "name": "Bm", "offset": 25 }
       ],
       "line": "Oğlan qızı sevərsə, kimin ona sözü var?"
     }

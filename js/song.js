@@ -332,24 +332,43 @@ async function init() {
   // Orijinal tona klik
   const origKeyEl = document.getElementById("song-key-text");
   if (origKeyEl) {
-    origKeyEl.style.cursor = "pointer";
-    origKeyEl.addEventListener("click", () => { semitones = 0; update(); });
-  }
+  origKeyEl.style.cursor = "pointer";
+  origKeyEl.addEventListener("click", () => { 
+    semitones = 0; 
+    update(); 
+    
+    // Rəngləri dəyişdir: Orijinal aktiv, Asan solğun
+    origKeyEl.classList.remove("dim-key");
+    origKeyEl.classList.add("active-key");
+    if (easyKeyEl) {
+      easyKeyEl.classList.remove("active-key");
+      easyKeyEl.classList.add("dim-key");
+    }
+  });
+}
 
   // Asan tona klik
   const easyKeyEl = document.getElementById("song-easy-text");
   if (easyKeyEl) {
-    easyKeyEl.style.cursor = "pointer";
-    easyKeyEl.addEventListener("click", () => {
-      const strong = easyKeyEl.querySelector("strong");
-      if (!strong) return;
-      const clickedIdx = NOTES.indexOf(strong.textContent.trim());
-      if (clickedIdx !== -1) {
-        semitones = ((clickedIdx - originalIdx) % 12 + 12) % 12;
-        update();
+  easyKeyEl.style.cursor = "pointer";
+  easyKeyEl.addEventListener("click", () => {
+    const strong = easyKeyEl.querySelector("strong");
+    if (!strong) return;
+    const clickedIdx = NOTES.indexOf(strong.textContent.trim());
+    if (clickedIdx !== -1) {
+      semitones = ((clickedIdx - originalIdx) % 12 + 12) % 12;
+      update();
+      
+      // Rəngləri dəyişdir: Asan aktiv, Orijinal solğun
+      easyKeyEl.classList.remove("dim-key");
+      easyKeyEl.classList.add("active-key");
+      if (origKeyEl) {
+        origKeyEl.classList.remove("active-key");
+        origKeyEl.classList.add("dim-key");
       }
-    });
-  }
+    }
+  });
+}
 
   document.getElementById("btn-up").addEventListener("click", () => {
     if (fontSize < FONT_MAX) { fontSize += FONT_STEP; applyFontSize(); }

@@ -1,109 +1,20 @@
 [
-  {
-    "id": "onur-can-ozcan-intihask",
-    "title": "İntihask",
-    "artist": "Onur Can Ozcan",
-    "key": "F#m",
-    "chords": ["F#m", "E", "D", "Bm"],
-    "capo": 0,
-     "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
-  },
-  {
-    "id": "gokhan-turkmen-bitmesin",
-    "title": "Bitmesin",
-    "artist": "Gökhan Türkmen",
-    "key": "Am",
-    "chords": ["Am", "Dm", "Em", "G", "F"],
-    "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
-  },
-  {
-    "id": "gokhan-turkmen-korkak",
-    "title": "Korkak",
-    "artist": "Gökhan Türkmen",
-    "key": "Gm",
-    "chords": ["Gm", "G", "Dm", "F", "E"],
-    "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
-  },
-  {
-    "id": "halil-sezai-galata",
-    "title": "Galata",
-    "artist": "Halil Sezai",
-    "key": "Gm",
-    "chords": ["Gm", "Dm7", "Cm7"],
-    "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
-  },
-  {
-    "id": "ufuk-baydemir-ay-tenli-kadin",
-    "title": "Ay Tenli Kadın",
-    "artist": "Ufuk Baydemir",
-    "key": "F#",
-    "chords": ["F#", "B", "Bbm"],
-    "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
-  },
-  {
-    "id":"ezhel-felaket",
-    "title":"Felaket",
-    "artist":"Ezhel",
-    "key":"Am",
-    "chords": ["Am", "Em", "D#m", "Dm"],
-    "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
-  },
-  {
-    "id": "haluk-levent-elfida",
-    "title": "Elfida",
-    "artist": "Haluk Levent",
-    "key": "F#m",
-    "chords": ["F#m", "Bm", "E"],
-    "capo": 0,
-    "rhythm": ["↓", "↑", "↑", "↓",  "↑", "↑", "↓", "↑"]
-  },
-  {
-    "id": "simge-sagin-uzulmedin-mi",
-    "title": "Üzülmedin mi?",
-    "artist": "Simge Sağın",
-    "key": "Em",
-    "chords": ["Em", "C", "Am", "Bm"],
-    "capo": 0,
-    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑"]
-  },
-  {
-    "id": "sertab-erener-acik-adres",
-    "title": "Açık Adres",
-    "artist": "Sertab Erener",
-    "key": "G#m",
-    "chords": ["G#m", "C#m", "E","D#m", "F#"],
-    "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
-  },
-  {
-    "id": "madrigal-dip",
-    "title": "Dip",
-    "artist": "Madrigal",
-    "key": "Eb",
-    "chords": ["Eb", "Dm"],
-    "capo": 0,
-    "rhythm": ["↓", "↑", "↑", "↓",  "↑", "↑", "↓", "↑"]
-  },
+
   {
     "id": "asif-meherremov-gece-gece",
     "title": "Gecə Gecə",
     "artist": "Asif Məhərrəmov",
-    "key": "Am",
-    "chords": ["Dm", "Am", "E", "F"],
-    "capo": 2,
+    "key": "Bm",
+    "chords": ["Bm", "Em", "G", "F#"],
+    "capo": 0,
     "rhythm": ["↓", "-", "↑", "↑", "↑", "-", "↓", "↑", "↓", "↑"]
   },
   {
     "id": "aygun-beyler-ozun-gunahkarsan",
     "title": "Özün Günahkarsan",
     "artist": "Aygün Bəylər",
-    "key": "Am",
-    "chords": ["Am", "Dm", "E"],
+    "key": "Bm",
+    "chords": ["Bm", "Em", "F#"],
     "capo": 0,
     "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
   },
@@ -111,55 +22,64 @@
     "id": "akif-islamzade-feridem",
     "title": "Fəridəm",
     "artist": "Akif İslamzadə",
-    "key": "Am",
-    "chords": ["Am", "Dm", "E", "C"],
-    "capo": 2,
+    "key": "Bm",
+    "chords": ["Bm", "Em", "F#", "D"],
+    "capo": 0,
     "rhythm": ["↓", "↓", "↑", "↓", "↑"]
   },
   {
     "id": "pasa-emircan-olerdim",
     "title": "Ölərdim",
     "artist": "Paşa Əmircan",
-    "key": "Am",
-    "chords": ["Am", "Dm", "Em"],
-    "capo": 7,
+    "key": "Em",
+    "chords": ["Em", "Bm", "Am"],
+    "capo": 0,
     "rhythm": ["↓", "↓", "↑", "↓", "↑"]
   },
   {
     "id": "elvin-mirzezade-dusun-meni",
     "title": "Düşün Məni",
     "artist": "Elvin Mirzəzadə",
-    "key": "Am",
-    "chords": ["Am", "F", "Dm", "E"],
-    "capo": 3,
+    "key": "Cm",
+    "chords": ["Cm", "G#", "Fm", "G"],
+    "capo": 0,
     "rhythm": ["↓", "↑", "↓", "↑"]
     },
     {
       "id": "kerim-gunahkar-mavi-xezerdir",
       "title": "Günahkar Mavi Xəzərdir",
       "artist": "Kərim",
-      "key": "Am",
-      "chords": ["Am", "Dm", "E", "F"],
-      "capo": 2,
+      "key": "Bm",
+      "chords": ["Bm", "Em", "F#", "G"],
+      "capo": 0,
       "rhythm": ["↓", "↓", "↑", "↓", "↑"]
     },
     {
       "id": "noton-mehdi-sadiq-sence-neden",
       "title": "Səncə Nədən?",
       "artist": "Noton & Mehdi Sadiq",
-      "key": "Am",
-      "chords": ["Am", "G", "F", "Dm", "E"],
-      "capo": 3,
+      "key": "Cm",
+      "chords": ["Cm","A#", "G#", "Fm", "G"],
+      "capo": 0,
       "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑", "↓", "↑"]
     },
     {
       "id": "eyyub-yaqubov-ezizim",
       "title": "Əzizim",
       "artist": "Eyyub Yaqubov",
-      "key": "Am",
-      "chords": ["Am", "Dm", "E", "A7", "F"],
+      "key": "C#m",
+      "chords": ["C#m", "F#m", "G#", "C#7", "D#"],
       "capo": 0,
       "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+    },
+    {
+      "id": "eldar-mansurov-bayatilar",
+      "title": "Bayatılar",
+      "artist": "Eldar Mansurov",
+      "key": "Cm",
+      "chords": ["Cm", "Fm", "Gm", "A#", "D#"],
+      "capo": 0,
+      "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
     }
 
 ]

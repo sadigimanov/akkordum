@@ -356,12 +356,26 @@ body {
 .song-info-row strong {
   color: var(--accent);
   font-weight: 600;
+  transition: color 0.2s ease;
+}
+/* --- YENİ ƏLAVƏ OLUNAN KLASLAR --- */
+
+/* Aktiv olan ton (Tam ağ/parlaq rəng və strong elementini də ağ edir) */
+.active-key, .active-key {
+  color: #ffffff !important; 
+  opacity: 1 !important;
 }
 
-#song-key-text, #song-easy-text {
-  &:hover {
-    color: var(--text);
-  }
+/* Aktiv olmayan/Solğun ton (Vebsaytının standart solğun mətni və bir az şəffaflıq) */
+.dim-key, .dim-key  {
+  color: var(--text-muted) !important;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+/* Solğun tonun üzərinə gələndə aktivləşəcəyi siqnalını vermək üçün hover effekti */
+.dim-key:hover, .dim-key:hover {
+  color: var(--text) !important;
+  transition:opacity 0.2s ease, color 0.2s ease;
 }
 
 /* ── Sevimli düyməsi ──────────────────────────────────────── */

@@ -1,0 +1,92 @@
+{
+  "id": "mehman-dervis-seven-esger-ureyi",
+  "title": "Sevən Əsgər Ürəyi",
+  "artist": "Mehman Dərviş",
+  "key": "Bm",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 23 }
+      ],
+      "line": "Bir sevgi yazmışam qəlbə, silinmir"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 9 },
+        { "name": "Bm", "offset": 21 }
+      ],
+      "line": "Gənclikdən xatirə, əmanətdir bu"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 23 }
+      ],
+      "line": "Bir sevgi yazmışam qəlbə, silinmir"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 9 },
+        { "name": "Bm", "offset": 21 }
+      ],
+      "line": "Gənclikdən xatirə, əmanətdir bu"
+    },
+    {
+      "chords": [
+        { "name": "B7", "offset": 0 },
+        { "name": "Em", "offset": 5 },
+        { "name": "Bm", "offset": 18 }
+      ],
+      "line": "Əvvəli bilinmir, sonu bilinmir"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 7 },
+        { "name": "Bm", "offset": 22 }
+      ],
+      "line": "Qəfildən yaranan məhəbbətdir bu"
+    },
+    {
+      "chords": [
+        { "name": "B7", "offset": 0 },
+        { "name": "Em", "offset": 5 },
+        { "name": "Bm", "offset": 18 }
+      ],
+      "line": "Əvvəli bilinmir, sonu bilinmir"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 7 },
+        { "name": "Bm", "offset": 25 }
+      ],
+      "line": "Qəfildən yaranan, ay, məhəbbətdir bu"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Mənim də var sevən ürəyim"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 10 }
+      ],
+      "line": "Əsgər olanda nə olar?"
+    },
+    {
+      "chords": [
+        {"name": "F#", "offset": 0 }
+      ],
+      "line": "Sevgiya vardır gərəyim"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 10 }
+      ],
+      "line": "Əsgər olanda nə olar?"
+    }
+  ]
+}

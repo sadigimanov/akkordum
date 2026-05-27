@@ -80,6 +80,15 @@
       "chords": ["Cm", "Fm", "Gm", "A#", "D#"],
       "capo": 0,
       "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
+    },
+    {
+      "id": "mehman-dervis-seven-esger-ureyi",
+      "title": "Sevən Əsgər Ürəyi",
+      "artist": "Mehman Dərviş",
+      "key": "Bbm",
+      "chords": ["Bbm", "Ebm", "F", "Bb7"],
+      "capo": 0,
+      "rhythm": ["↓", "↓", "↑", "↓", "↑"]
     }
 
 ]

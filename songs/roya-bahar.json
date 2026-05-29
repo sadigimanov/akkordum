@@ -4,34 +4,34 @@
   "artist": "Röya",
   "key": "Bm",
   "capo": 0,
-  "rhythm": ["↓", "✕", "↑", "↑", "↓", "↑"],
+  "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
   "sections": [
     {
       "chords": [
         { "name": "Bm", "offset": 0 },
-        { "name": "Em", "offset": 16 }
+        { "name": "Em", "offset": 9 }
       ],
       "line": "Mənə baxıb görməz oldun,"
     },
     {
       "chords": [
         { "name": "Bm", "offset": 0 },
-        { "name": "E", "offset": 19 }
+        { "name": "E", "offset": 15 }
       ],
-      "line": "Küsmüsən nədan? (Küsmüsən nədan)"
+      "line": "Küsmüsən nədən? (Küsmüsən nədən)"
     },
     {
       "chords": [
         { "name": "Bm", "offset": 0 },
-        { "name": "Em", "offset": 16 },
-        { "name": "G", "offset": 19 }
+        { "name": "Em", "offset": 9.5 },
+        { "name": "G", "offset": 12 }
       ],
-      "line": "Söz deyirəm güldürümki səni, 2"
+      "line": "Söz deyirəm güldürümki səni,"
     },
     {
       "chords": [
         { "name": "A", "offset": 0 },
-        { "name": "Bm", "offset": 11 }
+        { "name": "Bm", "offset": 9 }
       ],
       "line": "Çox üzülmə sən,"
     },
@@ -41,19 +41,19 @@
     {
       "chords": [
         { "name": "G", "offset": 0 },
-        { "name": "A", "offset": 10 },
-        { "name": "Bm", "offset": 25 }
+        { "name": "A", "offset": 9 },
+        { "name": "Bm", "offset": 22 }
       ],
       "line": "De sözünü gözləmə, ürəyim əsdi."
     },
     {
       "chords": [
         { "name": "Bm", "offset": 0 },
-        { "name": "Em", "offset": 12 },
-        { "name": "A", "offset": 20 },
-        { "name": "Bm", "offset": 32 }
+        { "name": "Em", "offset": 8.5 },
+        { "name": "A", "offset": 17.5 },
+        { "name": "Bm", "offset": 26 }
       ],
-      "line": "Yalvarıram, sən bu gün ağlama bəsdi. 2"
+      "line": "Yalvarıram, sən bu gün ağlama bəsdi."
     },
     {
         "chords":   [{ "name": "", "offset": 0 }]
@@ -61,29 +61,29 @@
     {
       "chords": [
         { "name": "Bm", "offset": 0 },
-        { "name": "Em", "offset": 16 }
+        { "name": "Em", "offset": 9 }
       ],
       "line": "Gəl danışaq sevgimizdən,"
     },
     {
       "chords": [
         { "name": "Bm", "offset": 0 },
-        { "name": "E", "offset": 17 }
+        { "name": "E", "offset": 13 }
       ],
       "line": "Sənə var sözüm,(Sənə var sözüm)"
     },
     {
       "chords": [
         { "name": "Bm", "offset": 0 },
-        { "name": "Em", "offset": 13 },
-        { "name": "G", "offset": 16 }
+        { "name": "Em", "offset": 8 },
+        { "name": "G", "offset": 11 }
       ],
-      "line": "Başqasına çox inanma yenə, 2"
+      "line": "Başqasına çox inanma yenə,"
     },
     {
       "chords": [
         { "name": "A", "offset": 0 },
-        { "name": "Bm", "offset": 11 }
+        { "name": "Bm", "offset": 10 }
       ],
       "line": "Gəl canım gözüm."
     },
@@ -93,17 +93,17 @@
     {
       "chords": [
         { "name": "G", "offset": 0 },
-        { "name": "A", "offset": 10 },
-        { "name": "Bm", "offset": 25 }
+        { "name": "A", "offset": 9 },
+        { "name": "Bm", "offset": 22 }
       ],
       "line": "De sözünü gözləmə, ürəyim əsdi"
     },
     {
       "chords": [
         { "name": "Bm", "offset": 0 },
-        { "name": "Em", "offset": 12 },
-        { "name": "A", "offset": 20 },
-        { "name": "Bm", "offset": 32 }
+        { "name": "Em", "offset": 8.5 },
+        { "name": "A", "offset": 17.5 },
+        { "name": "Bm", "offset": 26 }
       ],
       "line": "Yalvarıram, sən bu gün ağlama bəsdi"
     },
@@ -113,17 +113,17 @@
     {
       "chords": [
         { "name": "G", "offset": 0 },
-        { "name": "A", "offset": 20 },
-        { "name": "Bm", "offset": 46 }
+        { "name": "A", "offset": 13.5 },
+        { "name": "Bm", "offset": 32.5 }
       ],
       "line": "Gəl, bu yolda bizi gözləyən bir eşqin sabahı var,"
     },
     {
       "chords": [
         { "name": "Em", "offset": 0 },
-        { "name": "A", "offset": 21 },
-        { "name": "F#", "offset": 29 },
-        { "name": "Bm", "offset": 43 }
+        { "name": "A", "offset": 16 },
+        { "name": "F#", "offset": 23 },
+        { "name": "Bm", "offset": 32 }
       ],
       "line": "Mən, Sənin o ömründən keçən bir gözəl bahar."
     }

@@ -153,7 +153,7 @@ async function init() {
   const rhythmDisplay = document.getElementById("rhythm-display");
   const editorEl      = document.getElementById("rhythm-editor");
 
-  function renderRhythmRow(beats, label, labelColor) {
+    function renderRhythmRow(beats, label, labelColor) {
     const wrap = document.createElement("div");
     wrap.className = "rhythm-row-wrap";
     const lbl = document.createElement("div");
@@ -163,7 +163,7 @@ async function init() {
     wrap.appendChild(lbl);
     const row = document.createElement("div");
     row.className = "rhythm-display";
-    const BEAT_LABELS = { "↓": "Aşağı", "↑": "Yuxarı", "-": "Susma" };
+    const BEAT_LABELS = { "↓": "Aşağı", "↑": "Yuxarı", "✕": "Susma", "⌇": "Arpegio" };
     beats.forEach((beat, i) => {
       const span = document.createElement("span");
       span.className = "rhythm-beat";
@@ -174,9 +174,12 @@ async function init() {
       } else if (beat === "↑") {
         span.classList.add("beat-up");
         span.innerHTML = `<span class="beat-arrow">↑</span><span class="beat-num">&nbsp;</span>`;
-      } else if (beat === "-") {
+      } else if (beat === "✕") {
         span.classList.add("beat-mute");
         span.innerHTML = `<span class="beat-arrow">✕</span><span class="beat-num">&nbsp;</span>`;
+      } else if (beat === "⌇") {
+        span.classList.add("beat-arp");
+        span.innerHTML = `<span class="beat-arrow">⌇</span><span class="beat-num">&nbsp;</span>`;
       }
       row.appendChild(span);
     });
@@ -205,8 +208,8 @@ async function init() {
 
       const addRow = document.createElement("div");
       addRow.className = "rhythm-add-row";
-      const BEAT_TITLES = { "↓": "Aşağı", "↑": "Yuxarı", "-": "Susma" };
-      [["↓", "beat-down"], ["↑", "beat-up"], ["-", "beat-mute"]].forEach(([sym, cls]) => {
+      const BEAT_TITLES = { "↓": "Aşağı", "↑": "Yuxarı", "✕": "Susma", "⌇": "Arpegio" };
+      [["↓", "beat-down"], ["↑", "beat-up"], ["✕", "beat-mute"], ["⌇", "beat-arp"]].forEach(([sym, cls]) => {
         const btn = document.createElement("button");
         btn.className = `rhythm-add-btn ${cls}`;
         btn.textContent = sym;

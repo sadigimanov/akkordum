@@ -664,6 +664,8 @@ body {
   color: var(--text-muted);
   font-size: 14px;
 }
+.beat-arp .beat-arrow { color: #f59e0b; }
+.rhythm-add-btn.beat-arp { color: #f59e0b; }
 
 /* ── Akkord diaqramları ───────────────────────────────────── */
 :root,

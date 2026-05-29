@@ -73,6 +73,15 @@
       "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
     },
     {
+      "id":"eyyub-yaqubov-bakili-balasi",
+      "title": "Bakılı Balası",
+      "artist": "Eyyub Yaqubov",
+      "key": "F#m",
+      "chords": ["F#m", "G", "Bm", "Em"],
+      "capo": 0,
+      "rhythm":  ["↓", "⌇", "↑", "↓", "↑"]
+    },
+    {
       "id": "eldar-mansurov-bayatilar",
       "title": "Bayatılar",
       "artist": "Eldar Mansurov",
@@ -85,10 +94,37 @@
       "id": "mehman-dervis-seven-esger-ureyi",
       "title": "Sevən Əsgər Ürəyi",
       "artist": "Mehman Dərviş",
-      "key": "Bbm",
-      "chords": ["Bbm", "Ebm", "F", "Bb7"],
+      "key": "Bm",
+      "chords": ["Bm", "Em", "F#", "B7"],
       "capo": 0,
       "rhythm": ["↓", "↓", "↑", "↓", "↑"]
+    },
+    {
+      "id": "nadir-qafarzade-mene-soz-ver",
+      "title": "Mənə Söz Ver",
+      "artist": "Nadir Qafarzadə",
+      "key": "Em",
+      "chords": ["Em", "B", "Am", "C"],
+      "capo": 0,
+      "rhythm": []
+    },
+    {
+      "id": "yuxu-donge",
+      "title": "Döngə",
+      "artist": "Yuxu",
+      "key": "Bm",
+      "chords": ["Bm", "G", "Em", "F#"],
+      "capo": 0,
+      "rhythm": ["↓", "↑", "✕", "↑", "↓", "↑"]
+    },
+    {
+      "id": "roya-bahar",
+      "title": "Bahar",
+      "artist": "Röya",
+      "key": "Bm",
+      "chords": ["Bm", "Em", "E", "G", "A"],
+      "capo": 0,
+      "rhythm": ["↓", "✕", "↑", "↑", "↓", "↑"]
     }
 
 ]

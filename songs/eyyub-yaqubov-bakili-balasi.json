@@ -1,0 +1,112 @@
+{
+  "id": "eyyub-yaqubov-bakili-balasi",
+  "title": "Bakılı Balası",
+  "artist": "Eyyub Yaqubov",
+  "key": "Bm",
+  "capo": 0,
+  "rhythm": ["↓", "⌇", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "G", "offset": 13 },
+        { "name": "F#m", "offset": 24 }
+      ],
+      "line": "İnsan nəyə lazım yurdsuz, vətənsiz"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "G", "offset": 19 },
+        { "name": "F#m", "offset": 27 }
+      ],
+      "line": "Bülbül də nəğmə deməz, olsa çəmənsiz"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "G", "offset": 13 },
+        { "name": "F#m", "offset": 24 }
+      ],
+      "line": "İnsan nəyə lazım yurdsuz, vətənsiz"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "G", "offset": 19 },
+        { "name": "F#m", "offset": 27}
+      ],
+      "line": "Bülbül də nəğmə deməz, olsa çəmənsiz"
+    },
+    {
+        "chords":   [
+        { "name": "", "offset": 0 }
+        ]
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "Bm", "offset": 15 }
+      ],
+      "line": "Ölərəm, yaşamaram ay Bakı sənsiz"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "Em", "offset": 15 },
+        { "name": "F#m", "offset": 26 }
+      ],
+      "line": "Bakıdır məskənimiz, Bakıda qalasıyam"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "Bm", "offset": 15 }
+      ],
+      "line": "Ölərəm, yaşamaram ay Bakı sənsiz"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "Em", "offset": 15 },
+        { "name": "F#m", "offset": 26 }
+      ],
+      "line": "Bakıdır məskənimiz, Bakıda qalasıyam"
+    },
+    {
+        "chords":   [
+        { "name": "", "offset": 0 }
+        ]
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#m", "offset": 13 }
+      ],
+      "line": "Bakılı balasıyam, Bakılı balasıyam"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "Em", "offset": 16 },
+        { "name": "F#m", "offset": 26 }
+      ],
+      "line": "Bakıda doğulmuşam, Bakıda qalasıyam"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#m", "offset": 13 }
+      ],
+      "line": "Bakılı balasıyam, Bakılı balasıyam"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "Em", "offset": 15 },
+        { "name": "F#m", "offset": 26 }
+      ],
+      "line": "Bakıdır məskənimiz, Bakıda qalasıyam"
+    }
+  ]
+}

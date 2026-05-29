@@ -1,0 +1,100 @@
+{
+  "id": "yuxu-donge",
+  "title": "Döngə",
+  "artist": "Yuxu",
+  "key": "Bm",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "✕", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "G", "offset": 21 }
+      ],
+      "line": "Bir qız gördüm, könlüm ona vuruldu"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "G", "offset": 19 }
+      ],
+      "line": "Söz deyəndə çeşmə kimi duruldu"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "Bm", "offset": 20 }
+      ],
+      "line": "Əl eylədim, döngə, səndən buruldu"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "F#", "offset": 20 }
+      ],
+      "line": "İlk yarımı, döngə, məndən gizləmə!"
+    },
+    {
+        "chords":   [{ "name": "", "offset": 0 }]
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "G", "offset": 21 }
+      ],
+      "line": "Uçdu quşum, o turacın dalınca"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "G", "offset": 21 }
+      ],
+      "line": "Doğru sözdür: „Aşıq çapar qılınca“"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "Bm", "offset": 22 }
+      ],
+      "line": "Dərdə düşdüm ondan bir söz alınca"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "F#", "offset": 20 }
+      ],
+      "line": "İlk yarımı, döngə, məndən gizləmə!"
+    },
+    {
+        "chords":   [{ "name": "", "offset": 0 }]
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "Bm", "offset": 20 }
+      ],
+      "line": "Nişanə var kəmərində belinin"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "F#", "offset": 20 }
+      ],
+      "line": "Məst edibdir, ətri məni, dilinin"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "Bm", "offset": 18 }
+      ],
+      "line": "Şirin dilli Azərbaycan elinin"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "F#", "offset": 19 }
+      ],
+      "line": "Şikarımı, döngə, məndən gizləmə!"
+    }
+  ]
+}

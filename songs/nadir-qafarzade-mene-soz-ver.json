@@ -1,0 +1,125 @@
+{
+  "id": "nadir-qafarzade-mene-soz-ver",
+  "title": "Mənə Söz Ver",
+  "artist": "Nadir Qafarzadə",
+  "key": "Em",
+  "capo": 0,
+  "rhythm": [],
+  "sections": [
+    {
+      "chords": [
+        { "name": "B", "offset": 0 }
+      ],
+      "line": "Könlümdə açan çiçək"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "B", "offset": 13 }
+      ],
+      "line": "Bir məhəbbət fidanı"
+    },
+    {
+      "chords": [
+        { "name": "B", "offset": 0 }
+      ],
+      "line": "Sevən varmı mənimtək?"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "B", "offset": 15 }
+      ],
+      "line": "Sevdam tutub dünyanı"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "B", "offset": 14 }
+      ],
+      "line": "Bülbül tənha ötməsin"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "B", "offset": 12 }
+      ],
+      "line": "Baxışların itməsin"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "B", "offset": 13 }
+      ],
+      "line": "Ömür boyu bitməsin"
+    },
+    {
+      "chords": [
+        { "name": "C", "offset": 0 },
+        { "name": "B", "offset": 14 }
+      ],
+      "line": "Bu məhəbbət dastanı"
+    },
+    {
+        "chords":   [
+        { "name": "", "offset": 0 }
+        ]
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 8 }
+      ],
+      "line": "Mənə söz ver gözlərimə baxa – baxa"
+    },
+    {
+      "chords": [
+        { "name": "B", "offset": 8 }
+      ],
+      "line": "Mənə söz ver, ayrılmayaq biz bir daha"
+    },
+    {
+      "chords": [
+        { "name": "C", "offset": 8 },
+        { "name": "Am", "offset": 18 }
+      ],
+      "line": "Mənə söz ver, uzat əlini tutmağa"
+    },
+    {
+      "chords": [
+        { "name": "B", "offset": 0 }
+      ],
+      "line": "Söz ver..."
+    },
+    {
+        "chords":   [
+        { "name": "", "offset": 0 }
+        ]
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 8 }
+      ],
+      "line": "Mənə söz ver, bəxtəvər olum dünyada"
+    },
+    {
+      "chords": [
+        { "name": "B", "offset": 8 }
+      ],
+      "line": "Mənə söz ver, “əlvida” deyək fəryada"
+    },
+    {
+      "chords": [
+        { "name": "C", "offset": 8 },
+        { "name": "B", "offset": 19 }
+      ],
+      "line": "Mənə söz ver, mənə söz ver"
+    },
+    {
+      "chords": [
+        { "name": "C", "offset": 8 },
+        { "name": "B", "offset": 19 }
+      ],
+      "line": "Mənə söz ver, mənə söz ver"
+    }
+  ]
+}

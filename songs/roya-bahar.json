@@ -1,0 +1,131 @@
+{
+  "id": "roya-bahar",
+  "title": "Bahar",
+  "artist": "Röya",
+  "key": "Bm",
+  "capo": 0,
+  "rhythm": ["↓", "✕", "↑", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 16 }
+      ],
+      "line": "Mənə baxıb görməz oldun,"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "E", "offset": 19 }
+      ],
+      "line": "Küsmüsən nədan? (Küsmüsən nədan)"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 16 },
+        { "name": "G", "offset": 19 }
+      ],
+      "line": "Söz deyirəm güldürümki səni, 2"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 0 },
+        { "name": "Bm", "offset": 11 }
+      ],
+      "line": "Çox üzülmə sən,"
+    },
+    {
+        "chords":   [{ "name": "", "offset": 0 }]
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "A", "offset": 10 },
+        { "name": "Bm", "offset": 25 }
+      ],
+      "line": "De sözünü gözləmə, ürəyim əsdi."
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 12 },
+        { "name": "A", "offset": 20 },
+        { "name": "Bm", "offset": 32 }
+      ],
+      "line": "Yalvarıram, sən bu gün ağlama bəsdi. 2"
+    },
+    {
+        "chords":   [{ "name": "", "offset": 0 }]
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 16 }
+      ],
+      "line": "Gəl danışaq sevgimizdən,"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "E", "offset": 17 }
+      ],
+      "line": "Sənə var sözüm,(Sənə var sözüm)"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 13 },
+        { "name": "G", "offset": 16 }
+      ],
+      "line": "Başqasına çox inanma yenə, 2"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 0 },
+        { "name": "Bm", "offset": 11 }
+      ],
+      "line": "Gəl canım gözüm."
+    },
+    {
+        "chords":   [{ "name": "", "offset": 0 }]
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "A", "offset": 10 },
+        { "name": "Bm", "offset": 25 }
+      ],
+      "line": "De sözünü gözləmə, ürəyim əsdi"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 12 },
+        { "name": "A", "offset": 20 },
+        { "name": "Bm", "offset": 32 }
+      ],
+      "line": "Yalvarıram, sən bu gün ağlama bəsdi"
+    },
+    {
+        "chords":   [{ "name": "", "offset": 0 }]
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "A", "offset": 20 },
+        { "name": "Bm", "offset": 46 }
+      ],
+      "line": "Gəl, bu yolda bizi gözləyən bir eşqin sabahı var,"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "A", "offset": 21 },
+        { "name": "F#", "offset": 29 },
+        { "name": "Bm", "offset": 43 }
+      ],
+      "line": "Mən, Sənin o ömründən keçən bir gözəl bahar."
+    }
+  ]
+}

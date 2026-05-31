@@ -163,7 +163,7 @@ async function init() {
     wrap.appendChild(lbl);
     const row = document.createElement("div");
     row.className = "rhythm-display";
-    const BEAT_LABELS = { "↓": "Aşağı", "↑": "Yuxarı", "✕": "Susma", "⌇": "Arpegio" };
+    const BEAT_LABELS = { "↓": "Aşağı", "↑": "Yuxarı", "✕": "Susma", "⌇": "Tarama" };
     beats.forEach((beat, i) => {
       const span = document.createElement("span");
       span.className = "rhythm-beat";
@@ -208,7 +208,7 @@ async function init() {
 
       const addRow = document.createElement("div");
       addRow.className = "rhythm-add-row";
-      const BEAT_TITLES = { "↓": "Aşağı", "↑": "Yuxarı", "✕": "Susma", "⌇": "Arpegio" };
+      const BEAT_TITLES = { "↓": "Aşağı", "↑": "Yuxarı", "✕": "Susma", "⌇": "Tarama" };
       [["↓", "beat-down"], ["↑", "beat-up"], ["✕", "beat-mute"], ["⌇", "beat-arp"]].forEach(([sym, cls]) => {
         const btn = document.createElement("button");
         btn.className = `rhythm-add-btn ${cls}`;

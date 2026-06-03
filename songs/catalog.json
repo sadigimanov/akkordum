@@ -1,20 +1,11 @@
 [
 
   {
-    "id": "asif-meherremov-gece-gece",
-    "title": "Gecə Gecə",
-    "artist": "Asif Məhərrəmov",
-    "key": "Bm",
-    "chords": ["Bm", "Em", "G", "F#"],
-    "capo": 0,
-    "rhythm": ["↓", "-", "↑", "↑", "↑", "-", "↓", "↑", "↓", "↑"]
-  },
-  {
-    "id": "aygun-beyler-ozun-gunahkarsan",
-    "title": "Özün Günahkarsan",
-    "artist": "Aygün Bəylər",
-    "key": "Bm",
-    "chords": ["Bm", "Em", "F#"],
+    "id": "ahmed-mustafayev-yandim-her-gece",
+    "title": "Yandım Hər Gecə",
+    "artist": "Ahmed Mustafayev",
+    "key": "Am",
+    "chords": ["Am", "G", "F", "Dm", "Em"],
     "capo": 0,
     "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
   },
@@ -28,13 +19,67 @@
     "rhythm": ["↓", "↓", "↑", "↓", "↑"]
   },
   {
-    "id": "pasa-emircan-olerdim",
-    "title": "Ölərdim",
-    "artist": "Paşa Əmircan",
-    "key": "Em",
-    "chords": ["Em", "Bm", "Am"],
+    "id": "akif-islamzade-oten-gunlerimi-qaytaraydilar",
+    "title": "Ötən günlərimi qaytaraydılar",
+    "artist": "Akif İslamzadə",
+    "key": "Cm",
+    "chords": ["Cm", "G", "Fm"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"]
+  },
+  {
+    "id": "asif-meherremov-gece-gece",
+    "title": "Gecə Gecə",
+    "artist": "Asif Məhərrəmov",
+    "key": "Bm",
+    "chords": ["Bm", "Em", "G", "F#"],
+    "capo": 0,
+    "rhythm": ["↓", "✕", "↑", "↑", "↑", "✕", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "aygun-beyler-ozun-gunahkarsan",
+    "title": "Özün Günahkarsan",
+    "artist": "Aygün Bəylər",
+    "key": "Bm",
+    "chords": ["Bm", "Em", "F#"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "aygun-kazimova-geceler-kecir",
+    "title": "Gecələr keçir",
+    "artist": "Aygün Kazımova",
+    "key": "C#m",
+    "chords": ["C#m", "F#m", "G#", "D#", "B", "A", "E"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "↑"]
+  },
+  {
+    "id": "azer-memmedov-uzagin-adi-var",
+    "title": "Uzağın adı var",
+    "artist": "Azər Məmmədov",
+    "key": "Em",
+    "chords": ["Em", "C", "Bm", "Am", "B"],
+    "capo": 0,
+    "rhythm": []
+  },
+  {
+    "id": "cavansir-eliyev-bakinin-qara-gozlu-qizlari",
+    "title": "Bakının qara gözlü qızları",
+    "artist": "Cavanşir Əliyev",
+    "key": "Am",
+    "chords": ["Am", "E", "Dm", "C", "B", "A", "F", "C#", "F#m"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
+  },
+  {
+    "id": "eldar-mansurov-bayatilar",
+    "title": "Bayatılar",
+    "artist": "Eldar Mansurov",
+    "key": "Cm",
+    "chords": ["Cm", "Fm", "Gm", "A#", "D#"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
   },
   {
     "id": "elvin-mirzezade-dusun-meni",
@@ -44,87 +89,169 @@
     "chords": ["Cm", "G#", "Fm", "G"],
     "capo": 0,
     "rhythm": ["↓", "↑", "↓", "↑"]
-    },
-    {
-      "id": "kerim-gunahkar-mavi-xezerdir",
-      "title": "Günahkar Mavi Xəzərdir",
-      "artist": "Kərim",
-      "key": "Bm",
-      "chords": ["Bm", "Em", "F#", "G"],
-      "capo": 0,
-      "rhythm": ["↓", "↓", "↑", "↓", "↑"]
-    },
-    {
-      "id": "noton-mehdi-sadiq-sence-neden",
-      "title": "Səncə Nədən?",
-      "artist": "Noton & Mehdi Sadiq",
-      "key": "Cm",
-      "chords": ["Cm","A#", "G#", "Fm", "G"],
-      "capo": 0,
-      "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑", "↓", "↑"]
-    },
-    {
-      "id": "eyyub-yaqubov-ezizim",
-      "title": "Əzizim",
-      "artist": "Eyyub Yaqubov",
-      "key": "C#m",
-      "chords": ["C#m", "F#m", "G#", "C#7", "D#"],
-      "capo": 0,
-      "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
-    },
-    {
-      "id":"eyyub-yaqubov-bakili-balasi",
-      "title": "Bakılı Balası",
-      "artist": "Eyyub Yaqubov",
-      "key": "F#m",
-      "chords": ["F#m", "G", "Bm", "Em"],
-      "capo": 0,
-      "rhythm":  ["↓", "⌇", "↑", "↓", "↑"]
-    },
-    {
-      "id": "eldar-mansurov-bayatilar",
-      "title": "Bayatılar",
-      "artist": "Eldar Mansurov",
-      "key": "Cm",
-      "chords": ["Cm", "Fm", "Gm", "A#", "D#"],
-      "capo": 0,
-      "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
-    },
-    {
-      "id": "mehman-dervis-seven-esger-ureyi",
-      "title": "Sevən Əsgər Ürəyi",
-      "artist": "Mehman Dərviş",
-      "key": "Bm",
-      "chords": ["Bm", "Em", "F#", "B7"],
-      "capo": 0,
-      "rhythm": ["↓", "↓", "↑", "↓", "↑"]
-    },
-    {
-      "id": "nadir-qafarzade-mene-soz-ver",
-      "title": "Mənə Söz Ver",
-      "artist": "Nadir Qafarzadə",
-      "key": "Em",
-      "chords": ["Em", "B", "Am", "C"],
-      "capo": 0,
-      "rhythm": []
-    },
-    {
-      "id": "yuxu-donge",
-      "title": "Döngə",
-      "artist": "Yuxu",
-      "key": "Bm",
-      "chords": ["Bm", "G", "Em", "F#"],
-      "capo": 0,
-      "rhythm": ["↓", "↑", "✕", "↑", "↓", "↑"]
-    },
-    {
-      "id": "roya-bahar",
-      "title": "Bahar",
-      "artist": "Röya",
-      "key": "Bm",
-      "chords": ["Bm", "Em", "E", "G", "A"],
-      "capo": 0,
-      "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"]
-    }
+  },
+  {
+    "id":"eyyub-yaqubov-bakili-balasi",
+    "title": "Bakılı Balası",
+    "artist": "Eyyub Yaqubov",
+    "key": "F#m",
+    "chords": ["F#m", "G", "Bm", "Em"],
+    "capo": 0,
+    "rhythm":  ["↓", "⌇", "↑", "↓", "↑"]
+  },
+  {
+    "id": "eyyub-yaqubov-ezizim",
+    "title": "Əzizim",
+    "artist": "Eyyub Yaqubov",
+    "key": "C#m",
+    "chords": ["C#m", "F#m", "G#", "C#7", "D#"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "eyyub-yaqubov-hesretinin-yollarindayam",
+    "title": "Həsrətinin Yollarındayam",
+    "artist": "Eyyub Yaqubov",
+    "key": "Cm",
+    "chords": ["Cm", "G", "G#", "Fm"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
+  },
+  {
+    "id":"faiq-agayev-pencere",
+    "title": "Pəncərə",
+    "artist": "Faiq Ağayev",
+    "key": "Dm",
+    "chords": ["Gm", "C", "F", "D", "A#", "A7", "Dm"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "✕", "↑"]
+  },
+  {
+    "id": "kerim-gunahkar-mavi-xezerdir",
+    "title": "Günahkar Mavi Xəzərdir",
+    "artist": "Kərim",
+    "key": "Bm",
+    "chords": ["Bm", "Em", "F#", "G"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "lale-memmedova-seadet",
+    "title": "Səadət",
+    "artist": "Lalə Məmmədova",
+    "key": "Am",
+    "chords": ["Am", "E", "Dm", "C", "F", "G","B7"],
+    "capo": 0,
+    "rhythm": ["↓", "⌇", "↑", "↓"]
+  },
+  {
+    "id": "mehman-dervis-seven-esger-ureyi",
+    "title": "Sevən Əsgər Ürəyi",
+    "artist": "Mehman Dərviş",
+    "key": "Bm",
+    "chords": ["Bm", "Em", "F#", "B7"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "miri-yusif-xatire",
+    "title": "Xatirə",
+    "artist": "Miri Yusif",
+    "key": "Bm",
+    "chords": ["Bm", "Em", "F#", "D", "G", "A"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "nadir-qafarzade-mene-soz-ver",
+    "title": "Mənə Söz Ver",
+    "artist": "Nadir Qafarzadə",
+    "key": "Em",
+    "chords": ["Em", "B", "Am", "C"],
+    "capo": 0,
+    "rhythm": []
+  },
+  {
+    "id": "nezaket-teymurova-unuda-bilmirem",
+    "title": "Unuda Bilmirəm",
+    "artist": "Nəzakət Teymurova",
+    "key": "Bm",
+    "chords": ["Bm", "C", "Em", "Am"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "niyameddin-musayev-dunya-senin-dunya-menim",
+    "title": "Dünya Sənin Dünya Mənim",
+    "artist": "Niyaməddin Musayev",
+    "key": "C#m",
+    "chords": ["C#m", "B", "A", "G#m", "F#m"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "noton-mehdi-sadiq-sence-neden",
+    "title": "Səncə Nədən?",
+    "artist": "Noton & Mehdi Sadiq",
+    "key": "Cm",
+    "chords": ["Cm","A#", "G#", "Fm", "G"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "pasa-emircan-olerdim",
+    "title": "Ölərdim",
+    "artist": "Paşa Əmircan",
+    "key": "Em",
+    "chords": ["Em", "Bm", "Am"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "roya-bahar",
+    "title": "Bahar",
+    "artist": "Röya",
+    "key": "Bm",
+    "chords": ["Bm", "Em", "E", "G", "A"],
+    "capo": 0,
+    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"]
+  },
+  {
+    "id": "sahin-elizade-oyuncaq-kimi",
+    "title": "Oyuncaq kimi",
+    "artist": "Şahin Əlizadə",
+    "key": "Bm",
+    "chords": ["Bm", "F#m", "A", "Em"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "seron-torpagin-sesi",
+    "title": "Torpağın səsi",
+    "artist": "Şeron",
+    "key": "F#m",
+    "chords": ["F#m", "Bm", "Em", "G", "G#7", "A"],
+    "capo": 0,
+    "rhythm": ["↓", "⌇", "↑", "↑", "↓", "↑"]
+  },
+  {
+    "id": "vuqar-abdulov-sadix-mustafayev-qocaldiq-biz",
+    "title": "Qocaldıq Biz",
+    "artist": "Vüqar Əbdülov Sadıx Mustafayev",
+    "key": "Bm",
+    "chords": ["Bm", "Em", "F#", "B7"],
+    "capo": 0,
+    "rhythm": ["↓", "⌇", "↑", "↓", "↑"]
+  },
+  {
+    "id": "yuxu-donge",
+    "title": "Döngə",
+    "artist": "Yuxu",
+    "key": "Bm",
+    "chords": ["Bm", "G", "Em", "F#"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "✕", "↑", "↓", "↑"]
+  }
+    
 
 ]

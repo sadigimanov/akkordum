@@ -1,0 +1,131 @@
+{
+  "id": "faiq-agayev-omur-bumu",
+  "title": "Ömür Bumu",
+  "artist": "Faiq Ağayev",
+  "key": "Am",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Dm", "offset": 6 },
+        { "name": "E", "offset": 12 }
+      ],
+      "line": "Ömür bumu? Gələr-gedər"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 11 }
+      ],
+      "line": "Nə etsən – ayrılıq sonu"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 6 },
+        { "name": "G", "offset": 12 }
+      ],
+      "line": "Ömür bumu? Çalış-vuruş"
+    },
+    {
+      "chords": [
+        { "name": "C", "offset": 11 },
+        { "name": "A", "offset": 15 }
+      ],
+      "line": "İmtahandır hər addımı"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 6 },
+        { "name": "E", "offset": 13 }
+      ],
+      "line": "Ömür bumu? Həsrət odundan"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 8 }
+      ],
+      "line": "Keçir sevginin yolu"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 6 }
+      ],
+      "line": "Ömür bumu?"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 3 },
+        { "name": "Am", "offset": 14 }
+      ],
+      "line": "Sənsizliyi mənə verən omu?"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "E", "offset": 17 }
+      ],
+      "line": "Səbəbi yox göz yaşlarımın"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "G", "offset": 9 }
+      ],
+      "line": "Sən buna layiq deyilsən"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 0 }
+      ],
+      "line": "Ürəyim mənim"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "E", "offset": 16 }
+      ],
+      "line": "Həsrət dolu baxışlarımın"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 9 }
+      ],
+      "line": "Ünvanı – kədər"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "E", "offset": 16 }
+      ],
+      "line": "Yalan satan sirdaşlarımın"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "G", "offset": 9 }
+      ],
+      "line": "Hədəfinə çevrilmisən"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 0 }
+      ],
+      "line": "Ümidim mənim"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "E", "offset": 15 }
+      ],
+      "line": "Sevilməyi heç bacarmadın"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 9 }
+      ],
+      "line": "Bir ömür qədər"
+    }
+  ]
+}

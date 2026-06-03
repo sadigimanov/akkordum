@@ -118,6 +118,15 @@
     "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
   },
   {
+    "id": "faiq-agayev-omur-bumu",
+    "title": "Ömür Bumu",
+    "artist": "Faiq Ağayev",
+    "key": "Am",
+    "chords": ["Am", "Dm", "E", "F", "G", "C", "A"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑", "↓", "↑"]
+  },
+  {
     "id":"faiq-agayev-pencere",
     "title": "Pəncərə",
     "artist": "Faiq Ağayev",

@@ -141,6 +141,7 @@ async function init() {
   document.getElementById("song-artist").textContent = song.artist;
   document.getElementById("song-key").textContent    = song.key;
   document.getElementById("song-capo").textContent   = song.capo ?? 0;
+  document.getElementById("song-easy-key").textContent = song.easy_key || "A";
 
   // Tarixçəyə əlavə et
   const unsubHistory = onAuthStateChanged(auth, (user) => {

@@ -60,11 +60,7 @@
       ],
       "line": "Bu məhəbbət dastanı"
     },
-    {
-        "chords":   [
-        { "name": "", "offset": 0 }
-        ]
-    },
+    null,
     {
       "chords": [
         { "name": "Em", "offset": 8 }
@@ -90,11 +86,7 @@
       ],
       "line": "Söz ver..."
     },
-    {
-        "chords":   [
-        { "name": "", "offset": 0 }
-        ]
-    },
+    null,
     {
       "chords": [
         { "name": "Em", "offset": 8 }

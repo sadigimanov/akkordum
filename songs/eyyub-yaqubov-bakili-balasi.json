@@ -38,11 +38,7 @@
       ],
       "line": "Bülbül də nəğmə deməz, olsa çəmənsiz"
     },
-    {
-        "chords":   [
-        { "name": "", "offset": 0 }
-        ]
-    },
+    null,
     {
       "chords": [
         { "name": "F#m", "offset": 0 },
@@ -73,11 +69,7 @@
       ],
       "line": "Bakıdır məskənimiz, Bakıda qalasıyam"
     },
-    {
-        "chords":   [
-        { "name": "", "offset": 0 }
-        ]
-    },
+    null,
     {
       "chords": [
         { "name": "Bm", "offset": 0 },

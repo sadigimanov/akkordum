@@ -1,0 +1,132 @@
+{
+  "id": "faiq-agayev-pencere",
+  "title": "Pəncərə",
+  "artist": "Faiq Ağayev",
+  "key": "Dm",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "✕", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "A7", "offset": 6.5 },
+        { "name": "Dm", "offset": 12 }
+      ],
+      "line": "Ay məni məndən alıb gedən"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "A7", "offset": 6.5 },
+        { "name": "Dm", "offset": 12 }
+      ],
+      "line": "Dərdləri dərdə salıb gedən"
+    },
+    {
+      "chords": [
+        { "name": "Gm", "offset": 0 },
+        { "name": "C", "offset": 9 }
+      ],
+      "line": "Ləzzəti çörəyimdə"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 0 },
+        { "name": "A#", "offset": 6 }
+      ],
+      "line": "Ağrısı kürəyimdə"
+    },
+    {
+      "chords": [
+        { "name": "Gm", "offset": 0 },
+        { "name": "A7", "offset": 6 }
+      ],
+      "line": "Həsrəti ürəyimdə"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 2 },
+        { "name": "D", "offset": 6.5 }
+      ],
+      "line": "Qalıb gedən"
+    },
+    {
+      "chords": [
+        { "name": "Gm", "offset": 0 },
+        { "name": "C", "offset": 4 },
+        { "name": "F", "offset": 8 }
+      ],
+      "line": "Gecə çatdı səhərə"
+    },
+    {
+      "chords": [
+        { "name": "Gm", "offset": 0 },
+        { "name": "A7", "offset": 4.5 },
+        { "name": "Dm", "offset": 9 }
+      ],
+      "line": "Layla dedim şəhərə"
+    },
+    {
+      "chords": [
+        { "name": "Gm", "offset": 0 },
+        { "name": "C", "offset": 5 },
+        { "name": "F", "offset": 10 }
+      ],
+      "line": "Açılmadı bir kərə"
+    },
+    {
+      "chords": [
+        { "name": "Gm", "offset": 0 },
+        { "name": "A7", "offset": 7.5 },
+        { "name": "Dm", "offset": 15 }
+      ],
+      "line": "pəncərən, pənceren penceren"
+    },
+    {
+      "chords": [
+        { "name": "Gm", "offset": 0 },
+        { "name": "A7", "offset": 7.5 },
+        { "name": "Dm", "offset": 15 }
+      ],
+      "line": "pəncərən, pəncərən pəncərən"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "A7", "offset": 7 },
+        { "name": "Dm", "offset": 13 }
+      ],
+      "line": "Bir daha gəldim o yerlərə"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "A7", "offset": 6 },
+        { "name": "Dm", "offset": 12 }
+      ],
+      "line": "Danış küçə, danış pəncərə"
+    },
+    {
+      "chords": [
+        { "name": "Gm", "offset": 0 },
+        { "name": "C", "offset": 8 }
+      ],
+      "line": "Bir ömür yaşayardıq"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 0 },
+        { "name": "A#", "offset": 8 }
+      ],
+      "line": "Bir günlük qovuşaydıq"
+    },
+    {
+      "chords": [
+        { "name": "Gm", "offset": 0 },
+        { "name": "A7", "offset": 6 },
+        { "name": "Dm", "offset": 14.5 }
+      ],
+      "line": "Bir anlıq qayıdaydıq o illərə"
+    }
+  ]
+}

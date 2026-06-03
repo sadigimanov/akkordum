@@ -1,0 +1,153 @@
+{
+  "id": "lale-memmedova-seadet",
+  "title": "Səadət",
+  "artist": "Lalə Məmmədova",
+  "key": "Am",
+  "capo": 0,
+  "rhythm": ["↓", "⌇", "↑", "↓"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "E", "offset": 17 }
+      ],
+      "line": "Vuruldu gözüm o qara gözlərinə"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 17 }
+      ],
+      "line": "Aldandım, inan, o şirin sözlərinə"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "E", "offset": 18 }
+      ],
+      "line": "Çoxdan bilirdim gözlərin canlar alıb"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 5 },
+        { "name": "E", "offset": 15.7 },
+        { "name": "Am", "offset": 22 }
+      ],
+      "line": "Dözüb baxdım, inan, gecəmə, gündüzümə"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "E", "offset": 9 }
+      ],
+      "line": "Haradasan, səadət?"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "E", "offset": 8 }
+      ],
+      "line": "Üzür məni həsrət"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 5.6 }
+      ],
+      "line": "Ürəyim dolu"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 2 },
+        { "name": "Dm", "offset": 10 },
+        { "name": "E", "offset": 19 }
+      ],
+      "line": "Məhəbbət, məhəbbət, məhəbbət"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 }
+      ],
+      "line": "Ya nəsib, ya qismət"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Am", "offset": 4 },
+        { "name": "G", "offset": 11 }
+      ],
+      "line": "Haradasan, səadət?"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 3 },
+        { "name": "G", "offset": 7 },
+        { "name": "Dm", "offset": 10 },
+        { "name": "Em", "offset": 15 }
+      ],
+      "line": "Ayırır, ayırır bizi həsrət"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 4 },
+        { "name": "Em", "offset": 11 }
+      ],
+      "line": "Haradasan, səadət?"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 2.6 },
+        { "name": "C", "offset": 7 },
+        { "name": "F", "offset": 10 },
+        { "name": "Em", "offset": 15 }
+      ],
+      "line": "Ayırır, ayırır bizi həsrət"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 4 },
+        { "name": "C", "offset": 9.5 },
+        { "name": "F", "offset": 18 },
+        { "name": "B7", "offset": 26 }
+      ],
+      "line": "Ürəyimdə məhəbbət, məhəbbət, məhəbbət"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 }
+      ],
+      "line": "Ya nəsib, ya qismət"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Am", "offset": 2 },
+        { "name": "E", "offset": 18 }
+      ],
+      "line": "Hicrimdən uzun gecələr ağlamışam"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 16 }
+      ],
+      "line": "Saf eşqimizi qoruyub saxlamışam"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 2 },
+        { "name": "E", "offset": 17 }
+      ],
+      "line": "Başqa birisi mənə gəl-gəl desə də"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 4 },
+        { "name": "E", "offset": 12 },
+        { "name": "Am", "offset": 18 }
+      ],
+      "line": "Dünyada, inan, sənə bel bağlamışam"
+    }
+  ]
+}

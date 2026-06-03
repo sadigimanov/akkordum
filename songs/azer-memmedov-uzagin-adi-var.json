@@ -1,0 +1,123 @@
+{
+  "id": "azer-memmedov-uzagin-adi-var",
+  "title": "Uzağın adı var",
+  "artist": "Azər Məmmədov",
+  "key": "Em",
+  "capo": 0,
+    "rhythm": [],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "C", "offset": 5.3 },
+        { "name": "Bm", "offset": 13.4 },
+        { "name": "C", "offset": 19 }
+      ],
+      "line": "Uzağın bir adı var Uzağa gedir yollar"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "C", "offset": 5.3 },
+        { "name": "Bm", "offset": 8 },
+        { "name": "C", "offset": 15 }
+      ],
+      "line": "İtirir izlərini Ardından dalğalar"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Bm", "offset": 6 },
+        { "name": "C", "offset": 15 }
+      ],
+      "line": "Getdiyin o yerlərdən Xəyal göndər"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Bm", "offset": 5.3 }
+      ],
+      "line": "Dənizə axacaq"
+    },
+    {
+      "chords": [
+        { "name": "C", "offset": 0 },
+        { "name": "B", "offset": 6 }
+      ],
+      "line": "Saçlarından sahil düzəlt"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "C", "offset": 6 },
+        { "name": "Bm", "offset": 12.5 },
+        { "name": "C", "offset": 20.5 }
+      ],
+      "line": "Ağ-qara dağların Arxasındadır cənnət"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "C", "offset": 6 },
+        { "name": "Bm", "offset": 13 },
+        { "name": "C", "offset": 21 }
+      ],
+      "line": "Deyirlər, oralarda Gecə yox, sönmür günəş"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Bm", "offset": 6 },
+        { "name": "C", "offset": 13 },
+        { "name": "Am", "offset": 19 },
+        { "name": "Bm", "offset": 25 }
+      ],
+      "line": "Verdiyin kitabları oxudum Yuxuda görüşərik"
+    },
+    {
+      "chords": [
+        { "name": "C", "offset": 0 },
+        { "name": "B", "offset": 7 }
+      ],
+      "line": "Uzağdan danışarsan"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "C", "offset": 0 },
+        { "name": "Bm", "offset": 7 },
+        { "name": "C", "offset": 15 }
+      ],
+      "line": "Sənsizlik çətin gəlir, dostum, mənə"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Bm", "offset": 5 },
+        { "name": "C", "offset": 14 },
+        { "name": "B", "offset": 20 }
+      ],
+      "line": "Uzağın adı var Uzağın adı sənsən"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "C", "offset": 0 },
+        { "name": "Bm", "offset": 7 },
+        { "name": "C", "offset": 15 }
+      ],
+      "line": "Sənsizlik çətin gəlir, dostum, mənə"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Bm", "offset": 8 },
+        { "name": "C", "offset": 17 },
+        { "name": "B", "offset": 24 }
+      ],
+      "line": "Uzağı yaxın elə, Sehirbaz, Sehirbaz"
+    }
+  ]
+}

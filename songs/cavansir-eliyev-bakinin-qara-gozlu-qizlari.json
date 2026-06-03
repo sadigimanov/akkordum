@@ -1,0 +1,107 @@
+{
+  "id": "cavansir-eliyev-bakinin-qara-gozlu-qizlari",
+  "title": "Bakının qara gözlü qızları",
+  "artist": "Cavanşir Əliyev",
+  "key": "Am",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "E", "offset": 0 }
+      ],
+      "line": "Bakının qara gözlü qızları"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "E", "offset": 13 }
+      ],
+      "line": "Ulduzlu şəhərin ulduzları"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "E", "offset": 15 }
+      ],
+      "line": "Sizlərə heyran olub çiçəklər"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "E", "offset": 16 }
+      ],
+      "line": "Yollarda qalıb, gözlərim"
+    },
+
+    null,
+
+    {
+      "chords": [
+        { "name": "C", "offset": 0 },
+        { "name": "B", "offset": 14 }
+      ],
+      "line": "Siz könül odlayan Siz ürək ovlayan"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "B", "offset": 6 },
+        { "name": "F", "offset": 13.5 },
+        { "name": "E", "offset": 20 }
+      ],
+      "line": "Arzusu xoş təmiz Gözəllərsiz"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 0 },
+        { "name": "E", "offset": 14 }
+      ],
+      "line": "Bakının qara gözlü qızları"
+    },
+    {
+      "chords": [
+        { "name": "C#", "offset": 0 },
+        { "name": "F#m", "offset": 8 }
+      ],
+      "line": "Gülər üzlü qızları"
+    },
+    {
+      "chords": [
+        { "name": "B", "offset": 0 },
+        { "name": "E", "offset": 14 }
+      ],
+      "line": "Şirin söz Bakı qızları"
+    },
+
+    null,
+
+    {
+      "chords": [
+        { "name": "E", "offset": 0 }
+      ],
+      "line": "Gəzir çox şəhərlər görmüşəm mən"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "E", "offset": 17 }
+      ],
+      "line": "Baxıb, çox gözəllər görmüşəm mən"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "E", "offset": 18 }
+      ],
+      "line": "Unutmadım heç zaman sizləri"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "E", "offset": 14.5 }
+      ],
+      "line": "Mehriban Bakı qızları"
+    }
+  ]
+}

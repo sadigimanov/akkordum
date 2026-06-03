@@ -1,0 +1,120 @@
+{
+  "id": "miri-yusif-xatire",
+  "title": "Xatirə",
+  "artist": "Miri Yusif",
+  "key": "Bm",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Bm", "offset": 3 },
+        { "name": "G", "offset": 10 },
+        { "name": "F#", "offset": 17.5 }
+      ],
+      "line": "Duysan ürəyimin harayını"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 2 },
+        { "name": "Em", "offset": 10 },
+        { "name": "F#", "offset": 16 }
+      ],
+      "line": "Bəlkə, qayıdarıq o illərə"
+    },
+    {
+      "chords": [
+        { "name": "D", "offset": 2 },
+        { "name": "Em", "offset": 10 },
+        { "name": "F#", "offset": 19 }
+      ],
+      "line": "Birgə neçə küçələrdə qaçdıq"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 6 },
+        { "name": "Em", "offset": 14 }
+      ],
+      "line": "Neçə sabahları açdıq"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 7 }
+      ],
+      "line": "Bilsən, necə darıxmışam"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 2 },
+        { "name": "G", "offset": 11 },
+        { "name": "F#", "offset": 18 }
+      ],
+      "line": "Tənha qalıb Bakı küləkləri"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 2.5 },
+        { "name": "Em", "offset": 9.5 },
+        { "name": "F#", "offset": 19 }
+      ],
+      "line": "Hərdən xatirələr boğar məni"
+    },
+    {
+      "chords": [
+        { "name": "D", "offset": 2.5 },
+        { "name": "Em", "offset": 11 },
+        { "name": "F#", "offset": 19 }
+      ],
+      "line": "Bizdən nə qalacaq ki geriyə?"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 7 },
+        { "name": "Em", "offset": 16 }
+      ],
+      "line": "Unutmaq olmur, de, niyə?"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 9 }
+      ],
+      "line": "Sənsiz bu ömrü neynirəm?"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Em", "offset": 6 },
+        { "name": "A", "offset": 20 }
+      ],
+      "line": "Güllər solar, ətri qalar əllərimizdə"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 7 },
+        { "name": "Bm", "offset": 25 }
+      ],
+      "line": "Nəğmə gedər, sətri qalar dillərimizdə"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 7 }
+      ],
+      "line": "Soyuq məzar, təklik qalar"
+    },
+    {
+      "chords": [
+        { "name": "D", "offset": 5 }
+      ],
+      "line": "İnsan ölər, şəkli qalar"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 7 },
+        { "name": "F#", "offset": 11 },
+        { "name": "Bm", "offset": 22 }
+      ],
+      "line": "Amma şəkilləri olmur qucaqlamaq"
+    }
+  ]
+}

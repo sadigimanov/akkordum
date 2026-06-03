@@ -1,0 +1,137 @@
+{
+  "id": "akif-islamzade-oten-gunlerimi-qaytaraydilar",
+  "title": "Ötən günlərimi qaytaraydılar",
+  "artist": "Akif İslamzadə",
+  "key": "Cm",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "G", "offset": 14 }
+      ],
+      "line": "Mənə bircə kəlimə can söyləsəydin"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "Cm", "offset": 14 }
+      ],
+      "line": "O bircə kəlimənə min can verərdim"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 0 },
+        { "name": "Cm", "offset": 6.5 },
+        { "name": "G", "offset": 13 },
+        { "name": "Cm", "offset": 19.5 }
+      ],
+      "line": "Ömrünü, gününü dərd eyləsəydin"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 0 },
+        { "name": "Cm", "offset": 7 },
+        { "name": "G", "offset": 14 },
+        { "name": "Cm", "offset": 19.5 }
+      ],
+      "line": "Ömrümü, günümü dərman verərdim"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "G", "offset": 13 }
+      ],
+      "line": "Bezdirdim mən səni sədaqətimlə"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "Cm", "offset": 14 }
+      ],
+      "line": "Qaldım həsrətinlə, müsibətinlə"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 0 },
+        { "name": "Cm", "offset": 6.5 },
+        { "name": "G", "offset": 13 },
+        { "name": "Cm", "offset": 18 }
+      ],
+      "line": "Könlümü alsaydın bu zülmətinlə"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 0 },
+        { "name": "Cm", "offset": 6.5 },
+        { "name": "G", "offset": 13 },
+        { "name": "Cm", "offset": 19 }
+      ],
+      "line": "Sənə bir günəşli cahan verərdim"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Fm", "offset": 4 },
+        { "name": "Cm", "offset": 21 }
+      ],
+      "line": "O çağlar necə də mənə haydılar"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 7.6 },
+        { "name": "Cm", "offset": 22 }
+      ],
+      "line": "Könlümə, gözümə şəfəq yaydılar"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 5 },
+        { "name": "Cm", "offset": 20 }
+      ],
+      "line": "Geçən günlərimi qaytaraydılar"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 5 },
+        { "name": "Cm", "offset": 19.5 }
+      ],
+      "line": "Gələn günlərimi qurban verərdim"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "G", "offset": 14.5 }
+      ],
+      "line": "Elə ayrıldıq ki, səninlə, ey gül"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "Cm", "offset": 14 }
+      ],
+      "line": "Bir də ayrılıqdan ayrı düşmərik"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 5 },
+        { "name": "Cm", "offset": 12 },
+        { "name": "G", "offset": 16 },
+        { "name": "Cm", "offset": 23 }
+      ],
+      "line": "Ah, bu son hicranın vusalı müşkül"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 5 },
+        { "name": "Cm", "offset": 12 },
+        { "name": "G", "offset": 15 },
+        { "name": "Cm", "offset": 24 }
+      ],
+      "line": "Dağ dağa rast gələr, biz görüşmərik"
+    }
+  ]
+}

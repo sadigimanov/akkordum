@@ -1,0 +1,84 @@
+{
+  "id": "sahin-elizade-oyuncaq-kimi",
+  "title": "Oyuncaq kimi",
+  "artist": "Şahin Əlizadə",
+  "key": "Bm",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Bu ömür qısa"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 6 }
+      ],
+      "line": "Dur, gəl, heç nəyi gözləmə"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 4 },
+        { "name": "Em", "offset": 19 }
+      ],
+      "line": "Mən gözlədim, gözlədim, görmədin"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#m", "offset": 13 }
+      ],
+      "line": "Mən sənə yasaq, əllərim uzaq"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 6 },
+        { "name": "Em", "offset": 19 }
+      ],
+      "line": "Hər gün bir əzab, birtəhər ölmədim"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Üzünü görmədim doyunca"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 }
+      ],
+      "line": "Günlərim ay, il olunca"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 0 },
+        { "name": "Em", "offset": 15 }
+      ],
+      "line": "Ayrılıq sənçün oyuncaq kimi"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Ətrini qoydun, getdin"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 }
+      ],
+      "line": "Düşündün, hisslərin bitdi"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 0 },
+        { "name": "Em", "offset": 15.5 }
+      ],
+      "line": "Sanki heç nə olmayacaq kimi"
+    }
+  ]
+}

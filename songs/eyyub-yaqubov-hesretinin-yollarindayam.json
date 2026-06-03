@@ -1,0 +1,129 @@
+{
+  "id": "eyyub-yaqubov-hesretinin-yollarindayam",
+  "title": "Həsrətinin yollarındayam",
+  "artist": "Eyyub Yaqubov",
+  "key": "Cm",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "G", "offset": 8 },
+        { "name": "Cm", "offset": 15 }
+      ],
+      "line": "Hardasan gözümün işığı?"
+    },
+    {
+      "chords": [
+        { "name": "G#", "offset": 0 },
+        { "name": "G", "offset": 6 },
+        { "name": "Cm", "offset": 12 }
+      ],
+      "line": "Eşqimin sınmaz qüruru"
+    },
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "G", "offset": 8 },
+        { "name": "Cm", "offset": 17 },
+        { "name": "G#", "offset": 21 }
+      ],
+      "line": "Sənsiz keçmir günüm, ayım,"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 0 },
+        { "name": "G", "offset": 8 },
+        { "name": "Cm", "offset": 16 }
+      ],
+      "line": "Həsrətinin yollarındayam..."
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Fm", "offset": 4 },
+        { "name": "G", "offset": 11 },
+        { "name": "Cm", "offset": 16 },
+        { "name": "G#", "offset": 20 }
+      ],
+      "line": "Necə atıb gedirsən məni?"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 4 },
+        { "name": "G", "offset": 11 },
+        { "name": "Cm", "offset": 16 }
+      ],
+      "line": "Özün öyrətmişdin sevməyi..."
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Fm", "offset": 6 },
+        { "name": "G", "offset": 16 },
+        { "name": "Cm", "offset": 21 }
+      ],
+      "line": "Üstümə qar yağsa, leysan tökülsə"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 6 },
+        { "name": "G", "offset": 16 },
+        { "name": "Cm", "offset": 21 }
+      ],
+      "line": "Dünyanın təməli sınıb, sökülsə,"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 7 },
+        { "name": "G", "offset": 16 },
+        { "name": "Cm", "offset": 21 },
+        { "name": "G#", "offset": 27 }
+      ],
+      "line": "Sevincim qeyb olub, göyə çəkilsə, canım"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 0 },
+        { "name": "G", "offset": 8 },
+        { "name": "Cm", "offset": 16 }
+      ],
+      "line": "Həsrətinin yollarındayam ..."
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "G", "offset": 6 },
+        { "name": "Cm", "offset": 15 }
+      ],
+      "line": "Sənsiz ömür günüm xəzandır,"
+    },
+    {
+      "chords": [
+        { "name": "G#", "offset": 0 },
+        { "name": "G", "offset": 5 },
+        { "name": "Cm", "offset": 13 }
+      ],
+      "line": "Ayrılıq nə yaman uzaqdır,"
+    },
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "G", "offset": 6 },
+        { "name": "Cm", "offset": 15 },
+        { "name": "G#", "offset": 19 }
+      ],
+      "line": "Elə sənsən sevgi payım,"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 0 },
+        { "name": "G", "offset": 8 },
+        { "name": "Cm", "offset": 16 }
+      ],
+      "line": "Həsrətinin yollarındayam..."
+    }
+  ]
+}

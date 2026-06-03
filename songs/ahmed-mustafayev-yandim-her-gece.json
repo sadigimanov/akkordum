@@ -1,0 +1,133 @@
+{
+  "id": "ahmed-mustafayev-yandim-her-gece",
+  "title": "Yandım Hər Gecə",
+  "artist": "Ahmed Mustafayev",
+  "key": "Am",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "G", "offset": 8 },
+        { "name": "F", "offset": 11 },
+        { "name": "G", "offset": 21 }
+      ],
+      "line": "Uçdun, getdin könül qəfəsimdən"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "G", "offset": 5.5 },
+        { "name": "F", "offset": 16 },
+        { "name": "G", "offset": 20 }
+      ],
+      "line": "Dondu göz yaşlarım son sözündən"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "G", "offset": 6.5 },
+        { "name": "F", "offset": 10 },
+        { "name": "G", "offset": 18 }
+      ],
+      "line": "Əlini çəkdin, yar, əllərimdən"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "G", "offset": 4 },
+        { "name": "F", "offset": 10 },
+        { "name": "G", "offset": 20 }
+      ],
+      "line": "Çıxıb getdin heç düşünmədən"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Am", "offset": 2.5 },
+        { "name": "Em", "offset": 9 }
+      ],
+      "line": "Nə olar, zaman"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 2 },
+        { "name": "G", "offset": 9 }
+      ],
+      "line": "Geri dönsə də, səni yenidən"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Em", "offset": 6 }
+      ],
+      "line": "Qaytara bilsəm"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "G", "offset": 7 }
+      ],
+      "line": "Sənlə ola bilsəm"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 3 },
+        { "name": "Em", "offset": 9 }
+      ],
+      "line": "Nə olar, getmə"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 2 },
+        { "name": "G", "offset": 12.5 }
+      ],
+      "line": "Düşün məni, mənim sonumu"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Em", "offset": 8 }
+      ],
+      "line": "Heçə çevirmə"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "G", "offset": 8}
+      ],
+      "line": "Həyat yolumu"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Em", "offset": 17.5 }
+      ],
+      "line": "Yandım hər gecə Onun həsrətilə mən"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Am", "offset": 19 },
+        { "name": "Em", "offset": 22 }
+      ],
+      "line": "Sevdim onu necə O bilmədi"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Em", "offset": 18.5 }
+      ],
+      "line": "Yar deyə bilmədim Başqasına yar oldu"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Em", "offset": 19 }
+      ],
+      "line": "Onu silə bilmədim O bilmədi"
+    }
+  ]
+}

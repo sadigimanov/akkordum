@@ -1,0 +1,99 @@
+{
+  "id": "vuqar-abdulov-sadix-mustafayev-qocaldiq-biz",
+  "title": "Qocaldıq Biz",
+  "artist": "Vüqar Əbdülov Sadıx Mustafayev",
+  "key": "Bm",
+  "capo": 0,
+  "rhythm": ["↓", "⌇", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#", "offset": 9 },
+        { "name": "Bm", "offset": 17 }
+      ],
+      "line": "Saçın-başın ağardı, ay qərdəş"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 17 }
+      ],
+      "line": "Cavan vaxtı gül kimi oğlandın"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "Bm", "offset": 20 }
+      ],
+      "line": "Sən də çatırsan mənə day, qərdəş"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 16 }
+      ],
+      "line": "Ay yetim, şəkil kimi oğlandın"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#", "offset": 8 },
+        { "name": "Bm", "offset": 16.5 }
+      ],
+      "line": "İndikindən iraq, subay vaxtı"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 16 }
+      ],
+      "line": "Dünyanın hər yerini gəzirdin sən"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "Bm", "offset": 19.5 }
+      ],
+      "line": "Yadıma gəlir, dənizdə yay vaxtı"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 17 }
+      ],
+      "line": "Bakıdan İrana qədər üzürdün sən"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "B7", "offset": 9 },
+        { "name": "Em", "offset": 18 }
+      ],
+      "line": "Sənə elə gəlmir ki, qocaldıq biz?"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "Bm", "offset": 17 }
+      ],
+      "line": "Həyatın hər ləzzətini aldıq biz"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#", "offset": 18 }
+      ],
+      "line": "Maraqlı günlərimiz olub sənlə"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 16 }
+      ],
+      "line": "Gör neçə illər yola saldıq biz?!"
+    }
+  ]
+}

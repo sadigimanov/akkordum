@@ -1,0 +1,112 @@
+{
+  "id": "aygun-kazimova-geceler-kecir",
+  "title": "Gecələr keçir",
+  "artist": "Aygün Kazımova",
+  "key": "C#m",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "B", "offset": 6 },
+        { "name": "A", "offset": 13 },
+        { "name": "G#", "offset": 21 }
+      ],
+      "line": "Səhərə nə qalır? Ulduzlar sönür"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "C#m", "offset": 6 },
+        { "name": "G#", "offset": 11 },
+        { "name": "C#m", "offset": 19 }
+      ],
+      "line": "Səhərin yolları gecədən keçir"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "B", "offset": 6 },
+        { "name": "A", "offset": 12.5 },
+        { "name": "G#", "offset": 22 }
+      ],
+      "line": "Üfüqdə bir solğun şəfəq görünür"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "C#m", "offset": 7 },
+        { "name": "G#", "offset": 12 },
+        { "name": "C#m", "offset": 19 }
+      ],
+      "line": "Bu da bir qəribə gecədir keçir"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "C#", "offset": 0 },
+        { "name": "F#m", "offset": 12 }
+      ],
+      "line": "Bir gecə səninlə çəkildik bağa"
+    },
+    {
+      "chords": [
+        { "name": "B", "offset": 0 },
+        { "name": "E", "offset": 15 }
+      ],
+      "line": "Bağ yazıq nə desin sevən qonağa?"
+    },
+    {
+      "chords": [
+        { "name": "C#", "offset": 0 },
+        { "name": "F#m", "offset": 14 }
+      ],
+      "line": "Gördünmü ay necə baxır ocağa"
+    },
+    {
+      "chords": [
+        { "name": "B", "offset": 0 },
+        { "name": "E", "offset": 11 }
+      ],
+      "line": "Elə bil alovdan nur çəkir keçir"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "B", "offset": 6 },
+        { "name": "A", "offset": 13 },
+        { "name": "G#", "offset": 21 }
+      ],
+      "line": "Gecələr bu iliq gecəni məndə"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "C#m", "offset": 6 },
+        { "name": "G#", "offset": 11 },
+        { "name": "C#m", "offset": 19 }
+      ],
+      "line": "Yada sal olanı keçəni məndə"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "B", "offset": 6 },
+        { "name": "A", "offset": 13 },
+        { "name": "G#", "offset": 22 }
+      ],
+      "line": "Gecələr hər gecə gecəni məndə"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "C#m", "offset": 7 },
+        { "name": "G#", "offset": 13.5 },
+        { "name": "C#m", "offset": 19 }
+      ],
+      "line": "Deyirsən gedirəm gecədir gecdir"
+    }
+  ]
+}

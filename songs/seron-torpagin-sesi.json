@@ -1,0 +1,97 @@
+{
+  "id": "seron-torpagin-sesi",
+  "title": "Torpağın səsi",
+  "artist": "Şeron",
+  "key": "F#m",
+  "capo": 0,
+  "rhythm": ["↓", "⌇", "↑", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "Bm", "offset": 16 },
+        { "name": "F#m", "offset": 25 }
+      ],
+      "line": "Öz yolunda illər ötdü, Nələr gördü ölkəmiz."
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#m", "offset": 8 },
+        { "name": "Em", "offset": 18 },
+        { "name": "F#m", "offset": 27.5 }
+      ],
+      "line": "Parçalandı ölməz Vətən, Ayrı düşdük biz."
+    },
+    null,
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "G", "offset": 17.5 },
+        { "name": "F#m", "offset": 27.3 }
+      ],
+      "line": "İndi bilsin bütün dünya: Var yenilməz ordumuz!"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "F#m", "offset": 8 },
+        { "name": "G#7", "offset": 12 }
+      ],
+      "line": "Yenilməz ordu"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#m", "offset": 12 },
+        { "name": "Bm", "offset": 28 }
+      ],
+      "line": "Gör nə vaxtdan \"gəl\" deyir, Öz elindən ayrılan,"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "A", "offset": 8 },
+        { "name": "G", "offset": 15 },
+        { "name": "F#m", "offset": 22 }
+      ],
+      "line": "Taleyindən odlanan, Torpağın səsi."
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#m", "offset": 10 },
+        { "name": "Bm", "offset": 27 }
+      ],
+      "line": "O, həsrətdən qəm çəkir, İndi dözmür ağlayır,"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "A", "offset": 12 },
+        { "name": "G", "offset": 19 },
+        { "name": "F#m", "offset": 26 }
+      ],
+      "line": "Gör nə vaxtdan səsləyir, Torpağın səsi."
+    },
+    null,
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "G", "offset": 18 },
+        { "name": "F#m", "offset": 27 }
+      ],
+      "line": "Müstəqildir Azərbaycan, Onun nurlu dövrü var."
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#m", "offset": 9.5 },
+        { "name": "G", "offset": 19 },
+        { "name": "F#m", "offset": 26 }
+      ],
+      "line": "Sərhəddində məğrur oldu Bizim oğullar."
+    }
+  ]
+}

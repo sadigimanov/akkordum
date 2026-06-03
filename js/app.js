@@ -379,7 +379,7 @@ async function initFeedback() {
     document.getElementById("feedback-submit").addEventListener("click", async () => {
       const { auth } = await import("./firebase.js");
       if (!auth.currentUser) {
-        document.getElementById("feedback-error").textContent = "⚠️ Göndərmək üçün giriş etməlisiniz.";
+        document.getElementById("feedback-error").innerHTML = "⚠️ Göndərmək üçün <a href='profile.html' class='login-link'>giriş</a> etməlisiniz.";
         document.getElementById("feedback-error").classList.remove("hidden");
         return;
       }

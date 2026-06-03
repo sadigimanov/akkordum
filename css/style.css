@@ -1469,6 +1469,11 @@ body {
   font-size: 14px;
   color: #e05a5a;
 }
+
+.login-link{
+  text-decoration: underline;
+  color:#FFF;
+}
  
 /* ── Feedback panel ───────────────────────────────────────── */
 .feedback-tabs {
@@ -1557,6 +1562,9 @@ body {
 .player-toolbar {
   display: flex;
   align-items: center;
+  position: sticky; 
+  top: 55px;
+  z-index: 50;
   gap: 12px;
   max-width: 350px;
   margin-bottom: 0.8rem;

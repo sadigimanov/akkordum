@@ -1,0 +1,94 @@
+{
+  "id": "niyameddin-musayev-dunya-senin-dunya-menim",
+  "title": "Dünya Sənin Dünya Mənim",
+  "artist": "Niyaməddin Musayev",
+  "key": "C#m",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "B", "offset": 16 },
+        { "name": "C#m", "offset": 25 }
+      ],
+      "line": "Bir taleyin oyununda cütlənmiş zərik"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "B", "offset": 17 },
+        { "name": "A", "offset": 21 },
+        { "name": "G#m", "offset": 26 }
+      ],
+      "line": "Yüz il qoşa atılsaq da, qoşa düşmərik"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "B", "offset": 14 },
+        { "name": "C#m", "offset": 23 }
+      ],
+      "line": "Bir zərrənin işığına milyonlar şərik"
+    },
+    {
+      "chords": [
+        { "name": "G#m", "offset": 0 },
+        { "name": "A", "offset": 21 },
+        { "name": "F#m", "offset": 26 },
+        { "name": "G#m", "offset": 31 }
+      ],
+      "line": "Dünya sənin, dünya mənim, dünya heç kimin"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "B", "offset": 21 },
+        { "name": "A", "offset": 26 },
+        { "name": "G#m", "offset": 31 }
+      ],
+      "line": "Dünya sənin, dünya mənim, dünya heç kimin"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "G#m", "offset": 0 },
+        { "name": "C#m", "offset": 16.5 }
+      ],
+      "line": "Bu get-gəllər bazarına dəvədir dünya"
+    },
+    {
+      "chords": [
+        { "name": "G#m", "offset": 0 },
+        { "name": "C#m", "offset": 16.5 }
+      ],
+      "line": "Bu ömür-gün naxışına həvədir dünya"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "B", "offset": 18 }
+      ],
+      "line": "Əbədiyə qəh-qəh çəkər əbədi dünya"
+    },
+    {
+      "chords": [
+        { "name": "G#m", "offset": 0 },
+        { "name": "A", "offset": 21 },
+        { "name": "F#m", "offset": 26 },
+        { "name": "G#m", "offset": 31 }
+      ],
+      "line": "Dünya sənin, dünya mənim, dünya heç kimin"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "B", "offset": 21 },
+        { "name": "A", "offset": 26 },
+        { "name": "G#m", "offset": 31 }
+      ],
+      "line": "Dünya sənin, dünya mənim, dünya heç kimin"
+    }
+  ]
+}

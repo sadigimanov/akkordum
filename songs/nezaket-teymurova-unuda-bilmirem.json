@@ -1,0 +1,80 @@
+{
+  "id": "nezaket-teymurova-unuda-bilmirem",
+  "title": "Unuda Bilmirəm",
+  "artist": "Nəzakət Teymurova",
+  "key": "Bm",
+    "easy_key": "E",
+  "capo": 0,
+  "rhythm": ["↓", "✕", "↑", "↑", "↓", "✕", "↑", "↑", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "C", "offset": 23 }
+      ],
+      "line": "Ayrı düşdük, aylar ötdü, il oldu"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "Am", "offset": 23 },
+        { "name": "Bm", "offset": 28 }
+      ],
+      "line": "Sənsiz qəlbim bir çağlayan sel oldu"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "C", "offset": 23 }
+      ],
+      "line": "Ayrı düşdük, aylar ötdü, il oldu"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "Am", "offset": 23 },
+        { "name": "Bm", "offset": 28 }
+      ],
+      "line": "Sənsiz qəlbim bir çağlayan sel oldu"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "C", "offset": 23 },
+        { "name": "Am", "offset": 27 },
+        { "name": "Bm", "offset": 34 }
+      ],
+      "line": "Bağça saldım, qönçə açdı, gül oldu, gül oldu"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "C", "offset": 23 },
+        { "name": "Am", "offset": 27 },
+        { "name": "Bm", "offset": 34 }
+      ],
+      "line": "Bağça saldım, qönçə açdı, gül oldu, gül oldu"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 }
+      ],
+      "line": "Neyçün səni bəs unuda bilmirəm?"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Neyçün səni bəs unuda bilmirəm?"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Bm", "offset": 9 }
+      ],
+      "line": "Unuda bilmirəm"
+    }
+  ]
+}

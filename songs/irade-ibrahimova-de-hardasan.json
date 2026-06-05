@@ -1,0 +1,117 @@
+{
+  "id": "irade-ibrahimova-de-hardasan",
+  "title": "De Hardasan",
+  "artist": "İradə İbrahimova",
+  "key": "Am",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Sən gedəndən şərik oldum kədərə"
+    },
+    {
+      "chords": [
+        { "name": "", "offset": 0 }
+      ],
+      "line": "Dərdlərimi bölə - bölə yaşadım"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 }
+      ],
+      "line": "Mən bilirdim ömrüm gedir boş yerə"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 36 }
+      ],
+      "line": "Mən bunları bilə - bilə, damla – damla, gilə - gilə yaşadım"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "E", "offset": 15 }
+      ],
+      "line": "Yaşadım, bir bilsən necə?"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "F", "offset": 17 }
+      ],
+      "line": "Yaşadım hər tənha gecə"
+    },
+    {
+      "chords": [
+        { "name": "Bdim", "offset": 0 },
+        { "name": "E", "offset": 17 }
+      ],
+      "line": "Saxlayıb qəlbimdə gizlicə"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "A7", "offset": 18 }
+      ],
+      "line": "Sənin mən sevgini yaşadım"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "E", "offset": 15 }
+      ],
+      "line": "Yaşadım, bir bilsən necə?"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "F", "offset": 17 }
+      ],
+      "line": "Yaşadım hər tənha gecə"
+    },
+    {
+      "chords": [
+        { "name": "Bdim", "offset": 0 },
+        { "name": "E", "offset": 17 }
+      ],
+      "line": "Saxlayıb qəlbimdə gizlicə"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Yaşadım, yaşadım, yaşadım"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "De hardasan?"
+    },
+    {
+      "chords": [
+        { "name": "", "offset": 0 }
+      ],
+      "line": "Yerini söylə mən gəlim"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 7 }
+      ],
+      "line": "Yarım qalan ümidlərim"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 6 }
+      ],
+      "line": "Səni deyə - deyə ağlar"
+    }
+  ]
+}

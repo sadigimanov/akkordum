@@ -1,0 +1,110 @@
+{
+  "id": "sahin-elizade-hecne-getmedi-yolunda",
+  "title": "Heçnə Getmədi Yolunda",
+  "artist": "Şahin Əlizadə",
+  "key": "Bm",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Bm", "offset": 6 }
+      ],
+      "line": "Ürəyimə sal odu"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 9 }
+      ],
+      "line": "Yana-yana kül oldum"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 9 }
+      ],
+      "line": "Heç unuda bilmədim"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 9 }
+      ],
+      "line": "Mən özümə sən oldum"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 9 }
+      ],
+      "line": "Düzə-düzə dağıldı"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 8 }
+      ],
+      "line": "Üzərimə daşların"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 9 }
+      ],
+      "line": "De, geriyə nə qaldı?"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 8 }
+      ],
+      "line": "Xatirə gözyaşları"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 6 }
+      ],
+      "line": "Geriyə bax..."
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 17 }
+      ],
+      "line": "Heç nə getmədi yolunda"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 16 }
+      ],
+      "line": "Sənsiz bir ağrı qolumda"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 15 }
+      ],
+      "line": "Bitdi, ayrıldıq sonunda"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 6 }
+      ],
+      "line": "Üzümə bax..."
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 16 }
+      ],
+      "line": "Heç nə gəlmədi əlimdən"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 15 }
+      ],
+      "line": "Adın düşmədi dilimdən"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 13 }
+      ],
+      "line": "Soldu xatirə dərində"
+    }
+  ]
+}

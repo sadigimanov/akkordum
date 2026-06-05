@@ -1,0 +1,112 @@
+{
+  "id": "elnare-xelilova-mehebbet-payim",
+  "title": "Məhəbbət Payım",
+  "artist": "Elnarə Xəlilova",
+  "key": "Bm",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "D", "offset": 0 },
+        { "name": "G", "offset": 13 },
+        { "name": "F#", "offset": 20 }
+      ],
+      "line": "Düşəndə yadıma sənli günlərim"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#m", "offset": 7 },
+        { "name": "G", "offset": 15 },
+        { "name": "A", "offset": 23 }
+      ],
+      "line": "Sinəmdə həsrətdən ocaq qalanır"
+    },
+    {
+      "chords": [
+        { "name": "D", "offset": 0 },
+        { "name": "G", "offset": 14 },
+        { "name": "F#", "offset": 20 }
+      ],
+      "line": "Başlanır dumanlı, çənli günlərim"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#m", "offset": 7 },
+        { "name": "G", "offset": 14 },
+        { "name": "A", "offset": 23 },
+        { "name": "F#", "offset": 25 }
+      ],
+      "line": "Ömrümə qəmli bir ömür calanır"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#m", "offset": 14 }
+      ],
+      "line": "Xəyalın dolanır başımda mənim"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "F#m", "offset": 18 }
+      ],
+      "line": "Səni harada gəzim, harada arayım?"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 3 },
+        { "name": "Bm", "offset": 14 }
+      ],
+      "line": "Bu sevib-sevilən yaşımda mənim"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 4 },
+        { "name": "A", "offset": 15 },
+        { "name": "F#", "offset": 23 }
+      ],
+      "line": "Tanrıdan budurmu məhəbbət payım?"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "D", "offset": 0 },
+        { "name": "G", "offset": 12 },
+        { "name": "F#", "offset": 20 }
+      ],
+      "line": "Getdin gözlərində qəmli baxışlar"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#m", "offset": 7 },
+        { "name": "G", "offset": 16 },
+        { "name": "A", "offset": 23 }
+      ],
+      "line": "Mənimlə danışıb gülməyəcəksən"
+    },
+    {
+      "chords": [
+        { "name": "D", "offset": 0 },
+        { "name": "G", "offset": 11 },
+        { "name": "F#", "offset": 20 }
+      ],
+      "line": "Bəlkə gələcəksən yağan yağışla"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 1 },
+        { "name": "F#m", "offset": 7 },
+        { "name": "G", "offset": 16 },
+        { "name": "A", "offset": 25 },
+        { "name": "F#", "offset": 27 }
+      ],
+      "line": "Bəlkə də, heç zaman gəlməyəcəksən"
+    }
+  ]
+}

@@ -82,6 +82,24 @@
     "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
   },
   {
+    "id": "elekber-yasamalli-inaniram-men",
+    "title": "İnanıram mən",
+    "artist": "Ələkbər Yasamallı",
+    "key": "C#m",
+    "chords": ["C#m", "G#", "C#7", "F#m", "D#m", "Bm"],
+    "capo": 0,
+    "rhythm": ["↓", "⌇", "↑", "↓"]
+  },
+  {
+    "id": "elnare-xelilova-mehebbet-payim",
+    "title": "Məhəbbət Payım",
+    "artist": "Elnarə Xəlilova",
+    "key": "Bm",
+    "chords": ["D", "G", "F#", "Bm", "F#m", "A"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"]
+  },
+  {
     "id": "elvin-mirzezade-dusun-meni",
     "title": "Düşün Məni",
     "artist": "Elvin Mirzəzadə",
@@ -136,6 +154,15 @@
     "rhythm": ["↓", "↑", "✕", "↑"]
   },
   {
+    "id": "irade-ibrahimova-de-hardasan",
+    "title": "De Hardasan",
+    "artist": "İradə İbrahimova",
+    "key": "Am",
+    "chords": ["Am", "Dm", "E", "F", "Bdim", "A7"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑"]
+  },
+  {
     "id": "kerim-gunahkar-mavi-xezerdir",
     "title": "Günahkar Mavi Xəzərdir",
     "artist": "Kərim",
@@ -161,6 +188,15 @@
     "chords": ["Bm", "Em", "F#", "B7"],
     "capo": 0,
     "rhythm": ["↓", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "mikope-joseph-abbas-hop-hop",
+    "title": "Hop Hop",
+    "artist": "Mikope Joseph Abbas",
+    "key": "Bm",
+    "chords": ["Bm", "A", "G", "E"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑", "↓", "↑", "↓"]
   },
   {
     "id": "miri-yusif-xatire",
@@ -224,6 +260,15 @@
     "chords": ["Bm", "Em", "E", "G", "A"],
     "capo": 0,
     "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"]
+  },
+  {
+    "id": "sahin-elizade-hecne-getmedi-yolunda",
+    "title": "Heçnə Getmədi Yolunda",
+    "artist": "Şahin Əlizadə",
+    "key": "Bm",
+    "chords": ["Bm", "A", "F#m", "Em"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
   },
   {
     "id": "sahin-elizade-oyuncaq-kimi",

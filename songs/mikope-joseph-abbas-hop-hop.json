@@ -1,0 +1,99 @@
+{
+  "id": "mikope-joseph-abbas-hop-hop",
+  "title": "Hop Hop",
+  "artist": "Mikope Joseph Abbas",
+  "key": "Bm",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑", "↓", "↑", "↓"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "A", "offset": 5 }
+      ],
+      "line": "Neçə əhli qələmlər"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "A", "offset": 6 }
+      ],
+      "line": "Darışıb canıma qəmler"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "A", "offset": 6 }
+      ],
+      "line": "Qarışıb dərdi bəhəmlər"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "A", "offset": 6 }
+      ],
+      "line": "Ürəyim indi vərəmlər"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "A", "offset": 6 }
+      ],
+      "line": "Salıblar aləmə pərxaş"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "A", "offset": 5 }
+      ],
+      "line": "Bunlar lal ola ey kaş"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "A", "offset": 5 }
+      ],
+      "line": "Düşə başlarına"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "A", "offset": 5 },
+        { "name": "Bm", "offset": 12 }
+      ],
+      "line": "Özləri boyda bir daş"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "A", "offset": 7 }
+      ],
+      "line": "Ey fələk zülmün əyandır"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "A", "offset": 7 }
+      ],
+      "line": "Bu necə dövrü-zamandır"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "A", "offset": 6 }
+      ],
+      "line": "Ki işim ahu fəğandır"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "G", "offset": 7 },
+        { "name": "A", "offset": 12 }
+      ],
+      "line": "Məni yandırma amandır"
+    }
+  ]
+}

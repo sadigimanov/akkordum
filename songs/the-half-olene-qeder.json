@@ -1,0 +1,101 @@
+{
+  "id": "the-half-olene-qeder",
+  "title": "Ölənə qədər",
+  "artist": "The Half",
+  "key": "Cm",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "⌇", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "Fm", "offset": 14 }
+      ],
+      "line": "Bu gün biraz yenə oturdum düşündüm"
+    },
+    {
+      "chords": [
+        { "name": "A#", "offset": 0 },
+        { "name": "G", "offset": 15 }
+      ],
+      "line": "Ciddi ciddi ki, görən indi nələr olacaq"
+    },
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "Fm", "offset": 12 }
+      ],
+      "line": "Nələri itirəcəm, nələr özü gedəcək"
+    },
+    {
+      "chords": [
+        { "name": "A#", "offset": 0 },
+        { "name": "G", "offset": 16 }
+      ],
+      "line": "Nələrsə bəlkə yanımda qalacaq..."
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "Fm", "offset": 15 }
+      ],
+      "line": "Biraz meyimdən içib danışıram,"
+    },
+    {
+      "chords": [
+        { "name": "A#", "offset": 0 },
+        { "name": "G", "offset": 15 }
+      ],
+      "line": "Yalandan da olsa camaata qarışıram"
+    },
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "Fm", "offset": 15 }
+      ],
+      "line": "Bezirəm durub gedirəm gəzirəm"
+    },
+    {
+      "chords": [
+        { "name": "A#", "offset": 0 },
+        { "name": "G", "offset": 15 },
+        { "name": "G#", "offset": 23 },
+        { "name": "G", "offset": 26 }
+      ],
+      "line": "Sonra əlacsız özümlə barışıram"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "G", "offset": 15 }
+      ],
+      "line": "Mən beləyəm, belə gəldi-gedər,"
+    },
+    {
+      "chords": [
+        { "name": "A#", "offset": 3 },
+        { "name": "Fm", "offset": 12 },
+        { "name": "G", "offset": 17 }
+      ],
+      "line": "Ölənə qədər, ölənə qədər."
+    },
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "G", "offset": 15 }
+      ],
+      "line": "Mən beləyəm, belə gəldi-gedər,"
+    },
+    {
+      "chords": [
+        { "name": "A#", "offset": 3 },
+        { "name": "Fm", "offset": 9 },
+        { "name": "G", "offset": 12 }
+      ],
+      "line": "Ölənə qədər"
+    }
+  ]
+}

@@ -244,6 +244,15 @@
     "rhythm": ["↓", "⌇", "↑", "↑", "↓", "↑"]
   },
   {
+    "id": "the-half-olene-qeder",
+    "title": "Ölənə qədər",
+    "artist": "The Half",
+    "key": "Cm",
+    "chords": ["Cm", "Fm", "A#", "G", "F"],
+    "capo": 0,
+    "rhythm": ["↓", "⌇", "↑", "↓", "↑"]
+  },
+  {
     "id": "vuqar-abdulov-sadix-mustafayev-qocaldiq-biz",
     "title": "Qocaldıq Biz",
     "artist": "Vüqar Əbdülov Sadıx Mustafayev",

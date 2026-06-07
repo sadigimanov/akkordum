@@ -1,0 +1,152 @@
+{
+  "id": "irade-ibrahimova-bahar-ciceyi",
+  "title": "Bahar Çiçəyi",
+  "artist": "İradə İbrahimova",
+  "key": "Cm",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 }
+      ],
+      "line": "Bahar çiçəyini itirən kimi"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "Fm", "offset": 8 },
+        { "name": "Cm", "offset": 17 }
+      ],
+      "line": "Mən də itirdim səni beləcə"
+    },
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 }
+      ],
+      "line": "Fəsillər baharı gətirən kimi"
+    },
+    {
+      "chords": [
+        { "name": "D#", "offset": 0 },
+        { "name": "G", "offset": 13 },
+        { "name": "Cm", "offset": 21 }
+      ],
+      "line": "Mən səni geriyə qaytarım necə?"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 3 },
+        { "name": "G", "offset": 11 },
+        { "name": "Cm", "offset": 19 }
+      ],
+      "line": "Suallar içində tənha qalmışam"
+    },
+    {
+      "chords": [
+        { "name": "G#", "offset": 4 },
+        { "name": "G", "offset": 13 },
+        { "name": "Cm", "offset": 19 }
+      ],
+      "line": "Mən özüm özümü aldatmışam"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Fm", "offset": 3 },
+        { "name": "A#", "offset": 16 }
+      ],
+      "line": "Nə bilim, nə bilim, nə bilim"
+    },
+    {
+      "chords": [
+        { "name": "D#", "offset": 0 },
+        { "name": "Cm", "offset": 12 }
+      ],
+      "line": "Bəlkə də qəlbim daş imiş"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 3 },
+        { "name": "A#", "offset": 16 }
+      ],
+      "line": "Nə bilim, nə bilim, nə bilim"
+    },
+    {
+      "chords": [
+        { "name": "D#", "offset": 0 },
+        { "name": "Cm", "offset": 10 }
+      ],
+      "line": "Taleyim məni dəyişmiş"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 3 },
+        { "name": "G", "offset": 16 }
+      ],
+      "line": "Nə bilim, nə bilim, nə bilim"
+    },
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "A#", "offset": 4 },
+        { "name": "G#", "offset": 10 }
+      ],
+      "line": "Eşqimin gözü çaş imiş"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 4 },
+        { "name": "G", "offset": 14 },
+        { "name": "Cm", "offset": 21 }
+      ],
+      "line": "O mənə yalandan sevdirib səni"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 }
+      ],
+      "line": "Xəyallar gecənin xətrinə görə"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "Fm", "offset": 9 },
+        { "name": "Cm", "offset": 20 }
+      ],
+      "line": "Qayıdıb geriyə, görüşür yenə"
+    },
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 }
+      ],
+      "line": "Mən səni sevirdim nəyinə görə?"
+    },
+    {
+      "chords": [
+        { "name": "D#", "offset": 0 },
+        { "name": "G", "offset": 9 },
+        { "name": "Cm", "offset": 18 }
+      ],
+      "line": "Ürəyim artıq inanmır sənə"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 3 },
+        { "name": "G", "offset": 11 },
+        { "name": "Cm", "offset": 19 }
+      ],
+      "line": "Suallar içində tənha qalmışam"
+    },
+    {
+      "chords": [
+        { "name": "G#", "offset": 4 },
+        { "name": "G", "offset": 13 },
+        { "name": "Cm", "offset": 19 }
+      ],
+      "line": "Mən özüm özümü aldatmışam"
+    }
+  ]
+}

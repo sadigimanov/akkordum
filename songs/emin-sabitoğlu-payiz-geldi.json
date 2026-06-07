@@ -1,0 +1,118 @@
+{
+  "id": "emin-sabitoğlu-payiz-geldi",
+  "title": "Payız Gəldi",
+  "artist": "Emin Sabitoğlu",
+  "key": "Am",
+  "capo": 0,
+  "rhythm": ["↓", "⌇", "↑", "↓"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 22 }
+      ],
+      "line": "Gözlərim hər axşam axtarır səni"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 5 },
+        { "name": "E", "offset": 20 }
+      ],
+      "line": "Ürəyim yollardan qayıtmır evə"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 7 },
+        { "name": "Dm", "offset": 22 }
+      ],
+      "line": "Sənsiz dalğalar da tanımır məni"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 7 },
+        { "name": "E", "offset": 22 }
+      ],
+      "line": "Neyləyim, ürəyim heç yatmır evə"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 7 },
+        { "name": "B7", "offset": 20 }
+      ],
+      "line": "Payız gəldi, uçdu getdi quşlar"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 8 },
+        { "name": "Am", "offset": 23 }
+      ],
+      "line": "Sən də getdin, bax, yağdı yağışlar"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 6 },
+        { "name": "B7", "offset": 20 }
+      ],
+      "line": "Payız gəldi, uçdu getdi quşlar"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 8 },
+        { "name": "Am", "offset": 23 }
+      ],
+      "line": "Sən də getdin, bax, yağdı yağışlar"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "A", "offset": 7 },
+        { "name": "Dm", "offset": 19 }
+      ],
+      "line": "Payız gəldi, qərib oldu dəniz, ay balam"
+    },
+    {
+      "chords": [
+        { "name": "B7", "offset": 6 },
+        { "name": "E", "offset": 10 },
+        { "name": "Am", "offset": 19 }
+      ],
+      "line": "Bu dənizin gözü yaşlı sənsiz, yar"
+    },
+    {
+      "chords": [
+        { "name": "B7", "offset": 6 },
+        { "name": "E", "offset": 10 },
+        { "name": "Am", "offset": 19 }
+      ],
+      "line": "Bu dənizin gözü yaşlı sənsiz"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 21 }
+      ],
+      "line": "Küçələr, döngələr izindən qalıb"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 6 },
+        { "name": "E", "offset": 18 }
+      ],
+      "line": "Yarpaq pıçıltısı sənin səsindir"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 7 },
+        { "name": "Dm", "offset": 20 }
+      ],
+      "line": "İşıqlar zil qara gözündən qalıb"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 6 },
+        { "name": "E", "offset": 21 }
+      ],
+      "line": "Bu şirin xatirə mənim bəsimdir"
+    }
+  ]
+}

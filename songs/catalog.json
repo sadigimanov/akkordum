@@ -37,6 +37,15 @@
     "rhythm": ["↓", "✕", "↑", "↑", "↑", "✕", "↓", "↑", "↓", "↑"]
   },
   {
+    "id": "aygun-beyler-nigar-camal-nefesim-qelbim",
+    "title": "Nəfəsim Qəlbim",
+    "artist": "Aygün Bəylər ft. Nigar Camal",
+    "key": "Cm",
+    "chords": ["Cm", "G#", "Fm", "G"],
+    "capo": 0,
+    "rhythm": ["↓", "✕", "↑", "↑", "↓", "✕", "↑", "↓", "↑"]
+  },
+  {
     "id": "aygun-beyler-ozun-gunahkarsan",
     "title": "Özün Günahkarsan",
     "artist": "Aygün Bəylər",
@@ -109,6 +118,24 @@
     "rhythm": ["↓", "↑", "↓", "↑"]
   },
   {
+    "id": "elxan-sirinov-basqa-birisini-seve-bilmezsen",
+    "title": "Başqa birisini sevə bilməzsən",
+    "artist": "Elxan Şirinov",
+    "key": "C#m",
+    "chords": ["C#m", "G#", "F#m", "A", "C#7"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"]
+  },
+  {
+    "id": "emin-sabitoğlu-payiz-geldi",
+    "title": "Payız Gəldi",
+    "artist": "Emin Sabitoğlu",
+    "key": "Am",
+    "chords":["Am", "Dm", "E", "G", "F", "B7"],
+    "capo": 0,
+    "rhythm": ["↓", "⌇", "↑", "↓"]
+  },
+  {
     "id":"eyyub-yaqubov-bakili-balasi",
     "title": "Bakılı Balası",
     "artist": "Eyyub Yaqubov",
@@ -154,11 +181,38 @@
     "rhythm": ["↓", "↑", "✕", "↑"]
   },
   {
+    "id": "irade-ibrahimova-bahar-ciceyi",
+    "title": "Bahar Çiçəyi",
+    "artist": "İradə İbrahimova",
+    "key": "Cm",
+    "chords":["Cm", "G", "Fm", "A#", "D#"],
+    "capo": 0,
+    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"]
+  },
+  {
     "id": "irade-ibrahimova-de-hardasan",
     "title": "De Hardasan",
     "artist": "İradə İbrahimova",
     "key": "Am",
     "chords": ["Am", "Dm", "E", "F", "Bdim", "A7"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑"]
+  },
+  {
+    "id": "irade-ibrahimova-neylerem",
+    "title": "Neylərəm",
+    "artist": "İradə İbrahimova",
+    "key": "Bm",
+    "chords": ["Bm", "Em", "F#", "G"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "joseph-abbas-omrun-baharlari",
+    "title": "Ömrün Baharları",
+    "artist": "Joseph Abbas",
+    "key": "Bm",
+    "chords": ["Bm", "F#", "Em", "G"],
     "capo": 0,
     "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑"]
   },
@@ -208,6 +262,15 @@
     "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑", "↓", "↑"]
   },
   {
+    "id": "mubariz-tagiyev-yada-sal-meni",
+    "title": "Yada sal məni",
+    "artist": "Mübariz Tağıyev",
+    "key": "Am",
+    "chords":["Am", "Dm", "E", "F", "G", "C"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+  },
+  {
     "id": "nadir-qafarzade-mene-soz-ver",
     "title": "Mənə Söz Ver",
     "artist": "Nadir Qafarzadə",
@@ -244,6 +307,15 @@
     "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑", "↓", "↑"]
   },
   {
+    "id": "oqtay-agayev-kimsen-sen",
+    "title": "Kimsən Sən",
+    "artist": "Oqtay Ağayev",
+    "key": "Bm",
+    "chords": ["Bm", "F#", "Em", "A", "D", "G", "B7"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑", "↓", "↑"]
+  },
+  {
     "id": "pasa-emircan-olerdim",
     "title": "Ölərdim",
     "artist": "Paşa Əmircan",
@@ -253,12 +325,30 @@
     "rhythm": ["↓", "↓", "↑", "↓", "↑"]
   },
   {
+    "id": "qaya-ey-heyat-sen-ne-qeribesen",
+    "title": "Ey Həyat Sən Nə Qəribəsən",
+    "artist": "Qaya",
+    "key": "Bm",
+    "chords": ["Bm", "F#", "Em", "B", "A", "D", "G", "C#"],
+    "capo": 0,
+    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"]
+  },
+  {
     "id": "roya-bahar",
     "title": "Bahar",
     "artist": "Röya",
     "key": "Bm",
     "chords": ["Bm", "Em", "E", "G", "A"],
     "capo": 0,
+    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"]
+  },
+  {
+    "id": "roya-ft-xeyyam-sene-ehtiyacim-var",
+    "title": "Sənə Ehtiyacım Var",
+    "artist": "Röya ft. Xəyyam",
+    "key": "Dm",
+    "chords":["E", "Am", "C", "Dm", "F", "B7"],
+    "capo": 5,
     "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"]
   },
   {
@@ -278,6 +368,24 @@
     "chords": ["Bm", "F#m", "A", "Em"],
     "capo": 0,
     "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+  },
+  {
+    "id": "sahin-elizade-sene-geldim",
+    "title": "Sənə Gəldim",
+    "artist": "Şahin Əlizadə",
+    "key": "Am",
+    "chords":["Am", "E", "Dm", "F", "G", "C", "A7"],
+    "capo": 0,
+    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"]
+  },
+  {
+    "id": "sahin-elizade-sirin-yuxular",
+    "title": "Şirin Yuxular",
+    "artist": "Şahin Əlizadə",
+    "key": "Fm",
+    "chords":[],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑"]
   },
   {
     "id": "seron-torpagin-sesi",
@@ -314,6 +422,15 @@
     "chords": ["Bm", "G", "Em", "F#"],
     "capo": 0,
     "rhythm": ["↓", "↑", "✕", "↑", "↓", "↑"]
+  },
+  {
+    "id": "yuxu-xeyalperest",
+    "title": "Xəyalpərəst",
+    "artist": "Yuxu",
+    "key": "Cm",
+    "chords": ["Cm", "Fm", "G", "G#"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"]
   }
     
 

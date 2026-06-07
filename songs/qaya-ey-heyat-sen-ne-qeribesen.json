@@ -1,0 +1,108 @@
+{
+  "id": "qaya-ey-heyat-sen-ne-qeribesen",
+  "title": "Ey Həyat Sən Nə Qəribəsən",
+  "artist": "Qaya",
+  "key": "Bm",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Bm", "offset": 3 },
+        { "name": "F#", "offset": 22 }
+      ],
+      "line": "Nə yaxın qonşu olduq, bu dünyada"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 19 }
+      ],
+      "line": "Ayrı-ayrı doğulduq bu dünyada"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 2 },
+        { "name": "F#", "offset": 18 }
+      ],
+      "line": "Axır gəlib bir olduq, bu dünyada"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "F#", "offset": 8 },
+        { "name": "Bm", "offset": 18 }
+      ],
+      "line": "Ey həyat, sən nə qəribəsən?"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "B", "offset": 5 },
+        { "name": "Em", "offset": 15 }
+      ],
+      "line": "Sən ay kimi baxdın mənə"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 7 },
+        { "name": "D", "offset": 18 }
+      ],
+      "line": "Sən gün kimi baxdın mənə"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 4 },
+        { "name": "C#", "offset": 11 }
+      ],
+      "line": "Gözlərinin qarasıyla"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 4 },
+        { "name": "G", "offset": 9 },
+        { "name": "F#", "offset": 16 }
+      ],
+      "line": "Güldü ömrünün baxtı mənə..."
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#", "offset": 21 }
+      ],
+      "line": "Aylar keçir, illər keçir, axı nolur"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 18 }
+      ],
+      "line": "Yadlar gəlir, doğma olur, yaxın olur"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#", "offset": 13 }
+      ],
+      "line": "Məhəbbətlə ötən ömür nağıl olur"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 3 },
+        { "name": "F#", "offset": 8 },
+        { "name": "Bm", "offset": 18 }
+      ],
+      "line": "Ey həyat, sən nə qəribəsən?"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 3 },
+        { "name": "F#", "offset": 8 },
+        { "name": "Bm", "offset": 18 }
+      ],
+      "line": "Ey həyat, sən nə qəribəsən?"
+    }
+  ]
+}

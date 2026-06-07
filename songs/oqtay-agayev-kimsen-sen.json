@@ -1,0 +1,132 @@
+{
+  "id": "oqtay-agayev-kimsen-sen",
+  "title": "Kimsən Sən",
+  "artist": "Oqtay Ağayev",
+  "key": "Bm",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Bm", "offset": 4 },
+        { "name": "F#", "offset": 13 },
+        { "name": "Bm", "offset": 20 }
+      ],
+      "line": "Dənizdən, səmadan, küləkdən"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 4 },
+        { "name": "F#", "offset": 13 },
+        { "name": "Bm", "offset": 20 },
+        { "name": "B7", "offset": 23 }
+      ],
+      "line": "Gözlərdən, dillərdən, ürəkdən"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 4 },
+        { "name": "A", "offset": 12 },
+        { "name": "D", "offset": 19 },
+        { "name": "G", "offset": 21 }
+      ],
+      "line": "Arzudan, ümiddən, diləkdən"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 5 },
+        { "name": "F#", "offset": 12 },
+        { "name": "Bm", "offset": 20 }
+      ],
+      "line": "Soruşdum hamıdan, soruşdum"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Em", "offset": 6 },
+        { "name": "F#", "offset": 10 },
+        { "name": "Bm", "offset": 16 }
+      ],
+      "line": "Kimsən sən? Kimsən sən?"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 6 },
+        { "name": "F#", "offset": 10 },
+        { "name": "Bm", "offset": 16 }
+      ],
+      "line": "Soruşdum: \"Kimsən sən?\""
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 4 },
+        { "name": "F#", "offset": 13 },
+        { "name": "Bm", "offset": 20 }
+      ],
+      "line": "Qayanın quşqonmaz yerindən"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 5 },
+        { "name": "F#", "offset": 11 },
+        { "name": "Bm", "offset": 18 },
+        { "name": "B7", "offset": 21 }
+      ],
+      "line": "Dünyanın açılmaz sirrindən"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 4 },
+        { "name": "A", "offset": 10 },
+        { "name": "D", "offset": 16 },
+        { "name": "G", "offset": 19 }
+      ],
+      "line": "Küçədən ötənin birindən"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 4 },
+        { "name": "F#", "offset": 13 },
+        { "name": "Bm", "offset": 21 }
+      ],
+      "line": "Soruşdum bu axşam, soruşdum"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 3 },
+        { "name": "F#", "offset": 9 },
+        { "name": "Bm", "offset": 15 }
+      ],
+      "line": "Yerini tapmışam izindən"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 4 },
+        { "name": "F#", "offset": 11 },
+        { "name": "Bm", "offset": 19 },
+        { "name": "B7", "offset": 22 }
+      ],
+      "line": "Qəlbini görmüşəm gözündən"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 2 },
+        { "name": "A", "offset": 9 },
+        { "name": "D", "offset": 16 },
+        { "name": "G", "offset": 19 }
+      ],
+      "line": "Adını öyrəndim özündən"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 4 },
+        { "name": "F#", "offset": 12 },
+        { "name": "Bm", "offset": 19 }
+      ],
+      "line": "Bəs niyə soruşdum hamıdan?"
+    }
+  ]
+}

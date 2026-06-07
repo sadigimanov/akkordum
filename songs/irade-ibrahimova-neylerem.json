@@ -1,0 +1,150 @@
+{
+  "id": "irade-ibrahimova-neylerem",
+  "title": "Neylərəm",
+  "artist": "İradə İbrahimova",
+  "key": "Bm",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 19 }
+      ],
+      "line": "Neçə vaxtdır, əlin dəymir əlimə"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "Bm", "offset": 19 }
+      ],
+      "line": "Neçə vaxtdır, adın gəlmir dilimə"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 20 }
+      ],
+      "line": "Yanımdasan, yadlardan da yadıq biz"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "G", "offset": 13 },
+        { "name": "F#", "offset": 26 }
+      ],
+      "line": "Necə dözürük bu kədərə, söylə, ikimiz?"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "E", "offset": 20 }
+      ],
+      "line": "Ürək dözmür, ürək sənsiz ağlayır"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "Bm", "offset": 16 }
+      ],
+      "line": "Buz bağışlar yollarımı bağlayır"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 14 }
+      ],
+      "line": "Ötən günləri itirdik niyə biz?"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "G", "offset": 9 },
+        { "name": "F#", "offset": 20 }
+      ],
+      "line": "Qırıla-qırıla artıq küsdü qəlbimiz"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Yad baxışlar, yad şübhələr"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 }
+      ],
+      "line": "Anlaşılmayan kəlmələr"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 16 },
+        { "name": "G", "offset": 25 },
+        { "name": "F#", "offset": 27 }
+      ],
+      "line": "Aramızda nələr, nələr olacaqmış"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Ümidlər bitdi sonunda"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 }
+      ],
+      "line": "Xatirən var dörd yanımda"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 0 },
+        { "name": "Bm", "offset": 18 }
+      ],
+      "line": "Həsrətin səbri sonunda dolacaqmış"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "F#", "offset": 9 }
+      ],
+      "line": "Olacaqmış, olacaqmış"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#", "offset": 14 },
+        { "name": "Bm", "offset": 22 }
+      ],
+      "line": "Bu dünyanı sənsiz neylərəm, neylərəm?"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#", "offset": 11 },
+        { "name": "Bm", "offset": 16 }
+      ],
+      "line": "Ümidimi gecə göylərə söylərəm"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "F#", "offset": 13 },
+        { "name": "Bm", "offset": 20 }
+      ],
+      "line": "Hər gecə xəyallarımda görüşürdük"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "F#", "offset": 12 }
+      ],
+      "line": "İndi yuxuma da gəlmirsən, nədən?"
+    }
+  ]
+}

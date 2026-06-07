@@ -1,0 +1,122 @@
+{
+  "id": "joseph-abbas-omrun-baharlari",
+  "title": "Ömrün Baharları",
+  "artist": "Joseph Abbas",
+  "key": "Bm",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#", "offset": 3 },
+        { "name": "Bm", "offset": 11 }
+      ],
+      "line": "Ömrün baharları"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 11 }
+      ],
+      "line": "artıq sənsiz gedir"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 }
+      ],
+      "line": "O hər gün tək oyanır"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Ona hər ay noyabr"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "F#", "offset": 6 },
+        { "name": "Bm", "offset": 12 }
+      ],
+      "line": "Belə keçir günləri"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#", "offset": 5 },
+        { "name": "Bm", "offset": 10 }
+      ],
+      "line": "Söylə yalanları"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 14 }
+      ],
+      "line": "Ən xoş yalan sevgidi"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 }
+      ],
+      "line": "Deyir, gülür, oynayır"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Gözlərini bağlayır"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "F#", "offset": 5 },
+        { "name": "Bm", "offset": 12 }
+      ],
+      "line": "Qaçır günlərin biri"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Em", "offset": 8 }
+      ],
+      "line": "Bu həyat oyundu, oynadınsa"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 6 }
+      ],
+      "line": "Özünü qalib sanırsan"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "F#", "offset": 8 },
+        { "name": "Bm", "offset": 17 }
+      ],
+      "line": "Sayır fələk özünə sayırsan"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 5 }
+      ],
+      "line": "Eləbil asandı yaşamaq"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 8 }
+      ],
+      "line": "Yaşamaq ölüm kimi səssiz"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "G", "offset": 3 },
+        { "name": "F#", "offset": 11 },
+        { "name": "Bm", "offset": 20 }
+      ],
+      "line": "Ömrün baharları keçir sənsiz"
+    }
+  ]
+}

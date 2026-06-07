@@ -1,0 +1,108 @@
+{
+  "id": "roya-ft-xeyyam-sene-ehtiyacim-var",
+  "title": "Sənə Ehtiyacım Var",
+  "artist": "Röya ft. Xəyyam",
+  "key": "Dm",
+  "easy_key": "A",
+  "capo": 5,
+  "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 24 }
+      ],
+      "line": "Sənli gecələrimin həsrətini yaşayıb"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "C", "offset": 13 },
+        { "name": "B7", "offset": 32 }
+      ],
+      "line": "Yastığıma yağan damla damla göz yaşlarımda"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 11 }
+      ],
+      "line": "Sənin adını yazıb"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "E", "offset": 0 },
+        { "name": "Am", "offset": 23 }
+      ],
+      "line": "Gecələrin adı yox , gecələrin qaranlıq"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "C", "offset": 13 },
+        { "name": "B7", "offset": 29 }
+      ],
+      "line": "Yalvarıram sənə heç olmasa bircə dəqiqə"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 13 }
+      ],
+      "line": "Yuxuma gəl bir anlıq"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Am", "offset": 14 },
+        { "name": "Dm", "offset": 32 }
+      ],
+      "line": "Səni düşündüyüm qədər heç kəsi düşünmədim."
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 9 }
+      ],
+      "line": "Səni axtardığım qədər heç kəsi axtarmadım."
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 10 }
+      ],
+      "line": "Sənə vurulduğum qədər heç vaxt aşiq olmadım."
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 9 }
+      ],
+      "line": "Sən bir başqasan yar,"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Am", "offset": 14 },
+        { "name": "Dm", "offset": 32 }
+      ],
+      "line": "Səni düşündüyüm qədər heç kəsi düşünmədim."
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 9 }
+      ],
+      "line": "Səni axtardığım qədər heç kəsi axtarmadım."
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 10 }
+      ],
+      "line": "Sənə vurulduğum qədər heç vaxt aşiq olmadım."
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 9 },
+        { "name": "Dm", "offset": 17 },
+        { "name": "E", "offset": 29 }
+      ],
+      "line": "Sən bir başqasan yar, sənə ehtiyacım var"
+    }
+  ]
+}

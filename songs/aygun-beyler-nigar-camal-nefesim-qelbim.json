@@ -1,0 +1,120 @@
+{
+  "id": "aygun-beyler-nigar-camal-nefesim-qelbim",
+  "title": "Nəfəsim Qəlbim",
+  "artist": "Aygün Bəylər ft. Nigar Camal",
+  "key": "Cm",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "✕", "↑", "↑", "↓", "✕", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "G#", "offset": 13 },
+        { "name": "Fm", "offset": 20 },
+        { "name": "G", "offset": 32 }
+      ],
+      "line": "Məhəbbət bir sehrli dünya Gözəldir hər saatı"
+    },
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "G#", "offset": 14 },
+        { "name": "Fm", "offset": 20 },
+        { "name": "G", "offset": 31 }
+      ],
+      "line": "Sevgilim, bu nağıl eşqimiz Dolaşsın kainatı"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Fm", "offset": 0 },
+        { "name": "Cm", "offset": 13 }
+      ],
+      "line": "Sevərək yaşayaq Sədaqət daşıyaq"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 0 },
+        { "name": "G", "offset": 19 }
+      ],
+      "line": "Sevgi ilə döyünən qəlblərdə"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 0 }
+      ],
+      "line": "Bu anın sehri var"
+    },
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "Fm", "offset": 13 },
+        { "name": "G", "offset": 31 }
+      ],
+      "line": "Bar versin arzular Birgə gəzək möcüzələrdə"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "Fm", "offset": 21 }
+      ],
+      "line": "Sən mənim sevda yolumun işığı"
+    },
+    {
+      "chords": [
+        { "name": "Ddim", "offset": 0 },
+        { "name": "G", "offset": 22 }
+      ],
+      "line": "Səndən doğma, səndən əziz varmı?"
+    },
+    {
+      "chords": [
+        { "name": "G#", "offset": 0 },
+        { "name": "Fm", "offset": 10 },
+        { "name": "Fm", "offset": 20 }
+      ],
+      "line": "Səni sevmək ömrümün yaraşığı"
+    },
+    {
+      "chords": [
+        { "name": "Ddim", "offset": 0 },
+        { "name": "G", "offset": 11 },
+        { "name": "Cm", "offset": 17 }
+      ],
+      "line": "Səndən gözəl dünya olarmı?"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Cm", "offset": 0 },
+        { "name": "Fm", "offset": 16 }
+      ],
+      "line": "Mən səni elə sevirəm ürəkdən"
+    },
+    {
+      "chords": [
+        { "name": "Ddim", "offset": 0 },
+        { "name": "G", "offset": 18 }
+      ],
+      "line": "Səni görcək keçir bütün dərdim"
+    },
+    {
+      "chords": [
+        { "name": "G#", "offset": 0 },
+        { "name": "Fm", "offset": 9 },
+        { "name": "Fm", "offset": 25 }
+      ],
+      "line": "Sən mənim hər şeyimsən bu həyatda"
+    },
+    {
+      "chords": [
+        { "name": "Ddim", "offset": 0 },
+        { "name": "G", "offset": 7 },
+        { "name": "Cm", "offset": 17 }
+      ],
+      "line": "Yanımda qal, nəfəsim, qəlbim"
+    }
+  ]
+}

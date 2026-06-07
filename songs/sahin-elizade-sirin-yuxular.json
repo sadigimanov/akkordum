@@ -1,0 +1,110 @@
+{
+  "id": "sahin-elizade-sirin-yuxular",
+  "title": "Şirin Yuxular",
+  "artist": "Şahin Əlizadə",
+  "key": "Fm",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Fm", "offset": 0 }
+      ],
+      "line": "Gəl unudaq, demirəm, amma olsun"
+    },
+    {
+      "chords": [
+        { "name": "D#", "offset": 0 }
+      ],
+      "line": "Qelbimin ağrısısan"
+    },
+    {
+      "chords": [
+        { "name": "A#m", "offset": 0 }
+      ],
+      "line": "Bir ara çox düşünüb qərar aldım"
+    },
+    {
+      "chords": [
+        { "name": "C", "offset": 0 }
+      ],
+      "line": "Tək mənə qalmalısan"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Fm", "offset": 0 }
+      ],
+      "line": "Yüklədim üçü-beşi, tərsinə hər işim"
+    },
+    {
+      "chords": [
+        { "name": "D#", "offset": 0 }
+      ],
+      "line": "İstəmədim birini"
+    },
+    {
+      "chords": [
+        { "name": "A#m", "offset": 0 }
+      ],
+      "line": "Sən bunları keç, yolları seç"
+    },
+    {
+      "chords": [
+        { "name": "C", "offset": 0 }
+      ],
+      "line": "Məndən üz əllərini"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "A#m", "offset": 7 }
+      ],
+      "line": "Başını burax, düzələn deyiləm"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 6 }
+      ],
+      "line": "Yenə içirəm, ümidim səhərə"
+    },
+    {
+      "chords": [
+        { "name": "C", "offset": 7 }
+      ],
+      "line": "Gecə darıxır axı pəncərələr"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 7 },
+        { "name": "F7", "offset": 20 }
+      ],
+      "line": "Güzgüyə bax, biri sən, biri mən"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "A#m", "offset": 6 }
+      ],
+      "line": "İnadına itirdim izlərimi"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 8 }
+      ],
+      "line": "Gözləmə, yum daha gözlərini"
+    },
+    {
+      "chords": [
+        { "name": "C", "offset": 6 }
+      ],
+      "line": "Gecələr xəyallarım yıxılar"
+    },
+    {
+      "chords": [
+        { "name": "Fm", "offset": 8 }
+      ],
+      "line": "Sən mənə baxma, şirin yuxular"
+    }
+  ]
+}

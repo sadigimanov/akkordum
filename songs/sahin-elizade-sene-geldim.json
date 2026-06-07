@@ -1,0 +1,121 @@
+{
+  "id": "sahin-elizade-sene-geldim",
+  "title": "Sənə Gəldim",
+  "artist": "Şahin Əlizadə",
+  "key": "Am",
+  "capo": 0,
+  "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "E", "offset": 9 },
+        { "name": "Am", "offset": 15 }
+      ],
+      "line": "Yalnız keçirdim yaşımı"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "E", "offset": 9 },
+        { "name": "Am", "offset": 15 }
+      ],
+      "line": "Zorla qaldırdım başımı"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "E", "offset": 5 },
+        { "name": "Am", "offset": 12 },
+        { "name": "G", "offset": 15 },
+        { "name": "F", "offset": 17 }
+      ],
+      "line": "Bayaq axan gözyaşımı"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "E", "offset": 5 },
+        { "name": "Am", "offset": 9 }
+      ],
+      "line": "Silə-silə sənə gəldim"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Dm", "offset": 4 },
+        { "name": "G", "offset": 12 }
+      ],
+      "line": "Gözlərimdə itdiyini"
+    },
+    {
+      "chords": [
+        { "name": "C", "offset": 4 },
+        { "name": "F", "offset": 13 }
+      ],
+      "line": "Ölümümün yetdiyini"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 4 },
+        { "name": "E", "offset": 12 }
+      ],
+      "line": "Bir il öncə getdiyini"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 4 },
+        { "name": "A7", "offset": 13 }
+      ],
+      "line": "Bilə-bilə sənə gəldim"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Dm", "offset": 6 },
+        { "name": "G", "offset": 14 }
+      ],
+      "line": "Gecə səni düşününcə"
+    },
+    {
+      "chords": [
+        { "name": "C", "offset": 5 },
+        { "name": "F", "offset": 16 }
+      ],
+      "line": "Qəlb sıxılır, gedir küncə"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 7 },
+        { "name": "E", "offset": 18 }
+      ],
+      "line": "Söylə, görüm mənə, səncə"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 5 },
+        { "name": "E", "offset": 17 }
+      ],
+      "line": "Elə-belə sənə gəldim, yox"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 4 }
+      ],
+      "line": "Bilə-bilə sənə gəldim"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 5 },
+        { "name": "E", "offset": 17 }
+      ],
+      "line": "Elə-belə sənə gəldim, yox"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 4 }
+      ],
+      "line": "Bilə-bilə sənə gəldim"
+    }
+  ]
+}

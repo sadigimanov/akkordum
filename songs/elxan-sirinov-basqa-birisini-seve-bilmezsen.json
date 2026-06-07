@@ -1,0 +1,106 @@
+{
+  "id": "elxan-sirinov-basqa-birisini-seve-bilmezsen",
+  "title": "Başqa birisini sevə bilməzsən",
+  "artist": "Elxan Şirinov",
+  "key": "C#m",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "G#", "offset": 12 }
+      ],
+      "line": "Hələ qəlbimizdə xatirə izi"
+    },
+    {
+      "chords": [
+        { "name": "G#", "offset": 0 },
+        { "name": "F#m", "offset": 10 },
+        { "name": "G#", "offset": 20 }
+      ],
+      "line": "Hələ ayrılığın nəmlidir gözü"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "G#", "offset": 11 }
+      ],
+      "line": "Hələ ki sevirik biri-birimizi"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 4 },
+        { "name": "G#", "offset": 10 },
+        { "name": "C#m", "offset": 19 }
+      ],
+      "line": "Başqa birisini sevə bilməzsən"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "G#", "offset": 15 },
+        { "name": "C#m", "offset": 21 }
+      ],
+      "line": "Gör neçə nəğmənin bəstəsi qalıb"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "G#", "offset": 13 },
+        { "name": "C#m", "offset": 20 },
+        { "name": "C#7", "offset": 24 }
+      ],
+      "line": "Bu ocaq sönübsə tüstüsü qalıb"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "C#m", "offset": 10 }
+      ],
+      "line": "Əlimdə əlinin istisi qalıb"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 0 },
+        { "name": "F#m", "offset": 11 },
+        { "name": "G#", "offset": 21 },
+        { "name": "C#m", "offset": 27 }
+      ],
+      "line": "Başqa birisini, başqa birisini sevə bilməzsən"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "G#", "offset": 13 }
+      ],
+      "line": "Axar gözümüzün yaşı qurumaz"
+    },
+    {
+      "chords": [
+        { "name": "G#", "offset": 0 },
+        { "name": "F#m", "offset": 13 },
+        { "name": "G#", "offset": 26 }
+      ],
+      "line": "Deyirdik bu ilqar, peyman pozulmaz"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "G#", "offset": 12 }
+      ],
+      "line": "Belə sevə-sevə ayrılmaq olmaz"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 4 },
+        { "name": "G#", "offset": 10 },
+        { "name": "C#m", "offset": 19 }
+      ],
+      "line": "Başqa birisini sevə bilməzsən"
+    }
+  ]
+}

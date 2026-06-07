@@ -1,0 +1,130 @@
+{
+  "id": "mubariz-tagiyev-yada-sal-meni",
+  "title": "Yada sal məni",
+  "artist": "Mübariz Tağıyev",
+  "key": "Am",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 15 },
+        { "name": "Am", "offset": 22 }
+      ],
+      "line": "Gedirəm bu axşam, gedirəm, gülüm"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 13 },
+        { "name": "Am", "offset": 22 }
+      ],
+      "line": "Bilirəm, gül üzün solacaq mənsiz"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "E", "offset": 16 },
+        { "name": "Am", "offset": 22 }
+      ],
+      "line": "Gedirəm, gəlməsəm qalacaq sevgim"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 0 },
+        { "name": "Dm", "offset": 5 },
+        { "name": "E", "offset": 14 },
+        { "name": "Am", "offset": 20 }
+      ],
+      "line": "Bəlkə də gözlərin dolacaq mənsiz"
+    },
+        {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "E", "offset": 16 },
+        { "name": "Am", "offset": 22 }
+      ],
+      "line": "Gedirəm, gəlməsəm qalacaq sevgim"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 0 },
+        { "name": "Dm", "offset": 6 },
+        { "name": "E", "offset": 15 },
+        { "name": "Am", "offset": 21 }
+      ],
+      "line": "Güman ki, gözlərin dolacaq mənsiz"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Am", "offset": 6 },
+        { "name": "G", "offset": 12 },
+        { "name": "C", "offset": 19 }
+      ],
+      "line": "Yaşadır sevdalı bir xəyal məni"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "Am", "offset": 8 },
+        { "name": "G", "offset": 16 },
+        { "name": "Am", "offset": 23 }
+      ],
+      "line": "Gedirəm, gəlməsəm, yada sal məni"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 12 },
+        { "name": "Am", "offset": 19 }
+      ],
+      "line": "Bürüyüb göyləri indi çən, duman"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Dm", "offset": 13 },
+        { "name": "Am", "offset": 20 }
+      ],
+      "line": "Torpaq dilə gəlib aman, ay aman!"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "E", "offset": 13 },
+        { "name": "Am", "offset": 19 }
+      ],
+      "line": "Vətən gözü yaşlı qalsa, o zaman"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 0 },
+        { "name": "Dm", "offset": 5 },
+        { "name": "E", "offset": 14 },
+        { "name": "Am", "offset": 20 }
+      ],
+      "line": "Ay Allah, sevgilim qalacaq mənsiz!"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "E", "offset": 13 },
+        { "name": "Am", "offset": 19 }
+      ],
+      "line": "Vətən gözü yaşlı qalsa, o zaman"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 0 },
+        { "name": "Dm", "offset": 5 },
+        { "name": "E", "offset": 14 },
+        { "name": "Am", "offset": 20 }
+      ],
+      "line": "Ay Allah, sevgilim qalacaq mənsiz!"
+    }
+  ]
+}

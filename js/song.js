@@ -69,7 +69,7 @@ function initTheme() {
 }
 
 async function initSearch() {
-  const input   = document.getElementById("search-input");
+  const input = document.getElementById("search-input");
   const results = document.getElementById("search-results");
   if (!input || !results) return;
 
@@ -85,9 +85,9 @@ async function initSearch() {
       return;
     }
     const q = normalize(query);
-    const byTitle  = catalog.filter(s => normalize(s.title).startsWith(q));
+    const byTitle = catalog.filter(s => normalize(s.title).startsWith(q));
     const byArtist = catalog.filter(s => !normalize(s.title).startsWith(q) && normalize(s.artist).startsWith(q));
-    const matched  = [...byTitle, ...byArtist];
+    const matched = [...byTitle, ...byArtist];
     results.innerHTML = "";
     if (matched.length === 0) {
       results.innerHTML = `<li class="search-no-result">Nəticə tapılmadı</li>`;
@@ -136,11 +136,12 @@ async function init() {
     return;
   }
 
+  // metadata
   document.title = `${song.title} — ${song.artist}`;
-  document.getElementById("song-title").textContent  = song.title;
+  document.getElementById("song-title").textContent = song.title;
   document.getElementById("song-artist").textContent = song.artist;
-  document.getElementById("song-key").textContent    = song.key;
-  document.getElementById("song-capo").textContent   = song.capo ?? 0;
+  document.getElementById("song-key").textContent = song.key;
+  document.getElementById("song-capo").textContent = song.capo ?? 0;
   document.getElementById("song-easy-key").textContent = song.easy_key || "A";
 
   // Tarixçəyə əlavə et
@@ -152,9 +153,9 @@ async function init() {
   // ── Ritm ──────────────────────────────────────────────────
   const rhythmSection = document.getElementById("rhythm-section");
   const rhythmDisplay = document.getElementById("rhythm-display");
-  const editorEl      = document.getElementById("rhythm-editor");
+  const editorEl = document.getElementById("rhythm-editor");
 
-    function renderRhythmRow(beats, label, labelColor) {
+  function renderRhythmRow(beats, label, labelColor) {
     const wrap = document.createElement("div");
     wrap.className = "rhythm-row-wrap";
     const lbl = document.createElement("div");
@@ -291,7 +292,7 @@ async function init() {
   onAuthStateChanged(auth, () => renderRhythms());
 
   const originalRoot = getOriginalRoot(song.key);
-  const originalIdx  = NOTES.indexOf(originalRoot);
+  const originalIdx = NOTES.indexOf(originalRoot);
   let semitones = 0;
 
   // +A / -A — mətn ölçüsünü böyüdüb kiçildir
@@ -336,43 +337,43 @@ async function init() {
   // Orijinal tona klik
   const origKeyEl = document.getElementById("song-key-text");
   if (origKeyEl) {
-  origKeyEl.style.cursor = "pointer";
-  origKeyEl.addEventListener("click", () => { 
-    semitones = 0; 
-    update(); 
-    
-    // Rəngləri dəyişdir: Orijinal aktiv, Asan solğun
-    origKeyEl.classList.remove("dim-key");
-    origKeyEl.classList.add("active-key");
-    if (easyKeyEl) {
-      easyKeyEl.classList.remove("active-key");
-      easyKeyEl.classList.add("dim-key");
-    }
-  });
-}
+    origKeyEl.style.cursor = "pointer";
+    origKeyEl.addEventListener("click", () => {
+      semitones = 0;
+      update();
+
+      // Rəngləri dəyişdir: Orijinal aktiv, Asan solğun
+      origKeyEl.classList.remove("dim-key");
+      origKeyEl.classList.add("active-key");
+      if (easyKeyEl) {
+        easyKeyEl.classList.remove("active-key");
+        easyKeyEl.classList.add("dim-key");
+      }
+    });
+  }
 
   // Asan tona klik
   const easyKeyEl = document.getElementById("song-easy-text");
   if (easyKeyEl) {
-  easyKeyEl.style.cursor = "pointer";
-  easyKeyEl.addEventListener("click", () => {
-    const strong = easyKeyEl.querySelector("strong");
-    if (!strong) return;
-    const clickedIdx = NOTES.indexOf(strong.textContent.trim());
-    if (clickedIdx !== -1) {
-      semitones = ((clickedIdx - originalIdx) % 12 + 12) % 12;
-      update();
-      
-      // Rəngləri dəyişdir: Asan aktiv, Orijinal solğun
-      easyKeyEl.classList.remove("dim-key");
-      easyKeyEl.classList.add("active-key");
-      if (origKeyEl) {
-        origKeyEl.classList.remove("active-key");
-        origKeyEl.classList.add("dim-key");
+    easyKeyEl.style.cursor = "pointer";
+    easyKeyEl.addEventListener("click", () => {
+      const strong = easyKeyEl.querySelector("strong");
+      if (!strong) return;
+      const clickedIdx = NOTES.indexOf(strong.textContent.trim());
+      if (clickedIdx !== -1) {
+        semitones = ((clickedIdx - originalIdx) % 12 + 12) % 12;
+        update();
+
+        // Rəngləri dəyişdir: Asan aktiv, Orijinal solğun
+        easyKeyEl.classList.remove("dim-key");
+        easyKeyEl.classList.add("active-key");
+        if (origKeyEl) {
+          origKeyEl.classList.remove("active-key");
+          origKeyEl.classList.add("dim-key");
+        }
       }
-    }
-  });
-}
+    });
+  }
 
   document.getElementById("btn-up").addEventListener("click", () => {
     if (fontSize < FONT_MAX) { fontSize += FONT_STEP; applyFontSize(); }
@@ -418,7 +419,7 @@ async function init() {
     const catalogEntry = catalog.find(s => s.id === song.id);
     if (catalogEntry?.chords) song.chords = catalogEntry.chords;
     await initSections(song, catalog);
-  } catch {}
+  } catch { }
 
   async function initSections(song, catalog) {
     function songLink(s) {
@@ -446,8 +447,8 @@ async function init() {
 
     // Rastgele
     const sectionRandom = document.getElementById("section-random");
-    const listRandom    = document.getElementById("list-random");
-    const headerRandom  = sectionRandom?.querySelector(".section-header");
+    const listRandom = document.getElementById("list-random");
+    const headerRandom = sectionRandom?.querySelector(".section-header");
     let randomOpen = false;
 
     function getRandomSongs() {
@@ -514,8 +515,8 @@ async function init() {
 
     // Eyni akorlar
     const sectionChords = document.getElementById("section-chords");
-    const listChords    = document.getElementById("list-chords");
-    const headerChords  = sectionChords?.querySelector(".section-header");
+    const listChords = document.getElementById("list-chords");
+    const headerChords = sectionChords?.querySelector(".section-header");
     let chordsOpen = false;
 
     if (sectionChords) {
@@ -572,14 +573,14 @@ async function init() {
 
 
   // ── Oxuma paneli ───────────────────────────────────────────
-  const playBtn     = document.getElementById("player-play");
-  const restartBtn  = document.getElementById("player-restart");
+  const playBtn = document.getElementById("player-play");
+  const restartBtn = document.getElementById("player-restart");
   const speedSlider = document.getElementById("player-speed");
-  const speedVal    = document.getElementById("player-speed-val");
+  const speedVal = document.getElementById("player-speed-val");
 
-  let isPlaying  = false;
-  let scrollRAF  = null;
-  let scrollPos  = 0;
+  let isPlaying = false;
+  let scrollRAF = null;
+  let scrollPos = 0;
 
   function getScrollSpeed() {
     // 1-10 arası dəyəri px/saniyəyə çevir

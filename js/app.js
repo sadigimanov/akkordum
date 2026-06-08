@@ -266,7 +266,7 @@ async function initRandom() {
 
 // ── "Tezliklə" paneli ────────────────────────────────────────
 function initSoonCards() {
-  const soonIds = ["card-soon-1", "card-soon-2", "card-soon-3", "card-soon-4", "card-soon-5"];
+  const soonIds = ["card-soon-1", "card-soon-2", "card-soon-4", "card-soon-5"];
 
   let panel = document.getElementById("soon-panel");
   if (!panel) {
@@ -427,6 +427,77 @@ async function initFeedback() {
   });
 }
 
+// ── Yeni Akorlar paneli ──────────────────────────────────────
+async function initNewSongs() {
+  const card = document.getElementById("card-soon-3");
+  if (!card) return;
+
+  let catalog = [];
+  try {
+    catalog = await fetch("songs/catalog.json").then(r => r.json());
+  } catch { return; }
+
+  let panel = document.getElementById("new-songs-panel");
+  if (!panel) {
+    panel = document.createElement("div");
+    panel.id = "new-songs-panel";
+    panel.className = "random-panel hidden";
+    panel.innerHTML = `
+      <div class="random-panel-header">
+        <span>Yeni Akorlar</span>
+        <button class="random-panel-close" id="new-songs-close">✕</button>
+      </div>
+      <div class="artist-grid" id="new-songs-grid"></div>
+    `;
+    document.body.appendChild(panel);
+
+    document.getElementById("new-songs-close").addEventListener("click", () => {
+      panel.classList.add("hidden");
+    });
+    document.addEventListener("click", (e) => {
+      if (!panel.contains(e.target) && e.target !== card && !card.contains(e.target)) {
+        panel.classList.add("hidden");
+      }
+    });
+  }
+
+  function renderNewSongs() {
+    const grid = document.getElementById("new-songs-grid");
+    grid.innerHTML = "";
+
+    const sorted = [...catalog]
+      .filter(s => s.addedAt)
+      .sort((a, b) => new Date(b.addedAt) - new Date(a.addedAt))
+      .slice(0, 10);
+
+    if (sorted.length === 0) {
+      grid.innerHTML = `<p class="section-empty" style="grid-column:1/-1">Hələ mahnı yoxdur.</p>`;
+      return;
+    }
+
+    sorted.forEach(s => {
+      const a = document.createElement("a");
+      a.href = `song.html?id=${s.id}`;
+      a.className = "artist-card";
+      a.innerHTML = `
+        <span class="artist-card-title">${s.title}</span>
+        <span class="artist-card-meta">${s.artist} · ${s.key}</span>
+      `;
+      grid.appendChild(a);
+    });
+  }
+
+  card.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (!panel.classList.contains("hidden")) {
+      panel.classList.add("hidden");
+      return;
+    }
+    renderNewSongs();
+    panel.classList.remove("hidden");
+  });
+}
+
 // ── Index səhifəsi ────────────────────────────────────────────
 async function initIndex() {
   const listEl = document.getElementById("song-list");
@@ -486,6 +557,7 @@ initFavorites();
 initRandom();
 initHistory();
 initSoonCards();
+initNewSongs();
 initFeedback();
 initIndex();
 initSong();

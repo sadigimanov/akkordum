@@ -7,7 +7,8 @@
     "key": "Am",
     "chords": ["Am", "G", "F", "Dm", "Em"],
     "capo": 0,
-    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-01"
   },
   {
     "id": "akif-islamzade-feridem",
@@ -16,7 +17,8 @@
     "key": "Bm",
     "chords": ["Bm", "Em", "F#", "D"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-01"
   },
   {
     "id": "akif-islamzade-oten-gunlerimi-qaytaraydilar",
@@ -25,7 +27,8 @@
     "key": "Cm",
     "chords": ["Cm", "G", "Fm"],
     "capo": 0,
-    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"]
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"],
+    "addedAt": "2026-06-01"
   },
   {
     "id": "asif-meherremov-gece-gece",
@@ -34,7 +37,8 @@
     "key": "Bm",
     "chords": ["Bm", "Em", "G", "F#"],
     "capo": 0,
-    "rhythm": ["↓", "✕", "↑", "↑", "↑", "✕", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "✕", "↑", "↑", "↑", "✕", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-01"
   },
   {
     "id": "aygun-beyler-nigar-camal-nefesim-qelbim",
@@ -43,7 +47,8 @@
     "key": "Cm",
     "chords": ["Cm", "G#", "Fm", "G"],
     "capo": 0,
-    "rhythm": ["↓", "✕", "↑", "↑", "↓", "✕", "↑", "↓", "↑"]
+    "rhythm": ["↓", "✕", "↑", "↑", "↓", "✕", "↑", "↓", "↑"],
+    "addedAt": "2026-06-01"
   },
   {
     "id": "aygun-beyler-ozun-gunahkarsan",
@@ -52,7 +57,8 @@
     "key": "Bm",
     "chords": ["Bm", "Em", "F#"],
     "capo": 0,
-    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-01"
   },
   {
     "id": "aygun-kazimova-geceler-kecir",
@@ -61,7 +67,8 @@
     "key": "C#m",
     "chords": ["C#m", "F#m", "G#", "D#", "B", "A", "E"],
     "capo": 0,
-    "rhythm": ["↓", "↑", "↑"]
+    "rhythm": ["↓", "↑", "↑"],
+    "addedAt": "2026-06-01"
   },
   {
     "id": "azer-memmedov-uzagin-adi-var",
@@ -70,7 +77,8 @@
     "key": "Em",
     "chords": ["Em", "C", "Bm", "Am", "B"],
     "capo": 0,
-    "rhythm": []
+    "rhythm": [],
+    "addedAt": "2026-06-01"
   },
   {
     "id": "cavansir-eliyev-bakinin-qara-gozlu-qizlari",
@@ -79,7 +87,8 @@
     "key": "Am",
     "chords": ["Am", "E", "Dm", "C", "B", "A", "F", "C#", "F#m"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"],
+    "addedAt": "2026-06-01"
   },
   {
     "id": "eldar-mansurov-bayatilar",
@@ -88,7 +97,8 @@
     "key": "Cm",
     "chords": ["Cm", "Fm", "Gm", "A#", "D#"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"],
+    "addedAt": "2026-06-01"
   },
   {
     "id": "elekber-yasamalli-inaniram-men",
@@ -97,7 +107,8 @@
     "key": "C#m",
     "chords": ["C#m", "G#", "C#7", "F#m", "D#m", "Bm"],
     "capo": 0,
-    "rhythm": ["↓", "⌇", "↑", "↓"]
+    "rhythm": ["↓", "⌇", "↑", "↓"],
+    "addedAt": "2026-06-01"
   },
   {
     "id": "elnare-xelilova-mehebbet-payim",
@@ -106,7 +117,8 @@
     "key": "Bm",
     "chords": ["D", "G", "F#", "Bm", "F#m", "A"],
     "capo": 0,
-    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"]
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"],
+    "addedAt": "2026-06-01"
   },
   {
     "id": "elvin-mirzezade-dusun-meni",
@@ -115,7 +127,8 @@
     "key": "Cm",
     "chords": ["Cm", "G#", "Fm", "G"],
     "capo": 0,
-    "rhythm": ["↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-01"
   },
   {
     "id": "elxan-sirinov-basqa-birisini-seve-bilmezsen",
@@ -124,7 +137,8 @@
     "key": "C#m",
     "chords": ["C#m", "G#", "F#m", "A", "C#7"],
     "capo": 0,
-    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"]
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"],
+    "addedAt": "2026-06-02"
   },
   {
     "id": "emin-sabitoğlu-payiz-geldi",
@@ -133,7 +147,8 @@
     "key": "Am",
     "chords":["Am", "Dm", "E", "G", "F", "B7"],
     "capo": 0,
-    "rhythm": ["↓", "⌇", "↑", "↓"]
+    "rhythm": ["↓", "⌇", "↑", "↓"],
+    "addedAt": "2026-06-02"
   },
   {
     "id":"eyyub-yaqubov-bakili-balasi",
@@ -142,7 +157,8 @@
     "key": "F#m",
     "chords": ["F#m", "G", "Bm", "Em"],
     "capo": 0,
-    "rhythm":  ["↓", "⌇", "↑", "↓", "↑"]
+    "rhythm":  ["↓", "⌇", "↑", "↓", "↑"],
+    "addedAt": "2026-06-02"
   },
   {
     "id": "eyyub-yaqubov-ezizim",
@@ -151,7 +167,8 @@
     "key": "C#m",
     "chords": ["C#m", "F#m", "G#", "C#7", "D#"],
     "capo": 0,
-    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-02"
   },
   {
     "id": "eyyub-yaqubov-hesretinin-yollarindayam",
@@ -160,7 +177,8 @@
     "key": "Cm",
     "chords": ["Cm", "G", "G#", "Fm"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"],
+    "addedAt": "2026-06-02"
   },
   {
     "id": "faiq-agayev-omur-bumu",
@@ -169,7 +187,8 @@
     "key": "Am",
     "chords": ["Am", "Dm", "E", "F", "G", "C", "A"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-02"
   },
   {
     "id":"faiq-agayev-pencere",
@@ -178,7 +197,8 @@
     "key": "Dm",
     "chords": ["Gm", "C", "F", "D", "A#", "A7", "Dm"],
     "capo": 0,
-    "rhythm": ["↓", "↑", "✕", "↑"]
+    "rhythm": ["↓", "↑", "✕", "↑"],
+    "addedAt": "2026-06-02"
   },
   {
     "id": "irade-ibrahimova-bahar-ciceyi",
@@ -187,7 +207,8 @@
     "key": "Cm",
     "chords":["Cm", "G", "Fm", "A#", "D#"],
     "capo": 0,
-    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"]
+    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
+    "addedAt": "2026-06-03"
   },
   {
     "id": "irade-ibrahimova-de-hardasan",
@@ -196,7 +217,8 @@
     "key": "Am",
     "chords": ["Am", "Dm", "E", "F", "Bdim", "A7"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑"],
+    "addedAt": "2026-06-03"
   },
   {
     "id": "irade-ibrahimova-neylerem",
@@ -205,7 +227,8 @@
     "key": "Bm",
     "chords": ["Bm", "Em", "F#", "G"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-03"
   },
   {
     "id": "joseph-abbas-omrun-baharlari",
@@ -214,7 +237,8 @@
     "key": "Bm",
     "chords": ["Bm", "F#", "Em", "G"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑"],
+    "addedAt": "2026-06-03"
   },
   {
     "id": "kerim-gunahkar-mavi-xezerdir",
@@ -223,7 +247,8 @@
     "key": "Bm",
     "chords": ["Bm", "Em", "F#", "G"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-03"
   },
   {
     "id": "lale-memmedova-seadet",
@@ -232,7 +257,8 @@
     "key": "Am",
     "chords": ["Am", "E", "Dm", "C", "F", "G","B7"],
     "capo": 0,
-    "rhythm": ["↓", "⌇", "↑", "↓"]
+    "rhythm": ["↓", "⌇", "↑", "↓"],
+    "addedAt": "2026-06-03"
   },
   {
     "id": "mehman-dervis-seven-esger-ureyi",
@@ -241,7 +267,8 @@
     "key": "Bm",
     "chords": ["Bm", "Em", "F#", "B7"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-03"
   },
   {
     "id": "mikope-joseph-abbas-hop-hop",
@@ -250,7 +277,8 @@
     "key": "Bm",
     "chords": ["Bm", "A", "G", "E"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑", "↓", "↑", "↓"]
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑", "↓", "↑", "↓"],
+    "addedAt": "2026-06-03"
   },
   {
     "id": "miri-yusif-xatire",
@@ -259,7 +287,8 @@
     "key": "Bm",
     "chords": ["Bm", "Em", "F#", "D", "G", "A"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-03"
   },
   {
     "id": "mubariz-tagiyev-yada-sal-meni",
@@ -268,7 +297,8 @@
     "key": "Am",
     "chords":["Am", "Dm", "E", "F", "G", "C"],
     "capo": 0,
-    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-03"
   },
   {
     "id": "nadir-qafarzade-mene-soz-ver",
@@ -277,7 +307,8 @@
     "key": "Em",
     "chords": ["Em", "B", "Am", "C"],
     "capo": 0,
-    "rhythm": []
+    "rhythm": [],
+    "addedAt": "2026-06-03"
   },
   {
     "id": "nezaket-teymurova-unuda-bilmirem",
@@ -286,7 +317,8 @@
     "key": "Bm",
     "chords": ["Bm", "C", "Em", "Am"],
     "capo": 0,
-    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-03"
   },
   {
     "id": "niyameddin-musayev-dunya-senin-dunya-menim",
@@ -295,7 +327,8 @@
     "key": "C#m",
     "chords": ["C#m", "B", "A", "G#m", "F#m"],
     "capo": 0,
-    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-03"
   },
   {
     "id": "noton-mehdi-sadiq-sence-neden",
@@ -304,7 +337,8 @@
     "key": "Cm",
     "chords": ["Cm","A#", "G#", "Fm", "G"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-03"
   },
   {
     "id": "oqtay-agayev-kimsen-sen",
@@ -313,7 +347,8 @@
     "key": "Bm",
     "chords": ["Bm", "F#", "Em", "A", "D", "G", "B7"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-04"
   },
   {
     "id": "pasa-emircan-olerdim",
@@ -322,7 +357,8 @@
     "key": "Em",
     "chords": ["Em", "Bm", "Am"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-04"
   },
   {
     "id": "qaya-ey-heyat-sen-ne-qeribesen",
@@ -331,7 +367,8 @@
     "key": "Bm",
     "chords": ["Bm", "F#", "Em", "B", "A", "D", "G", "C#"],
     "capo": 0,
-    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"]
+    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
+    "addedAt": "2026-06-04"
   },
   {
     "id": "roya-bahar",
@@ -340,7 +377,8 @@
     "key": "Bm",
     "chords": ["Bm", "Em", "E", "G", "A"],
     "capo": 0,
-    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"]
+    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
+    "addedAt": "2026-06-04"
   },
   {
     "id": "roya-ft-xeyyam-sene-ehtiyacim-var",
@@ -349,7 +387,8 @@
     "key": "Dm",
     "chords":["E", "Am", "C", "Dm", "F", "B7"],
     "capo": 5,
-    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"]
+    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
+    "addedAt": "2026-06-04"
   },
   {
     "id": "sahin-elizade-hecne-getmedi-yolunda",
@@ -358,7 +397,8 @@
     "key": "Bm",
     "chords": ["Bm", "A", "F#m", "Em"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-04"
   },
   {
     "id": "sahin-elizade-oyuncaq-kimi",
@@ -367,7 +407,8 @@
     "key": "Bm",
     "chords": ["Bm", "F#m", "A", "Em"],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-04"
   },
   {
     "id": "sahin-elizade-sene-geldim",
@@ -376,7 +417,8 @@
     "key": "Am",
     "chords":["Am", "E", "Dm", "F", "G", "C", "A7"],
     "capo": 0,
-    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"]
+    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
+    "addedAt": "2026-06-04"
   },
   {
     "id": "sahin-elizade-sirin-yuxular",
@@ -385,7 +427,8 @@
     "key": "Fm",
     "chords":[],
     "capo": 0,
-    "rhythm": ["↓", "↓", "↑"]
+    "rhythm": ["↓", "↓", "↑"],
+    "addedAt": "2026-06-04"
   },
   {
     "id": "seron-torpagin-sesi",
@@ -394,7 +437,8 @@
     "key": "F#m",
     "chords": ["F#m", "Bm", "Em", "G", "G#7", "A"],
     "capo": 0,
-    "rhythm": ["↓", "⌇", "↑", "↑", "↓", "↑"]
+    "rhythm": ["↓", "⌇", "↑", "↑", "↓", "↑"],
+    "addedAt": "2026-06-04"
   },
   {
     "id": "the-half-olene-qeder",
@@ -403,7 +447,8 @@
     "key": "Cm",
     "chords": ["Cm", "Fm", "A#", "G", "G#"],
     "capo": 0,
-    "rhythm": ["↓", "⌇", "↑", "↓", "↑"]
+    "rhythm": ["↓", "⌇", "↑", "↓", "↑"],
+    "addedAt": "2026-06-04"
   },
   {
     "id": "vuqar-abdulov-sadix-mustafayev-qocaldiq-biz",
@@ -412,7 +457,8 @@
     "key": "Bm",
     "chords": ["Bm", "Em", "F#", "B7"],
     "capo": 0,
-    "rhythm": ["↓", "⌇", "↑", "↓", "↑"]
+    "rhythm": ["↓", "⌇", "↑", "↓", "↑"],
+    "addedAt": "2026-06-05"
   },
   {
     "id": "yuxu-donge",
@@ -421,7 +467,8 @@
     "key": "Bm",
     "chords": ["Bm", "G", "Em", "F#"],
     "capo": 0,
-    "rhythm": ["↓", "↑", "✕", "↑", "↓", "↑"]
+    "rhythm": ["↓", "↑", "✕", "↑", "↓", "↑"],
+    "addedAt": "2026-06-05"
   },
   {
     "id": "yuxu-xeyalperest",
@@ -430,7 +477,8 @@
     "key": "Cm",
     "chords": ["Cm", "Fm", "G", "G#"],
     "capo": 0,
-    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"]
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"],
+    "addedAt": "2026-06-05"
   }
     
 

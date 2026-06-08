@@ -1,0 +1,135 @@
+{
+  "id": "orxan-zeynalli-iller-sonra",
+  "title": "İllər Sonra",
+  "artist": "Orxan Zeynallı",
+  "key": "C#m",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 }
+      ],
+      "line": "Səni başqa sahildə görmək ürəyimi incitdi illər sonra"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 }
+      ],
+      "line": "Xoşbəxtliyin iki şəkli - biri dağ idi, biri yol"
+    },
+    {
+      "chords": [
+        { "name": "G#", "offset": 0 }
+      ],
+      "line": "Nağıl kimiydi evimizə qayıtmaq illər sonra"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 }
+      ],
+      "line": "Nağılı açdım ki, valideynimin biri var idi, biri yox"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 }
+      ],
+      "line": "Getmək-gəlmək qalmaq beyində əbədi dilemma"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 }
+      ],
+      "line": "Son dəfə qərar verirsən, çıxır yenə də bir əmma"
+    },
+    {
+      "chords": [
+        { "name": "G#", "offset": 0 }
+      ],
+      "line": "Xeyir dəftərində istədim şəhərə qayıb qoymaq"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 }
+      ],
+      "line": "Mən sadəcə istədim hansısa şəhərə aid olmaq"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 }
+      ],
+      "line": "İllər keçir, böyüyür bədən, artır rəqəm, ürəksə"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 }
+      ],
+      "line": "Sanki daha çox sevgi tuturdu balaca vaxtı"
+    },
+    {
+      "chords": [
+        { "name": "G#", "offset": 0 }
+      ],
+      "line": "Evim dəniz, illər günəş, dəniz sahilinə isə"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 }
+      ],
+      "line": "Ürəyimə çəkdiyi dağdan atam çay olub yarıcan axdı"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 }
+      ],
+      "line": "Nə qədər varıqsa, var bizlə bir yaşayanlar"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 }
+      ],
+      "line": "Pillə-pillə tərtib edəcək yaddaşı anlar"
+    },
+    {
+      "chords": [
+        { "name": "G#", "offset": 0 }
+      ],
+      "line": "Nə qədər varam musiqinin dəyişən axışı olacaq"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 }
+      ],
+      "line": "Gedəndə anam mesaj yazdı \"hər şey yaxşı olacaq\""
+    },
+    null,
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "F#m", "offset": 15 }
+      ],
+      "line": "Düşdü dənlər saçlarıma illər sonra"
+    },
+    {
+      "chords": [
+        { "name": "G#", "offset": 0 },
+        { "name": "C#m", "offset": 15.5 }
+      ],
+      "line": "Soyuq insan bağlarında güllər solar"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "F#m", "offset": 16 }
+      ],
+      "line": "Yaşa dolmaq yaşla dolan gözlər kimi"
+    },
+    {
+      "chords": [
+        { "name": "G#", "offset": 0 },
+        { "name": "C#m", "offset": 14 }
+      ],
+      "line": "Gedir üzlər, qalır izlər illər sonra"
+    }
+  ]
+}

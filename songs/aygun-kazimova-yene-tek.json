@@ -1,0 +1,97 @@
+{
+  "id": "aygun-kazimova-yene-tek",
+  "title": "Yenə Tək",
+  "artist": "Aygün Kazımova",
+  "key": "C#m",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "G#m", "offset": 17 }
+      ],
+      "line": "Hərdən başımız qarışır Dilimiz çox sərt danışır"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "C#m", "offset": 16 }
+      ],
+      "line": "O küsür sonra tez barışır"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "A", "offset": 0 },
+        { "name": "G#m", "offset": 17 },
+        { "name": "C#7", "offset": 26 }
+      ],
+      "line": "Hərdən başımız qarışır Dilimiz çox sərt danışır"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "G#7", "offset": 16 }
+      ],
+      "line": "O küsür sonra tez barışır"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "G#", "offset": 17 }
+      ],
+      "line": "Amma ki, bu dəfə danışıb ciddi"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "A", "offset": 8 }
+      ],
+      "line": "Qapını çırpıb getdi"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 },
+        { "name": "G#m", "offset": 8 },
+        { "name": "C#m", "offset": 17 }
+      ],
+      "line": "Bilirəm geriyə dönməyəcək"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "C#m", "offset": 4 },
+        { "name": "F#m", "offset": 10 },
+        { "name": "B", "offset": 18 },
+        { "name": "E", "offset": 24 }
+      ],
+      "line": "Bu gecə yenə tək Döyünür bu ürək"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 4 },
+        { "name": "F#m", "offset": 10 },
+        { "name": "G#", "offset": 21 }
+      ],
+      "line": "Düşünür həmdəmi gəlməyəcək"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 4 },
+        { "name": "G#m", "offset": 18 },
+        { "name": "C#7", "offset": 24 }
+      ],
+      "line": "Bu gecə yenə tək Döyünür bu ürək"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 4 },
+        { "name": "A", "offset": 10 },
+        { "name": "G#", "offset": 21 }
+      ],
+      "line": "Düşünür həmdəmi gəlməyəcək"
+    }
+  ]
+}

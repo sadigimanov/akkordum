@@ -1,0 +1,88 @@
+{
+  "id": "ceyhun-samedov-tufan-var",
+  "title": "Tufan Var",
+  "artist": "Ceyhun Səmədov",
+  "key": "A#m",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "A#m", "offset": 0 },
+        { "name": "G#", "offset": 5 }
+      ],
+      "line": "Pəncərənə baxıram"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 0 },
+        { "name": "D#m", "offset": 5 }
+      ],
+      "line": "İşıq yanır otağında"
+    },
+    {
+      "chords": [
+        { "name": "A#m", "offset": 0 },
+        { "name": "G#", "offset": 5 }
+      ],
+      "line": "Pərdəyə də kölgən düşür"
+    },
+    {
+      "chords": [
+        { "name": "D#", "offset": 0 }
+      ],
+      "line": "Sən güzgünün qabağında"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "A#m", "offset": 0 },
+        { "name": "G#", "offset": 4 }
+      ],
+      "line": "Qar da yağır küçələrə"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 0 },
+        { "name": "D#m", "offset": 5 }
+      ],
+      "line": "Üstüm başım olub qar"
+    },
+    {
+      "chords": [
+        { "name": "A#m", "offset": 0 },
+        { "name": "G#", "offset": 5 }
+      ],
+      "line": "Əynini qalın geyin"
+    },
+    {
+      "chords": [
+        { "name": "D#", "offset": 0 }
+      ],
+      "line": "Çöldə tufan var"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "A#m", "offset": 4 },
+        { "name": "G#", "offset": 7.4 },
+        { "name": "F#", "offset": 13 },
+        { "name": "D#m", "offset": 15 }
+      ],
+      "line": "Tufan var...Tufan var..."
+    },
+    {
+      "chords": [
+        { "name": "A#m", "offset": 0 },
+        { "name": "G#", "offset": 5 }
+      ],
+      "line": "Əynini qalın geyin"
+    },
+    {
+      "chords": [
+        { "name": "D#", "offset": 0 }
+      ],
+      "line": "Çöldə tufan var"
+    }
+  ]
+}

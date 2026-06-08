@@ -1,0 +1,126 @@
+{
+  "id": "roya-seninem",
+  "title": "Səninəm",
+  "artist": "Röya",
+  "key": "Bm",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Sən bir ötən sevgi tək unutdun məni"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "F#m", "offset": 11 }
+      ],
+      "line": "Qəlbimdə çox incidim sən gedən gündən"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#m", "offset": 9 }
+      ],
+      "line": "Ağladım sevgimizin gözlərində mən"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "A", "offset": 10 },
+        { "name": "D", "offset": 17 }
+      ],
+      "line": "İndi yalnız qalmışam həsrətinlə bil"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Hər bir ötən səhərdə gözlədim səni"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 0 }
+      ],
+      "line": "Hər bir itən günlərdə gözlədim səni"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 }
+      ],
+      "line": "İndi dünyamda belə dəyişsə mənim"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 0 },
+        { "name": "Em", "offset": 19 },
+        { "name": "F#m", "offset": 28 }
+      ],
+      "line": "Səninəm bil ki hər gün, hər zaman sənin"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 5 }
+      ],
+      "line": "Səninəm, illər ötüb keçsə də"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 0 },
+        { "name": "F#m", "offset": 10 }
+      ],
+      "line": "Bilki yalnız səninəm"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 0 }
+      ],
+      "line": "Məndən uzaq düşsən də"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 10 }
+      ],
+      "line": "Sənsən məni düşünən"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "A", "offset": 0 },
+        { "name": "G", "offset": 16 },
+        { "name": "F#", "offset": 25 }
+      ],
+      "line": "Ömrümün ən gözəl şirin nəğməsi sən"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "Em", "offset": 5 },
+        { "name": "A", "offset": 16 },
+        { "name": "F#m", "offset": 32 }
+      ],
+      "line": "Onu bil, illər ötüb keçsə də bilki yalnız səninəm"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 0 },
+        { "name": "G", "offset": 29 }
+      ],
+      "line": "Məndən uzaq düşsəndə sənsən məni düşünən"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 0 },
+        { "name": "G", "offset": 16 },
+        { "name": "F#", "offset": 25 }
+      ],
+      "line": "Ömrümün ən gözəl şirin nəğməsi sən"
+    }
+
+  ]
+}

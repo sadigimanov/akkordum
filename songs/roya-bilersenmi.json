@@ -1,0 +1,91 @@
+{
+  "id": "roya-bilersenmi",
+  "title": "Bilərsənmi",
+  "artist": "Röya",
+  "key": "Bm",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#", "offset": 11 }
+      ],
+      "line": "Özümdən çox sevdiyim"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "F#", "offset": 9 }
+      ],
+      "line": "Niyə dönük çıxdın sən?"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "F#", "offset": 10 }
+      ],
+      "line": "De, hansı gözlər ilə"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "F#", "offset": 9 }
+      ],
+      "line": "Başqa gözə baxdın sən?"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "Em", "offset": 7 }
+      ],
+      "line": "Həyatımı, ömrümü"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "F#", "offset": 10 }
+      ],
+      "line": "Arzumu puç eylədin"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "Em", "offset": 8 }
+      ],
+      "line": "Ürəyindən nə keçdi?"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "Em", "offset": 6 },
+        { "name": "F#", "offset": 12 }
+      ],
+      "line": "Niyə hiylə geyindin?"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 },
+        { "name": "A", "offset": 9 }
+      ],
+      "line": "Bilərsənmi, bilərsənmi?"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 },
+        { "name": "F#m", "offset": 9 }
+      ],
+      "line": "De, qaytara bilərsənmi"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "F#", "offset": 8 }
+      ],
+      "line": "Ötən günlərimi?"
+    }
+  ]
+}

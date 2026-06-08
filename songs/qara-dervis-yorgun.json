@@ -1,0 +1,101 @@
+{
+  "id": "qara-dervis-yorgun",
+  "title": "Yorğun",
+  "artist": "Qara Dərviş",
+  "key": "D#m",
+  "capo": 0,
+  "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "D#m", "offset": 0 },
+        { "name": "B", "offset": 20 }
+      ],
+      "line": "Uzaqdan ölümün səsi gəlir Mənsə,ona tərəf qaçmaqda"
+    },
+    {
+      "chords": [
+        { "name": "G#m", "offset": 0 },
+        { "name": "A#", "offset": 20 }
+      ],
+      "line": "Ulduzlar, ay qaranlıq saçır Mən elə hey yalan danışmaqda"
+    },
+    {
+      "chords": [
+        { "name": "D#m", "offset": 0 },
+        { "name": "B", "offset": 22 }
+      ],
+      "line": "Tapdanmış bütün müqəddəslər Ədalət ölümü sevən yazarda"
+    },
+    {
+      "chords": [
+        { "name": "G#m", "offset": 0 },
+        { "name": "A#", "offset": 20 }
+      ],
+      "line": "Dinmədi, bitməz bu həsrət Od tutub yanacaq məzarda"
+    },
+    {
+      "chords": [
+        { "name": "G#m", "offset": 0 },
+        { "name": "B", "offset": 21 }
+      ],
+      "line": "Yorğunam durğunluğumdan Kar oldum yalnızlığımdan"
+    },
+    {
+      "chords": [
+        { "name": "A#", "offset": 0 },
+        { "name": "A#", "offset": 21 }
+      ],
+      "line": "Lal oldum susqunluğumdan Doymuşam haqsızlığımdan"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "D#m", "offset": 0 }
+      ],
+      "line": "Çirkin vücudunda yuyundum sədaqətimdən"
+    },
+    {
+      "chords": [
+        { "name": "B", "offset": 0 }
+      ],
+      "line": "İyrənc yalanlarla dolu saxta təbəssümünlə"
+    },
+    {
+      "chords": [
+        { "name": "G#m", "offset": 0 }
+      ],
+      "line": "Yalanlar da belə iyrənib bəraətindən"
+    },
+    {
+      "chords": [
+        { "name": "A#", "offset": 0 }
+      ],
+      "line": "Pak olmuş bütün çirkablar təkəbbürünlə"
+    },
+    {
+      "chords": [
+        { "name": "D#m", "offset": 0 }
+      ],
+      "line": "Yorğun körpənin dinmək bilməyən göz yaşlarıyam"
+    },
+    {
+      "chords": [
+        { "name": "B", "offset": 0 }
+      ],
+      "line": "Cəsədsiz qanlı kəfənəm, simasız baş daşıyam"
+    },
+    {
+      "chords": [
+        { "name": "G#m", "offset": 0 }
+      ],
+      "line": "Allah küsmüş dirilərə, bezmiş ey fani insan"
+    },
+    {
+      "chords": [
+        { "name": "A#", "offset": 0 }
+      ],
+      "line": "Mən qibləgahsız, peyğəmbərlərin qarğışındayam"
+    }
+  ]
+}

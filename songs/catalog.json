@@ -1,5 +1,4 @@
 [
-
   {
     "id": "ahmed-mustafayev-yandim-her-gece",
     "title": "Yandım Hər Gecə",
@@ -71,6 +70,16 @@
     "addedAt": "2026-06-01"
   },
   {
+    "id": "aygun-kazimova-yene-tek",
+    "title": "Yenə Tək",
+    "artist": "Aygün Kazımova",
+    "key": "C#m",
+    "chords":["C#m", "F#m","G#m", "A", "B", "E", "G#", "C#7"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↑"],
+    "addedAt": "2026-06-09"
+  },
+  {
     "id": "azer-memmedov-uzagin-adi-var",
     "title": "Uzağın adı var",
     "artist": "Azər Məmmədov",
@@ -89,6 +98,26 @@
     "capo": 0,
     "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"],
     "addedAt": "2026-06-01"
+  },
+  {
+    "id": "ceyhun-samedov-tufan-var",
+    "title": "Tufan Var",
+    "artist": "Ceyhun Səmədov",
+    "key": "A#m",
+    "chords":["A#m", "G#", "F#", "D#m", "D#"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-09"
+  },
+  {
+    "id": "ceyhun-zeynalov-buludlar",
+    "title": "Buludlar",
+    "artist": "Ceyhun Zeynalov",
+    "key": "C",
+    "chords":["C", "F", "G", "Am"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-09"
   },
   {
     "id": "eldar-mansurov-bayatilar",
@@ -291,6 +320,16 @@
     "addedAt": "2026-06-03"
   },
   {
+    "id": "miro-onun-ozune",
+    "title": "Onun Özünə",
+    "artist": "Miro",
+    "key": "Bm",
+    "chords":["Bm", "A", "G", "F#"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓"],
+    "addedAt": "2026-06-09"
+  },
+  {
     "id": "mubariz-tagiyev-yada-sal-meni",
     "title": "Yada sal məni",
     "artist": "Mübariz Tağıyev",
@@ -351,6 +390,26 @@
     "addedAt": "2026-06-04"
   },
   {
+    "id": "oqtay-agayev-qaytar-esqimi",
+    "title": "Qaytar eşqimi",
+    "artist": "Oqtay Ağayev",
+    "key": "Em",
+    "chords":["Em", "Am", "C", "F", "B7"],
+    "capo": 0,
+    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
+    "addedAt": "2026-06-09"
+  },
+  {
+    "id": "orxan-zeynalli-iller-sonra",
+    "title": "İllər Sonra",
+    "artist": "Orxan Zeynallı",
+    "key": "C#m",
+    "chords":["C#m", "F#m", "G#"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-09"
+  },
+  {
     "id": "pasa-emircan-olerdim",
     "title": "Ölərdim",
     "artist": "Paşa Əmircan",
@@ -359,6 +418,16 @@
     "capo": 0,
     "rhythm": ["↓", "↓", "↑", "↓", "↑"],
     "addedAt": "2026-06-04"
+  },
+  {
+    "id": "qara-dervis-yorgun",
+    "title": "Yorğun",
+    "artist": "Qara Dərviş",
+    "key": "D#m",
+    "chords":["D#m", "G#m", "A#", "B"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"],
+    "addedAt": "2026-06-09"
   },
   {
     "id": "qaya-ey-heyat-sen-ne-qeribesen",
@@ -381,6 +450,16 @@
     "addedAt": "2026-06-04"
   },
   {
+    "id": "roya-bilersenmi",
+    "title": "Bilərsənmi",
+    "artist": "Röya",
+    "key": "Bm",
+    "chords":["Bm", "A", "G", "F#", "F#m", "Em"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↓", "↑"],
+    "addedAt": "2026-06-09"
+  },
+  {
     "id": "roya-ft-xeyyam-sene-ehtiyacim-var",
     "title": "Sənə Ehtiyacım Var",
     "artist": "Röya ft. Xəyyam",
@@ -389,6 +468,16 @@
     "capo": 5,
     "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
     "addedAt": "2026-06-04"
+  },
+  {
+    "id": "roya-seninem",
+    "title": "Səninəm",
+    "artist": "Röya",
+    "key": "Bm",
+    "chords":["Bm", "Em", "F#m", "A", "D", "G"],
+    "capo": 0,
+    "rhythm": ["↓", "↑", "↑", "↓", "↑", "↑", "↓", "↓", "↑"],
+    "addedAt": "2026-06-09"
   },
   {
     "id": "sahin-elizade-hecne-getmedi-yolunda",

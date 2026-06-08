@@ -1,0 +1,116 @@
+{
+  "id": "miro-onun-ozune",
+  "title": "Onun Özünə",
+  "artist": "Miro",
+  "key": "Bm",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↓"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Baxıram gözlərinə güzgü kimi"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 0 }
+      ],
+      "line": "Bu mənim həyatımmı? Deyil"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 }
+      ],
+      "line": "Sən mənim həyatımın özüsən"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 0 }
+      ],
+      "line": "Ömrümü öz əyninə geyinib"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 0 }
+      ],
+      "line": "Mən səndən başqasını tanımam"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 0 }
+      ],
+      "line": "Sən olmasan inan ki, yarımam"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 0 }
+      ],
+      "line": "Yazıram olanları yadıma"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 0 }
+      ],
+      "line": "Yazılan sənin adın mənə"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 11 }
+      ],
+      "line": "Mən qaranlığa dönsəm onunla, dəyər"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 10 }
+      ],
+      "line": "Görərəm onun saçlarında günəşi"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 9 }
+      ],
+      "line": "Ürəyi dolu, gözlərində yağışı"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 10 }
+      ],
+      "line": "Ümidim olur, hislərimlə danışır"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Bm", "offset": 6 }
+      ],
+      "line": "O ulduzlar, buludlardan"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 8 }
+      ],
+      "line": "Uzağa uçub bir mələkmi gəzir?"
+    },
+    {
+      "chords": [
+        { "name": "G", "offset": 7 }
+      ],
+      "line": "Kim ürəyimi bəs onunla dəyişib?"
+    },
+    {
+      "chords": [
+        { "name": "F#", "offset": 7 }
+      ],
+      "line": "Gülür üzümə"
+    },
+    {
+      "chords": [
+        { "name": "Bm", "offset": 24 }
+      ],
+      "line": "Sanki mən dönüşürəm onun özünə"
+    }
+  ]
+}

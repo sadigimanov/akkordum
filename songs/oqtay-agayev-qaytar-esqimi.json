@@ -1,0 +1,117 @@
+{
+  "id": "oqtay-agayev-qaytar-esqimi",
+  "title": "Qaytar eşqimi",
+  "artist": "Oqtay Ağayev",
+  "key": "Em",
+  "easy_key": "E",
+  "capo": 0,
+  "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 }
+      ],
+      "line": "Dünyada min gözəl tapardım"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Sən mənim ömrümü qopardın"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 0 }
+      ],
+      "line": "Qaytar, ver ömrümü, günümü"
+    },
+    {
+      "chords": [
+        { "name": "B7", "offset": 0 },
+        { "name": "Em", "offset": 12 }
+      ],
+      "line": "Sən onu özünlə apardın"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 }
+      ],
+      "line": "Gəl, məni ucuz tutma sən"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 }
+      ],
+      "line": "Getmisən, heç qayıtma sən"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 },
+        { "name": "Am", "offset": 13 }
+      ],
+      "line": "Qaytar ötən günləri"
+    },
+    {
+      "chords": [
+        { "name": "C", "offset": 0 },
+        { "name": "B7", "offset": 6 },
+        { "name": "Em", "offset": 18 },
+        { "name": "B7", "offset": 21 },
+        { "name": "Em", "offset": 23.5 }
+      ],
+      "line": "Sən qaytar, qaytar ömrümü"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Em", "offset": 9 }
+      ],
+      "line": "Ver mənim eşqimi"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 11 }
+      ],
+      "line": "O sənə heç gərək deyil"
+    },
+    {
+      "chords": [
+        { "name": "B7", "offset": 9 }
+      ],
+      "line": "Gəl, qaytar eşqimi"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 10 }
+      ],
+      "line": "O solqun bir çiçək deyil"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 }
+      ],
+      "line": "Uzanıb qaldı əllərim"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Əlimdə soldu güllərim"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 0 }
+      ],
+      "line": "Mən sənə qayıt gəl, demirəm"
+    },
+    {
+      "chords": [
+        { "name": "B7", "offset": 0 },
+        { "name": "Em", "offset": 12 }
+      ],
+      "line": "Qaytar o ayları, illəri"
+    }
+  ]
+}

@@ -1336,6 +1336,18 @@ body {
   text-decoration: underline;
 }
 
+/* -- Son Caldiklarim Login Xebardarligi ------------- */
+.panel-login-msg {
+  padding: 1rem 0;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+.panel-login-msg a {
+  color: var(--accent);
+  display: block;
+  margin-top: 4px;
+}
+
 /* ── Tezliklə mesajı ─────────────────────────────────────── */
 .soon-message {
   font-size: 15px;

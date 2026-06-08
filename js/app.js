@@ -170,6 +170,16 @@ async function initHistory() {
       const unsub = onAuthStateChanged(auth, u => { unsub(); resolve(u); });
     });
 
+    if (!user) {
+      empty.style.display = "none";
+      grid.innerHTML = `
+        <div class="panel-login-msg">
+          <p>Tarixçənizi görmək üçün</p>
+          <a href="profile.html">giriş edin →</a>
+        </div>`;
+      return;
+    }
+
     const history = await getHistory(user);
 
     if (history.length === 0) {
@@ -379,7 +389,7 @@ async function initFeedback() {
     document.getElementById("feedback-submit").addEventListener("click", async () => {
       const { auth } = await import("./firebase.js");
       if (!auth.currentUser) {
-        document.getElementById("feedback-error").innerHTML = "⚠️ Göndərmək üçün <a href='profile.html' class='login-link'>giriş</a> etməlisiniz.";
+        document.getElementById("feedback-error").textContent = "⚠️ Göndərmək üçün <a href='profile.html' class='login-link'>giriş</a> etməlisiniz.";
         document.getElementById("feedback-error").classList.remove("hidden");
         return;
       }

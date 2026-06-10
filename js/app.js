@@ -2,7 +2,7 @@ import { initAuth } from "./auth.js";
 // app.js
 import { renderLyrics } from "./renderer.js";
 
-import { getHistory } from "./firestore-favs.js";
+import { getHistory, getPopularSongs } from "./firestore-favs.js";
 import { auth, onAuthStateChanged } from "./firebase.js";
 
 // ── Yardımçı funksiyalar ─────────────────────────────────────
@@ -276,7 +276,7 @@ async function initRandom() {
 
 // ── "Tezliklə" paneli ────────────────────────────────────────
 function initSoonCards() {
-  const soonIds = ["card-soon-1", "card-soon-2", "card-soon-4", "card-soon-5"];
+  const soonIds = ["card-soon-2", "card-soon-4", "card-soon-5"];
 
   let panel = document.getElementById("soon-panel");
   if (!panel) {
@@ -508,6 +508,73 @@ async function initNewSongs() {
   });
 }
 
+// ── Populyar Mahnılar paneli ─────────────────────────────────
+async function initPopularSongs() {
+  const card = document.getElementById("card-soon-1");
+  if (!card) return;
+
+  let panel = document.getElementById("popular-panel");
+  if (!panel) {
+    panel = document.createElement("div");
+    panel.id = "popular-panel";
+    panel.className = "random-panel hidden";
+    panel.innerHTML = `
+      <div class="random-panel-header">
+        <span>⭐ Populyar Mahnılar</span>
+        <button class="random-panel-close" id="popular-close">✕</button>
+      </div>
+      <div class="artist-grid" id="popular-grid"></div>
+      <p class="section-empty" id="popular-empty" style="display:none">Hələ məlumat yoxdur.</p>
+    `;
+    document.body.appendChild(panel);
+
+    document.getElementById("popular-close").addEventListener("click", () => {
+      panel.classList.add("hidden");
+    });
+    document.addEventListener("click", (e) => {
+      if (!panel.contains(e.target) && e.target !== card && !card.contains(e.target)) {
+        panel.classList.add("hidden");
+      }
+    });
+  }
+
+  async function renderPopular() {
+    const grid  = document.getElementById("popular-grid");
+    const empty = document.getElementById("popular-empty");
+    grid.innerHTML = "<p class='section-empty' style='grid-column:1/-1'>Yüklənir...</p>";
+
+    const songs = await getPopularSongs(10);
+
+    grid.innerHTML = "";
+    if (songs.length === 0) {
+      empty.style.display = "block";
+      return;
+    }
+    empty.style.display = "none";
+
+    songs.forEach(s => {
+      const a = document.createElement("a");
+      a.href = `song.html?id=${s.id}`;
+      a.className = "artist-card";
+      a.innerHTML = `
+        <span class="artist-card-title">${s.title}</span>
+        <span class="artist-card-meta">${s.artist} · ${s.key} · ❤️ ${s.favoriteCount}</span>
+      `;
+      grid.appendChild(a);
+    });
+  }
+
+  card.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (!panel.classList.contains("hidden")) {
+      panel.classList.add("hidden");
+      return;
+    }
+    renderPopular();
+    panel.classList.remove("hidden");
+  });
+}
+
 // ── Index səhifəsi ────────────────────────────────────────────
 async function initIndex() {
   const listEl = document.getElementById("song-list");
@@ -568,6 +635,7 @@ initRandom();
 initHistory();
 initSoonCards();
 initNewSongs();
+initPopularSongs();
 initFeedback();
 initIndex();
 initSong();

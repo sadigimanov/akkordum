@@ -1,5 +1,5 @@
 // js/firestore-favs.js
-import { db, doc, getDoc, setDoc, updateDoc } from "./firebase.js";
+import { db, doc, getDoc, setDoc, updateDoc, increment } from "./firebase.js";
 
 function userRef(uid) {
   return doc(db, "users", uid);
@@ -35,6 +35,14 @@ export async function addFavorite(user, song) {
       const existing = snap.data().favorites || [];
       if (!existing.some(f => f.id === song.id)) {
         await updateDoc(ref, { favorites: [...existing, song] });
+        // Populyarlıq sayğacını artır
+        const songRef = doc(db, "songs", song.id);
+        const songSnap = await getDoc(songRef);
+        if (songSnap.exists()) {
+          await updateDoc(songRef, { favoriteCount: increment(1) });
+        } else {
+          await setDoc(songRef, { favoriteCount: 1, title: song.title, artist: song.artist, key: song.key });
+        }
       }
     }
   } catch (e) { console.error("addFavorite xətası:", e); }
@@ -53,6 +61,13 @@ export async function removeFavorite(user, songId) {
     if (!snap.exists()) return;
     const updated = (snap.data().favorites || []).filter(f => f.id !== songId);
     await updateDoc(ref, { favorites: updated });
+    // Populyarlıq sayğacını azalt
+    const songRef = doc(db, "songs", songId);
+    const songSnap = await getDoc(songRef);
+    if (songSnap.exists()) {
+      const current = songSnap.data().favoriteCount || 0;
+      await updateDoc(songRef, { favoriteCount: Math.max(0, current - 1) });
+    }
   } catch (e) { console.error("removeFavorite xətası:", e); }
 }
 
@@ -117,4 +132,23 @@ export async function getHistory(user) {
     const snap = await getDoc(doc(db, "users", user.uid));
     return snap.exists() ? (snap.data().history || []) : [];
   } catch { return []; }
+}
+
+// ── Populyar mahnılar ──────────────────────────────────────────
+export async function getPopularSongs(limit = 10) {
+  try {
+    const { collection, getDocs, query, orderBy, limit: fsLimit } = await import(
+      "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"
+    );
+    const q = query(
+      collection(db, "songs"),
+      orderBy("favoriteCount", "desc"),
+      fsLimit(limit)
+    );
+    const snap = await getDocs(q);
+    return snap.docs.map(d => ({ id: d.id, ...d.data() }));
+  } catch (e) {
+    console.error("getPopularSongs xətası:", e);
+    return [];
+  }
 }

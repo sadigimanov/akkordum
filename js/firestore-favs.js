@@ -152,3 +152,16 @@ export async function getPopularSongs(limit = 10) {
     return [];
   }
 }
+
+// ── Önə Çıxanlar ──────────────────────────────────────────────
+export async function getFeaturedSongs() {
+  try {
+    const ref  = doc(db, "featured", "config");
+    const snap = await getDoc(ref);
+    if (!snap.exists()) return [];
+    return snap.data().songs || [];
+  } catch (e) {
+    console.error("getFeaturedSongs xətası:", e);
+    return [];
+  }
+}

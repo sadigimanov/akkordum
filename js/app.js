@@ -2,7 +2,7 @@ import { initAuth } from "./auth.js";
 // app.js
 import { renderLyrics } from "./renderer.js";
 
-import { getHistory, getPopularSongs } from "./firestore-favs.js";
+import { getHistory, getPopularSongs, getFeaturedSongs } from "./firestore-favs.js";
 import { auth, onAuthStateChanged } from "./firebase.js";
 
 // ── Yardımçı funksiyalar ─────────────────────────────────────
@@ -276,7 +276,7 @@ async function initRandom() {
 
 // ── "Tezliklə" paneli ────────────────────────────────────────
 function initSoonCards() {
-  const soonIds = ["card-soon-2", "card-soon-4", "card-soon-5"];
+  const soonIds = ["card-soon-4", "card-soon-5"];
 
   let panel = document.getElementById("soon-panel");
   if (!panel) {
@@ -508,6 +508,80 @@ async function initNewSongs() {
   });
 }
 
+// ── Önə Çıxanlar paneli ──────────────────────────────────────
+async function initFeatured() {
+  const card = document.getElementById("card-soon-2");
+  if (!card) return;
+
+  let catalog = [];
+  try {
+    catalog = await fetch("songs/catalog.json").then(r => r.json());
+  } catch { return; }
+
+  let panel = document.getElementById("featured-panel");
+  if (!panel) {
+    panel = document.createElement("div");
+    panel.id = "featured-panel";
+    panel.className = "random-panel hidden";
+    panel.innerHTML = `
+      <div class="random-panel-header">
+        <span>🔥 Önə Çıxanlar</span>
+        <button class="random-panel-close" id="featured-close">✕</button>
+      </div>
+      <div class="artist-grid" id="featured-grid"></div>
+      <p class="section-empty" id="featured-empty" style="display:none">Hələ seçilmiş mahnı yoxdur.</p>
+    `;
+    document.body.appendChild(panel);
+
+    document.getElementById("featured-close").addEventListener("click", () => {
+      panel.classList.add("hidden");
+    });
+    document.addEventListener("click", (e) => {
+      if (!panel.contains(e.target) && e.target !== card && !card.contains(e.target)) {
+        panel.classList.add("hidden");
+      }
+    });
+  }
+
+  async function renderFeatured() {
+    const grid  = document.getElementById("featured-grid");
+    const empty = document.getElementById("featured-empty");
+    grid.innerHTML = "<p class='section-empty' style='grid-column:1/-1'>Yüklənir...</p>";
+
+    const ids = await getFeaturedSongs();
+    grid.innerHTML = "";
+
+    if (ids.length === 0) {
+      empty.style.display = "block";
+      return;
+    }
+    empty.style.display = "none";
+
+    ids.forEach(id => {
+      const s = catalog.find(c => c.id === id);
+      if (!s) return;
+      const a = document.createElement("a");
+      a.href = `song.html?id=${s.id}`;
+      a.className = "artist-card";
+      a.innerHTML = `
+        <span class="artist-card-title">${s.title}</span>
+        <span class="artist-card-meta">${s.artist} · ${s.key}</span>
+      `;
+      grid.appendChild(a);
+    });
+  }
+
+  card.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (!panel.classList.contains("hidden")) {
+      panel.classList.add("hidden");
+      return;
+    }
+    renderFeatured();
+    panel.classList.remove("hidden");
+  });
+}
+
 // ── Populyar Mahnılar paneli ─────────────────────────────────
 async function initPopularSongs() {
   const card = document.getElementById("card-soon-1");
@@ -636,6 +710,7 @@ initHistory();
 initSoonCards();
 initNewSongs();
 initPopularSongs();
+initFeatured();
 initFeedback();
 initIndex();
 initSong();

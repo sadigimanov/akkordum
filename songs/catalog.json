@@ -514,7 +514,7 @@
     "title": "Şirin Yuxular",
     "artist": "Şahin Əlizadə",
     "key": "Fm",
-    "chords":[],
+    "chords":["Fm", "D#", "A#m", "C", "F7"],
     "capo": 0,
     "rhythm": ["↓", "↓", "↑"],
     "addedAt": "2026-06-04"

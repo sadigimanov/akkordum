@@ -2,7 +2,7 @@ import { initAuth } from "./auth.js";
 // app.js
 import { renderLyrics } from "./renderer.js";
 
-import { getHistory, getPopularSongs, getFeaturedSongs } from "./firestore-favs.js";
+import { getHistory, getPopularSongs, getFeaturedSongs, getAllUserNotes } from "./firestore-favs.js";
 import { auth, onAuthStateChanged } from "./firebase.js";
 
 // ── Yardımçı funksiyalar ─────────────────────────────────────
@@ -276,7 +276,7 @@ async function initRandom() {
 
 // ── "Tezliklə" paneli ────────────────────────────────────────
 function initSoonCards() {
-  const soonIds = ["card-soon-4", "card-soon-5"];
+  const soonIds = [];
 
   let panel = document.getElementById("soon-panel");
   if (!panel) {
@@ -508,6 +508,173 @@ async function initNewSongs() {
   });
 }
 
+// ── Qeyd Aldıqlarım paneli ────────────────────────────────────
+async function initNotes() {
+  const card = document.getElementById("card-soon-4");
+  if (!card) return;
+
+  let panel = document.getElementById("notes-panel");
+  if (!panel) {
+    panel = document.createElement("div");
+    panel.id = "notes-panel";
+    panel.className = "random-panel hidden";
+    panel.innerHTML = `
+      <div class="random-panel-header">
+        <span>📝 Qeyd Aldıqlarım</span>
+        <button class="random-panel-close" id="notes-close">✕</button>
+      </div>
+      <div class="artist-grid" id="notes-grid"></div>
+      <p class="section-empty" id="notes-empty" style="display:none">İlk qeydinizi aparmaq üçün mahnı
+      səhifəsindəki "Qeyd apar" düyməsinə klikləyin.</p>
+    `;
+    document.body.appendChild(panel);
+
+    document.getElementById("notes-close").addEventListener("click", () => {
+      panel.classList.add("hidden");
+    });
+    document.addEventListener("click", (e) => {
+      if (!panel.contains(e.target) && e.target !== card && !card.contains(e.target)) {
+        panel.classList.add("hidden");
+      }
+    });
+  }
+
+  async function renderNotes() {
+    const grid  = document.getElementById("notes-grid");
+    const empty = document.getElementById("notes-empty");
+    grid.innerHTML = "";
+
+    const user = await new Promise(resolve => {
+      const unsub = onAuthStateChanged(auth, u => { unsub(); resolve(u); });
+    });
+
+    if (!user) {
+      empty.style.display = "none";
+      grid.innerHTML = `
+        <div class="panel-login-msg">
+          <p>Qeydlərinizi görmək üçün</p>
+          <a href="profile.html">giriş edin →</a>
+        </div>`;
+      return;
+    }
+
+    const notes = await getAllUserNotes(user);
+
+    if (notes.length === 0) {
+      empty.style.display = "block";
+      return;
+    }
+    empty.style.display = "none";
+
+    notes.forEach(n => {
+      const s = n.song;
+      const a = document.createElement("a");
+      a.href = `song.html?id=${s.id}`;
+      a.className = "artist-card";
+      a.innerHTML = `
+        <span class="artist-card-title">${s.title}</span>
+        <span class="artist-card-meta">${s.artist} · ${s.key}</span>
+      `;
+      grid.appendChild(a);
+    });
+  }
+
+  card.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (!panel.classList.contains("hidden")) {
+      panel.classList.add("hidden");
+      return;
+    }
+    renderNotes();
+    panel.classList.remove("hidden");
+  });
+}
+
+// ── Populyar Artistlər paneli ────────────────────────────────
+async function initPopularArtists() {
+  const card = document.getElementById("card-soon-5");
+  if (!card) return;
+
+  let catalog = [];
+  try {
+    catalog = await fetch("songs/catalog.json").then(r => r.json());
+  } catch { return; }
+
+  let panel = document.getElementById("artists-panel");
+  if (!panel) {
+    panel = document.createElement("div");
+    panel.id = "artists-panel";
+    panel.className = "random-panel hidden";
+    panel.innerHTML = `
+      <div class="random-panel-header">
+        <span>🎤 Populyar Artistlər</span>
+        <button class="random-panel-close" id="artists-close">✕</button>
+      </div>
+      <div class="artist-grid" id="artists-grid"></div>
+      <p class="section-empty" id="artists-empty" style="display:none">Hələ məlumat yoxdur.</p>
+    `;
+    document.body.appendChild(panel);
+
+    document.getElementById("artists-close").addEventListener("click", () => {
+      panel.classList.add("hidden");
+    });
+    document.addEventListener("click", (e) => {
+      if (!panel.contains(e.target) && e.target !== card && !card.contains(e.target)) {
+        panel.classList.add("hidden");
+      }
+    });
+  }
+
+  async function renderArtists() {
+    const grid  = document.getElementById("artists-grid");
+    const empty = document.getElementById("artists-empty");
+    grid.innerHTML = "<p class='section-empty' style='grid-column:1/-1'>Yüklənir...</p>";
+
+    const songs = await getPopularSongs(100); // hamısını al, sonra cəmlə
+
+    // Artistə görə cəmlə
+    const artistTotals = {};
+    songs.forEach(s => {
+      if (!s.artist) return;
+      artistTotals[s.artist] = (artistTotals[s.artist] || 0) + (s.favoriteCount || 0);
+    });
+
+    const sorted = Object.entries(artistTotals)
+      .filter(([, count]) => count > 0)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 10);
+
+    grid.innerHTML = "";
+    if (sorted.length === 0) {
+      empty.style.display = "block";
+      return;
+    }
+    empty.style.display = "none";
+
+    sorted.forEach(([artist, count]) => {
+      const songCount = catalog.filter(s => s.artist === artist).length;
+      const a = document.createElement("a");
+      a.href = `artist.html?artist=${encodeURIComponent(artist)}`;
+      a.className = "artist-card";
+      a.innerHTML = `
+        <span class="artist-card-title">${artist}</span>
+        <span class="artist-card-meta">${songCount} mahnı · ❤️ ${count}</span>
+      `;
+      grid.appendChild(a);
+    });
+  }
+
+  card.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (!panel.classList.contains("hidden")) {
+      panel.classList.add("hidden");
+      return;
+    }
+    renderArtists();
+    panel.classList.remove("hidden");
+  });
+}
+
 // ── Önə Çıxanlar paneli ──────────────────────────────────────
 async function initFeatured() {
   const card = document.getElementById("card-soon-2");
@@ -711,6 +878,8 @@ initSoonCards();
 initNewSongs();
 initPopularSongs();
 initFeatured();
+initPopularArtists();
+initNotes();
 initFeedback();
 initIndex();
 initSong();

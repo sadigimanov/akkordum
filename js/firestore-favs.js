@@ -165,3 +165,53 @@ export async function getFeaturedSongs() {
     return [];
   }
 }
+
+// ── Qeydlər ───────────────────────────────────────────────────
+export async function getUserNote(user, songId) {
+  if (!user) return "";
+  try {
+    const ref  = doc(db, "users", user.uid, "notes", songId);
+    const snap = await getDoc(ref);
+    return snap.exists() ? (snap.data().text || "") : "";
+  } catch (e) { console.error("getUserNote xətası:", e); return ""; }
+}
+
+export async function saveUserNote(user, songId, text) {
+  if (!user) return;
+  try {
+    const ref = doc(db, "users", user.uid, "notes", songId);
+    if (text.trim() === "") {
+      await setDoc(ref, { text: "", song: null });
+    } else {
+      await setDoc(ref, { text, song: null, updatedAt: new Date().toISOString() });
+    }
+  } catch (e) { console.error("saveUserNote xətası:", e); }
+}
+
+export async function saveUserNoteWithSong(user, song, text) {
+  if (!user) return;
+  try {
+    const ref = doc(db, "users", user.uid, "notes", song.id);
+    await setDoc(ref, {
+      text,
+      song: { id: song.id, title: song.title, artist: song.artist, key: song.key },
+      updatedAt: new Date().toISOString()
+    });
+  } catch (e) { console.error("saveUserNoteWithSong xətası:", e); }
+}
+
+export async function getAllUserNotes(user) {
+  if (!user) return [];
+  try {
+    const { collection, getDocs } = await import(
+      "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js"
+    );
+    const snap = await getDocs(collection(db, "users", user.uid, "notes"));
+    return snap.docs
+      .map(d => d.data())
+      .filter(d => d.text && d.text.trim() !== "" && d.song);
+  } catch (e) {
+    console.error("getAllUserNotes xətası:", e);
+    return [];
+  }
+}

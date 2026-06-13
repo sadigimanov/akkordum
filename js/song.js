@@ -1,6 +1,6 @@
 import { initAuth } from "./auth.js";
 import { auth, onAuthStateChanged } from "./firebase.js";
-import { getFavorites, addFavorite, removeFavorite, isFavorite, getUserRhythm, saveUserRhythm, addToHistory } from "./firestore-favs.js";
+import { getFavorites, addFavorite, removeFavorite, isFavorite, getUserRhythm, saveUserRhythm, addToHistory, getUserNote, saveUserNoteWithSong } from "./firestore-favs.js";
 import { renderLyrics } from "./renderer.js";
 import { initChordClick } from "./chord-diagram.js";
 
@@ -291,6 +291,50 @@ async function init() {
 
   onAuthStateChanged(auth, () => renderRhythms());
 
+    // ── Qeyd ─────────────────────────────────────────────────
+  const noteBtn      = document.getElementById("note-add-btn");
+  const noteEditor   = document.getElementById("note-editor");
+  const noteTextarea = document.getElementById("note-textarea");
+  const noteSaveBtn  = document.getElementById("note-save-btn");
+
+  if (noteBtn) {
+    noteBtn.addEventListener("click", async () => {
+      if (!auth.currentUser) {
+        let warning = document.getElementById("note-login-warning");
+        if (!warning) {
+          warning = document.createElement("p");
+          warning.id = "note-login-warning";
+          warning.className = "rhythm-login-warning";
+          warning.innerHTML = `Qeyd aparmaq üçün <a href="profile.html">giriş et</a>.`;
+          noteEditor.parentNode.insertBefore(warning, noteEditor);
+        }
+        return;
+      }
+      const warning = document.getElementById("note-login-warning");
+      if (warning) warning.remove();
+
+      const isOpen = !noteEditor.classList.contains("hidden");
+      if (isOpen) {
+        noteEditor.classList.add("hidden");
+        noteBtn.textContent = "📝 Qeyd apar";
+      } else {
+        // Mövcud qeydi yüklə
+        const existing = await getUserNote(auth.currentUser, song.id);
+        noteTextarea.value = existing;
+        noteEditor.classList.remove("hidden");
+        noteBtn.textContent = "✕ Bağla";
+      }
+    });
+  }
+
+  if (noteSaveBtn) {
+    noteSaveBtn.addEventListener("click", async () => {
+      await saveUserNoteWithSong(auth.currentUser, song, noteTextarea.value);
+      noteEditor.classList.add("hidden");
+      noteBtn.textContent = "📝 Qeyd apar";
+    });
+  }
+
   const originalRoot = getOriginalRoot(song.key);
   const originalIdx = NOTES.indexOf(originalRoot);
   let semitones = 0;
@@ -425,6 +469,7 @@ async function init() {
     function songLink(s) {
       const a = document.createElement("a");
       a.href = `song.html?id=${s.id}`;
+      a.className = "song-link-item";
       a.innerHTML = `<span>${s.title}</span><span class="s-meta">${s.artist} · ${s.key}</span>`;
       return a;
     }
@@ -634,7 +679,6 @@ async function init() {
 
   function startPlay() {
     isPlaying = true;
-    scrollPos = window.scrollY;
 
     // Mobil/tablet — navbar-ı gizlət
     if (window.innerWidth <= 1024) {
@@ -647,7 +691,11 @@ async function init() {
       document.querySelector(".divider")?.classList.add("player-hidden");
     }
 
-    startScroll();
+    // Layout dəyişdikdən sonra scroll mövqeyini al
+    requestAnimationFrame(() => {
+      scrollPos = window.scrollY;
+      startScroll();
+    });
   }
 
   if (playBtn) {

@@ -36,6 +36,7 @@
         <span id="song-easy-text" class="dim-key">Asan Ton: <strong id="song-easy-key">A</strong></span>
         <span id="btn-favorite" class="fav-btn" title="Sevimlilərə əlavə et">Sevimlilərə əlavə et 🤍</span>
         <button id="rhythm-add-btn" class="rhythm-add-toggle">＋ Ritm əlavə et</button>
+        <button id="note-add-btn" class="rhythm-add-toggle">📝 Qeyd apar</button>
       </div>
 
       <!-- Ritm -->
@@ -43,6 +44,12 @@
         <div class="rhythm-label">Ritm</div>
         <div id="rhythm-display"></div>
         <div id="rhythm-editor" class="rhythm-editor hidden"></div>
+        <div id="note-editor" class="note-editor hidden">
+          <textarea id="note-textarea" class="note-textarea" placeholder="Qeydinizi yazın..." rows="4"></textarea>
+          <div class="note-actions">
+            <button id="note-save-btn" class="rhythm-save-btn">✓ Saxla</button>
+          </div>
+        </div>
       </div>
 
       <!-- Ton sırası -->
@@ -100,20 +107,20 @@
           <div class="section-list" id="list-chords"></div>
         </div>
 
-        <a href="favorites.html" class="song-section" id="section-favorites">
-          <div class="section-header">
-            <span class="section-dot" style="background:#f87171"></span>
-            <span class="section-title-text">Sevimlilərim</span>
-          </div>
-        </a>
-
-        <div class="song-section" id="section-rhythm">
+         <div class="song-section" id="section-rhythm">
           <div class="section-header">
             <span class="section-dot" style="background:#60a5fa"></span>
             <span class="section-title-text">Eyni ritmlə olan mahnılar</span>
           </div>
           <div class="section-list" id="list-rhythm"></div>
         </div>
+
+        <a href="favorites.html" class="song-section" id="section-favorites">
+          <div class="section-header">
+            <span class="section-dot" style="background:#f87171"></span>
+            <span class="section-title-text">Sevimlilərim</span>
+          </div>
+        </a>
 
       </div>
     </div>

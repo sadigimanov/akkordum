@@ -45,21 +45,59 @@ a {
 }
 
 [data-theme="light"] {
-  --bg: #a7bdfb;
-  --bg-deep: #e4eaf5;
-  --surface: #ffffff;
-  --surface-2: #d6dbf0;
-  --border: rgba(0, 0, 0, 0.18);
-  --text: #1a1f2e;
-  --text-muted: #6b7a99;
+  --bg: #e8ecf2;
+  --bg-deep: #e2e5ec;
+  --surface: #f7f8fa;
+  --surface-2: #e8eaef;
+  --border: rgba(0, 0, 0, 0.1);
+  --text: #2a2f3a;
+  --text-muted: #6b7280;
   --accent: #0f7a5a;
   --accent-dim: rgba(15, 122, 90, 0.1);
-  --card-bg: #1e2d4a;
-  --card-hover: #263654;
-  --navbar-bg: #0d1526;
+  --card-bg: #f0f4f9;
+  --card-hover: #eef0f4;
+  --navbar-bg: #f7f8fa;
   --input-bg: #ffffff;
   --input-text: #111;
-  --input-border: #ccc;
+  --input-border: #ddd;
+}
+
+/* ── Light tema düzəlişləri ───────────────────────────────── */
+
+/* Kartlar və siyahı elementləri */
+[data-theme="light"] .fav-item,
+[data-theme="light"] .artist-card,
+[data-theme="light"] .song-sections a {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+[data-theme="light"] .song-sections a:hover {
+  background: var(--card-hover);
+}
+
+/* Sevimlilər bölməsi — şəffaf, üst xətt */
+[data-theme="light"] #section-favorites {
+  background: transparent;
+  border: none;
+  border-top: 1px solid var(--border);
+  border-radius: 0;
+}
+
+/* Aktiv ton göstəriciləri */
+[data-theme="light"] .active-key {
+  color: var(--text) !important;
+  font-weight: 700;
+}
+[data-theme="light"] .key-note.active {
+  color: var(--text) !important;
+  border: 1px solid var(--border);
+  background: var(--accent-dim);
+}
+
+/* Sevimli düyməsi hover */
+[data-theme="light"] #btn-favorite:hover {
+  color: var(--accent);
 }
 
 /* ── Base ─────────────────────────────────────────────────── */
@@ -124,6 +162,7 @@ body {
   font-weight: 600;
   letter-spacing: -0.02em;
   margin-bottom: 1.2rem;
+  color: var(--text);
 }
 
 /* ── Search ───────────────────────────────────────────────── */
@@ -232,6 +271,7 @@ body {
 
 .cat-name {
   line-height: 1.3;
+  color: var(--text);
 }
 
 /* ── Rastgele panel (index) ───────────────────────────────── */
@@ -324,6 +364,7 @@ body {
 /* ── Song card ────────────────────────────────────────────── */
 .song-card {
   background: var(--card-bg);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.09);
   border-radius: 14px;
   padding: 2rem 2.5rem 2.5rem;
   margin: 0 auto;
@@ -331,7 +372,7 @@ body {
 
 #song-artist {
   font-size: 18px;
-  color: #fff;
+  color: var(--text);
   opacity: 0.8;
   margin-bottom: 0.6rem;
   margin-top: -0.2rem;
@@ -342,7 +383,7 @@ body {
   font-weight: 600;
   letter-spacing: -0.02em;
   margin-bottom: 0.5rem;
-  color: #fff;
+  color: var(--text);
 }
 
 .song-info-row {
@@ -503,6 +544,7 @@ body {
 .lyric-row {
   white-space: pre;
   font-size: 12px;
+  color: var(--text);
 }
 
 /* ── Error ────────────────────────────────────────────────── */
@@ -677,9 +719,9 @@ body {
 }
 
 [data-theme="light"] {
-  --chord-text: #e8e4dc;
-  --chord-muted: #6b7a99;
-  --chord-grid: rgba(255, 255, 255, 0.15);
+  --chord-text: #2a2f3a;
+  --chord-grid: rgba(0, 0, 0, 0.15);
+  --chord-muted: #9aa3b2;
   --chord-dot: #0f7a5a;
   --chord-finger-text: #ffffff;
 }
@@ -877,7 +919,7 @@ body {
 .artist-card-title {
   font-size: 15px;
   font-weight: 500;
-  color :#fff;
+  color: var(--text);
 }
 
 .artist-card-meta {
@@ -976,6 +1018,7 @@ body {
   font-size: 22px;
   font-weight: 600;
   letter-spacing: -0.02em;
+  color: var(--text);
 }
  
 .profile-subtitle {
@@ -1328,7 +1371,7 @@ body {
 /* ── Ritm login xəbərdarlığı ─────────────────────────────── */
 .rhythm-login-warning {
   font-size: 13px;
-  color: #fbbf24;
+  color: var(--text);
   margin-top: 0.5rem;
 }
 .rhythm-login-warning a {
@@ -1483,7 +1526,7 @@ body {
 
 .login-link{
   text-decoration: underline;
-  color:#FFF;
+  color: var(--text)
 }
  
 /* ── Feedback panel ───────────────────────────────────────── */
@@ -1632,4 +1675,68 @@ body {
  
 .player-hidden {
   display: none !important;
+}
+
+/* ── Qeyd editoru ─────────────────────────────────────────── */
+.note-editor {
+  margin-top: 0.8rem;
+  padding: 1rem;
+  background: var(--surface);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.note-editor.hidden { display: none; }
+ 
+.note-textarea {
+  width: 100%;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-family: var(--font-ui);
+  font-size: 14px;
+  padding: 0.7rem 0.9rem;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.15s;
+  line-height: 1.6;
+  box-sizing: border-box;
+}
+.note-textarea:focus { border-color: var(--accent); }
+.note-textarea::placeholder { color: var(--text-muted); }
+ 
+.note-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ── Xoş gəlmisiniz banneri ───────────────────────────────── */
+.welcome-banner {
+  margin-bottom: 1.5rem;
+  padding: 1.2rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+.welcome-title {
+  font-size: 30px;
+  margin-bottom: 0.4rem;
+  color: var(--text);
+}
+.welcome-text {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+ 
+/* ── Index qeydi ──────────────────────────────────────────── */
+.index-note {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1rem;
+  font-size: 13px;
+  color: var(--text-muted);
+  background: var(--surface);
+  border-radius: 8px;
+  line-height: 1.6;
 }

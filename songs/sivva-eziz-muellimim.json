@@ -1,0 +1,101 @@
+{
+  "id": "sivva-eziz-muellimim",
+  "title": "Əziz Müəllimim",
+  "artist": "Sivva",
+  "key": "C#m",
+  "capo": 0,
+  "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "F#m", "offset": 27 }
+      ],
+      "line": "Bəzən şirin yuxularda dönüb şıltaq kiçik qıza"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 7 },
+        { "name": "G#", "offset": 16 },
+        { "name": "C#m", "offset": 27 }
+      ],
+      "line": "Sevinc ilə yüyürürəm doğma məktəb yollarında"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "F#m", "offset": 27 }
+      ],
+      "line": "Bir vaxt sənin sözlərinə gizli-gizli gülərdik biz"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 9 },
+        { "name": "G#", "offset": 19 },
+        { "name": "C#m", "offset": 27 }
+      ],
+      "line": "Deyəndə ki, vaxt gələcək bu günləri anacaqsınız"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "F#m", "offset": 4 },
+        { "name": "C#m", "offset": 28 }
+      ],
+      "line": "Əziz müəllimim, dediklərin doğru imiş sətir-sətir"
+    },
+    {
+      "chords": [
+        { "name": "G#", "offset": 16 },
+        { "name": "C#m", "offset": 28 }
+      ],
+      "line": "Nə olar, sən o günləri bircə anlıq geri gətir"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "F#m", "offset": 27 }
+      ],
+      "line": "Deyəndə ki, saçınızı qoşa hörük hörmək üçün"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 7 },
+        { "name": "G#", "offset": 15 },
+        { "name": "C#m", "offset": 25 }
+      ],
+      "line": "Uclarına bəyaz lenti kəpənək tək vurmaq üçün"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "F#m", "offset": 28 }
+      ],
+      "line": "Siz çox şeydən keçəcəksiniz, hələ də sən için-için"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 7 },
+        { "name": "G#", "offset": 18 },
+        { "name": "C#m", "offset": 26 }
+      ],
+      "line": "Alovlanıb yanacaqsınız, onda məni anacaqsınız"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "F#m", "offset": 4 },
+        { "name": "C#m", "offset": 28 }
+      ],
+      "line": "Əziz müəllimim, dediklərin doğru imiş sətir-sətir"
+    },
+    {
+      "chords": [
+        { "name": "G#", "offset": 16 },
+        { "name": "C#m", "offset": 28 }
+      ],
+      "line": "Nə olar, sən o günləri bircə anlıq geri gətir"
+    }
+  ]
+}

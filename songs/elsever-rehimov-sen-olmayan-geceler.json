@@ -1,0 +1,102 @@
+{
+  "id": "elsever-rehimov-sen-olmayan-geceler",
+  "title": "Sən Olmayan Gecələr",
+  "artist": "Elsevər Rəhimov",
+  "key": "Am",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [],
+      "line": "Düşün:"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Xəyalı özündən gözəl qoxan bir qadın"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 7 }
+      ],
+      "line": "Çatlamış dodaqları qırmızı rəng və şirin dadı"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 8 }
+      ],
+      "line": "Hər səsdə eşidir adını qulağım"
+    },
+    null,
+    {
+      "chords": [],
+      "line": "İşimin adı sənsən"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "E", "offset": 13 }
+      ],
+      "line": "Birdə siqaret hərdən başımı qatır"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Em", "offset": 30 }
+      ],
+      "line": "Sən gedən günü, mənsə sən gedəndən hər gün öldüm"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 0 },
+        { "name": "Dm", "offset": 25 },
+        { "name": "E", "offset": 34 }
+      ],
+      "line": "Həbs oldum gözlərinə nə bir işıq, nə gün gördüm"
+    },
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 },
+        { "name": "Em", "offset": 21 }
+      ],
+      "line": "Yanımda olmadan, necə sol yanımda öldün?"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 0 },
+        { "name": "Dm", "offset": 18 },
+        { "name": "E", "offset": 32 }
+      ],
+      "line": "Öldürdün xəyalları, səndə xəyallarımda öldün"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Am", "offset": 0 }
+      ],
+      "line": "Sən olmayan gecələr Həyat axır necədə"
+    },
+    {
+      "chords": [
+        { "name": "Em", "offset": 0 }
+      ],
+      "line": "Bilməm saat neçədə Uzanıram küçədə"
+    },
+    {
+      "chords": [
+        { "name": "F", "offset": 0 }
+      ],
+      "line": "Çox səssizdi küçələr Şərabdan da içərək"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "E", "offset": 12 }
+      ],
+      "line": "Ulduzlarla gecələyirəm mən"
+    }
+  ]
+}

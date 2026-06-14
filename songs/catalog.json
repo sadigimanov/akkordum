@@ -150,6 +150,16 @@
     "addedAt": "2026-06-01"
   },
   {
+    "id": "elsever-rehimov-sen-olmayan-geceler",
+    "title": "Sən Olmayan Gecələr",
+    "artist": "Elsevər Rəhimov",
+    "key": "Am",
+    "chords":["Am", "Em", "F", "Dm", "E"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑", "↓", "↑"],
+    "addedAt": "2026-06-14"
+  },
+  {
     "id": "elvin-mirzezade-dusun-meni",
     "title": "Düşün Məni",
     "artist": "Elvin Mirzəzadə",
@@ -228,6 +238,16 @@
     "capo": 0,
     "rhythm": ["↓", "↑", "✕", "↑"],
     "addedAt": "2026-06-02"
+  },
+  {
+    "id": "faiq-agayev-seni-evez-elemir",
+    "title": "Səni Əvəz Eləmir",
+    "artist": "Faiq Ağayev",
+    "key": "Dm",
+    "chords":["Dm", "A", "A#", "Gm"],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑"],
+    "addedAt": "2026-06-14"
   },
   {
     "id": "irade-ibrahimova-bahar-ciceyi",
@@ -348,6 +368,16 @@
     "capo": 0,
     "rhythm": [],
     "addedAt": "2026-06-03"
+  },
+  {
+    "id": "natavan-hebibi-teyyareler",
+    "title": "Təyyarələr",
+    "artist": "Natavan Həbibi",
+    "key": "C#m",
+    "chords":["C#m", "F#m", "G#", "E", "A"],
+    "capo": 0,
+    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
+    "addedAt": "2026-06-14"
   },
   {
     "id": "nezaket-teymurova-unuda-bilmirem",
@@ -530,6 +560,16 @@
     "addedAt": "2026-06-04"
   },
   {
+    "id": "sivva-eziz-muellimim",
+    "title": "Əziz Müəllimim",
+    "artist": "Sivva",
+    "key": "C#m",
+    "chords":["C#m", "F#m", "G#"],
+    "capo": 0,
+    "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
+    "addedAt": "2026-06-14"
+  },
+  {
     "id": "the-half-olene-qeder",
     "title": "Ölənə qədər",
     "artist": "The Half",
@@ -548,6 +588,16 @@
     "capo": 0,
     "rhythm": ["↓", "⌇", "↑", "↓", "↑"],
     "addedAt": "2026-06-05"
+  },
+  {
+    "id": "yuxu-aldatdin-meni-sen",
+    "title": "Aldatdın Məni Sən",
+    "artist": "Yuxu",
+    "key": "E",
+    "chords":[],
+    "capo": 0,
+    "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑"],
+    "addedAt": "2026-06-14"
   },
   {
     "id": "yuxu-donge",

@@ -1,0 +1,79 @@
+{
+  "id": "natavan-hebibi-teyyareler",
+  "title": "Təyyarələr",
+  "artist": "Natavan Həbibi",
+  "key": "C#m",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "✕", "↑", "↑", "✕", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "C#m", "offset": 2 },
+        { "name": "F#m", "offset": 22 },
+        { "name": "G#", "offset": 25.3 }
+      ],
+      "line": "Birlikdə olmaqda məna yox artıq"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 5 },
+        { "name": "F#m", "offset": 18 },
+        { "name": "G#", "offset": 21.4 }
+      ],
+      "line": "Bütün arzuları reallaşdırdıq"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 5 },
+        { "name": "F#m", "offset": 22 },
+        { "name": "G#", "offset": 25.3 }
+      ],
+      "line": "Tükəndi sevgimiz, sonuna çatdıq"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 5 },
+        { "name": "F#m", "offset": 22 },
+        { "name": "G#", "offset": 25.3 }
+      ],
+      "line": "Sözlər deyildi, qəlblər qırıq-qırıq"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "C#m", "offset": 0 },
+        { "name": "E", "offset": 10 },
+        { "name": "A", "offset": 19 },
+        { "name": "G#", "offset": 24 }
+      ],
+      "line": "Sən üstəgəl mən bərabərdir ayrılıq"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "C#m", "offset": 9 }
+      ],
+      "line": "Səni sevən mənəm, mən deyiləm"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 8 }
+      ],
+      "line": "Sənin həyatından çıxıb gedirəm"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 9 }
+      ],
+      "line": "Kim bilir, olacaqdı nələr-nələr"
+    },
+    {
+      "chords": [
+        { "name": "F#m", "offset": 4 },
+        { "name": "G#", "offset": 12 }
+      ],
+      "line": "Bizi ayırdı təyyarələr"
+    }
+  ]
+}

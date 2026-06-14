@@ -1,0 +1,126 @@
+{
+  "id": "faiq-agayev-seni-evez-elemir",
+  "title": "Səni Əvəz Eləmir",
+  "artist": "Faiq Ağayev",
+  "key": "Dm",
+  "easy_key": "A",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "A", "offset": 20 }
+      ],
+      "line": "Məni atdın, atıb getdin, əzizim"
+    },
+    {
+      "chords": [
+        { "name": "A#", "offset": 0 },
+        { "name": "Gm", "offset": 11 },
+        { "name": "A", "offset": 22 },
+        { "name": "Dm", "offset": 25 }
+      ],
+      "line": "Mən bu axşam unudulmuş bir kəsəm"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "A", "offset": 19 }
+      ],
+      "line": "Dost itirmək hər ağrıdan ağırdır"
+    },
+    {
+      "chords": [
+        { "name": "A#", "offset": 0 },
+        { "name": "Gm", "offset": 12 },
+        { "name": "A", "offset": 19 },
+        { "name": "Dm", "offset": 22 }
+      ],
+      "line": "Bir gecədə qara saçım ağardı"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Dm", "offset": 4 }
+      ],
+      "line": "Əldə bir qədəh şərab"
+    },
+    {
+      "chords": [
+        { "name": "Gm", "offset": 4 },
+        { "name": "A", "offset": 11 }
+      ],
+      "line": "Səni əvəz eləmir"
+    },
+    null,
+    {
+      "chords": [],
+      "line": "Həsrətli xatirələr"
+    },
+    {
+      "chords": [
+        { "name": "A#", "offset": 11 }
+      ],
+      "line": "Səni əvəz eləmir"
+    },
+    null,
+    {
+      "chords": [],
+      "line": "Şəkillərdən baxışın"
+    },
+    {
+      "chords": [
+        { "name": "Gm", "offset": 4 },
+        { "name": "A", "offset": 11 }
+      ],
+      "line": "Səni əvəz eləmir"
+    },
+    null,
+    {
+      "chords": [],
+      "line": "Yastığımda göz yaşım"
+    },
+    {
+      "chords": [
+        { "name": "A#", "offset": 4 },
+        { "name": "A", "offset": 9 },
+        { "name": "Dm", "offset": 12 }
+      ],
+      "line": "Səni əvəz eləmir"
+    },
+    null,
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "A", "offset": 20 }
+      ],
+      "line": "İlk bahardır, son bahardır – unutdum"
+    },
+    {
+      "chords": [
+        { "name": "A#", "offset": 0 },
+        { "name": "Gm", "offset": 8 },
+        { "name": "A", "offset": 14 },
+        { "name": "Dm", "offset": 20 }
+      ],
+      "line": "Dan yerini kirpiyimlə qanatdım"
+    },
+    {
+      "chords": [
+        { "name": "Dm", "offset": 0 },
+        { "name": "A", "offset": 19 }
+      ],
+      "line": "Niyə mənə qismət oldu intizar?"
+    },
+    {
+      "chords": [
+        { "name": "A#", "offset": 0 },
+        { "name": "Gm", "offset": 8 },
+        { "name": "A", "offset": 13 },
+        { "name": "Dm", "offset": 19 }
+      ],
+      "line": "Ürəyimə niyə yağdı yağışlar?"
+    }
+  ]
+}

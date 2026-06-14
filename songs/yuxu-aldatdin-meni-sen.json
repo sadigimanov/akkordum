@@ -1,0 +1,86 @@
+{
+  "id": "yuxu-aldatdin-meni-sen",
+  "title": "Aldatdın Məni Sən",
+  "artist": "Yuxu",
+  "key": "E",
+  "easy_key": "C",
+  "capo": 0,
+  "rhythm": ["↓", "↓", "↑", "↑", "↑", "↓", "↑"],
+  "sections": [
+    {
+      "chords": [
+        { "name": "E", "offset": 11 }
+      ],
+      "line": "Aldatdın məni sən"
+    },
+    {
+      "chords": [
+        { "name": "C#m", "offset": 13 }
+      ],
+      "line": "Kor qoydun dünyada"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 13 },
+        { "name": "C#m", "offset": 23 }
+      ],
+      "line": "Hər axşam görürdüm səni röyada"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 10 },
+        { "name": "B", "offset": 21 }
+      ],
+      "line": "Sən isə aldatdın bizim sevgini..."
+    },
+    null,
+    {
+      "chords": [
+        { "name": "E", "offset": 11 },
+        { "name": "C#m", "offset": 23 }
+      ],
+      "line": "Mən səni sevirdim dünyalar qədər"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 10 },
+        { "name": "C#m", "offset": 22 }
+      ],
+      "line": "Bizim ilk sevgini yudu yağış, qar"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 8 }
+      ],
+      "line": "Sən məni aldatdın"
+    },
+    {
+      "chords": [
+        { "name": "B", "offset": 14 }
+      ],
+      "line": "Kor qoydun dünyada.."
+    },
+    null,
+    {
+      "chords": [
+        { "name": "E", "offset": 11 },
+        { "name": "C#m", "offset": 23 }
+      ],
+      "line": "Rüzgarın havası, dənizin dalğası"
+    },
+    {
+      "chords": [
+        { "name": "E", "offset": 11 },
+        { "name": "C#m", "offset": 21 }
+      ],
+      "line": "Göydəki ulduzlar səni sevdirdi"
+    },
+    {
+      "chords": [
+        { "name": "A", "offset": 10 },
+        { "name": "B", "offset": 21 }
+      ],
+      "line": "Sən isə aldatdın bizim sevgini"
+    }
+  ]
+}

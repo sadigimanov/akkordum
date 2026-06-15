@@ -872,8 +872,6 @@ body {
   padding: 5px 14px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: 6px;
-  margin-left: 0.7rem;
   transition: color 0.12s, border-color 0.12s;
 }
 

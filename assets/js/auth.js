@@ -3,13 +3,12 @@ import { auth, provider, signInWithPopup, signOut, onAuthStateChanged, signInWit
   from "./firebase.js";
 
 function updateNavbar(user) {
-  // nav-profile: giriş edilibsə profil şəkli, yoxsa 🎸
   const navProfile = document.getElementById("nav-profile");
   if (navProfile) {
     if (user && user.photoURL) {
       navProfile.innerHTML = `<img src="${user.photoURL}" class="nav-profile-photo" alt="profil" />`;
     } else {
-      navProfile.textContent = "🎸";
+      navProfile.innerHTML = `<img src="assets/img/akkordum_favicon.svg" class="nav-logo-img" alt="Akkordum" />`;
     }
   }
 
